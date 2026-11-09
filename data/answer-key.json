@@ -1,0 +1,7118 @@
+{
+ "txnNet": {
+  "1": {
+   "1-1100": 400000000,
+   "3-1000": -400000000
+  },
+  "2": {
+   "1-1100": -72000000,
+   "1-1600": 72000000
+  },
+  "3": {
+   "1-1400": 186000000,
+   "2-1000": -186000000
+  },
+  "4": {
+   "1-1100": 95000000,
+   "1-1400": -57000000,
+   "4-1000": -95000000,
+   "5-1000": 57000000
+  },
+  "5": {
+   "1-1100": -182280000,
+   "1-1400": -3720000,
+   "2-1000": 186000000
+  },
+  "6": {
+   "1-1200": 180000000,
+   "1-1400": -108000000,
+   "4-1000": -180000000,
+   "5-1000": 108000000
+  },
+  "7": {
+   "1-1100": -24000000,
+   "1-1700": 24000000
+  },
+  "8": {
+   "1-1100": -180000000,
+   "2-1000": 180000000
+  },
+  "9": {
+   "1-1000": -6500000,
+   "1-1500": 6500000
+  },
+  "10": {
+   "1-1100": 176400000,
+   "1-1200": -180000000,
+   "4-1200": 3600000
+  },
+  "11": {
+   "1-1100": -68000000,
+   "6-1000": 68000000
+  },
+  "12": {
+   "1-1100": -9500000,
+   "1-1400": 5700000,
+   "4-1100": 9500000,
+   "5-1000": -5700000
+  },
+  "13": {
+   "1-1100": 45000000,
+   "2-1400": -45000000
+  },
+  "14": {
+   "1-1100": -28500000,
+   "2-1200": 28500000
+  },
+  "15": {
+   "1-1400": 224000000,
+   "2-1000": -224000000
+  },
+  "16": {
+   "1-1200": 250000000,
+   "1-1400": -150000000,
+   "4-1000": -250000000,
+   "5-1000": 150000000
+  },
+  "17": {
+   "1-1100": -14200000,
+   "6-2000": 14200000
+  },
+  "18": {
+   "1-1100": -219520000,
+   "1-1400": -4480000,
+   "2-1000": 224000000
+  },
+  "19": {
+   "1-1100": -110000000,
+   "1-2300": 310000000,
+   "2-1100": -200000000
+  },
+  "20": {
+   "1-1000": 12000000,
+   "1-1310": -12000000
+  },
+  "21": {
+   "1-1100": 120000000,
+   "1-1400": -72000000,
+   "4-1000": -120000000,
+   "5-1000": 72000000
+  },
+  "22": {
+   "1-1100": -18000000,
+   "6-2200": 18000000
+  },
+  "24": {
+   "1-1500": 4200000,
+   "2-1000": -4200000
+  },
+  "25": {
+   "1-1100": 250000000,
+   "1-1200": -250000000
+  },
+  "26": {
+   "1-1100": -21000000,
+   "1-1600": 21000000
+  },
+  "27": {
+   "1-1400": 312000000,
+   "2-1000": -312000000
+  },
+  "28": {
+   "1-1400": -18000000,
+   "5-1000": 18000000
+  },
+  "29": {
+   "1-1100": -305760000,
+   "1-1400": -6240000,
+   "2-1000": 312000000
+  },
+  "30": {
+   "1-1200": 285000000,
+   "1-1400": -171000000,
+   "4-1000": -285000000,
+   "5-1000": 171000000
+  },
+  "31": {
+   "1-1100": -8000000,
+   "2-1400": 45000000,
+   "4-2000": -45000000,
+   "5-1000": 8000000
+  },
+  "32": {
+   "1-1100": 279300000,
+   "1-1200": -285000000,
+   "4-1200": 5700000
+  },
+  "33": {
+   "1-1100": -9600000,
+   "6-2100": 9600000
+  },
+  "34": {
+   "1-1100": -116000000,
+   "2-1000": 116000000
+  },
+  "35": {
+   "1-1100": 250000000,
+   "1-1200": -250000000
+  },
+  "36": {
+   "1-1100": -486000000,
+   "1-2400": 510000000,
+   "2-2400": -24000000
+  },
+  "37": {
+   "1-1100": -9000000,
+   "6-2400": 9000000
+  },
+  "38": {
+   "1-1400": 264000000,
+   "2-1000": -264000000
+  },
+  "39": {
+   "1-1200": 320000000,
+   "1-1400": -192000000,
+   "4-1000": -320000000,
+   "5-1000": 192000000
+  },
+  "40": {
+   "1-1100": -190000000,
+   "1-2800": 190000000
+  },
+  "41": {
+   "1-1100": -261360000,
+   "1-1400": -2640000,
+   "2-1000": 264000000
+  },
+  "42": {
+   "1-1100": -60000000,
+   "1-1800": 60000000
+  },
+  "43": {
+   "1-2700": 95095963,
+   "2-1700": -20490404,
+   "2-2200": -74605559
+  },
+  "44": {
+   "1-1100": -216000000,
+   "6-1000": 216000000
+  },
+  "45": {
+   "1-1100": 320000000,
+   "1-1200": -320000000
+  },
+  "46": {
+   "1-1100": -85000000,
+   "1-2900": 85000000
+  },
+  "47": {
+   "1-1100": -425000,
+   "6-2400": 425000
+  },
+  "48": {
+   "1-1400": 298000000,
+   "2-1000": -298000000
+  },
+  "49": {
+   "1-1100": 350000000,
+   "1-1400": -210000000,
+   "4-1000": -350000000,
+   "5-1000": 210000000
+  },
+  "51": {
+   "1-1100": -292040000,
+   "1-1400": -5960000,
+   "2-1000": 298000000
+  },
+  "52": {
+   "1-1100": 180000000,
+   "1-1400": -103680000,
+   "2-1600": -7200000,
+   "4-1000": -172800000,
+   "5-1000": 103680000
+  },
+  "53": {
+   "1-2100": -90000000,
+   "1-2200": -100000000,
+   "1-2210": 20000000,
+   "1-2600": 168466667,
+   "6-1400": 1533333
+  },
+  "54": {
+   "1-1100": -15600000,
+   "1-1700": 15600000
+  },
+  "55": {
+   "1-1400": 275000000,
+   "2-1000": -275000000
+  },
+  "56": {
+   "1-1000": 65000000,
+   "1-2300": -180000000,
+   "1-2310": 121875000,
+   "4-8200": -6875000
+  },
+  "57": {
+   "1-1200": 240000000,
+   "1-1400": -144000000,
+   "4-1000": -240000000,
+   "5-1000": 144000000
+  },
+  "58": {
+   "1-1100": -272250000,
+   "1-1400": -2750000,
+   "2-1000": 275000000
+  },
+  "59": {
+   "1-1100": -50000000,
+   "2-1100": 50000000
+  },
+  "60": {
+   "1-1100": -6944444,
+   "7-1000": 6944444
+  },
+  "61": {
+   "1-1100": 235200000,
+   "1-1200": -240000000,
+   "4-1200": 4800000
+  },
+  "62": {
+   "1-1100": -152000000,
+   "6-1000": 152000000
+  },
+  "64": {
+   "1-1100": -76000000,
+   "6-2000": 76000000
+  },
+  "65": {
+   "1-1400": 312000000,
+   "2-1000": -312000000
+  },
+  "66": {
+   "1-1100": 3466667,
+   "1-2800": 637650,
+   "4-8000": -4104317
+  },
+  "68": {
+   "1-1100": -150000000,
+   "2-1100": 150000000
+  },
+  "69": {
+   "1-1100": -32000000,
+   "2-1500": 32000000
+  },
+  "70": {
+   "1-1100": 7500000,
+   "4-8000": -7500000
+  },
+  "71": {
+   "1-1100": -4500000,
+   "7-1000": 4500000
+  },
+  "72": {
+   "1-1400": 288000000,
+   "2-1000": -288000000
+  },
+  "73": {
+   "1-1100": -60000000,
+   "1-2400": 60000000
+  },
+  "74": {
+   "1-1100": -3500000,
+   "6-2100": 3500000
+  },
+  "75": {
+   "1-1100": 330000000,
+   "1-1400": -198000000,
+   "4-1000": -330000000,
+   "5-1000": 198000000
+  },
+  "76": {
+   "1-1100": -282240000,
+   "1-1400": -5760000,
+   "2-1000": 288000000
+  },
+  "77": {
+   "1-1100": 480976155,
+   "2-2000": -500000000,
+   "2-2010": 19023845
+  },
+  "78": {
+   "1-1100": -60000000,
+   "1-1800": 60000000
+  },
+  "79": {
+   "1-1400": 245000000,
+   "2-1000": -245000000
+  },
+  "80": {
+   "1-1200": 260000000,
+   "1-1400": -156000000,
+   "4-1000": -260000000,
+   "5-1000": 156000000
+  },
+  "81": {
+   "1-1100": 254800000,
+   "1-1200": -260000000,
+   "4-1200": 5200000
+  },
+  "83": {
+   "1-1400": 336000000,
+   "2-1000": -336000000
+  },
+  "84": {
+   "1-1100": 340000000,
+   "1-1400": -204000000,
+   "4-1000": -340000000,
+   "5-1000": 204000000
+  },
+  "85": {
+   "1-1100": -329280000,
+   "1-1400": -6720000,
+   "2-1000": 336000000
+  },
+  "87": {
+   "1-1100": -413000000,
+   "1-2100": 413000000
+  },
+  "88": {
+   "1-1100": -6000000,
+   "6-2400": 6000000
+  },
+  "89": {
+   "1-1100": -245000000,
+   "2-1000": 245000000
+  },
+  "90": {
+   "1-1100": -312000000,
+   "2-1000": 312000000
+  },
+  "91": {
+   "1-1100": -96000000,
+   "1-1900": 128000000,
+   "4-2000": -128000000,
+   "5-1000": 96000000
+  },
+  "92": {
+   "1-1400": 258000000,
+   "2-1000": -258000000
+  },
+  "93": {
+   "1-1100": 300000000,
+   "1-1900": -300000000
+  },
+  "94": {
+   "1-1100": -157000000,
+   "6-1000": 157000000
+  },
+  "95": {
+   "1-1200": 230000000,
+   "1-1400": -138000000,
+   "4-1000": -230000000,
+   "5-1000": 138000000
+  },
+  "96": {
+   "1-1100": -255420000,
+   "1-1400": -2580000,
+   "2-1000": 258000000
+  },
+  "97": {
+   "1-1200": -9000000,
+   "1-1210": 9000000
+  },
+  "98": {
+   "1-1100": 360000000,
+   "1-1400": -216000000,
+   "4-1000": -360000000,
+   "5-1000": 216000000
+  },
+  "99": {
+   "1-1200": 260000000,
+   "1-1400": -156000000,
+   "2-1400": -6000000,
+   "4-1000": -254000000,
+   "5-1000": 156000000
+  },
+  "100": {
+   "1-2410": -32000000,
+   "6-2500": 32000000
+  },
+  "101": {
+   "1-1100": 254800000,
+   "1-1200": -260000000,
+   "4-1200": 5200000
+  },
+  "102": {
+   "1-1000": -5100000,
+   "1-1500": 5100000
+  },
+  "103": {
+   "1-1100": -30000000,
+   "7-1000": 30000000
+  },
+  "104": {
+   "1-1100": -180000000,
+   "1-1900": 240000000,
+   "4-2000": -240000000,
+   "5-1000": 180000000
+  },
+  "105": {
+   "1-1400": 302000000,
+   "2-1000": -302000000
+  },
+  "106": {
+   "1-1100": 230000000,
+   "1-1200": -230000000
+  },
+  "107": {
+   "1-1200": 250000000,
+   "1-1400": -150000000,
+   "4-1000": -250000000,
+   "5-1000": 150000000
+  },
+  "108": {
+   "1-1100": -302000000,
+   "2-1000": 302000000
+  },
+  "109": {
+   "1-1100": 245000000,
+   "1-1200": -250000000,
+   "4-1200": 5000000
+  },
+  "110": {
+   "1-1100": -60000000,
+   "1-1800": 60000000
+  },
+  "111": {
+   "2-1200": -45000000,
+   "6-2400": 45000000
+  },
+  "112": {
+   "1-1100": -161000000,
+   "6-1000": 161000000
+  },
+  "113": {
+   "1-1100": -45000000,
+   "2-1200": 45000000
+  },
+  "114": {
+   "1-1100": 320000000,
+   "1-1400": -192000000,
+   "4-1000": -320000000,
+   "5-1000": 192000000
+  },
+  "115": {
+   "1-1100": 250000000,
+   "1-1900": -250000000
+  },
+  "116": {
+   "1-1100": -144000000,
+   "1-1900": 192000000,
+   "4-2000": -192000000,
+   "5-1000": 144000000
+  },
+  "117": {
+   "1-1400": 268000000,
+   "2-1000": -268000000
+  },
+  "118": {
+   "1-1200": 270000000,
+   "1-1400": -162000000,
+   "4-1000": -270000000,
+   "5-1000": 162000000
+  },
+  "119": {
+   "1-1100": -265320000,
+   "1-1400": -2680000,
+   "2-1000": 268000000
+  },
+  "120": {
+   "1-2500": -32000000,
+   "1-2510": 32000000
+  },
+  "121": {
+   "1-1100": 310000000,
+   "1-1400": -186000000,
+   "4-1000": -310000000,
+   "5-1000": 186000000
+  },
+  "122": {
+   "1-1100": -140000000,
+   "1-2300": 40000000,
+   "1-2310": 86250000,
+   "7-1100": 13750000
+  },
+  "123": {
+   "1-1400": 294000000,
+   "2-1000": -294000000
+  },
+  "124": {
+   "1-1100": -60000000,
+   "3-9000": 60000000
+  },
+  "125": {
+   "1-1100": -82000000,
+   "6-1000": 82000000
+  },
+  "126": {
+   "1-1200": 290000000,
+   "1-1400": -174000000,
+   "4-1000": -290000000,
+   "5-1000": 174000000
+  },
+  "127": {
+   "1-1100": -108000000,
+   "1-1900": 144000000,
+   "4-2000": -144000000,
+   "5-1000": 108000000
+  },
+  "129": {
+   "1-1100": 270000000,
+   "1-1200": -270000000
+  },
+  "130": {
+   "1-1100": 410000000,
+   "1-1900": -410000000
+  },
+  "131": {
+   "1-1100": 380000000,
+   "1-1400": -228000000,
+   "4-1000": -380000000,
+   "5-1000": 228000000
+  },
+  "132": {
+   "1-2100": -75000000,
+   "1-2950": 70000000,
+   "6-2500": 5000000
+  },
+  "133": {
+   "1-1200": 240000000,
+   "1-1400": -144000000,
+   "4-1000": -240000000,
+   "5-1000": 144000000
+  },
+  "135": {
+   "1-1100": 290000000,
+   "1-1200": -290000000
+  },
+  "136": {
+   "1-1100": -166000000,
+   "6-1000": 166000000
+  },
+  "137": {
+   "1-1100": -192000000,
+   "1-1900": 256000000,
+   "4-2000": -256000000,
+   "5-1000": 192000000
+  },
+  "138": {
+   "1-1200": -38000000,
+   "1-1210": 38000000
+  },
+  "139": {
+   "1-1000": -8500000,
+   "1-1400": 8500000
+  },
+  "140": {
+   "1-1100": 430000000,
+   "1-1400": -258000000,
+   "4-1000": -430000000,
+   "5-1000": 258000000
+  },
+  "141": {
+   "1-1100": -15000000,
+   "6-2400": 15000000
+  },
+  "142": {
+   "1-1100": 96000000,
+   "1-2900": -85000000,
+   "4-8400": -11000000
+  },
+  "143": {
+   "1-1100": -100000000,
+   "2-1900": 100000000
+  },
+  "147": {
+   "1-1100": -20625000,
+   "7-1000": 20625000
+  }
+ },
+ "adjNet": {
+  "AJ01": {
+   "1-1600": -108000000,
+   "6-1100": 108000000
+  },
+  "AJ02": {
+   "1-1600": -21000000,
+   "6-1100": 21000000
+  },
+  "AJ03": {
+   "1-1700": -41000000,
+   "6-1300": 41000000
+  },
+  "AJ04": {
+   "1-1700": -9425000,
+   "6-1300": 9425000
+  },
+  "AJ05": {
+   "1-1500": -17700000,
+   "6-1200": 17700000
+  },
+  "AJ06": {
+   "1-2210": -44000000,
+   "6-1400": 44000000
+  },
+  "AJ07": {
+   "1-2410": -30166667,
+   "6-1600": 30166667
+  },
+  "AJ08": {
+   "1-2410": -54989474,
+   "6-1600": 54989474
+  },
+  "AJ09": {
+   "1-2310": -74713542,
+   "6-1500": 74713542
+  },
+  "AJ10": {
+   "1-2510": -10600000,
+   "6-1700": 10600000
+  },
+  "AJ11": {
+   "1-2710": -15849327,
+   "6-1750": 15849327
+  },
+  "AJ12": {
+   "2-1700": -6339731,
+   "7-1000": 6339731
+  },
+  "AJ13": {
+   "2-1300": -8125000,
+   "7-1000": 8125000
+  },
+  "AJ14": {
+   "2-1300": -10000000,
+   "7-1000": 10000000
+  },
+  "AJ15": {
+   "2-2010": -1419740,
+   "7-1000": 1419740
+  },
+  "AJ16": {
+   "1-1300": 8000000,
+   "1-2800": 1503287,
+   "4-8000": -9503287
+  },
+  "AJ17": {
+   "1-1300": 7500000,
+   "4-8000": -7500000
+  },
+  "AJ19": {
+   "1-1400": -11000000,
+   "5-1000": 11000000
+  },
+  "AJ20": {
+   "1-2410": 8989474,
+   "6-2500": -8989474
+  },
+  "AJ21": {
+   "2-1800": -44460000,
+   "6-1900": 44460000
+  },
+  "AJ22": {
+   "2-2300": -38000000,
+   "6-2300": 38000000
+  },
+  "AJ23": {
+   "2-2400": -1440000,
+   "7-1000": 1440000
+  },
+  "AJ24": {
+   "2-1900": -100000000,
+   "2-2100": 100000000
+  },
+  "AJ25": {
+   "1-2600": 36533333,
+   "4-8300": -36533333
+  },
+  "AJ18": {
+   "1-1210": -13900000,
+   "6-1800": 13900000
+  },
+  "AJ26": {
+   "1-1800": -180000000,
+   "2-1500": -32627729,
+   "7-1200": 212627729
+  },
+  "AJ27": {
+   "1-2990": 24303516,
+   "7-1300": -24303516
+  },
+  "AJ28": {
+   "2-1200": -93600000,
+   "6-2000": 93600000
+  }
+ },
+ "analysis": {
+  "1": {
+   "debit": "1-1100",
+   "credit": "3-1000",
+   "amount": 400000000,
+   "cashClass": "Pendanaan",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Ya",
+   "reason": "Harga terbit sama dengan nilai nominal, sehingga seluruh setoran masuk Modal Saham (tidak ada agio).",
+   "cashSub": "Pendanaan: setoran modal saham"
+  },
+  "2": {
+   "debit": "1-1600",
+   "credit": "1-1100",
+   "amount": 72000000,
+   "cashClass": "Operasi",
+   "needsAdj": "Ya",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Ya",
+   "reason": "Pembayaran untuk manfaat masa depan diakui sebagai aset (Sewa Dibayar di Muka), lalu dibebankan bertahap.",
+   "cashSub": "Operasi"
+  },
+  "3": {
+   "debit": "1-1400",
+   "credit": "2-1000",
+   "amount": 186000000,
+   "cashClass": "Non-kas / Reklasifikasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Tidak",
+   "reason": "Metode perpetual: pembelian langsung menambah Persediaan (gross), utang diakui sebesar faktur.",
+   "cashSub": "Non-kas"
+  },
+  "4": {
+   "debit": "1-1100",
+   "credit": "4-1000",
+   "amount": 95000000,
+   "cashClass": "Operasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Ya",
+   "affectsCash": "Ya",
+   "reason": "Dua pasang jurnal: pengakuan pendapatan dan pengakuan HPP (perpetual).",
+   "cashSub": "Operasi"
+  },
+  "5": {
+   "debit": "2-1000",
+   "credit": "1-1100",
+   "amount": 186000000,
+   "cashClass": "Operasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Ya",
+   "reason": "Diskon pembelian Rp3.720.000 mengurangi biaya persediaan (perpetual, metode gross).",
+   "cashSub": "Operasi"
+  },
+  "6": {
+   "debit": "1-1200",
+   "credit": "4-1000",
+   "amount": 180000000,
+   "cashClass": "Non-kas / Reklasifikasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Ya",
+   "affectsCash": "Tidak",
+   "reason": "Penjualan kredit dicatat sebesar harga faktur. Dalam sistem perpetual, HPP diakui bersamaan dengan penjualan.",
+   "cashSub": "Non-kas"
+  },
+  "7": {
+   "debit": "1-1700",
+   "credit": "1-1100",
+   "amount": 24000000,
+   "cashClass": "Operasi",
+   "needsAdj": "Ya",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Ya",
+   "reason": "Premi dibayar di muka adalah aset; beban diakui proporsional pada akhir periode (AJ).",
+   "cashSub": "Operasi"
+  },
+  "8": {
+   "debit": "2-1000",
+   "credit": "1-1100",
+   "amount": 180000000,
+   "cashClass": "Operasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Ya",
+   "reason": "Pelunasan utang lama: utang usaha berkurang, bank berkurang. Tidak ada diskon karena lewat periode.",
+   "cashSub": "Operasi"
+  },
+  "9": {
+   "debit": "1-1500",
+   "credit": "1-1000",
+   "amount": 6500000,
+   "cashClass": "Operasi",
+   "needsAdj": "Ya",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Ya",
+   "reason": "Perlengkapan dicatat sebagai aset; pemakaian diakui saat penyesuaian berdasarkan stock opname.",
+   "cashSub": "Operasi"
+  },
+  "10": {
+   "debit": "1-1100",
+   "credit": "1-1200",
+   "amount": 176400000,
+   "cashClass": "Operasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Ya",
+   "affectsCash": "Ya",
+   "reason": "Diskon 2% x Rp180.000.000 = Rp3.600.000 dicatat sebagai Potongan Penjualan (kontra pendapatan).",
+   "cashSub": "Operasi"
+  },
+  "11": {
+   "debit": "6-1000",
+   "credit": "1-1100",
+   "amount": 68000000,
+   "cashClass": "Operasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Ya",
+   "affectsCash": "Ya",
+   "reason": "Beban gaji diakui sesuai periode jasa diberikan.",
+   "cashSub": "Operasi"
+  },
+  "12": {
+   "debit": "4-1100",
+   "credit": "1-1100",
+   "amount": 9500000,
+   "cashClass": "Operasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Ya",
+   "affectsCash": "Ya",
+   "reason": "Retur membalik dua sisi: pendapatan (via kontra pendapatan) dan HPP/persediaan.",
+   "cashSub": "Operasi"
+  },
+  "13": {
+   "debit": "1-1100",
+   "credit": "2-1400",
+   "amount": 45000000,
+   "cashClass": "Operasi",
+   "needsAdj": "Ya",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Ya",
+   "reason": "Kas diterima sebelum jasa diserahkan: kewajiban (Pendapatan Diterima di Muka), bukan pendapatan.",
+   "cashSub": "Operasi"
+  },
+  "14": {
+   "debit": "2-1200",
+   "credit": "1-1100",
+   "amount": 28500000,
+   "cashClass": "Operasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Ya",
+   "reason": "Beban sudah diakui tahun lalu (akrual); pembayaran hanya mengurangi liabilitas.",
+   "cashSub": "Operasi"
+  },
+  "15": {
+   "debit": "1-1400",
+   "credit": "2-1000",
+   "amount": 224000000,
+   "cashClass": "Non-kas / Reklasifikasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Tidak",
+   "reason": "Metode perpetual: pembelian langsung menambah Persediaan (gross), utang diakui sebesar faktur.",
+   "cashSub": "Non-kas"
+  },
+  "16": {
+   "debit": "1-1200",
+   "credit": "4-1000",
+   "amount": 250000000,
+   "cashClass": "Non-kas / Reklasifikasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Ya",
+   "affectsCash": "Tidak",
+   "reason": "Penjualan kredit dicatat sebesar harga faktur. Dalam sistem perpetual, HPP diakui bersamaan dengan penjualan.",
+   "cashSub": "Non-kas"
+  },
+  "17": {
+   "debit": "6-2000",
+   "credit": "1-1100",
+   "amount": 14200000,
+   "cashClass": "Operasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Ya",
+   "affectsCash": "Ya",
+   "reason": "Beban operasional dibayar tunai: debit beban, kredit bank.",
+   "cashSub": "Operasi"
+  },
+  "18": {
+   "debit": "2-1000",
+   "credit": "1-1100",
+   "amount": 224000000,
+   "cashClass": "Operasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Ya",
+   "reason": "Diskon pembelian Rp4.480.000 mengurangi biaya persediaan (perpetual, metode gross).",
+   "cashSub": "Operasi"
+  },
+  "19": {
+   "debit": "1-2300",
+   "credit": "2-1100",
+   "amount": 310000000,
+   "cashClass": "Investasi",
+   "needsAdj": "Ya",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Ya",
+   "reason": "Aset diakui sebesar harga perolehan; pendanaan campuran menghasilkan jurnal tiga baris.",
+   "cashSub": "Investasi: perolehan aset tetap"
+  },
+  "20": {
+   "debit": "1-1000",
+   "credit": "1-1310",
+   "amount": 12000000,
+   "cashClass": "Operasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Ya",
+   "reason": "Pelunasan piutang non-usaha: kas naik, piutang karyawan turun.",
+   "cashSub": "Operasi"
+  },
+  "21": {
+   "debit": "1-1100",
+   "credit": "4-1000",
+   "amount": 120000000,
+   "cashClass": "Operasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Ya",
+   "affectsCash": "Ya",
+   "reason": "Penjualan tunai dengan HPP perpetual.",
+   "cashSub": "Operasi"
+  },
+  "22": {
+   "debit": "6-2200",
+   "credit": "1-1100",
+   "amount": 18000000,
+   "cashClass": "Operasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Ya",
+   "affectsCash": "Ya",
+   "reason": "Iklan yang sudah tayang/dinikmati langsung dibebankan; tidak ada manfaat masa depan yang dapat dikapitalisasi.",
+   "cashSub": "Operasi"
+  },
+  "23": {
+   "debit": "-",
+   "credit": "-",
+   "amount": 0,
+   "cashClass": "Tidak ada transaksi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Tidak",
+   "reason": "Penawaran bukan transaksi: tidak ada pertukaran nilai, tidak ada hak/kewajiban yang timbul. Tidak ada jurnal.",
+   "cashSub": "Non-kas"
+  },
+  "24": {
+   "debit": "1-1500",
+   "credit": "2-1000",
+   "amount": 4200000,
+   "cashClass": "Non-kas / Reklasifikasi",
+   "needsAdj": "Ya",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Tidak",
+   "reason": "Pembelian perlengkapan kredit: aset bertambah, utang usaha bertambah.",
+   "cashSub": "Non-kas"
+  },
+  "25": {
+   "debit": "1-1100",
+   "credit": "1-1200",
+   "amount": 250000000,
+   "cashClass": "Operasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Ya",
+   "reason": "Pembayaran di luar periode diskon: tidak ada potongan penjualan.",
+   "cashSub": "Operasi"
+  },
+  "26": {
+   "debit": "1-1600",
+   "credit": "1-1100",
+   "amount": 21000000,
+   "cashClass": "Operasi",
+   "needsAdj": "Ya",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Ya",
+   "reason": "Dibayar di muka untuk 3 bulan: aset sampai periode manfaat berjalan.",
+   "cashSub": "Operasi"
+  },
+  "27": {
+   "debit": "1-1400",
+   "credit": "2-1000",
+   "amount": 312000000,
+   "cashClass": "Non-kas / Reklasifikasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Tidak",
+   "reason": "Metode perpetual: pembelian langsung menambah Persediaan (gross), utang diakui sebesar faktur.",
+   "cashSub": "Non-kas"
+  },
+  "28": {
+   "debit": "5-1000",
+   "credit": "1-1400",
+   "amount": 18000000,
+   "cashClass": "Non-kas / Reklasifikasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Ya",
+   "affectsCash": "Tidak",
+   "reason": "Persediaan rusak dihapus dan kerugiannya dimasukkan ke HPP (sesuai kebijakan: kerugian normal).",
+   "cashSub": "Non-kas"
+  },
+  "29": {
+   "debit": "2-1000",
+   "credit": "1-1100",
+   "amount": 312000000,
+   "cashClass": "Operasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Ya",
+   "reason": "Diskon pembelian Rp6.240.000 mengurangi biaya persediaan (perpetual, metode gross).",
+   "cashSub": "Operasi"
+  },
+  "30": {
+   "debit": "1-1200",
+   "credit": "4-1000",
+   "amount": 285000000,
+   "cashClass": "Non-kas / Reklasifikasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Ya",
+   "affectsCash": "Tidak",
+   "reason": "Trade discount tidak dicatat: penjualan diakui sebesar harga faktur (Rp300jt - 5% = Rp285jt). Berbeda dengan cash discount.",
+   "cashSub": "Non-kas"
+  },
+  "31": {
+   "debit": "2-1400",
+   "credit": "4-2000",
+   "amount": 45000000,
+   "cashClass": "Operasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Ya",
+   "affectsCash": "Ya",
+   "reason": "Kewajiban terpenuhi saat jasa selesai: Pendapatan Diterima di Muka menjadi pendapatan. Biaya proyek diakui bersamaan (matching).",
+   "cashSub": "Operasi"
+  },
+  "32": {
+   "debit": "1-1100",
+   "credit": "1-1200",
+   "amount": 279300000,
+   "cashClass": "Operasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Ya",
+   "affectsCash": "Ya",
+   "reason": "Diskon 2% x Rp285.000.000 = Rp5.700.000 dicatat sebagai Potongan Penjualan (kontra pendapatan).",
+   "cashSub": "Operasi"
+  },
+  "33": {
+   "debit": "6-2100",
+   "credit": "1-1100",
+   "amount": 9600000,
+   "cashClass": "Operasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Ya",
+   "affectsCash": "Ya",
+   "reason": "Pengeluaran yang hanya mempertahankan kondisi (repair & maintenance) dibebankan, bukan dikapitalisasi.",
+   "cashSub": "Operasi"
+  },
+  "34": {
+   "debit": "2-1000",
+   "credit": "1-1100",
+   "amount": 116000000,
+   "cashClass": "Operasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Ya",
+   "reason": "Melunasi sisa saldo awal (296jt total = 180jt + 116jt).",
+   "cashSub": "Operasi"
+  },
+  "35": {
+   "debit": "1-1100",
+   "credit": "1-1200",
+   "amount": 250000000,
+   "cashClass": "Operasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Ya",
+   "reason": "Pelunasan piutang lama: bank naik, piutang turun.",
+   "cashSub": "Operasi"
+  },
+  "36": {
+   "debit": "1-2400",
+   "credit": "1-1100",
+   "amount": 510000000,
+   "cashClass": "Investasi",
+   "needsAdj": "Ya",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Ya",
+   "reason": "Biaya perolehan = harga + angkut + instalasi + uji coba + PV restorasi = Rp510.000.000. Pelatihan operator bukan biaya yang dapat diatribusikan langsung ke pembawaan aset ke kondisi siap pakai, maka dibebankan. Kewajiban restorasi diakui sebagai provisi karena ada kewajiban kini atas pemasangan mesin.",
+   "cashSub": "Investasi: perolehan aset tetap"
+  },
+  "37": {
+   "debit": "6-2400",
+   "credit": "1-1100",
+   "amount": 9000000,
+   "cashClass": "Operasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Ya",
+   "affectsCash": "Ya",
+   "reason": "Biaya pelatihan tidak termasuk biaya perolehan aset tetap; dibebankan pada periode terjadinya.",
+   "cashSub": "Operasi"
+  },
+  "38": {
+   "debit": "1-1400",
+   "credit": "2-1000",
+   "amount": 264000000,
+   "cashClass": "Non-kas / Reklasifikasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Tidak",
+   "reason": "Metode perpetual: pembelian langsung menambah Persediaan (gross), utang diakui sebesar faktur.",
+   "cashSub": "Non-kas"
+  },
+  "39": {
+   "debit": "1-1200",
+   "credit": "4-1000",
+   "amount": 320000000,
+   "cashClass": "Non-kas / Reklasifikasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Ya",
+   "affectsCash": "Tidak",
+   "reason": "Penjualan kredit dicatat sebesar harga faktur. Dalam sistem perpetual, HPP diakui bersamaan dengan penjualan.",
+   "cashSub": "Non-kas"
+  },
+  "40": {
+   "debit": "1-2800",
+   "credit": "1-1100",
+   "amount": 190000000,
+   "cashClass": "Investasi",
+   "needsAdj": "Ya",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Ya",
+   "reason": "Model bisnis hold-to-collect + arus kas SPPI -> biaya diamortisasi. Pengakuan awal sebesar harga perolehan (diskonto tidak dijurnal terpisah).",
+   "cashSub": "Investasi: perolehan investasi keuangan"
+  },
+  "41": {
+   "debit": "2-1000",
+   "credit": "1-1100",
+   "amount": 264000000,
+   "cashClass": "Operasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Ya",
+   "reason": "Diskon pembelian Rp2.640.000 mengurangi biaya persediaan (perpetual, metode gross).",
+   "cashSub": "Operasi"
+  },
+  "42": {
+   "debit": "1-1800",
+   "credit": "1-1100",
+   "amount": 60000000,
+   "cashClass": "Operasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Ya",
+   "reason": "Angsuran pajak (PPh 25) dicatat sebagai pajak dibayar di muka (uang muka), lalu dikompensasi terhadap utang pajak kini pada akhir tahun.",
+   "cashSub": "Operasi"
+  },
+  "43": {
+   "debit": "1-2700",
+   "credit": "2-2200",
+   "amount": 95095963,
+   "cashClass": "Non-kas / Reklasifikasi",
+   "needsAdj": "Ya",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Tidak",
+   "reason": "ROU dan liabilitas sewa diakui sebesar PV pembayaran sewa (Rp95.095.963). Bagian lancar = pokok yang dibayar dalam 12 bulan = Rp20.490.404 (pembayaran Rp30jt dikurangi bunga tahun 1), bagian tidak lancar = Rp74.605.559.",
+   "cashSub": "Non-kas"
+  },
+  "44": {
+   "debit": "6-1000",
+   "credit": "1-1100",
+   "amount": 216000000,
+   "cashClass": "Operasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Ya",
+   "affectsCash": "Ya",
+   "reason": "Beban gaji periode berjalan (Februari Rp70jt + Maret Rp72jt + April Rp74jt = Rp216jt).",
+   "cashSub": "Operasi"
+  },
+  "45": {
+   "debit": "1-1100",
+   "credit": "1-1200",
+   "amount": 320000000,
+   "cashClass": "Operasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Ya",
+   "reason": "Pembayaran di luar periode diskon: tidak ada potongan penjualan.",
+   "cashSub": "Operasi"
+  },
+  "46": {
+   "debit": "1-2900",
+   "credit": "1-1100",
+   "amount": 85000000,
+   "cashClass": "Operasi",
+   "needsAdj": "Ya",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Ya",
+   "reason": "FVTPL: investasi diakui pada nilai wajar (harga transaksi) Rp85jt. Efek yang dimiliki untuk diperdagangkan: arus kas disajikan di aktivitas operasi (PSAK 207 par.16).",
+   "cashSub": "Operasi"
+  },
+  "47": {
+   "debit": "6-2400",
+   "credit": "1-1100",
+   "amount": 425000,
+   "cashClass": "Operasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Ya",
+   "affectsCash": "Ya",
+   "reason": "Untuk instrumen FVTPL, biaya transaksi tidak ditambahkan ke nilai investasi; langsung dibebankan dalam laba rugi.",
+   "cashSub": "Operasi"
+  },
+  "48": {
+   "debit": "1-1400",
+   "credit": "2-1000",
+   "amount": 298000000,
+   "cashClass": "Non-kas / Reklasifikasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Tidak",
+   "reason": "Metode perpetual: pembelian langsung menambah Persediaan (gross), utang diakui sebesar faktur.",
+   "cashSub": "Non-kas"
+  },
+  "49": {
+   "debit": "1-1100",
+   "credit": "4-1000",
+   "amount": 350000000,
+   "cashClass": "Operasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Ya",
+   "affectsCash": "Ya",
+   "reason": "Penjualan tunai + HPP.",
+   "cashSub": "Operasi"
+  },
+  "50": {
+   "debit": "-",
+   "credit": "-",
+   "amount": 0,
+   "cashClass": "Tidak ada transaksi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Tidak",
+   "reason": "Arus keluar tidak kemungkinan besar terjadi (probable), maka bukan provisi. Cukup diungkapkan sebagai liabilitas kontinjensi. Tidak ada jurnal.",
+   "cashSub": "Non-kas"
+  },
+  "51": {
+   "debit": "2-1000",
+   "credit": "1-1100",
+   "amount": 298000000,
+   "cashClass": "Operasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Ya",
+   "reason": "Diskon pembelian Rp5.960.000 mengurangi biaya persediaan (perpetual, metode gross).",
+   "cashSub": "Operasi"
+  },
+  "52": {
+   "debit": "1-1100",
+   "credit": "4-1000",
+   "amount": 180000000,
+   "cashClass": "Operasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Ya",
+   "affectsCash": "Ya",
+   "reason": "Pendapatan hanya untuk barang yang diperkirakan tidak diretur (96%); 4% = liabilitas pengembalian. Penjualan tunai dengan hak retur 12 bulan.",
+   "cashSub": "Operasi"
+  },
+  "53": {
+   "debit": "1-2600",
+   "credit": "1-2200",
+   "amount": 168466667,
+   "cashClass": "Non-kas / Reklasifikasi",
+   "needsAdj": "Ya",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Tidak",
+   "reason": "Alih guna dari aset tetap ke properti investasi dicatat pada nilai tercatat Rp180jt: harga perolehan bangunan Rp100jt dikeluarkan bersama akumulasi Rp10jt (dihapus). Keuntungan nilai wajar diakui pada pengukuran akhir tahun, bukan saat ini. Tidak ada arus kas.",
+   "cashSub": "Non-kas"
+  },
+  "54": {
+   "debit": "1-1700",
+   "credit": "1-1100",
+   "amount": 15600000,
+   "cashClass": "Operasi",
+   "needsAdj": "Ya",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Ya",
+   "reason": "Beban dibayar di muka.",
+   "cashSub": "Operasi"
+  },
+  "55": {
+   "debit": "1-1400",
+   "credit": "2-1000",
+   "amount": 275000000,
+   "cashClass": "Non-kas / Reklasifikasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Tidak",
+   "reason": "Metode perpetual: pembelian langsung menambah Persediaan (gross), utang diakui sebesar faktur.",
+   "cashSub": "Non-kas"
+  },
+  "56": {
+   "debit": "1-2310",
+   "credit": "1-2300",
+   "amount": 121875000,
+   "cashClass": "Investasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Ya",
+   "affectsCash": "Ya",
+   "reason": "Akumulasi = Rp180.000.000/8 x 5,4167 = Rp121.875.000. Nilai buku = Rp58.125.000. Harga jual Rp65.000.000 > nilai buku -> keuntungan Rp6.875.000.",
+   "cashSub": "Investasi: hasil pelepasan aset tetap"
+  },
+  "57": {
+   "debit": "1-1200",
+   "credit": "4-1000",
+   "amount": 240000000,
+   "cashClass": "Non-kas / Reklasifikasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Ya",
+   "affectsCash": "Tidak",
+   "reason": "Penjualan kredit dicatat sebesar harga faktur. Dalam sistem perpetual, HPP diakui bersamaan dengan penjualan.",
+   "cashSub": "Non-kas"
+  },
+  "58": {
+   "debit": "2-1000",
+   "credit": "1-1100",
+   "amount": 275000000,
+   "cashClass": "Operasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Ya",
+   "reason": "Diskon pembelian Rp2.750.000 mengurangi biaya persediaan (perpetual, metode gross).",
+   "cashSub": "Operasi"
+  },
+  "59": {
+   "debit": "2-1100",
+   "credit": "1-1100",
+   "amount": 50000000,
+   "cashClass": "Pendanaan",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Ya",
+   "reason": "Pembayaran pokok mengurangi utang bank (aktivitas pendanaan).",
+   "cashSub": "Pendanaan: pembayaran utang bank"
+  },
+  "60": {
+   "debit": "7-1000",
+   "credit": "1-1100",
+   "amount": 6944444,
+   "cashClass": "Operasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Ya",
+   "affectsCash": "Ya",
+   "reason": "Bunga yang sudah menjadi beban periode berjalan dibebankan; bukan pengurang utang pokok.",
+   "cashSub": "Operasi"
+  },
+  "61": {
+   "debit": "1-1100",
+   "credit": "1-1200",
+   "amount": 235200000,
+   "cashClass": "Operasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Ya",
+   "affectsCash": "Ya",
+   "reason": "Diskon 2% x Rp240.000.000 = Rp4.800.000 dicatat sebagai Potongan Penjualan (kontra pendapatan).",
+   "cashSub": "Operasi"
+  },
+  "62": {
+   "debit": "6-1000",
+   "credit": "1-1100",
+   "amount": 152000000,
+   "cashClass": "Operasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Ya",
+   "affectsCash": "Ya",
+   "reason": "Kedua bulan jasa sudah diterima: dibebankan pada 2024.",
+   "cashSub": "Operasi"
+  },
+  "63": {
+   "debit": "-",
+   "credit": "-",
+   "amount": 0,
+   "cashClass": "Tidak ada transaksi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Tidak",
+   "reason": "Pengukuran ulang ke nilai wajar dilakukan pada tanggal pelaporan. Kenaikan harga harian bukan transaksi yang dijurnal.",
+   "cashSub": "Non-kas"
+  },
+  "64": {
+   "debit": "6-2000",
+   "credit": "1-1100",
+   "amount": 76000000,
+   "cashClass": "Operasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Ya",
+   "affectsCash": "Ya",
+   "reason": "Seluruh periode sudah dinikmati: beban tahun berjalan.",
+   "cashSub": "Operasi"
+  },
+  "65": {
+   "debit": "1-1400",
+   "credit": "2-1000",
+   "amount": 312000000,
+   "cashClass": "Non-kas / Reklasifikasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Tidak",
+   "reason": "Dicatat sebesar USD 20.000 x Rp15.600 = Rp312.000.000.",
+   "cashSub": "Non-kas"
+  },
+  "66": {
+   "debit": "1-1100",
+   "credit": "4-8000",
+   "amount": 3466667,
+   "cashClass": "Operasi",
+   "needsAdj": "Ya",
+   "affectsProfit": "Ya",
+   "affectsCash": "Ya",
+   "reason": "Pendapatan bunga efektif = Rp190.000.000 x 9,97% x 78/360 = Rp4.104.317. Kupon tunai = Rp3.466.667. Selisih Rp637.650 menambah nilai tercatat (amortisasi diskonto). Nilai tercatat baru = Rp190.637.650.",
+   "cashSub": "Operasi"
+  },
+  "67": {
+   "debit": "-",
+   "credit": "-",
+   "amount": 0,
+   "cashClass": "Tidak ada transaksi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Tidak",
+   "reason": "Tidak ada transaksi. Cadangan dinilai pada akhir tahun.",
+   "cashSub": "Non-kas"
+  },
+  "68": {
+   "debit": "2-1100",
+   "credit": "1-1100",
+   "amount": 150000000,
+   "cashClass": "Pendanaan",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Ya",
+   "reason": "Pelunasan pokok mengurangi utang bank (pendanaan).",
+   "cashSub": "Pendanaan: pembayaran utang bank"
+  },
+  "69": {
+   "debit": "2-1500",
+   "credit": "1-1100",
+   "amount": 32000000,
+   "cashClass": "Operasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Ya",
+   "reason": "Melunasi kewajiban pajak tahun sebelumnya; tidak memengaruhi laba 2024.",
+   "cashSub": "Operasi"
+  },
+  "70": {
+   "debit": "1-1100",
+   "credit": "4-8000",
+   "amount": 7500000,
+   "cashClass": "Operasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Ya",
+   "affectsCash": "Ya",
+   "reason": "Pendapatan bunga diakui sebagai penghasilan lain.",
+   "cashSub": "Operasi"
+  },
+  "71": {
+   "debit": "7-1000",
+   "credit": "1-1100",
+   "amount": 4500000,
+   "cashClass": "Operasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Ya",
+   "affectsCash": "Ya",
+   "reason": "Bunga adalah beban periode berjalan.",
+   "cashSub": "Operasi"
+  },
+  "72": {
+   "debit": "1-1400",
+   "credit": "2-1000",
+   "amount": 288000000,
+   "cashClass": "Non-kas / Reklasifikasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Tidak",
+   "reason": "Metode perpetual: pembelian langsung menambah Persediaan (gross), utang diakui sebesar faktur.",
+   "cashSub": "Non-kas"
+  },
+  "73": {
+   "debit": "1-2400",
+   "credit": "1-1100",
+   "amount": 60000000,
+   "cashClass": "Investasi",
+   "needsAdj": "Ya",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Ya",
+   "reason": "Overhaul yang memperpanjang umur/manfaat memenuhi kriteria pengakuan aset -> dikapitalisasi ke Mesin (bukan beban pemeliharaan).",
+   "cashSub": "Investasi: perolehan aset tetap"
+  },
+  "74": {
+   "debit": "6-2100",
+   "credit": "1-1100",
+   "amount": 3500000,
+   "cashClass": "Operasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Ya",
+   "affectsCash": "Ya",
+   "reason": "Servis rutin hanya mempertahankan kondisi mesin -> beban pemeliharaan periode berjalan.",
+   "cashSub": "Operasi"
+  },
+  "75": {
+   "debit": "1-1100",
+   "credit": "4-1000",
+   "amount": 330000000,
+   "cashClass": "Operasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Ya",
+   "affectsCash": "Ya",
+   "reason": "Penjualan tunai + HPP.",
+   "cashSub": "Operasi"
+  },
+  "76": {
+   "debit": "2-1000",
+   "credit": "1-1100",
+   "amount": 288000000,
+   "cashClass": "Operasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Ya",
+   "reason": "Diskon pembelian Rp5.760.000 mengurangi biaya persediaan (perpetual, metode gross).",
+   "cashSub": "Operasi"
+  },
+  "77": {
+   "debit": "1-1100",
+   "credit": "2-2000",
+   "amount": 480976155,
+   "cashClass": "Pendanaan",
+   "needsAdj": "Ya",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Ya",
+   "reason": "Utang Obligasi dicatat pada nominal Rp500.000.000; selisih Rp19.023.845 dicatat dalam akun Diskonto (kontra liabilitas). Nilai tercatat neto = Rp480.976.155.",
+   "cashSub": "Pendanaan: hasil penerbitan obligasi"
+  },
+  "78": {
+   "debit": "1-1800",
+   "credit": "1-1100",
+   "amount": 60000000,
+   "cashClass": "Operasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Ya",
+   "reason": "Sama seperti triwulan I: pajak dibayar di muka.",
+   "cashSub": "Operasi"
+  },
+  "79": {
+   "debit": "1-1400",
+   "credit": "2-1000",
+   "amount": 245000000,
+   "cashClass": "Non-kas / Reklasifikasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Tidak",
+   "reason": "Metode perpetual: pembelian langsung menambah Persediaan (gross), utang diakui sebesar faktur.",
+   "cashSub": "Non-kas"
+  },
+  "80": {
+   "debit": "1-1200",
+   "credit": "4-1000",
+   "amount": 260000000,
+   "cashClass": "Non-kas / Reklasifikasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Ya",
+   "affectsCash": "Tidak",
+   "reason": "Penjualan kredit dicatat sebesar harga faktur. Dalam sistem perpetual, HPP diakui bersamaan dengan penjualan.",
+   "cashSub": "Non-kas"
+  },
+  "81": {
+   "debit": "1-1100",
+   "credit": "1-1200",
+   "amount": 254800000,
+   "cashClass": "Operasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Ya",
+   "affectsCash": "Ya",
+   "reason": "Diskon 2% x Rp260.000.000 = Rp5.200.000 dicatat sebagai Potongan Penjualan (kontra pendapatan).",
+   "cashSub": "Operasi"
+  },
+  "82": {
+   "debit": "-",
+   "credit": "-",
+   "amount": 0,
+   "cashClass": "Tidak ada transaksi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Tidak",
+   "reason": "Penandatanganan kontrak belum menghasilkan pendapatan. Pendapatan diakui selama penyelesaian. Tidak ada jurnal hari ini.",
+   "cashSub": "Non-kas"
+  },
+  "83": {
+   "debit": "1-1400",
+   "credit": "2-1000",
+   "amount": 336000000,
+   "cashClass": "Non-kas / Reklasifikasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Tidak",
+   "reason": "Metode perpetual: pembelian langsung menambah Persediaan (gross), utang diakui sebesar faktur.",
+   "cashSub": "Non-kas"
+  },
+  "84": {
+   "debit": "1-1100",
+   "credit": "4-1000",
+   "amount": 340000000,
+   "cashClass": "Operasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Ya",
+   "affectsCash": "Ya",
+   "reason": "Penjualan tunai + HPP.",
+   "cashSub": "Operasi"
+  },
+  "85": {
+   "debit": "2-1000",
+   "credit": "1-1100",
+   "amount": 336000000,
+   "cashClass": "Operasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Ya",
+   "reason": "Diskon pembelian Rp6.720.000 mengurangi biaya persediaan (perpetual, metode gross).",
+   "cashSub": "Operasi"
+  },
+  "86": {
+   "debit": "-",
+   "credit": "-",
+   "amount": 0,
+   "cashClass": "Tidak ada transaksi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Tidak",
+   "reason": "Model nilai wajar dipakai pada tanggal pelaporan berdasarkan penilaian yang andal. Tidak ada jurnal sekarang.",
+   "cashSub": "Non-kas"
+  },
+  "87": {
+   "debit": "1-2100",
+   "credit": "1-1100",
+   "amount": 413000000,
+   "cashClass": "Investasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Ya",
+   "reason": "Notaris, balik nama, dan BPHTB adalah biaya perolehan tanah = Rp413.000.000.",
+   "cashSub": "Investasi: perolehan aset tetap"
+  },
+  "88": {
+   "debit": "6-2400",
+   "credit": "1-1100",
+   "amount": 6000000,
+   "cashClass": "Operasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Ya",
+   "affectsCash": "Ya",
+   "reason": "Pagar sementara tidak memberi manfaat ekonomi berkelanjutan pada tanah -> beban periode berjalan, bukan biaya perolehan.",
+   "cashSub": "Operasi"
+  },
+  "89": {
+   "debit": "2-1000",
+   "credit": "1-1100",
+   "amount": 245000000,
+   "cashClass": "Operasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Ya",
+   "reason": "Pembayaran di luar periode diskon: utang dilunasi sebesar nilai faktur penuh.",
+   "cashSub": "Operasi"
+  },
+  "90": {
+   "debit": "2-1000",
+   "credit": "1-1100",
+   "amount": 312000000,
+   "cashClass": "Operasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Ya",
+   "reason": "Kurs bayar = kurs catat -> tidak ada selisih kurs. Kasus dengan selisih kurs berada di luar inti materi.",
+   "cashSub": "Operasi"
+  },
+  "91": {
+   "debit": "1-1900",
+   "credit": "4-2000",
+   "amount": 128000000,
+   "cashClass": "Operasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Ya",
+   "affectsCash": "Ya",
+   "reason": "% penyelesaian kumulatif = Rp96.000.000/Rp720.000.000 = 13.33%. Pendapatan kumulatif = 13.33% x Rp960.000.000 = Rp128.000.000. Pendapatan bulan ini = Rp128.000.000. Biaya proyek diakui sebagai beban pokok (5-1000).",
+   "cashSub": "Operasi"
+  },
+  "92": {
+   "debit": "1-1400",
+   "credit": "2-1000",
+   "amount": 258000000,
+   "cashClass": "Non-kas / Reklasifikasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Tidak",
+   "reason": "Metode perpetual: pembelian langsung menambah Persediaan (gross), utang diakui sebesar faktur.",
+   "cashSub": "Non-kas"
+  },
+  "93": {
+   "debit": "1-1100",
+   "credit": "1-1900",
+   "amount": 300000000,
+   "cashClass": "Operasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Ya",
+   "reason": "Penerimaan termin mengurangi Aset Kontrak (1-1900). Karena termin lebih besar dari pendapatan yang sudah diakui saat itu, akun bersaldo kredit (liabilitas kontrak) sampai pendapatan berikutnya diakui. Tidak mengubah pendapatan.",
+   "cashSub": "Operasi"
+  },
+  "94": {
+   "debit": "6-1000",
+   "credit": "1-1100",
+   "amount": 157000000,
+   "cashClass": "Operasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Ya",
+   "affectsCash": "Ya",
+   "reason": "Beban gaji dua bulan.",
+   "cashSub": "Operasi"
+  },
+  "95": {
+   "debit": "1-1200",
+   "credit": "4-1000",
+   "amount": 230000000,
+   "cashClass": "Non-kas / Reklasifikasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Ya",
+   "affectsCash": "Tidak",
+   "reason": "Penjualan kredit dicatat sebesar harga faktur. Dalam sistem perpetual, HPP diakui bersamaan dengan penjualan.",
+   "cashSub": "Non-kas"
+  },
+  "96": {
+   "debit": "2-1000",
+   "credit": "1-1100",
+   "amount": 258000000,
+   "cashClass": "Operasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Ya",
+   "reason": "Diskon pembelian Rp2.580.000 mengurangi biaya persediaan (perpetual, metode gross).",
+   "cashSub": "Operasi"
+  },
+  "97": {
+   "debit": "1-1210",
+   "credit": "1-1200",
+   "amount": 9000000,
+   "cashClass": "Non-kas / Reklasifikasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Tidak",
+   "reason": "Metode cadangan: penghapusan mendebit Cadangan, bukan beban. Tidak memengaruhi laba dan nilai piutang neto.",
+   "cashSub": "Non-kas"
+  },
+  "98": {
+   "debit": "1-1100",
+   "credit": "4-1000",
+   "amount": 360000000,
+   "cashClass": "Operasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Ya",
+   "affectsCash": "Ya",
+   "reason": "Penjualan tunai + HPP.",
+   "cashSub": "Operasi"
+  },
+  "99": {
+   "debit": "1-1200",
+   "credit": "4-1000",
+   "amount": 260000000,
+   "cashClass": "Non-kas / Reklasifikasi",
+   "needsAdj": "Ya",
+   "affectsProfit": "Ya",
+   "affectsCash": "Tidak",
+   "reason": "Terdapat dua kewajiban pelaksanaan: barang dan poin. Imbalan Rp260jt dialokasikan; Rp6jt ditangguhkan sebagai kewajiban kontrak (pendapatan diterima di muka) sampai poin ditukar/kedaluwarsa.",
+   "cashSub": "Non-kas"
+  },
+  "100": {
+   "debit": "6-2500",
+   "credit": "1-2410",
+   "amount": 32000000,
+   "cashClass": "Non-kas / Reklasifikasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Ya",
+   "affectsCash": "Tidak",
+   "reason": "Jumlah terpulihkan = yang tertinggi antara Rp58jt dan Rp63jt = Rp63jt. Rugi penurunan nilai = 95 - 63 = Rp32jt.",
+   "cashSub": "Non-kas"
+  },
+  "101": {
+   "debit": "1-1100",
+   "credit": "1-1200",
+   "amount": 254800000,
+   "cashClass": "Operasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Ya",
+   "affectsCash": "Ya",
+   "reason": "Diskon 2% x Rp260.000.000 = Rp5.200.000 dicatat sebagai Potongan Penjualan (kontra pendapatan).",
+   "cashSub": "Operasi"
+  },
+  "102": {
+   "debit": "1-1500",
+   "credit": "1-1000",
+   "amount": 5100000,
+   "cashClass": "Operasi",
+   "needsAdj": "Ya",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Ya",
+   "reason": "Pembelian perlengkapan tunai.",
+   "cashSub": "Operasi"
+  },
+  "103": {
+   "debit": "7-1000",
+   "credit": "1-1100",
+   "amount": 30000000,
+   "cashClass": "Operasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Ya",
+   "affectsCash": "Ya",
+   "reason": "Bunga = 500jt x 8% x 9/12 = Rp30jt.",
+   "cashSub": "Operasi"
+  },
+  "104": {
+   "debit": "1-1900",
+   "credit": "4-2000",
+   "amount": 240000000,
+   "cashClass": "Operasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Ya",
+   "affectsCash": "Ya",
+   "reason": "% penyelesaian kumulatif = Rp276.000.000/Rp720.000.000 = 38.33%. Pendapatan kumulatif = 38.33% x Rp960.000.000 = Rp368.000.000. Pendapatan bulan ini = Rp240.000.000. Biaya proyek diakui sebagai beban pokok (5-1000).",
+   "cashSub": "Operasi"
+  },
+  "105": {
+   "debit": "1-1400",
+   "credit": "2-1000",
+   "amount": 302000000,
+   "cashClass": "Non-kas / Reklasifikasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Tidak",
+   "reason": "Metode perpetual: pembelian langsung menambah Persediaan (gross), utang diakui sebesar faktur.",
+   "cashSub": "Non-kas"
+  },
+  "106": {
+   "debit": "1-1100",
+   "credit": "1-1200",
+   "amount": 230000000,
+   "cashClass": "Operasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Ya",
+   "reason": "Pembayaran di luar periode diskon: tidak ada potongan penjualan.",
+   "cashSub": "Operasi"
+  },
+  "107": {
+   "debit": "1-1200",
+   "credit": "4-1000",
+   "amount": 250000000,
+   "cashClass": "Non-kas / Reklasifikasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Ya",
+   "affectsCash": "Tidak",
+   "reason": "Penjualan kredit dicatat sebesar harga faktur. Dalam sistem perpetual, HPP diakui bersamaan dengan penjualan.",
+   "cashSub": "Non-kas"
+  },
+  "108": {
+   "debit": "2-1000",
+   "credit": "1-1100",
+   "amount": 302000000,
+   "cashClass": "Operasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Ya",
+   "reason": "Pembayaran di luar periode diskon: utang dilunasi sebesar nilai faktur penuh.",
+   "cashSub": "Operasi"
+  },
+  "109": {
+   "debit": "1-1100",
+   "credit": "1-1200",
+   "amount": 245000000,
+   "cashClass": "Operasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Ya",
+   "affectsCash": "Ya",
+   "reason": "Diskon 2% x Rp250.000.000 = Rp5.000.000 dicatat sebagai Potongan Penjualan (kontra pendapatan).",
+   "cashSub": "Operasi"
+  },
+  "110": {
+   "debit": "1-1800",
+   "credit": "1-1100",
+   "amount": 60000000,
+   "cashClass": "Operasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Ya",
+   "reason": "Sama seperti triwulan I: pajak dibayar di muka.",
+   "cashSub": "Operasi"
+  },
+  "111": {
+   "debit": "6-2400",
+   "credit": "2-1200",
+   "amount": 45000000,
+   "cashClass": "Non-kas / Reklasifikasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Ya",
+   "affectsCash": "Tidak",
+   "reason": "Kondisi berubah: kewajiban kini, arus keluar hampir pasti, dan jumlah andal -> diakui sebagai beban dan liabilitas.",
+   "cashSub": "Non-kas"
+  },
+  "112": {
+   "debit": "6-1000",
+   "credit": "1-1100",
+   "amount": 161000000,
+   "cashClass": "Operasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Ya",
+   "affectsCash": "Ya",
+   "reason": "Beban gaji dua bulan.",
+   "cashSub": "Operasi"
+  },
+  "113": {
+   "debit": "2-1200",
+   "credit": "1-1100",
+   "amount": 45000000,
+   "cashClass": "Operasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Ya",
+   "reason": "Kewajiban lunas.",
+   "cashSub": "Operasi"
+  },
+  "114": {
+   "debit": "1-1100",
+   "credit": "4-1000",
+   "amount": 320000000,
+   "cashClass": "Operasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Ya",
+   "affectsCash": "Ya",
+   "reason": "Penjualan tunai + HPP.",
+   "cashSub": "Operasi"
+  },
+  "115": {
+   "debit": "1-1100",
+   "credit": "1-1900",
+   "amount": 250000000,
+   "cashClass": "Operasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Ya",
+   "reason": "Penerimaan termin kedua mengurangi Aset Kontrak / (Liabilitas Kontrak).",
+   "cashSub": "Operasi"
+  },
+  "116": {
+   "debit": "1-1900",
+   "credit": "4-2000",
+   "amount": 192000000,
+   "cashClass": "Operasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Ya",
+   "affectsCash": "Ya",
+   "reason": "% penyelesaian kumulatif = Rp420.000.000/Rp720.000.000 = 58.33%. Pendapatan kumulatif = 58.33% x Rp960.000.000 = Rp560.000.000. Pendapatan bulan ini = Rp192.000.000. Biaya proyek diakui sebagai beban pokok (5-1000).",
+   "cashSub": "Operasi"
+  },
+  "117": {
+   "debit": "1-1400",
+   "credit": "2-1000",
+   "amount": 268000000,
+   "cashClass": "Non-kas / Reklasifikasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Tidak",
+   "reason": "Metode perpetual: pembelian langsung menambah Persediaan (gross), utang diakui sebesar faktur.",
+   "cashSub": "Non-kas"
+  },
+  "118": {
+   "debit": "1-1200",
+   "credit": "4-1000",
+   "amount": 270000000,
+   "cashClass": "Non-kas / Reklasifikasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Ya",
+   "affectsCash": "Tidak",
+   "reason": "Penjualan kredit dicatat sebesar harga faktur. Dalam sistem perpetual, HPP diakui bersamaan dengan penjualan.",
+   "cashSub": "Non-kas"
+  },
+  "119": {
+   "debit": "2-1000",
+   "credit": "1-1100",
+   "amount": 268000000,
+   "cashClass": "Operasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Ya",
+   "reason": "Diskon pembelian Rp2.680.000 mengurangi biaya persediaan (perpetual, metode gross).",
+   "cashSub": "Operasi"
+  },
+  "120": {
+   "debit": "1-2510",
+   "credit": "1-2500",
+   "amount": 32000000,
+   "cashClass": "Non-kas / Reklasifikasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Tidak",
+   "reason": "Nilai buku nol dan tanpa hasil -> tidak ada untung/rugi. Aset dan akumulasi dihapus.",
+   "cashSub": "Non-kas"
+  },
+  "121": {
+   "debit": "1-1100",
+   "credit": "4-1000",
+   "amount": 310000000,
+   "cashClass": "Operasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Ya",
+   "affectsCash": "Ya",
+   "reason": "Penjualan tunai + HPP.",
+   "cashSub": "Operasi"
+  },
+  "122": {
+   "debit": "1-2310",
+   "credit": "1-1100",
+   "amount": 86250000,
+   "cashClass": "Investasi",
+   "needsAdj": "Ya",
+   "affectsProfit": "Ya",
+   "affectsCash": "Ya",
+   "reason": "Aset baru diukur pada nilai wajar aset yang diserahkan + kas = Rp140.000.000 + Rp140.000.000 = Rp280.000.000. Nilai buku lama Rp153.750.000 vs nilai wajar Rp140.000.000 -> rugi Rp13.750.000.",
+   "cashSub": "Investasi: perolehan aset tetap"
+  },
+  "123": {
+   "debit": "1-1400",
+   "credit": "2-1000",
+   "amount": 294000000,
+   "cashClass": "Non-kas / Reklasifikasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Tidak",
+   "reason": "Metode perpetual: pembelian langsung menambah Persediaan (gross), utang diakui sebesar faktur.",
+   "cashSub": "Non-kas"
+  },
+  "124": {
+   "debit": "3-9000",
+   "credit": "1-1100",
+   "amount": 60000000,
+   "cashClass": "Pendanaan",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Ya",
+   "reason": "Dividen mengurangi ekuitas (dicatat ke akun Dividen/Prive, ditutup ke Saldo Laba). Bukan beban.",
+   "cashSub": "Pendanaan: pembayaran dividen"
+  },
+  "125": {
+   "debit": "6-1000",
+   "credit": "1-1100",
+   "amount": 82000000,
+   "cashClass": "Operasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Ya",
+   "affectsCash": "Ya",
+   "reason": "Beban gaji.",
+   "cashSub": "Operasi"
+  },
+  "126": {
+   "debit": "1-1200",
+   "credit": "4-1000",
+   "amount": 290000000,
+   "cashClass": "Non-kas / Reklasifikasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Ya",
+   "affectsCash": "Tidak",
+   "reason": "Penjualan kredit dicatat sebesar harga faktur. Dalam sistem perpetual, HPP diakui bersamaan dengan penjualan.",
+   "cashSub": "Non-kas"
+  },
+  "127": {
+   "debit": "1-1900",
+   "credit": "4-2000",
+   "amount": 144000000,
+   "cashClass": "Operasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Ya",
+   "affectsCash": "Ya",
+   "reason": "% penyelesaian kumulatif = Rp528.000.000/Rp720.000.000 = 73.33%. Pendapatan kumulatif = 73.33% x Rp960.000.000 = Rp704.000.000. Pendapatan bulan ini = Rp144.000.000. Biaya proyek diakui sebagai beban pokok (5-1000).",
+   "cashSub": "Operasi"
+  },
+  "128": {
+   "debit": "-",
+   "credit": "-",
+   "amount": 0,
+   "cashClass": "Tidak ada transaksi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Tidak",
+   "reason": "Kewajiban tetap diakui sebesar Rp294jt pada 31 Desember (Utang Usaha). Tidak ada jurnal karena tidak ada kas keluar dan diskon tidak lagi tersedia.",
+   "cashSub": "Non-kas"
+  },
+  "129": {
+   "debit": "1-1100",
+   "credit": "1-1200",
+   "amount": 270000000,
+   "cashClass": "Operasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Ya",
+   "reason": "Pembayaran di luar periode diskon: tidak ada potongan penjualan.",
+   "cashSub": "Operasi"
+  },
+  "130": {
+   "debit": "1-1100",
+   "credit": "1-1900",
+   "amount": 410000000,
+   "cashClass": "Operasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Ya",
+   "reason": "Total kontrak Rp960jt: 300 + 250 + 410 = 960. Saldo Aset Kontrak menjadi nol.",
+   "cashSub": "Operasi"
+  },
+  "131": {
+   "debit": "1-1100",
+   "credit": "4-1000",
+   "amount": 380000000,
+   "cashClass": "Operasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Ya",
+   "affectsCash": "Ya",
+   "reason": "Penjualan tunai + HPP.",
+   "cashSub": "Operasi"
+  },
+  "132": {
+   "debit": "1-2950",
+   "credit": "1-2100",
+   "amount": 70000000,
+   "cashClass": "Non-kas / Reklasifikasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Ya",
+   "affectsCash": "Tidak",
+   "reason": "Diukur pada yang lebih rendah antara nilai tercatat dan nilai wajar dikurangi biaya menjual (Rp70jt); selisih Rp5jt = rugi penurunan nilai. Tidak disusutkan lagi.",
+   "cashSub": "Non-kas"
+  },
+  "133": {
+   "debit": "1-1200",
+   "credit": "4-1000",
+   "amount": 240000000,
+   "cashClass": "Non-kas / Reklasifikasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Ya",
+   "affectsCash": "Tidak",
+   "reason": "Penjualan kredit dicatat sebesar harga faktur. Dalam sistem perpetual, HPP diakui bersamaan dengan penjualan.",
+   "cashSub": "Non-kas"
+  },
+  "134": {
+   "debit": "-",
+   "credit": "-",
+   "amount": 0,
+   "cashClass": "Tidak ada transaksi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Tidak",
+   "reason": "FOB destination: kepemilikan berpindah saat tiba. Per 31 Desember 2024 barang bukan milik perusahaan -> bukan persediaan/utang 2024. Tidak ada jurnal.",
+   "cashSub": "Non-kas"
+  },
+  "135": {
+   "debit": "1-1100",
+   "credit": "1-1200",
+   "amount": 290000000,
+   "cashClass": "Operasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Ya",
+   "reason": "Pembayaran di luar periode diskon: tidak ada potongan penjualan.",
+   "cashSub": "Operasi"
+  },
+  "136": {
+   "debit": "6-1000",
+   "credit": "1-1100",
+   "amount": 166000000,
+   "cashClass": "Operasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Ya",
+   "affectsCash": "Ya",
+   "reason": "Beban gaji + THR.",
+   "cashSub": "Operasi"
+  },
+  "137": {
+   "debit": "1-1900",
+   "credit": "4-2000",
+   "amount": 256000000,
+   "cashClass": "Operasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Ya",
+   "affectsCash": "Ya",
+   "reason": "% penyelesaian kumulatif = Rp720.000.000/Rp720.000.000 = 100.00%. Pendapatan kumulatif = 100.00% x Rp960.000.000 = Rp960.000.000. Pendapatan bulan ini = Rp256.000.000. Biaya proyek diakui sebagai beban pokok (5-1000).",
+   "cashSub": "Operasi"
+  },
+  "138": {
+   "debit": "1-1210",
+   "credit": "1-1200",
+   "amount": 38000000,
+   "cashClass": "Non-kas / Reklasifikasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Tidak",
+   "reason": "Metode cadangan: piutang tak tertagih dihapus terhadap Cadangan. Piutang faktur No.133 tidak terpengaruh.",
+   "cashSub": "Non-kas"
+  },
+  "139": {
+   "debit": "1-1400",
+   "credit": "1-1000",
+   "amount": 8500000,
+   "cashClass": "Operasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Ya",
+   "reason": "Pembelian tunai: persediaan bertambah, kas berkurang.",
+   "cashSub": "Operasi"
+  },
+  "140": {
+   "debit": "1-1100",
+   "credit": "4-1000",
+   "amount": 430000000,
+   "cashClass": "Operasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Ya",
+   "affectsCash": "Ya",
+   "reason": "Penjualan tunai + HPP.",
+   "cashSub": "Operasi"
+  },
+  "141": {
+   "debit": "6-2400",
+   "credit": "1-1100",
+   "amount": 15000000,
+   "cashClass": "Operasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Ya",
+   "affectsCash": "Ya",
+   "reason": "Jasa sudah diterima seluruhnya: beban periode berjalan, bukan biaya dibayar di muka.",
+   "cashSub": "Operasi"
+  },
+  "142": {
+   "debit": "1-1100",
+   "credit": "1-2900",
+   "amount": 96000000,
+   "cashClass": "Operasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Ya",
+   "affectsCash": "Ya",
+   "reason": "Selisih hasil penjualan Rp96jt dan nilai tercatat Rp85jt = keuntungan Rp11jt dalam laba rugi. Efek untuk diperdagangkan: arus kas disajikan di aktivitas operasi (PSAK 207 par.16).",
+   "cashSub": "Operasi"
+  },
+  "143": {
+   "debit": "2-1900",
+   "credit": "1-1100",
+   "amount": 100000000,
+   "cashClass": "Pendanaan",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Ya",
+   "reason": "Pembayaran pokok mengurangi bagian lancar utang bank jangka panjang (2-1900); bunga tidak termasuk di sini.",
+   "cashSub": "Pendanaan: pembayaran utang bank"
+  },
+  "144": {
+   "debit": "-",
+   "credit": "-",
+   "amount": 0,
+   "cashClass": "Tidak ada transaksi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Tidak",
+   "reason": "Belum ada barang/jasa diserahkan dan belum ada pembayaran -> tidak ada pendapatan atau piutang di 2024. Tidak ada jurnal.",
+   "cashSub": "Non-kas"
+  },
+  "145": {
+   "debit": "-",
+   "credit": "-",
+   "amount": 0,
+   "cashClass": "Tidak ada transaksi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Tidak",
+   "reason": "Bukan transaksi; dasar penyesuaian AJ persediaan (LCNRV). Tidak ada jurnal transaksi.",
+   "cashSub": "Non-kas"
+  },
+  "146": {
+   "debit": "-",
+   "credit": "-",
+   "amount": 0,
+   "cashClass": "Tidak ada transaksi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Tidak",
+   "affectsCash": "Tidak",
+   "reason": "Bunga sudah menjadi hak (sudah berjalan) -> AJ pendapatan yang masih harus diterima (piutang bunga), bukan transaksi hari ini.",
+   "cashSub": "Non-kas"
+  },
+  "147": {
+   "debit": "7-1000",
+   "credit": "1-1100",
+   "amount": 20625000,
+   "cashClass": "Operasi",
+   "needsAdj": "Tidak",
+   "affectsProfit": "Ya",
+   "affectsCash": "Ya",
+   "reason": "Kupon tunai Rp20.625.000 dibebankan sebagai bunga (kupon). Selisih terhadap beban efektif ditambahkan lewat AJ amortisasi diskonto. Catatan: dicatat sebagai beban bunga sementara; AJ15 menambah beban sebesar amortisasi diskonto saja.",
+   "cashSub": "Operasi"
+  }
+ },
+ "correctingNet": {
+  "1": {
+   "1-2300": 85000000,
+   "1-2500": -85000000
+  },
+  "2": {
+   "1-1100": 240000000,
+   "1-1200": -240000000
+  },
+  "3": {
+   "1-1100": -54000000,
+   "6-1000": 54000000
+  },
+  "4": {
+   "1-1200": 150000000,
+   "1-1400": -90000000,
+   "4-1000": -150000000,
+   "5-1000": 90000000
+  },
+  "5": {
+   "1-1000": 3800000,
+   "1-1500": -3800000
+  },
+  "6": {
+   "1-1300": 7500000,
+   "4-8000": -7500000
+  },
+  "7": {
+   "1-2400": 60000000,
+   "6-2100": -60000000
+  },
+  "8": {
+   "2-1700": -6339731,
+   "7-1000": 6339731
+  },
+  "9": {
+   "1-2410": 3833333,
+   "6-1600": -3833333
+  },
+  "10": {
+   "1-1210": 14000000,
+   "6-1800": -14000000
+  },
+  "12": {
+   "2-1400": -45000000,
+   "4-2000": 45000000
+  }
+ },
+ "errorType": {
+  "1": "Salah akun",
+  "2": "Salah sisi debit/kredit",
+  "3": "Salah nominal",
+  "4": "Transaksi belum dicatat",
+  "5": "Pencatatan ganda",
+  "6": "Salah periode",
+  "7": "Salah klasifikasi",
+  "8": "Penyesuaian terlewat",
+  "9": "Salah hitung penyusutan",
+  "10": "Salah hitung cadangan",
+  "11": "Salah klasifikasi arus kas",
+  "12": "Salah pengakuan pendapatan"
+ },
+ "scenario": {
+  "1": {
+   "key": 619000000,
+   "explanation": "Harga neto 576jt + pengiriman 15jt + fondasi 20jt + biaya uji coba 8jt = 619jt. Sesuai PSAK 216 par.20A, biaya uji coba dikapitalisasi, sedangkan hasil penjualan barang contoh Rp3jt diakui di laba rugi bersama biaya barang tersebut (tidak dikurangkan dari biaya perolehan). Pelatihan dan administrasi umum bukan biaya yang dapat diatribusikan langsung -> beban."
+  },
+  "2": {
+   "key": 115000000,
+   "explanation": "Penambahan mezanin (90jt) dan penggantian atap (25jt) memenuhi kriteria pengakuan aset. Pengecatan bersifat pemeliharaan -> beban. Nilai atap lama Rp10jt dihapus sebagai rugi."
+  },
+  "3": {
+   "key": 62000000,
+   "explanation": "Nilai tercatat awal 2024 = 900jt - 3 x 84jt = 648jt. Perubahan estimasi prospektif: (648jt - 90jt)/9 = Rp62jt. Tidak ada penyajian ulang."
+  },
+  "4": {
+   "key": 40000000,
+   "explanation": "Penyusutan sampai 1 Oktober = 9 bulan = 30jt. Nilai buku = 400 - 270 = 130jt. Hasil 170jt -> keuntungan Rp40jt."
+  },
+  "5": {
+   "key": 90000000,
+   "explanation": "Jumlah terpulihkan = yang tertinggi (760jt). Rugi = 850 - 760 = Rp90jt."
+  },
+  "6": {
+   "key": 80000000,
+   "explanation": "Nilai tercatat seandainya tidak ada impairment = 500 - 6 x 50 = 200jt. Pembalikan maksimum = 200jt - 120jt = Rp80jt (bukan 140jt, karena dibatasi)."
+  },
+  "7": {
+   "key": "Hanya A",
+   "explanation": "Provisi butuh kewajiban kini + kemungkinan besar terjadi (>50%) + estimasi andal. Hanya A. B tidak kemungkinan besar (kontinjensi). C tidak dapat diestimasi andal (kontinjensi)."
+  },
+  "8": {
+   "key": 360000000,
+   "explanation": "Ekspektasi per unit = 0,2x1,5jt + 0,1x6jt = 900rb. 400 x 900rb = Rp360jt."
+  },
+  "9": {
+   "key": "Diungkapkan sebagai aset kontinjensi",
+   "explanation": "Aset kontinjensi hanya diakui bila realisasi pendapatan 'virtually certain'. Probable -> diungkapkan saja."
+  },
+  "10": {
+   "key": 285000000,
+   "explanation": "Tiap kelompok pada yang lebih rendah antara biaya dan NRV: 120 + 70 + 55 + 40 = Rp285jt."
+  },
+  "11": {
+   "key": 80000000,
+   "explanation": "Hanya (a): FOB shipping point berpindah kepemilikan saat dikirim. (b) FOB destination belum berpindah. (c) konsinyasi milik pihak lain."
+  },
+  "12": {
+   "key": 58000000,
+   "explanation": "Cadangan dibutuhkan = 8 + 12 + 18 + 40 = 78jt. Beban = 78jt - 20jt = Rp58jt."
+  },
+  "13": {
+   "key": "Ditangguhkan sampai ketidakpastian retur selesai / batas dibatasi",
+   "explanation": "Jika retur tidak dapat diestimasi andal, pendapatan hanya diakui sebatas jumlah yang sangat mungkin tidak dibalik (constraint). Sisanya kewajiban pengembalian."
+  },
+  "14": {
+   "key": 960000000,
+   "explanation": "Tahun 1: 30% x 2.400 = 720jt. Kumulatif tahun 2: 70% x 2.400 = 1.680jt. Tahun 2 = 1.680 - 720 = Rp960jt."
+  },
+  "15": {
+   "key": "Beban sewa garis lurus (pengecualian sewa jangka pendek)",
+   "explanation": "Sewa <= 12 bulan tanpa opsi beli boleh diperlakukan sebagai beban linear (pengecualian praktis)."
+  },
+  "16": {
+   "key": 199635502,
+   "explanation": "PV = 50jt x 3,99271 = Rp199.635.502."
+  },
+  "17": {
+   "key": 932000000,
+   "explanation": "Beban bunga = 920jt x 10% = 92jt. Kupon tunai = 80jt. Amortisasi = 12jt. Nilai tercatat = 932jt."
+  },
+  "18": {
+   "key": 21660000,
+   "explanation": "Pendapatan bunga efektif = 285jt x 7,6% = Rp21,66jt. Kupon 18jt; selisih 3,66jt menambah nilai tercatat."
+  },
+  "19": {
+   "key": "Nilai wajar melalui laba rugi",
+   "explanation": "Instrumen ekuitas yang dimiliki untuk diperdagangkan diukur pada nilai wajar dengan perubahan di laba rugi."
+  },
+  "20": {
+   "key": 13200000,
+   "explanation": "Beda temporer boleh dikurangkan Rp60jt x 22% = Rp13,2jt (aset pajak tangguhan)."
+  },
+  "21": {
+   "key": 184800000,
+   "explanation": "Laba kena pajak = 800+60+10-30 = 840jt. Pajak kini = 22% x 840jt = Rp184,8jt."
+  },
+  "22": {
+   "key": 30000000,
+   "explanation": "Diukur pada yang lebih rendah antara nilai tercatat dan nilai wajar dikurangi biaya menjual. Rugi = Rp30jt."
+  },
+  "23": {
+   "key": "Diakui dalam laba rugi",
+   "explanation": "Model nilai wajar: perubahan nilai wajar diakui dalam laba rugi dan properti tidak disusutkan."
+  },
+  "24": {
+   "key": "Liabilitas (utang dividen) dan pengurang ekuitas",
+   "explanation": "Dividen diakui sebagai liabilitas pada tanggal diumumkan (deklarasi), mengurangi ekuitas. Bukan beban."
+  },
+  "25": {
+   "key": 6000000,
+   "explanation": "Di luar inti materi: selisih kurs atas pos moneter diakui di laba rugi = USD 10.000 x Rp600 = Rp6jt."
+  },
+  "26": {
+   "key": "Saat distributor menjual ke pihak ketiga",
+   "explanation": "Pengendalian belum berpindah saat barang dikirim ke konsinyasi; pendapatan diakui ketika barang dijual ke pihak ketiga."
+  }
+ },
+ "reversingNet": {
+  "1": {
+   "2-1300": 18125000,
+   "7-1000": -18125000
+  },
+  "2": {
+   "1-1300": -15500000,
+   "4-8000": 15500000
+  }
+ },
+ "readableTxn": [
+  {
+   "no": 1,
+   "date": "2024-01-02",
+   "level": "Intermediate",
+   "topic": "Modal saham",
+   "lines": [
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 400000000,
+     "credit": 0
+    },
+    {
+     "code": "3-1000",
+     "name": "Modal Saham",
+     "debit": 0,
+     "credit": 400000000
+    }
+   ],
+   "explain": "Harga terbit sama dengan nilai nominal, sehingga seluruh setoran masuk Modal Saham (tidak ada agio)."
+  },
+  {
+   "no": 2,
+   "date": "2024-01-03",
+   "level": "Intermediate",
+   "topic": "Beban dibayar di muka",
+   "lines": [
+    {
+     "code": "1-1600",
+     "name": "Sewa Dibayar di Muka",
+     "debit": 72000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 0,
+     "credit": 72000000
+    }
+   ],
+   "explain": "Pembayaran untuk manfaat masa depan diakui sebagai aset (Sewa Dibayar di Muka), lalu dibebankan bertahap."
+  },
+  {
+   "no": 3,
+   "date": "2024-01-05",
+   "level": "Intermediate",
+   "topic": "Pembelian kredit",
+   "lines": [
+    {
+     "code": "1-1400",
+     "name": "Persediaan Barang Dagang",
+     "debit": 186000000,
+     "credit": 0
+    },
+    {
+     "code": "2-1000",
+     "name": "Utang Usaha",
+     "debit": 0,
+     "credit": 186000000
+    }
+   ],
+   "explain": "Metode perpetual: pembelian langsung menambah Persediaan (gross), utang diakui sebesar faktur."
+  },
+  {
+   "no": 4,
+   "date": "2024-01-08",
+   "level": "Intermediate",
+   "topic": "Penjualan tunai + HPP",
+   "lines": [
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 95000000,
+     "credit": 0
+    },
+    {
+     "code": "4-1000",
+     "name": "Penjualan",
+     "debit": 0,
+     "credit": 95000000
+    },
+    {
+     "code": "5-1000",
+     "name": "Harga Pokok Penjualan",
+     "debit": 57000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1400",
+     "name": "Persediaan Barang Dagang",
+     "debit": 0,
+     "credit": 57000000
+    }
+   ],
+   "explain": "Dua pasang jurnal: pengakuan pendapatan dan pengakuan HPP (perpetual)."
+  },
+  {
+   "no": 5,
+   "date": "2024-01-10",
+   "level": "Intermediate",
+   "topic": "Pelunasan utang dengan diskon",
+   "lines": [
+    {
+     "code": "2-1000",
+     "name": "Utang Usaha",
+     "debit": 186000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 0,
+     "credit": 182280000
+    },
+    {
+     "code": "1-1400",
+     "name": "Persediaan Barang Dagang",
+     "debit": 0,
+     "credit": 3720000
+    }
+   ],
+   "explain": "Diskon pembelian Rp3.720.000 mengurangi biaya persediaan (perpetual, metode gross)."
+  },
+  {
+   "no": 6,
+   "date": "2024-01-12",
+   "level": "Intermediate",
+   "topic": "Penjualan kredit",
+   "lines": [
+    {
+     "code": "1-1200",
+     "name": "Piutang Usaha",
+     "debit": 180000000,
+     "credit": 0
+    },
+    {
+     "code": "4-1000",
+     "name": "Penjualan",
+     "debit": 0,
+     "credit": 180000000
+    },
+    {
+     "code": "5-1000",
+     "name": "Harga Pokok Penjualan",
+     "debit": 108000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1400",
+     "name": "Persediaan Barang Dagang",
+     "debit": 0,
+     "credit": 108000000
+    }
+   ],
+   "explain": "Penjualan kredit dicatat sebesar harga faktur. Dalam sistem perpetual, HPP diakui bersamaan dengan penjualan."
+  },
+  {
+   "no": 7,
+   "date": "2024-01-15",
+   "level": "Intermediate",
+   "topic": "Beban dibayar di muka",
+   "lines": [
+    {
+     "code": "1-1700",
+     "name": "Asuransi Dibayar di Muka",
+     "debit": 24000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 0,
+     "credit": 24000000
+    }
+   ],
+   "explain": "Premi dibayar di muka adalah aset; beban diakui proporsional pada akhir periode (AJ)."
+  },
+  {
+   "no": 8,
+   "date": "2024-01-15",
+   "level": "Intermediate",
+   "topic": "Pelunasan saldo awal utang usaha",
+   "lines": [
+    {
+     "code": "2-1000",
+     "name": "Utang Usaha",
+     "debit": 180000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 0,
+     "credit": 180000000
+    }
+   ],
+   "explain": "Pelunasan utang lama: utang usaha berkurang, bank berkurang. Tidak ada diskon karena lewat periode."
+  },
+  {
+   "no": 9,
+   "date": "2024-01-18",
+   "level": "Intermediate",
+   "topic": "Perlengkapan",
+   "lines": [
+    {
+     "code": "1-1500",
+     "name": "Perlengkapan Kantor",
+     "debit": 6500000,
+     "credit": 0
+    },
+    {
+     "code": "1-1000",
+     "name": "Kas",
+     "debit": 0,
+     "credit": 6500000
+    }
+   ],
+   "explain": "Perlengkapan dicatat sebagai aset; pemakaian diakui saat penyesuaian berdasarkan stock opname."
+  },
+  {
+   "no": 10,
+   "date": "2024-01-20",
+   "level": "Intermediate",
+   "topic": "Pelunasan piutang dengan diskon",
+   "lines": [
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 176400000,
+     "credit": 0
+    },
+    {
+     "code": "4-1200",
+     "name": "Potongan Penjualan",
+     "debit": 3600000,
+     "credit": 0
+    },
+    {
+     "code": "1-1200",
+     "name": "Piutang Usaha",
+     "debit": 0,
+     "credit": 180000000
+    }
+   ],
+   "explain": "Diskon 2% x Rp180.000.000 = Rp3.600.000 dicatat sebagai Potongan Penjualan (kontra pendapatan)."
+  },
+  {
+   "no": 11,
+   "date": "2024-01-22",
+   "level": "Intermediate",
+   "topic": "Beban gaji",
+   "lines": [
+    {
+     "code": "6-1000",
+     "name": "Beban Gaji dan Upah",
+     "debit": 68000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 0,
+     "credit": 68000000
+    }
+   ],
+   "explain": "Beban gaji diakui sesuai periode jasa diberikan."
+  },
+  {
+   "no": 12,
+   "date": "2024-01-25",
+   "level": "Intermediate",
+   "topic": "Retur penjualan",
+   "lines": [
+    {
+     "code": "4-1100",
+     "name": "Retur Penjualan dan Pengurangan Harga",
+     "debit": 9500000,
+     "credit": 0
+    },
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 0,
+     "credit": 9500000
+    },
+    {
+     "code": "1-1400",
+     "name": "Persediaan Barang Dagang",
+     "debit": 5700000,
+     "credit": 0
+    },
+    {
+     "code": "5-1000",
+     "name": "Harga Pokok Penjualan",
+     "debit": 0,
+     "credit": 5700000
+    }
+   ],
+   "explain": "Retur membalik dua sisi: pendapatan (via kontra pendapatan) dan HPP/persediaan."
+  },
+  {
+   "no": 13,
+   "date": "2024-01-28",
+   "level": "Intermediate",
+   "topic": "Pendapatan diterima di muka",
+   "lines": [
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 45000000,
+     "credit": 0
+    },
+    {
+     "code": "2-1400",
+     "name": "Pendapatan Diterima di Muka",
+     "debit": 0,
+     "credit": 45000000
+    }
+   ],
+   "explain": "Kas diterima sebelum jasa diserahkan: kewajiban (Pendapatan Diterima di Muka), bukan pendapatan."
+  },
+  {
+   "no": 14,
+   "date": "2024-01-31",
+   "level": "Intermediate",
+   "topic": "Pelunasan beban yang masih harus dibayar",
+   "lines": [
+    {
+     "code": "2-1200",
+     "name": "Beban Yang Masih Harus Dibayar",
+     "debit": 28500000,
+     "credit": 0
+    },
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 0,
+     "credit": 28500000
+    }
+   ],
+   "explain": "Beban sudah diakui tahun lalu (akrual); pembayaran hanya mengurangi liabilitas."
+  },
+  {
+   "no": 15,
+   "date": "2024-02-01",
+   "level": "Intermediate",
+   "topic": "Pembelian kredit",
+   "lines": [
+    {
+     "code": "1-1400",
+     "name": "Persediaan Barang Dagang",
+     "debit": 224000000,
+     "credit": 0
+    },
+    {
+     "code": "2-1000",
+     "name": "Utang Usaha",
+     "debit": 0,
+     "credit": 224000000
+    }
+   ],
+   "explain": "Metode perpetual: pembelian langsung menambah Persediaan (gross), utang diakui sebesar faktur."
+  },
+  {
+   "no": 16,
+   "date": "2024-02-03",
+   "level": "Intermediate",
+   "topic": "Penjualan kredit",
+   "lines": [
+    {
+     "code": "1-1200",
+     "name": "Piutang Usaha",
+     "debit": 250000000,
+     "credit": 0
+    },
+    {
+     "code": "4-1000",
+     "name": "Penjualan",
+     "debit": 0,
+     "credit": 250000000
+    },
+    {
+     "code": "5-1000",
+     "name": "Harga Pokok Penjualan",
+     "debit": 150000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1400",
+     "name": "Persediaan Barang Dagang",
+     "debit": 0,
+     "credit": 150000000
+    }
+   ],
+   "explain": "Penjualan kredit dicatat sebesar harga faktur. Dalam sistem perpetual, HPP diakui bersamaan dengan penjualan."
+  },
+  {
+   "no": 17,
+   "date": "2024-02-08",
+   "level": "Intermediate",
+   "topic": "Beban operasional",
+   "lines": [
+    {
+     "code": "6-2000",
+     "name": "Beban Listrik, Air & Telekomunikasi",
+     "debit": 14200000,
+     "credit": 0
+    },
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 0,
+     "credit": 14200000
+    }
+   ],
+   "explain": "Beban operasional dibayar tunai: debit beban, kredit bank."
+  },
+  {
+   "no": 18,
+   "date": "2024-02-10",
+   "level": "Intermediate",
+   "topic": "Pelunasan utang dengan diskon",
+   "lines": [
+    {
+     "code": "2-1000",
+     "name": "Utang Usaha",
+     "debit": 224000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 0,
+     "credit": 219520000
+    },
+    {
+     "code": "1-1400",
+     "name": "Persediaan Barang Dagang",
+     "debit": 0,
+     "credit": 4480000
+    }
+   ],
+   "explain": "Diskon pembelian Rp4.480.000 mengurangi biaya persediaan (perpetual, metode gross)."
+  },
+  {
+   "no": 19,
+   "date": "2024-02-10",
+   "level": "Intermediate",
+   "topic": "Aset tetap + pembiayaan",
+   "lines": [
+    {
+     "code": "1-2300",
+     "name": "Kendaraan Operasional",
+     "debit": 310000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 0,
+     "credit": 110000000
+    },
+    {
+     "code": "2-1100",
+     "name": "Utang Bank Jangka Pendek",
+     "debit": 0,
+     "credit": 200000000
+    }
+   ],
+   "explain": "Aset diakui sebesar harga perolehan; pendanaan campuran menghasilkan jurnal tiga baris."
+  },
+  {
+   "no": 20,
+   "date": "2024-02-14",
+   "level": "Intermediate",
+   "topic": "Piutang karyawan",
+   "lines": [
+    {
+     "code": "1-1000",
+     "name": "Kas",
+     "debit": 12000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1310",
+     "name": "Piutang Karyawan",
+     "debit": 0,
+     "credit": 12000000
+    }
+   ],
+   "explain": "Pelunasan piutang non-usaha: kas naik, piutang karyawan turun."
+  },
+  {
+   "no": 21,
+   "date": "2024-02-16",
+   "level": "Intermediate",
+   "topic": "Penjualan tunai + HPP",
+   "lines": [
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 120000000,
+     "credit": 0
+    },
+    {
+     "code": "4-1000",
+     "name": "Penjualan",
+     "debit": 0,
+     "credit": 120000000
+    },
+    {
+     "code": "5-1000",
+     "name": "Harga Pokok Penjualan",
+     "debit": 72000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1400",
+     "name": "Persediaan Barang Dagang",
+     "debit": 0,
+     "credit": 72000000
+    }
+   ],
+   "explain": "Penjualan tunai dengan HPP perpetual."
+  },
+  {
+   "no": 22,
+   "date": "2024-02-20",
+   "level": "Intermediate",
+   "topic": "Beban iklan",
+   "lines": [
+    {
+     "code": "6-2200",
+     "name": "Beban Iklan & Pemasaran",
+     "debit": 18000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 0,
+     "credit": 18000000
+    }
+   ],
+   "explain": "Iklan yang sudah tayang/dinikmati langsung dibebankan; tidak ada manfaat masa depan yang dapat dikapitalisasi."
+  },
+  {
+   "no": 23,
+   "date": "2024-02-22",
+   "level": "Intermediate",
+   "topic": "Distractor: tidak perlu jurnal",
+   "lines": [
+    {
+     "code": "-",
+     "name": "TIDAK ADA JURNAL",
+     "debit": 0,
+     "credit": 0
+    }
+   ],
+   "explain": "Penawaran bukan transaksi: tidak ada pertukaran nilai, tidak ada hak/kewajiban yang timbul. Tidak ada jurnal."
+  },
+  {
+   "no": 24,
+   "date": "2024-02-25",
+   "level": "Intermediate",
+   "topic": "Perlengkapan kredit",
+   "lines": [
+    {
+     "code": "1-1500",
+     "name": "Perlengkapan Kantor",
+     "debit": 4200000,
+     "credit": 0
+    },
+    {
+     "code": "2-1000",
+     "name": "Utang Usaha",
+     "debit": 0,
+     "credit": 4200000
+    }
+   ],
+   "explain": "Pembelian perlengkapan kredit: aset bertambah, utang usaha bertambah."
+  },
+  {
+   "no": 25,
+   "date": "2024-03-01",
+   "level": "Intermediate",
+   "topic": "Pelunasan piutang (tanpa diskon)",
+   "lines": [
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 250000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1200",
+     "name": "Piutang Usaha",
+     "debit": 0,
+     "credit": 250000000
+    }
+   ],
+   "explain": "Pembayaran di luar periode diskon: tidak ada potongan penjualan."
+  },
+  {
+   "no": 26,
+   "date": "2024-03-01",
+   "level": "Intermediate",
+   "topic": "Beban dibayar di muka",
+   "lines": [
+    {
+     "code": "1-1600",
+     "name": "Sewa Dibayar di Muka",
+     "debit": 21000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 0,
+     "credit": 21000000
+    }
+   ],
+   "explain": "Dibayar di muka untuk 3 bulan: aset sampai periode manfaat berjalan."
+  },
+  {
+   "no": 27,
+   "date": "2024-03-04",
+   "level": "Intermediate",
+   "topic": "Pembelian kredit",
+   "lines": [
+    {
+     "code": "1-1400",
+     "name": "Persediaan Barang Dagang",
+     "debit": 312000000,
+     "credit": 0
+    },
+    {
+     "code": "2-1000",
+     "name": "Utang Usaha",
+     "debit": 0,
+     "credit": 312000000
+    }
+   ],
+   "explain": "Metode perpetual: pembelian langsung menambah Persediaan (gross), utang diakui sebesar faktur."
+  },
+  {
+   "no": 28,
+   "date": "2024-03-07",
+   "level": "Intermediate",
+   "topic": "Kerugian persediaan",
+   "lines": [
+    {
+     "code": "5-1000",
+     "name": "Harga Pokok Penjualan",
+     "debit": 18000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1400",
+     "name": "Persediaan Barang Dagang",
+     "debit": 0,
+     "credit": 18000000
+    }
+   ],
+   "explain": "Persediaan rusak dihapus dan kerugiannya dimasukkan ke HPP (sesuai kebijakan: kerugian normal)."
+  },
+  {
+   "no": 29,
+   "date": "2024-03-10",
+   "level": "Intermediate",
+   "topic": "Pelunasan utang dengan diskon",
+   "lines": [
+    {
+     "code": "2-1000",
+     "name": "Utang Usaha",
+     "debit": 312000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 0,
+     "credit": 305760000
+    },
+    {
+     "code": "1-1400",
+     "name": "Persediaan Barang Dagang",
+     "debit": 0,
+     "credit": 6240000
+    }
+   ],
+   "explain": "Diskon pembelian Rp6.240.000 mengurangi biaya persediaan (perpetual, metode gross)."
+  },
+  {
+   "no": 30,
+   "date": "2024-03-15",
+   "level": "Intermediate",
+   "topic": "Trade discount",
+   "lines": [
+    {
+     "code": "1-1200",
+     "name": "Piutang Usaha",
+     "debit": 285000000,
+     "credit": 0
+    },
+    {
+     "code": "4-1000",
+     "name": "Penjualan",
+     "debit": 0,
+     "credit": 285000000
+    },
+    {
+     "code": "5-1000",
+     "name": "Harga Pokok Penjualan",
+     "debit": 171000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1400",
+     "name": "Persediaan Barang Dagang",
+     "debit": 0,
+     "credit": 171000000
+    }
+   ],
+   "explain": "Trade discount tidak dicatat: penjualan diakui sebesar harga faktur (Rp300jt - 5% = Rp285jt). Berbeda dengan cash discount."
+  },
+  {
+   "no": 31,
+   "date": "2024-03-20",
+   "level": "Intermediate",
+   "topic": "Pendapatan jasa (uang muka)",
+   "lines": [
+    {
+     "code": "2-1400",
+     "name": "Pendapatan Diterima di Muka",
+     "debit": 45000000,
+     "credit": 0
+    },
+    {
+     "code": "4-2000",
+     "name": "Pendapatan Jasa Instalasi/Proyek",
+     "debit": 0,
+     "credit": 45000000
+    },
+    {
+     "code": "5-1000",
+     "name": "Harga Pokok Penjualan",
+     "debit": 8000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 0,
+     "credit": 8000000
+    }
+   ],
+   "explain": "Kewajiban terpenuhi saat jasa selesai: Pendapatan Diterima di Muka menjadi pendapatan. Biaya proyek diakui bersamaan (matching)."
+  },
+  {
+   "no": 32,
+   "date": "2024-03-22",
+   "level": "Intermediate",
+   "topic": "Pelunasan piutang dengan diskon",
+   "lines": [
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 279300000,
+     "credit": 0
+    },
+    {
+     "code": "4-1200",
+     "name": "Potongan Penjualan",
+     "debit": 5700000,
+     "credit": 0
+    },
+    {
+     "code": "1-1200",
+     "name": "Piutang Usaha",
+     "debit": 0,
+     "credit": 285000000
+    }
+   ],
+   "explain": "Diskon 2% x Rp285.000.000 = Rp5.700.000 dicatat sebagai Potongan Penjualan (kontra pendapatan)."
+  },
+  {
+   "no": 33,
+   "date": "2024-03-25",
+   "level": "Intermediate",
+   "topic": "Beban pemeliharaan",
+   "lines": [
+    {
+     "code": "6-2100",
+     "name": "Beban Pemeliharaan & Perbaikan",
+     "debit": 9600000,
+     "credit": 0
+    },
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 0,
+     "credit": 9600000
+    }
+   ],
+   "explain": "Pengeluaran yang hanya mempertahankan kondisi (repair & maintenance) dibebankan, bukan dikapitalisasi."
+  },
+  {
+   "no": 34,
+   "date": "2024-03-30",
+   "level": "Intermediate",
+   "topic": "Pelunasan saldo awal utang usaha",
+   "lines": [
+    {
+     "code": "2-1000",
+     "name": "Utang Usaha",
+     "debit": 116000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 0,
+     "credit": 116000000
+    }
+   ],
+   "explain": "Melunasi sisa saldo awal (296jt total = 180jt + 116jt)."
+  },
+  {
+   "no": 35,
+   "date": "2024-03-31",
+   "level": "Intermediate",
+   "topic": "Penerimaan piutang lama (saldo awal)",
+   "lines": [
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 250000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1200",
+     "name": "Piutang Usaha",
+     "debit": 0,
+     "credit": 250000000
+    }
+   ],
+   "explain": "Pelunasan piutang lama: bank naik, piutang turun."
+  },
+  {
+   "no": 36,
+   "date": "2024-04-02",
+   "level": "Expert",
+   "topic": "Aset tetap: komponen biaya perolehan",
+   "lines": [
+    {
+     "code": "1-2400",
+     "name": "Mesin & Peralatan Perakitan",
+     "debit": 510000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 0,
+     "credit": 486000000
+    },
+    {
+     "code": "2-2400",
+     "name": "Provisi Restorasi Aset",
+     "debit": 0,
+     "credit": 24000000
+    }
+   ],
+   "explain": "Biaya perolehan = harga + angkut + instalasi + uji coba + PV restorasi = Rp510.000.000. Pelatihan operator bukan biaya yang dapat diatribusikan langsung ke pembawaan aset ke kondisi siap pakai, maka dibebankan. Kewajiban restorasi diakui sebagai provisi karena ada kewajiban kini atas pemasangan mesin."
+  },
+  {
+   "no": 37,
+   "date": "2024-04-02",
+   "level": "Advanced",
+   "topic": "Aset tetap: biaya yang tidak dikapitalisasi",
+   "lines": [
+    {
+     "code": "6-2400",
+     "name": "Beban Lain-Lain",
+     "debit": 9000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 0,
+     "credit": 9000000
+    }
+   ],
+   "explain": "Biaya pelatihan tidak termasuk biaya perolehan aset tetap; dibebankan pada periode terjadinya."
+  },
+  {
+   "no": 38,
+   "date": "2024-04-05",
+   "level": "Advanced",
+   "topic": "Pembelian kredit",
+   "lines": [
+    {
+     "code": "1-1400",
+     "name": "Persediaan Barang Dagang",
+     "debit": 264000000,
+     "credit": 0
+    },
+    {
+     "code": "2-1000",
+     "name": "Utang Usaha",
+     "debit": 0,
+     "credit": 264000000
+    }
+   ],
+   "explain": "Metode perpetual: pembelian langsung menambah Persediaan (gross), utang diakui sebesar faktur."
+  },
+  {
+   "no": 39,
+   "date": "2024-04-08",
+   "level": "Advanced",
+   "topic": "Penjualan kredit FOB shipping point",
+   "lines": [
+    {
+     "code": "1-1200",
+     "name": "Piutang Usaha",
+     "debit": 320000000,
+     "credit": 0
+    },
+    {
+     "code": "4-1000",
+     "name": "Penjualan",
+     "debit": 0,
+     "credit": 320000000
+    },
+    {
+     "code": "5-1000",
+     "name": "Harga Pokok Penjualan",
+     "debit": 192000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1400",
+     "name": "Persediaan Barang Dagang",
+     "debit": 0,
+     "credit": 192000000
+    }
+   ],
+   "explain": "Penjualan kredit dicatat sebesar harga faktur. Dalam sistem perpetual, HPP diakui bersamaan dengan penjualan."
+  },
+  {
+   "no": 40,
+   "date": "2024-04-12",
+   "level": "Advanced",
+   "topic": "Investasi obligasi (biaya diamortisasi)",
+   "lines": [
+    {
+     "code": "1-2800",
+     "name": "Investasi Obligasi (Biaya Diamortisasi) - Tidak Lancar",
+     "debit": 190000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 0,
+     "credit": 190000000
+    }
+   ],
+   "explain": "Model bisnis hold-to-collect + arus kas SPPI -> biaya diamortisasi. Pengakuan awal sebesar harga perolehan (diskonto tidak dijurnal terpisah)."
+  },
+  {
+   "no": 41,
+   "date": "2024-04-15",
+   "level": "Advanced",
+   "topic": "Pelunasan utang dengan diskon",
+   "lines": [
+    {
+     "code": "2-1000",
+     "name": "Utang Usaha",
+     "debit": 264000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 0,
+     "credit": 261360000
+    },
+    {
+     "code": "1-1400",
+     "name": "Persediaan Barang Dagang",
+     "debit": 0,
+     "credit": 2640000
+    }
+   ],
+   "explain": "Diskon pembelian Rp2.640.000 mengurangi biaya persediaan (perpetual, metode gross)."
+  },
+  {
+   "no": 42,
+   "date": "2024-04-15",
+   "level": "Advanced",
+   "topic": "Pembayaran angsuran pajak",
+   "lines": [
+    {
+     "code": "1-1800",
+     "name": "Pajak Dibayar di Muka (PPh 25)",
+     "debit": 60000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 0,
+     "credit": 60000000
+    }
+   ],
+   "explain": "Angsuran pajak (PPh 25) dicatat sebagai pajak dibayar di muka (uang muka), lalu dikompensasi terhadap utang pajak kini pada akhir tahun."
+  },
+  {
+   "no": 43,
+   "date": "2024-04-20",
+   "level": "Expert",
+   "topic": "Sewa (PSAK 116 - penyewa)",
+   "lines": [
+    {
+     "code": "1-2700",
+     "name": "Aset Hak-Guna (ROU Asset)",
+     "debit": 95095963,
+     "credit": 0
+    },
+    {
+     "code": "2-1700",
+     "name": "Liabilitas Sewa - Bagian Lancar",
+     "debit": 0,
+     "credit": 20490404
+    },
+    {
+     "code": "2-2200",
+     "name": "Liabilitas Sewa - Bagian Tidak Lancar",
+     "debit": 0,
+     "credit": 74605559
+    }
+   ],
+   "explain": "ROU dan liabilitas sewa diakui sebesar PV pembayaran sewa (Rp95.095.963). Bagian lancar = pokok yang dibayar dalam 12 bulan = Rp20.490.404 (pembayaran Rp30jt dikurangi bunga tahun 1), bagian tidak lancar = Rp74.605.559."
+  },
+  {
+   "no": 44,
+   "date": "2024-04-22",
+   "level": "Intermediate",
+   "topic": "Beban gaji",
+   "lines": [
+    {
+     "code": "6-1000",
+     "name": "Beban Gaji dan Upah",
+     "debit": 216000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 0,
+     "credit": 216000000
+    }
+   ],
+   "explain": "Beban gaji periode berjalan (Februari Rp70jt + Maret Rp72jt + April Rp74jt = Rp216jt)."
+  },
+  {
+   "no": 45,
+   "date": "2024-04-23",
+   "level": "Intermediate",
+   "topic": "Pelunasan piutang (tanpa diskon)",
+   "lines": [
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 320000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1200",
+     "name": "Piutang Usaha",
+     "debit": 0,
+     "credit": 320000000
+    }
+   ],
+   "explain": "Pembayaran di luar periode diskon: tidak ada potongan penjualan."
+  },
+  {
+   "no": 46,
+   "date": "2024-04-25",
+   "level": "Advanced",
+   "topic": "Investasi ekuitas (FVTPL)",
+   "lines": [
+    {
+     "code": "1-2900",
+     "name": "Investasi Saham (FVTPL)",
+     "debit": 85000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 0,
+     "credit": 85000000
+    }
+   ],
+   "explain": "FVTPL: investasi diakui pada nilai wajar (harga transaksi) Rp85jt. Efek yang dimiliki untuk diperdagangkan: arus kas disajikan di aktivitas operasi (PSAK 207 par.16)."
+  },
+  {
+   "no": 47,
+   "date": "2024-04-25",
+   "level": "Advanced",
+   "topic": "Biaya transaksi investasi FVTPL",
+   "lines": [
+    {
+     "code": "6-2400",
+     "name": "Beban Lain-Lain",
+     "debit": 425000,
+     "credit": 0
+    },
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 0,
+     "credit": 425000
+    }
+   ],
+   "explain": "Untuk instrumen FVTPL, biaya transaksi tidak ditambahkan ke nilai investasi; langsung dibebankan dalam laba rugi."
+  },
+  {
+   "no": 48,
+   "date": "2024-05-02",
+   "level": "Advanced",
+   "topic": "Pembelian kredit",
+   "lines": [
+    {
+     "code": "1-1400",
+     "name": "Persediaan Barang Dagang",
+     "debit": 298000000,
+     "credit": 0
+    },
+    {
+     "code": "2-1000",
+     "name": "Utang Usaha",
+     "debit": 0,
+     "credit": 298000000
+    }
+   ],
+   "explain": "Metode perpetual: pembelian langsung menambah Persediaan (gross), utang diakui sebesar faktur."
+  },
+  {
+   "no": 49,
+   "date": "2024-05-05",
+   "level": "Intermediate",
+   "topic": "Penjualan tunai + HPP",
+   "lines": [
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 350000000,
+     "credit": 0
+    },
+    {
+     "code": "4-1000",
+     "name": "Penjualan",
+     "debit": 0,
+     "credit": 350000000
+    },
+    {
+     "code": "5-1000",
+     "name": "Harga Pokok Penjualan",
+     "debit": 210000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1400",
+     "name": "Persediaan Barang Dagang",
+     "debit": 0,
+     "credit": 210000000
+    }
+   ],
+   "explain": "Penjualan tunai + HPP."
+  },
+  {
+   "no": 50,
+   "date": "2024-05-08",
+   "level": "Expert",
+   "topic": "Kontinjensi (tidak diakui)",
+   "lines": [
+    {
+     "code": "-",
+     "name": "TIDAK ADA JURNAL",
+     "debit": 0,
+     "credit": 0
+    }
+   ],
+   "explain": "Arus keluar tidak kemungkinan besar terjadi (probable), maka bukan provisi. Cukup diungkapkan sebagai liabilitas kontinjensi. Tidak ada jurnal."
+  },
+  {
+   "no": 51,
+   "date": "2024-05-10",
+   "level": "Advanced",
+   "topic": "Pelunasan utang dengan diskon",
+   "lines": [
+    {
+     "code": "2-1000",
+     "name": "Utang Usaha",
+     "debit": 298000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 0,
+     "credit": 292040000
+    },
+    {
+     "code": "1-1400",
+     "name": "Persediaan Barang Dagang",
+     "debit": 0,
+     "credit": 5960000
+    }
+   ],
+   "explain": "Diskon pembelian Rp5.960.000 mengurangi biaya persediaan (perpetual, metode gross)."
+  },
+  {
+   "no": 52,
+   "date": "2024-05-17",
+   "level": "Expert",
+   "topic": "Pendapatan dengan hak retur",
+   "lines": [
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 180000000,
+     "credit": 0
+    },
+    {
+     "code": "4-1000",
+     "name": "Penjualan",
+     "debit": 0,
+     "credit": 172800000
+    },
+    {
+     "code": "2-1600",
+     "name": "Liabilitas Pengembalian (Refund)",
+     "debit": 0,
+     "credit": 7200000
+    },
+    {
+     "code": "5-1000",
+     "name": "Harga Pokok Penjualan",
+     "debit": 103680000,
+     "credit": 0
+    },
+    {
+     "code": "1-1400",
+     "name": "Persediaan Barang Dagang",
+     "debit": 0,
+     "credit": 103680000
+    }
+   ],
+   "explain": "Dua pasang jurnal: pendapatan hanya sebatas jumlah yang sangat mungkin tidak berbalik (96% x Rp180jt = Rp172,8jt); selisih 4% (Rp7,2jt) = liabilitas pengembalian, bukan pendapatan. HPP = 96% x Rp108jt = Rp103,68jt; Rp4,32jt (4%) tetap dalam persediaan sebagai hak atas barang yang akan diretur. Hak retur berlaku sampai 16 Mei 2025 sehingga liabilitas masih ada per 31 Desember 2024."
+  },
+  {
+   "no": 53,
+   "date": "2024-05-20",
+   "level": "Expert",
+   "topic": "Properti investasi (reklasifikasi)",
+   "lines": [
+    {
+     "code": "1-2600",
+     "name": "Properti Investasi",
+     "debit": 168466667,
+     "credit": 0
+    },
+    {
+     "code": "1-2210",
+     "name": "Akumulasi Penyusutan Bangunan",
+     "debit": 20000000,
+     "credit": 0
+    },
+    {
+     "code": "6-1400",
+     "name": "Beban Penyusutan Bangunan",
+     "debit": 1533333,
+     "credit": 0
+    },
+    {
+     "code": "1-2100",
+     "name": "Tanah",
+     "debit": 0,
+     "credit": 90000000
+    },
+    {
+     "code": "1-2200",
+     "name": "Bangunan",
+     "debit": 0,
+     "credit": 100000000
+    }
+   ],
+   "explain": "Penyusutan bagian bangunan s.d. tanggal alih guna dibebankan dulu (100jt/25 x 4,6/12 = Rp1.533.333). Akumulasi penyusutan bagian itu (Rp20.000.000 saldo awal + Rp1.533.333) dikeluarkan; properti investasi = tanah 90jt + bangunan (100jt - 21,533jt) = Rp168.466.667. Nilai wajar saat alih guna dianggap sama dengan nilai tercatat."
+  },
+  {
+   "no": 54,
+   "date": "2024-05-24",
+   "level": "Intermediate",
+   "topic": "Beban dibayar di muka",
+   "lines": [
+    {
+     "code": "1-1700",
+     "name": "Asuransi Dibayar di Muka",
+     "debit": 15600000,
+     "credit": 0
+    },
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 0,
+     "credit": 15600000
+    }
+   ],
+   "explain": "Beban dibayar di muka."
+  },
+  {
+   "no": 55,
+   "date": "2024-06-02",
+   "level": "Advanced",
+   "topic": "Pembelian kredit",
+   "lines": [
+    {
+     "code": "1-1400",
+     "name": "Persediaan Barang Dagang",
+     "debit": 275000000,
+     "credit": 0
+    },
+    {
+     "code": "2-1000",
+     "name": "Utang Usaha",
+     "debit": 0,
+     "credit": 275000000
+    }
+   ],
+   "explain": "Metode perpetual: pembelian langsung menambah Persediaan (gross), utang diakui sebesar faktur."
+  },
+  {
+   "no": 56,
+   "date": "2024-06-05",
+   "level": "Advanced",
+   "topic": "Pelepasan aset tetap (untung)",
+   "lines": [
+    {
+     "code": "1-1000",
+     "name": "Kas",
+     "debit": 65000000,
+     "credit": 0
+    },
+    {
+     "code": "1-2310",
+     "name": "Akumulasi Penyusutan Kendaraan",
+     "debit": 121875000,
+     "credit": 0
+    },
+    {
+     "code": "1-2300",
+     "name": "Kendaraan Operasional",
+     "debit": 0,
+     "credit": 180000000
+    },
+    {
+     "code": "4-8200",
+     "name": "Keuntungan Penjualan Aset Tetap",
+     "debit": 0,
+     "credit": 6875000
+    }
+   ],
+   "explain": "Akumulasi = Rp180.000.000/8 x 5,4167 = Rp121.875.000. Nilai buku = Rp58.125.000. Harga jual Rp65.000.000 > nilai buku -> keuntungan Rp6.875.000."
+  },
+  {
+   "no": 57,
+   "date": "2024-06-08",
+   "level": "Advanced",
+   "topic": "Penjualan kredit",
+   "lines": [
+    {
+     "code": "1-1200",
+     "name": "Piutang Usaha",
+     "debit": 240000000,
+     "credit": 0
+    },
+    {
+     "code": "4-1000",
+     "name": "Penjualan",
+     "debit": 0,
+     "credit": 240000000
+    },
+    {
+     "code": "5-1000",
+     "name": "Harga Pokok Penjualan",
+     "debit": 144000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1400",
+     "name": "Persediaan Barang Dagang",
+     "debit": 0,
+     "credit": 144000000
+    }
+   ],
+   "explain": "Penjualan kredit dicatat sebesar harga faktur. Dalam sistem perpetual, HPP diakui bersamaan dengan penjualan."
+  },
+  {
+   "no": 58,
+   "date": "2024-06-10",
+   "level": "Advanced",
+   "topic": "Pelunasan utang dengan diskon",
+   "lines": [
+    {
+     "code": "2-1000",
+     "name": "Utang Usaha",
+     "debit": 275000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 0,
+     "credit": 272250000
+    },
+    {
+     "code": "1-1400",
+     "name": "Persediaan Barang Dagang",
+     "debit": 0,
+     "credit": 2750000
+    }
+   ],
+   "explain": "Diskon pembelian Rp2.750.000 mengurangi biaya persediaan (perpetual, metode gross)."
+  },
+  {
+   "no": 59,
+   "date": "2024-06-15",
+   "level": "Advanced",
+   "topic": "Angsuran pokok kredit bank",
+   "lines": [
+    {
+     "code": "2-1100",
+     "name": "Utang Bank Jangka Pendek",
+     "debit": 50000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 0,
+     "credit": 50000000
+    }
+   ],
+   "explain": "Pembayaran pokok mengurangi utang bank (aktivitas pendanaan)."
+  },
+  {
+   "no": 60,
+   "date": "2024-06-15",
+   "level": "Advanced",
+   "topic": "Pembayaran bunga kredit bank",
+   "lines": [
+    {
+     "code": "7-1000",
+     "name": "Beban Bunga",
+     "debit": 6944444,
+     "credit": 0
+    },
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 0,
+     "credit": 6944444
+    }
+   ],
+   "explain": "Bunga yang sudah menjadi beban periode berjalan dibebankan; bukan pengurang utang pokok."
+  },
+  {
+   "no": 61,
+   "date": "2024-06-18",
+   "level": "Intermediate",
+   "topic": "Pelunasan piutang dengan diskon",
+   "lines": [
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 235200000,
+     "credit": 0
+    },
+    {
+     "code": "4-1200",
+     "name": "Potongan Penjualan",
+     "debit": 4800000,
+     "credit": 0
+    },
+    {
+     "code": "1-1200",
+     "name": "Piutang Usaha",
+     "debit": 0,
+     "credit": 240000000
+    }
+   ],
+   "explain": "Diskon 2% x Rp240.000.000 = Rp4.800.000 dicatat sebagai Potongan Penjualan (kontra pendapatan)."
+  },
+  {
+   "no": 62,
+   "date": "2024-06-20",
+   "level": "Intermediate",
+   "topic": "Beban gaji",
+   "lines": [
+    {
+     "code": "6-1000",
+     "name": "Beban Gaji dan Upah",
+     "debit": 152000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 0,
+     "credit": 152000000
+    }
+   ],
+   "explain": "Kedua bulan jasa sudah diterima: dibebankan pada 2024."
+  },
+  {
+   "no": 63,
+   "date": "2024-06-22",
+   "level": "Expert",
+   "topic": "Distractor: FVTPL belum dinilai ulang",
+   "lines": [
+    {
+     "code": "-",
+     "name": "TIDAK ADA JURNAL",
+     "debit": 0,
+     "credit": 0
+    }
+   ],
+   "explain": "Pengukuran ulang ke nilai wajar dilakukan pada tanggal pelaporan. Kenaikan harga harian bukan transaksi yang dijurnal."
+  },
+  {
+   "no": 64,
+   "date": "2024-06-25",
+   "level": "Intermediate",
+   "topic": "Beban operasional",
+   "lines": [
+    {
+     "code": "6-2000",
+     "name": "Beban Listrik, Air & Telekomunikasi",
+     "debit": 76000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 0,
+     "credit": 76000000
+    }
+   ],
+   "explain": "Seluruh periode sudah dinikmati: beban tahun berjalan."
+  },
+  {
+   "no": 65,
+   "date": "2024-06-28",
+   "level": "Advanced",
+   "topic": "Pembelian valuta asing",
+   "lines": [
+    {
+     "code": "1-1400",
+     "name": "Persediaan Barang Dagang",
+     "debit": 312000000,
+     "credit": 0
+    },
+    {
+     "code": "2-1000",
+     "name": "Utang Usaha",
+     "debit": 0,
+     "credit": 312000000
+    }
+   ],
+   "explain": "Dicatat sebesar USD 20.000 x Rp15.600 = Rp312.000.000."
+  },
+  {
+   "no": 66,
+   "date": "2024-06-30",
+   "level": "Advanced",
+   "topic": "Bunga investasi obligasi (biaya diamortisasi)",
+   "lines": [
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 3466667,
+     "credit": 0
+    },
+    {
+     "code": "1-2800",
+     "name": "Investasi Obligasi (Biaya Diamortisasi) - Tidak Lancar",
+     "debit": 637650,
+     "credit": 0
+    },
+    {
+     "code": "4-8000",
+     "name": "Pendapatan Bunga",
+     "debit": 0,
+     "credit": 4104317
+    }
+   ],
+   "explain": "Pendapatan bunga efektif = Rp190.000.000 x 9,97% x 78/360 = Rp4.104.317. Kupon tunai = Rp3.466.667. Selisih Rp637.650 menambah nilai tercatat (amortisasi diskonto). Nilai tercatat baru = Rp190.637.650."
+  },
+  {
+   "no": 67,
+   "date": "2024-06-30",
+   "level": "Intermediate",
+   "topic": "Distractor: tidak perlu jurnal",
+   "lines": [
+    {
+     "code": "-",
+     "name": "TIDAK ADA JURNAL",
+     "debit": 0,
+     "credit": 0
+    }
+   ],
+   "explain": "Tidak ada transaksi. Cadangan dinilai pada akhir tahun."
+  },
+  {
+   "no": 68,
+   "date": "2024-06-30",
+   "level": "Advanced",
+   "topic": "Pelunasan utang bank jangka pendek",
+   "lines": [
+    {
+     "code": "2-1100",
+     "name": "Utang Bank Jangka Pendek",
+     "debit": 150000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 0,
+     "credit": 150000000
+    }
+   ],
+   "explain": "Pelunasan pokok mengurangi utang bank (pendanaan)."
+  },
+  {
+   "no": 69,
+   "date": "2024-06-30",
+   "level": "Advanced",
+   "topic": "Akun hutang pajak (pembayaran)",
+   "lines": [
+    {
+     "code": "2-1500",
+     "name": "Utang Pajak Penghasilan",
+     "debit": 32000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 0,
+     "credit": 32000000
+    }
+   ],
+   "explain": "Melunasi kewajiban pajak tahun sebelumnya; tidak memengaruhi laba 2024."
+  },
+  {
+   "no": 70,
+   "date": "2024-06-30",
+   "level": "Advanced",
+   "topic": "Pendapatan bunga deposito",
+   "lines": [
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 7500000,
+     "credit": 0
+    },
+    {
+     "code": "4-8000",
+     "name": "Pendapatan Bunga",
+     "debit": 0,
+     "credit": 7500000
+    }
+   ],
+   "explain": "Pendapatan bunga diakui sebagai penghasilan lain."
+  },
+  {
+   "no": 71,
+   "date": "2024-06-30",
+   "level": "Advanced",
+   "topic": "Pembayaran bunga kredit bank",
+   "lines": [
+    {
+     "code": "7-1000",
+     "name": "Beban Bunga",
+     "debit": 4500000,
+     "credit": 0
+    },
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 0,
+     "credit": 4500000
+    }
+   ],
+   "explain": "Bunga adalah beban periode berjalan."
+  },
+  {
+   "no": 72,
+   "date": "2024-07-02",
+   "level": "Advanced",
+   "topic": "Pembelian kredit",
+   "lines": [
+    {
+     "code": "1-1400",
+     "name": "Persediaan Barang Dagang",
+     "debit": 288000000,
+     "credit": 0
+    },
+    {
+     "code": "2-1000",
+     "name": "Utang Usaha",
+     "debit": 0,
+     "credit": 288000000
+    }
+   ],
+   "explain": "Metode perpetual: pembelian langsung menambah Persediaan (gross), utang diakui sebesar faktur."
+  },
+  {
+   "no": 73,
+   "date": "2024-07-05",
+   "level": "Expert",
+   "topic": "Subsequent cost: kapitalisasi vs beban",
+   "lines": [
+    {
+     "code": "1-2400",
+     "name": "Mesin & Peralatan Perakitan",
+     "debit": 60000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 0,
+     "credit": 60000000
+    }
+   ],
+   "explain": "Overhaul yang memperpanjang umur/manfaat memenuhi kriteria pengakuan aset -> dikapitalisasi ke Mesin (bukan beban pemeliharaan)."
+  },
+  {
+   "no": 74,
+   "date": "2024-07-05",
+   "level": "Advanced",
+   "topic": "Beban pemeliharaan rutin",
+   "lines": [
+    {
+     "code": "6-2100",
+     "name": "Beban Pemeliharaan & Perbaikan",
+     "debit": 3500000,
+     "credit": 0
+    },
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 0,
+     "credit": 3500000
+    }
+   ],
+   "explain": "Servis rutin hanya mempertahankan kondisi mesin -> beban pemeliharaan periode berjalan."
+  },
+  {
+   "no": 75,
+   "date": "2024-07-08",
+   "level": "Intermediate",
+   "topic": "Penjualan tunai + HPP",
+   "lines": [
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 330000000,
+     "credit": 0
+    },
+    {
+     "code": "4-1000",
+     "name": "Penjualan",
+     "debit": 0,
+     "credit": 330000000
+    },
+    {
+     "code": "5-1000",
+     "name": "Harga Pokok Penjualan",
+     "debit": 198000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1400",
+     "name": "Persediaan Barang Dagang",
+     "debit": 0,
+     "credit": 198000000
+    }
+   ],
+   "explain": "Penjualan tunai + HPP."
+  },
+  {
+   "no": 76,
+   "date": "2024-07-10",
+   "level": "Advanced",
+   "topic": "Pelunasan utang dengan diskon",
+   "lines": [
+    {
+     "code": "2-1000",
+     "name": "Utang Usaha",
+     "debit": 288000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 0,
+     "credit": 282240000
+    },
+    {
+     "code": "1-1400",
+     "name": "Persediaan Barang Dagang",
+     "debit": 0,
+     "credit": 5760000
+    }
+   ],
+   "explain": "Diskon pembelian Rp5.760.000 mengurangi biaya persediaan (perpetual, metode gross)."
+  },
+  {
+   "no": 77,
+   "date": "2024-07-15",
+   "level": "Expert",
+   "topic": "Penerbitan obligasi (diskonto)",
+   "lines": [
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 480976155,
+     "credit": 0
+    },
+    {
+     "code": "2-2010",
+     "name": "Diskonto/Premium Utang Obligasi (Contra)",
+     "debit": 19023845,
+     "credit": 0
+    },
+    {
+     "code": "2-2000",
+     "name": "Utang Obligasi",
+     "debit": 0,
+     "credit": 500000000
+    }
+   ],
+   "explain": "Utang Obligasi dicatat pada nominal Rp500.000.000; selisih Rp19.023.845 dicatat dalam akun Diskonto (kontra liabilitas). Nilai tercatat neto = Rp480.976.155."
+  },
+  {
+   "no": 78,
+   "date": "2024-07-15",
+   "level": "Advanced",
+   "topic": "Pembayaran angsuran pajak",
+   "lines": [
+    {
+     "code": "1-1800",
+     "name": "Pajak Dibayar di Muka (PPh 25)",
+     "debit": 60000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 0,
+     "credit": 60000000
+    }
+   ],
+   "explain": "Sama seperti triwulan I: pajak dibayar di muka."
+  },
+  {
+   "no": 79,
+   "date": "2024-07-18",
+   "level": "Advanced",
+   "topic": "Pembelian kredit",
+   "lines": [
+    {
+     "code": "1-1400",
+     "name": "Persediaan Barang Dagang",
+     "debit": 245000000,
+     "credit": 0
+    },
+    {
+     "code": "2-1000",
+     "name": "Utang Usaha",
+     "debit": 0,
+     "credit": 245000000
+    }
+   ],
+   "explain": "Metode perpetual: pembelian langsung menambah Persediaan (gross), utang diakui sebesar faktur."
+  },
+  {
+   "no": 80,
+   "date": "2024-07-22",
+   "level": "Advanced",
+   "topic": "Penjualan kredit",
+   "lines": [
+    {
+     "code": "1-1200",
+     "name": "Piutang Usaha",
+     "debit": 260000000,
+     "credit": 0
+    },
+    {
+     "code": "4-1000",
+     "name": "Penjualan",
+     "debit": 0,
+     "credit": 260000000
+    },
+    {
+     "code": "5-1000",
+     "name": "Harga Pokok Penjualan",
+     "debit": 156000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1400",
+     "name": "Persediaan Barang Dagang",
+     "debit": 0,
+     "credit": 156000000
+    }
+   ],
+   "explain": "Penjualan kredit dicatat sebesar harga faktur. Dalam sistem perpetual, HPP diakui bersamaan dengan penjualan."
+  },
+  {
+   "no": 81,
+   "date": "2024-07-25",
+   "level": "Intermediate",
+   "topic": "Pelunasan piutang dengan diskon",
+   "lines": [
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 254800000,
+     "credit": 0
+    },
+    {
+     "code": "4-1200",
+     "name": "Potongan Penjualan",
+     "debit": 5200000,
+     "credit": 0
+    },
+    {
+     "code": "1-1200",
+     "name": "Piutang Usaha",
+     "debit": 0,
+     "credit": 260000000
+    }
+   ],
+   "explain": "Diskon 2% x Rp260.000.000 = Rp5.200.000 dicatat sebagai Potongan Penjualan (kontra pendapatan)."
+  },
+  {
+   "no": 82,
+   "date": "2024-07-28",
+   "level": "Expert",
+   "topic": "Kontrak sepanjang waktu: identifikasi",
+   "lines": [
+    {
+     "code": "-",
+     "name": "TIDAK ADA JURNAL",
+     "debit": 0,
+     "credit": 0
+    }
+   ],
+   "explain": "Penandatanganan kontrak belum menghasilkan pendapatan. Pendapatan diakui selama penyelesaian. Tidak ada jurnal hari ini."
+  },
+  {
+   "no": 83,
+   "date": "2024-08-08",
+   "level": "Advanced",
+   "topic": "Pembelian kredit",
+   "lines": [
+    {
+     "code": "1-1400",
+     "name": "Persediaan Barang Dagang",
+     "debit": 336000000,
+     "credit": 0
+    },
+    {
+     "code": "2-1000",
+     "name": "Utang Usaha",
+     "debit": 0,
+     "credit": 336000000
+    }
+   ],
+   "explain": "Metode perpetual: pembelian langsung menambah Persediaan (gross), utang diakui sebesar faktur."
+  },
+  {
+   "no": 84,
+   "date": "2024-08-12",
+   "level": "Intermediate",
+   "topic": "Penjualan tunai + HPP",
+   "lines": [
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 340000000,
+     "credit": 0
+    },
+    {
+     "code": "4-1000",
+     "name": "Penjualan",
+     "debit": 0,
+     "credit": 340000000
+    },
+    {
+     "code": "5-1000",
+     "name": "Harga Pokok Penjualan",
+     "debit": 204000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1400",
+     "name": "Persediaan Barang Dagang",
+     "debit": 0,
+     "credit": 204000000
+    }
+   ],
+   "explain": "Penjualan tunai + HPP."
+  },
+  {
+   "no": 85,
+   "date": "2024-08-15",
+   "level": "Advanced",
+   "topic": "Pelunasan utang dengan diskon",
+   "lines": [
+    {
+     "code": "2-1000",
+     "name": "Utang Usaha",
+     "debit": 336000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 0,
+     "credit": 329280000
+    },
+    {
+     "code": "1-1400",
+     "name": "Persediaan Barang Dagang",
+     "debit": 0,
+     "credit": 6720000
+    }
+   ],
+   "explain": "Diskon pembelian Rp6.720.000 mengurangi biaya persediaan (perpetual, metode gross)."
+  },
+  {
+   "no": 86,
+   "date": "2024-08-18",
+   "level": "Expert",
+   "topic": "Distractor: properti investasi belum dinilai",
+   "lines": [
+    {
+     "code": "-",
+     "name": "TIDAK ADA JURNAL",
+     "debit": 0,
+     "credit": 0
+    }
+   ],
+   "explain": "Model nilai wajar dipakai pada tanggal pelaporan berdasarkan penilaian yang andal. Tidak ada jurnal sekarang."
+  },
+  {
+   "no": 87,
+   "date": "2024-08-25",
+   "level": "Advanced",
+   "topic": "Aset tetap: biaya perolehan tanah",
+   "lines": [
+    {
+     "code": "1-2100",
+     "name": "Tanah",
+     "debit": 413000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 0,
+     "credit": 413000000
+    }
+   ],
+   "explain": "Notaris, balik nama, dan BPHTB adalah biaya perolehan tanah = Rp413.000.000."
+  },
+  {
+   "no": 88,
+   "date": "2024-08-25",
+   "level": "Advanced",
+   "topic": "Biaya sementara yang tidak dikapitalisasi",
+   "lines": [
+    {
+     "code": "6-2400",
+     "name": "Beban Lain-Lain",
+     "debit": 6000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 0,
+     "credit": 6000000
+    }
+   ],
+   "explain": "Pagar sementara tidak memberi manfaat ekonomi berkelanjutan pada tanah -> beban periode berjalan, bukan biaya perolehan."
+  },
+  {
+   "no": 89,
+   "date": "2024-08-31",
+   "level": "Advanced",
+   "topic": "Pelunasan utang tanpa diskon",
+   "lines": [
+    {
+     "code": "2-1000",
+     "name": "Utang Usaha",
+     "debit": 245000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 0,
+     "credit": 245000000
+    }
+   ],
+   "explain": "Pembayaran di luar periode diskon: utang dilunasi sebesar nilai faktur penuh."
+  },
+  {
+   "no": 90,
+   "date": "2024-08-31",
+   "level": "Advanced",
+   "topic": "Pelunasan utang valuta asing",
+   "lines": [
+    {
+     "code": "2-1000",
+     "name": "Utang Usaha",
+     "debit": 312000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 0,
+     "credit": 312000000
+    }
+   ],
+   "explain": "Kurs bayar = kurs catat -> tidak ada selisih kurs. Kasus dengan selisih kurs berada di luar inti materi."
+  },
+  {
+   "no": 91,
+   "date": "2024-08-31",
+   "level": "Expert",
+   "topic": "Kontrak sepanjang waktu: pengakuan Agustus",
+   "lines": [
+    {
+     "code": "5-1000",
+     "name": "Harga Pokok Penjualan",
+     "debit": 96000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 0,
+     "credit": 96000000
+    },
+    {
+     "code": "1-1900",
+     "name": "Aset Kontrak / (Liabilitas Kontrak)",
+     "debit": 128000000,
+     "credit": 0
+    },
+    {
+     "code": "4-2000",
+     "name": "Pendapatan Jasa Instalasi/Proyek",
+     "debit": 0,
+     "credit": 128000000
+    }
+   ],
+   "explain": "% penyelesaian kumulatif = Rp96.000.000/Rp720.000.000 = 13.33%. Pendapatan kumulatif = 13.33% x Rp960.000.000 = Rp128.000.000. Pendapatan bulan ini = Rp128.000.000. Biaya proyek diakui sebagai beban pokok (5-1000)."
+  },
+  {
+   "no": 92,
+   "date": "2024-09-01",
+   "level": "Advanced",
+   "topic": "Pembelian kredit",
+   "lines": [
+    {
+     "code": "1-1400",
+     "name": "Persediaan Barang Dagang",
+     "debit": 258000000,
+     "credit": 0
+    },
+    {
+     "code": "2-1000",
+     "name": "Utang Usaha",
+     "debit": 0,
+     "credit": 258000000
+    }
+   ],
+   "explain": "Metode perpetual: pembelian langsung menambah Persediaan (gross), utang diakui sebesar faktur."
+  },
+  {
+   "no": 93,
+   "date": "2024-09-05",
+   "level": "Advanced",
+   "topic": "Penerimaan termin kontrak",
+   "lines": [
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 300000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1900",
+     "name": "Aset Kontrak / (Liabilitas Kontrak)",
+     "debit": 0,
+     "credit": 300000000
+    }
+   ],
+   "explain": "Penerimaan termin mengurangi Aset Kontrak (1-1900). Karena termin lebih besar dari pendapatan yang sudah diakui saat itu, akun bersaldo kredit (liabilitas kontrak) sampai pendapatan berikutnya diakui. Tidak mengubah pendapatan."
+  },
+  {
+   "no": 94,
+   "date": "2024-09-05",
+   "level": "Intermediate",
+   "topic": "Beban gaji",
+   "lines": [
+    {
+     "code": "6-1000",
+     "name": "Beban Gaji dan Upah",
+     "debit": 157000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 0,
+     "credit": 157000000
+    }
+   ],
+   "explain": "Beban gaji dua bulan."
+  },
+  {
+   "no": 95,
+   "date": "2024-09-08",
+   "level": "Advanced",
+   "topic": "Penjualan kredit",
+   "lines": [
+    {
+     "code": "1-1200",
+     "name": "Piutang Usaha",
+     "debit": 230000000,
+     "credit": 0
+    },
+    {
+     "code": "4-1000",
+     "name": "Penjualan",
+     "debit": 0,
+     "credit": 230000000
+    },
+    {
+     "code": "5-1000",
+     "name": "Harga Pokok Penjualan",
+     "debit": 138000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1400",
+     "name": "Persediaan Barang Dagang",
+     "debit": 0,
+     "credit": 138000000
+    }
+   ],
+   "explain": "Penjualan kredit dicatat sebesar harga faktur. Dalam sistem perpetual, HPP diakui bersamaan dengan penjualan."
+  },
+  {
+   "no": 96,
+   "date": "2024-09-10",
+   "level": "Advanced",
+   "topic": "Pelunasan utang dengan diskon",
+   "lines": [
+    {
+     "code": "2-1000",
+     "name": "Utang Usaha",
+     "debit": 258000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 0,
+     "credit": 255420000
+    },
+    {
+     "code": "1-1400",
+     "name": "Persediaan Barang Dagang",
+     "debit": 0,
+     "credit": 2580000
+    }
+   ],
+   "explain": "Diskon pembelian Rp2.580.000 mengurangi biaya persediaan (perpetual, metode gross)."
+  },
+  {
+   "no": 97,
+   "date": "2024-09-12",
+   "level": "Advanced",
+   "topic": "Penghapusan piutang (metode cadangan)",
+   "lines": [
+    {
+     "code": "1-1210",
+     "name": "Cadangan Kerugian Penurunan Nilai Piutang",
+     "debit": 9000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1200",
+     "name": "Piutang Usaha",
+     "debit": 0,
+     "credit": 9000000
+    }
+   ],
+   "explain": "Metode cadangan: penghapusan mendebit Cadangan, bukan beban. Tidak memengaruhi laba dan nilai piutang neto."
+  },
+  {
+   "no": 98,
+   "date": "2024-09-15",
+   "level": "Intermediate",
+   "topic": "Penjualan tunai + HPP",
+   "lines": [
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 360000000,
+     "credit": 0
+    },
+    {
+     "code": "4-1000",
+     "name": "Penjualan",
+     "debit": 0,
+     "credit": 360000000
+    },
+    {
+     "code": "5-1000",
+     "name": "Harga Pokok Penjualan",
+     "debit": 216000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1400",
+     "name": "Persediaan Barang Dagang",
+     "debit": 0,
+     "credit": 216000000
+    }
+   ],
+   "explain": "Penjualan tunai + HPP."
+  },
+  {
+   "no": 99,
+   "date": "2024-09-18",
+   "level": "Expert",
+   "topic": "Program loyalitas (kewajiban pelaksanaan)",
+   "lines": [
+    {
+     "code": "1-1200",
+     "name": "Piutang Usaha",
+     "debit": 260000000,
+     "credit": 0
+    },
+    {
+     "code": "4-1000",
+     "name": "Penjualan",
+     "debit": 0,
+     "credit": 254000000
+    },
+    {
+     "code": "2-1400",
+     "name": "Pendapatan Diterima di Muka",
+     "debit": 0,
+     "credit": 6000000
+    },
+    {
+     "code": "5-1000",
+     "name": "Harga Pokok Penjualan",
+     "debit": 156000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1400",
+     "name": "Persediaan Barang Dagang",
+     "debit": 0,
+     "credit": 156000000
+    }
+   ],
+   "explain": "Terdapat dua kewajiban pelaksanaan: barang dan poin. Imbalan Rp260jt dialokasikan; Rp6jt ditangguhkan sebagai kewajiban kontrak (pendapatan diterima di muka) sampai poin ditukar/kedaluwarsa."
+  },
+  {
+   "no": 100,
+   "date": "2024-09-25",
+   "level": "Expert",
+   "topic": "Penurunan nilai aset (PSAK 236)",
+   "lines": [
+    {
+     "code": "6-2500",
+     "name": "Kerugian Penurunan Nilai Aset",
+     "debit": 32000000,
+     "credit": 0
+    },
+    {
+     "code": "1-2410",
+     "name": "Akumulasi Penyusutan Mesin & Peralatan",
+     "debit": 0,
+     "credit": 32000000
+    }
+   ],
+   "explain": "Jumlah terpulihkan = yang tertinggi antara Rp58jt dan Rp63jt = Rp63jt. Rugi penurunan nilai = 95 - 63 = Rp32jt."
+  },
+  {
+   "no": 101,
+   "date": "2024-09-27",
+   "level": "Intermediate",
+   "topic": "Pelunasan piutang dengan diskon",
+   "lines": [
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 254800000,
+     "credit": 0
+    },
+    {
+     "code": "4-1200",
+     "name": "Potongan Penjualan",
+     "debit": 5200000,
+     "credit": 0
+    },
+    {
+     "code": "1-1200",
+     "name": "Piutang Usaha",
+     "debit": 0,
+     "credit": 260000000
+    }
+   ],
+   "explain": "Diskon 2% x Rp260.000.000 = Rp5.200.000 dicatat sebagai Potongan Penjualan (kontra pendapatan)."
+  },
+  {
+   "no": 102,
+   "date": "2024-09-28",
+   "level": "Intermediate",
+   "topic": "Perlengkapan",
+   "lines": [
+    {
+     "code": "1-1500",
+     "name": "Perlengkapan Kantor",
+     "debit": 5100000,
+     "credit": 0
+    },
+    {
+     "code": "1-1000",
+     "name": "Kas",
+     "debit": 0,
+     "credit": 5100000
+    }
+   ],
+   "explain": "Pembelian perlengkapan tunai."
+  },
+  {
+   "no": 103,
+   "date": "2024-09-30",
+   "level": "Advanced",
+   "topic": "Pembayaran bunga kredit bank",
+   "lines": [
+    {
+     "code": "7-1000",
+     "name": "Beban Bunga",
+     "debit": 30000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 0,
+     "credit": 30000000
+    }
+   ],
+   "explain": "Bunga = 500jt x 8% x 9/12 = Rp30jt."
+  },
+  {
+   "no": 104,
+   "date": "2024-09-30",
+   "level": "Expert",
+   "topic": "Kontrak sepanjang waktu: pengakuan September",
+   "lines": [
+    {
+     "code": "5-1000",
+     "name": "Harga Pokok Penjualan",
+     "debit": 180000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 0,
+     "credit": 180000000
+    },
+    {
+     "code": "1-1900",
+     "name": "Aset Kontrak / (Liabilitas Kontrak)",
+     "debit": 240000000,
+     "credit": 0
+    },
+    {
+     "code": "4-2000",
+     "name": "Pendapatan Jasa Instalasi/Proyek",
+     "debit": 0,
+     "credit": 240000000
+    }
+   ],
+   "explain": "% penyelesaian kumulatif = Rp276.000.000/Rp720.000.000 = 38.33%. Pendapatan kumulatif = 38.33% x Rp960.000.000 = Rp368.000.000. Pendapatan bulan ini = Rp240.000.000. Biaya proyek diakui sebagai beban pokok (5-1000)."
+  },
+  {
+   "no": 105,
+   "date": "2024-10-01",
+   "level": "Advanced",
+   "topic": "Pembelian kredit",
+   "lines": [
+    {
+     "code": "1-1400",
+     "name": "Persediaan Barang Dagang",
+     "debit": 302000000,
+     "credit": 0
+    },
+    {
+     "code": "2-1000",
+     "name": "Utang Usaha",
+     "debit": 0,
+     "credit": 302000000
+    }
+   ],
+   "explain": "Metode perpetual: pembelian langsung menambah Persediaan (gross), utang diakui sebesar faktur."
+  },
+  {
+   "no": 106,
+   "date": "2024-10-07",
+   "level": "Intermediate",
+   "topic": "Pelunasan piutang (tanpa diskon)",
+   "lines": [
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 230000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1200",
+     "name": "Piutang Usaha",
+     "debit": 0,
+     "credit": 230000000
+    }
+   ],
+   "explain": "Pembayaran di luar periode diskon: tidak ada potongan penjualan."
+  },
+  {
+   "no": 107,
+   "date": "2024-10-08",
+   "level": "Advanced",
+   "topic": "Penjualan kredit",
+   "lines": [
+    {
+     "code": "1-1200",
+     "name": "Piutang Usaha",
+     "debit": 250000000,
+     "credit": 0
+    },
+    {
+     "code": "4-1000",
+     "name": "Penjualan",
+     "debit": 0,
+     "credit": 250000000
+    },
+    {
+     "code": "5-1000",
+     "name": "Harga Pokok Penjualan",
+     "debit": 150000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1400",
+     "name": "Persediaan Barang Dagang",
+     "debit": 0,
+     "credit": 150000000
+    }
+   ],
+   "explain": "Penjualan kredit dicatat sebesar harga faktur. Dalam sistem perpetual, HPP diakui bersamaan dengan penjualan."
+  },
+  {
+   "no": 108,
+   "date": "2024-10-11",
+   "level": "Advanced",
+   "topic": "Pelunasan utang tanpa diskon",
+   "lines": [
+    {
+     "code": "2-1000",
+     "name": "Utang Usaha",
+     "debit": 302000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 0,
+     "credit": 302000000
+    }
+   ],
+   "explain": "Pembayaran di luar periode diskon: utang dilunasi sebesar nilai faktur penuh."
+  },
+  {
+   "no": 109,
+   "date": "2024-10-15",
+   "level": "Intermediate",
+   "topic": "Pelunasan piutang dengan diskon",
+   "lines": [
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 245000000,
+     "credit": 0
+    },
+    {
+     "code": "4-1200",
+     "name": "Potongan Penjualan",
+     "debit": 5000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1200",
+     "name": "Piutang Usaha",
+     "debit": 0,
+     "credit": 250000000
+    }
+   ],
+   "explain": "Diskon 2% x Rp250.000.000 = Rp5.000.000 dicatat sebagai Potongan Penjualan (kontra pendapatan)."
+  },
+  {
+   "no": 110,
+   "date": "2024-10-15",
+   "level": "Advanced",
+   "topic": "Pembayaran angsuran pajak",
+   "lines": [
+    {
+     "code": "1-1800",
+     "name": "Pajak Dibayar di Muka (PPh 25)",
+     "debit": 60000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 0,
+     "credit": 60000000
+    }
+   ],
+   "explain": "Sama seperti triwulan I: pajak dibayar di muka."
+  },
+  {
+   "no": 111,
+   "date": "2024-10-18",
+   "level": "Expert",
+   "topic": "Provisi: kontinjensi menjadi kewajiban",
+   "lines": [
+    {
+     "code": "6-2400",
+     "name": "Beban Lain-Lain",
+     "debit": 45000000,
+     "credit": 0
+    },
+    {
+     "code": "2-1200",
+     "name": "Beban Yang Masih Harus Dibayar",
+     "debit": 0,
+     "credit": 45000000
+    }
+   ],
+   "explain": "Kondisi berubah: kewajiban kini, arus keluar hampir pasti, dan jumlah andal -> diakui sebagai beban dan liabilitas."
+  },
+  {
+   "no": 112,
+   "date": "2024-10-20",
+   "level": "Intermediate",
+   "topic": "Beban gaji",
+   "lines": [
+    {
+     "code": "6-1000",
+     "name": "Beban Gaji dan Upah",
+     "debit": 161000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 0,
+     "credit": 161000000
+    }
+   ],
+   "explain": "Beban gaji dua bulan."
+  },
+  {
+   "no": 113,
+   "date": "2024-10-24",
+   "level": "Intermediate",
+   "topic": "Pelunasan kewajiban",
+   "lines": [
+    {
+     "code": "2-1200",
+     "name": "Beban Yang Masih Harus Dibayar",
+     "debit": 45000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 0,
+     "credit": 45000000
+    }
+   ],
+   "explain": "Kewajiban lunas."
+  },
+  {
+   "no": 114,
+   "date": "2024-10-28",
+   "level": "Intermediate",
+   "topic": "Penjualan tunai + HPP",
+   "lines": [
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 320000000,
+     "credit": 0
+    },
+    {
+     "code": "4-1000",
+     "name": "Penjualan",
+     "debit": 0,
+     "credit": 320000000
+    },
+    {
+     "code": "5-1000",
+     "name": "Harga Pokok Penjualan",
+     "debit": 192000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1400",
+     "name": "Persediaan Barang Dagang",
+     "debit": 0,
+     "credit": 192000000
+    }
+   ],
+   "explain": "Penjualan tunai + HPP."
+  },
+  {
+   "no": 115,
+   "date": "2024-10-31",
+   "level": "Advanced",
+   "topic": "Penerimaan termin kontrak",
+   "lines": [
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 250000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1900",
+     "name": "Aset Kontrak / (Liabilitas Kontrak)",
+     "debit": 0,
+     "credit": 250000000
+    }
+   ],
+   "explain": "Penerimaan termin kedua mengurangi Aset Kontrak / (Liabilitas Kontrak)."
+  },
+  {
+   "no": 116,
+   "date": "2024-10-31",
+   "level": "Expert",
+   "topic": "Kontrak sepanjang waktu: pengakuan Oktober",
+   "lines": [
+    {
+     "code": "5-1000",
+     "name": "Harga Pokok Penjualan",
+     "debit": 144000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 0,
+     "credit": 144000000
+    },
+    {
+     "code": "1-1900",
+     "name": "Aset Kontrak / (Liabilitas Kontrak)",
+     "debit": 192000000,
+     "credit": 0
+    },
+    {
+     "code": "4-2000",
+     "name": "Pendapatan Jasa Instalasi/Proyek",
+     "debit": 0,
+     "credit": 192000000
+    }
+   ],
+   "explain": "% penyelesaian kumulatif = Rp420.000.000/Rp720.000.000 = 58.33%. Pendapatan kumulatif = 58.33% x Rp960.000.000 = Rp560.000.000. Pendapatan bulan ini = Rp192.000.000. Biaya proyek diakui sebagai beban pokok (5-1000)."
+  },
+  {
+   "no": 117,
+   "date": "2024-11-02",
+   "level": "Advanced",
+   "topic": "Pembelian kredit",
+   "lines": [
+    {
+     "code": "1-1400",
+     "name": "Persediaan Barang Dagang",
+     "debit": 268000000,
+     "credit": 0
+    },
+    {
+     "code": "2-1000",
+     "name": "Utang Usaha",
+     "debit": 0,
+     "credit": 268000000
+    }
+   ],
+   "explain": "Metode perpetual: pembelian langsung menambah Persediaan (gross), utang diakui sebesar faktur."
+  },
+  {
+   "no": 118,
+   "date": "2024-11-05",
+   "level": "Advanced",
+   "topic": "Penjualan kredit",
+   "lines": [
+    {
+     "code": "1-1200",
+     "name": "Piutang Usaha",
+     "debit": 270000000,
+     "credit": 0
+    },
+    {
+     "code": "4-1000",
+     "name": "Penjualan",
+     "debit": 0,
+     "credit": 270000000
+    },
+    {
+     "code": "5-1000",
+     "name": "Harga Pokok Penjualan",
+     "debit": 162000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1400",
+     "name": "Persediaan Barang Dagang",
+     "debit": 0,
+     "credit": 162000000
+    }
+   ],
+   "explain": "Penjualan kredit dicatat sebesar harga faktur. Dalam sistem perpetual, HPP diakui bersamaan dengan penjualan."
+  },
+  {
+   "no": 119,
+   "date": "2024-11-08",
+   "level": "Advanced",
+   "topic": "Pelunasan utang dengan diskon",
+   "lines": [
+    {
+     "code": "2-1000",
+     "name": "Utang Usaha",
+     "debit": 268000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 0,
+     "credit": 265320000
+    },
+    {
+     "code": "1-1400",
+     "name": "Persediaan Barang Dagang",
+     "debit": 0,
+     "credit": 2680000
+    }
+   ],
+   "explain": "Diskon pembelian Rp2.680.000 mengurangi biaya persediaan (perpetual, metode gross)."
+  },
+  {
+   "no": 120,
+   "date": "2024-11-12",
+   "level": "Advanced",
+   "topic": "Penghentian aset (nilai buku nol)",
+   "lines": [
+    {
+     "code": "1-2510",
+     "name": "Akumulasi Penyusutan Peralatan Kantor",
+     "debit": 32000000,
+     "credit": 0
+    },
+    {
+     "code": "1-2500",
+     "name": "Peralatan Kantor",
+     "debit": 0,
+     "credit": 32000000
+    }
+   ],
+   "explain": "Nilai buku nol dan tanpa hasil -> tidak ada untung/rugi. Aset dan akumulasi dihapus."
+  },
+  {
+   "no": 121,
+   "date": "2024-11-15",
+   "level": "Intermediate",
+   "topic": "Penjualan tunai + HPP",
+   "lines": [
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 310000000,
+     "credit": 0
+    },
+    {
+     "code": "4-1000",
+     "name": "Penjualan",
+     "debit": 0,
+     "credit": 310000000
+    },
+    {
+     "code": "5-1000",
+     "name": "Harga Pokok Penjualan",
+     "debit": 186000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1400",
+     "name": "Persediaan Barang Dagang",
+     "debit": 0,
+     "credit": 186000000
+    }
+   ],
+   "explain": "Penjualan tunai + HPP."
+  },
+  {
+   "no": 122,
+   "date": "2024-11-18",
+   "level": "Expert",
+   "topic": "Pertukaran aset (substansi komersial)",
+   "lines": [
+    {
+     "code": "1-2300",
+     "name": "Kendaraan Operasional",
+     "debit": 280000000,
+     "credit": 0
+    },
+    {
+     "code": "1-2310",
+     "name": "Akumulasi Penyusutan Kendaraan",
+     "debit": 86250000,
+     "credit": 0
+    },
+    {
+     "code": "7-1100",
+     "name": "Kerugian Penjualan Aset Tetap",
+     "debit": 13750000,
+     "credit": 0
+    },
+    {
+     "code": "1-2300",
+     "name": "Kendaraan Operasional",
+     "debit": 0,
+     "credit": 240000000
+    },
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 0,
+     "credit": 140000000
+    }
+   ],
+   "explain": "Aset baru diukur pada nilai wajar aset yang diserahkan + kas = Rp140.000.000 + Rp140.000.000 = Rp280.000.000. Nilai buku lama Rp153.750.000 vs nilai wajar Rp140.000.000 -> rugi Rp13.750.000."
+  },
+  {
+   "no": 123,
+   "date": "2024-11-22",
+   "level": "Advanced",
+   "topic": "Pembelian kredit",
+   "lines": [
+    {
+     "code": "1-1400",
+     "name": "Persediaan Barang Dagang",
+     "debit": 294000000,
+     "credit": 0
+    },
+    {
+     "code": "2-1000",
+     "name": "Utang Usaha",
+     "debit": 0,
+     "credit": 294000000
+    }
+   ],
+   "explain": "Metode perpetual: pembelian langsung menambah Persediaan (gross), utang diakui sebesar faktur."
+  },
+  {
+   "no": 124,
+   "date": "2024-11-25",
+   "level": "Advanced",
+   "topic": "Dividen",
+   "lines": [
+    {
+     "code": "3-9000",
+     "name": "Dividen",
+     "debit": 60000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 0,
+     "credit": 60000000
+    }
+   ],
+   "explain": "Dividen mengurangi ekuitas (dicatat ke akun Dividen/Prive, ditutup ke Saldo Laba). Bukan beban."
+  },
+  {
+   "no": 125,
+   "date": "2024-11-28",
+   "level": "Intermediate",
+   "topic": "Beban gaji",
+   "lines": [
+    {
+     "code": "6-1000",
+     "name": "Beban Gaji dan Upah",
+     "debit": 82000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 0,
+     "credit": 82000000
+    }
+   ],
+   "explain": "Beban gaji."
+  },
+  {
+   "no": 126,
+   "date": "2024-11-28",
+   "level": "Advanced",
+   "topic": "Penjualan kredit",
+   "lines": [
+    {
+     "code": "1-1200",
+     "name": "Piutang Usaha",
+     "debit": 290000000,
+     "credit": 0
+    },
+    {
+     "code": "4-1000",
+     "name": "Penjualan",
+     "debit": 0,
+     "credit": 290000000
+    },
+    {
+     "code": "5-1000",
+     "name": "Harga Pokok Penjualan",
+     "debit": 174000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1400",
+     "name": "Persediaan Barang Dagang",
+     "debit": 0,
+     "credit": 174000000
+    }
+   ],
+   "explain": "Penjualan kredit dicatat sebesar harga faktur. Dalam sistem perpetual, HPP diakui bersamaan dengan penjualan."
+  },
+  {
+   "no": 127,
+   "date": "2024-11-30",
+   "level": "Expert",
+   "topic": "Kontrak sepanjang waktu: pengakuan November",
+   "lines": [
+    {
+     "code": "5-1000",
+     "name": "Harga Pokok Penjualan",
+     "debit": 108000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 0,
+     "credit": 108000000
+    },
+    {
+     "code": "1-1900",
+     "name": "Aset Kontrak / (Liabilitas Kontrak)",
+     "debit": 144000000,
+     "credit": 0
+    },
+    {
+     "code": "4-2000",
+     "name": "Pendapatan Jasa Instalasi/Proyek",
+     "debit": 0,
+     "credit": 144000000
+    }
+   ],
+   "explain": "% penyelesaian kumulatif = Rp528.000.000/Rp720.000.000 = 73.33%. Pendapatan kumulatif = 73.33% x Rp960.000.000 = Rp704.000.000. Pendapatan bulan ini = Rp144.000.000. Biaya proyek diakui sebagai beban pokok (5-1000)."
+  },
+  {
+   "no": 128,
+   "date": "2024-12-01",
+   "level": "Expert",
+   "topic": "Distractor: utang jatuh tempo, belum dibayar",
+   "lines": [
+    {
+     "code": "-",
+     "name": "TIDAK ADA JURNAL",
+     "debit": 0,
+     "credit": 0
+    }
+   ],
+   "explain": "Kewajiban tetap diakui sebesar Rp294jt pada 31 Desember (Utang Usaha). Tidak ada jurnal karena tidak ada kas keluar dan diskon tidak lagi tersedia."
+  },
+  {
+   "no": 129,
+   "date": "2024-12-03",
+   "level": "Intermediate",
+   "topic": "Pelunasan piutang (tanpa diskon)",
+   "lines": [
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 270000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1200",
+     "name": "Piutang Usaha",
+     "debit": 0,
+     "credit": 270000000
+    }
+   ],
+   "explain": "Pembayaran di luar periode diskon: tidak ada potongan penjualan."
+  },
+  {
+   "no": 130,
+   "date": "2024-12-05",
+   "level": "Advanced",
+   "topic": "Penerimaan sisa termin kontrak",
+   "lines": [
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 410000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1900",
+     "name": "Aset Kontrak / (Liabilitas Kontrak)",
+     "debit": 0,
+     "credit": 410000000
+    }
+   ],
+   "explain": "Total kontrak Rp960jt: 300 + 250 + 410 = 960. Saldo Aset Kontrak menjadi nol."
+  },
+  {
+   "no": 131,
+   "date": "2024-12-08",
+   "level": "Intermediate",
+   "topic": "Penjualan tunai + HPP",
+   "lines": [
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 380000000,
+     "credit": 0
+    },
+    {
+     "code": "4-1000",
+     "name": "Penjualan",
+     "debit": 0,
+     "credit": 380000000
+    },
+    {
+     "code": "5-1000",
+     "name": "Harga Pokok Penjualan",
+     "debit": 228000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1400",
+     "name": "Persediaan Barang Dagang",
+     "debit": 0,
+     "credit": 228000000
+    }
+   ],
+   "explain": "Penjualan tunai + HPP."
+  },
+  {
+   "no": 132,
+   "date": "2024-12-10",
+   "level": "Expert",
+   "topic": "Aset dimiliki untuk dijual (PSAK 105)",
+   "lines": [
+    {
+     "code": "1-2950",
+     "name": "Aset Tidak Lancar Dimiliki untuk Dijual",
+     "debit": 70000000,
+     "credit": 0
+    },
+    {
+     "code": "6-2500",
+     "name": "Kerugian Penurunan Nilai Aset",
+     "debit": 5000000,
+     "credit": 0
+    },
+    {
+     "code": "1-2100",
+     "name": "Tanah",
+     "debit": 0,
+     "credit": 75000000
+    }
+   ],
+   "explain": "Diukur pada yang lebih rendah antara nilai tercatat dan nilai wajar dikurangi biaya menjual (Rp70jt); selisih Rp5jt = rugi penurunan nilai. Tidak disusutkan lagi."
+  },
+  {
+   "no": 133,
+   "date": "2024-12-12",
+   "level": "Advanced",
+   "topic": "Penjualan kredit",
+   "lines": [
+    {
+     "code": "1-1200",
+     "name": "Piutang Usaha",
+     "debit": 240000000,
+     "credit": 0
+    },
+    {
+     "code": "4-1000",
+     "name": "Penjualan",
+     "debit": 0,
+     "credit": 240000000
+    },
+    {
+     "code": "5-1000",
+     "name": "Harga Pokok Penjualan",
+     "debit": 144000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1400",
+     "name": "Persediaan Barang Dagang",
+     "debit": 0,
+     "credit": 144000000
+    }
+   ],
+   "explain": "Penjualan kredit dicatat sebesar harga faktur. Dalam sistem perpetual, HPP diakui bersamaan dengan penjualan."
+  },
+  {
+   "no": 134,
+   "date": "2024-12-15",
+   "level": "Expert",
+   "topic": "Distractor: FOB destination",
+   "lines": [
+    {
+     "code": "-",
+     "name": "TIDAK ADA JURNAL",
+     "debit": 0,
+     "credit": 0
+    }
+   ],
+   "explain": "FOB destination: kepemilikan berpindah saat tiba. Per 31 Desember 2024 barang bukan milik perusahaan -> bukan persediaan/utang 2024. Tidak ada jurnal."
+  },
+  {
+   "no": 135,
+   "date": "2024-12-18",
+   "level": "Intermediate",
+   "topic": "Pelunasan piutang (tanpa diskon)",
+   "lines": [
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 290000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1200",
+     "name": "Piutang Usaha",
+     "debit": 0,
+     "credit": 290000000
+    }
+   ],
+   "explain": "Pembayaran di luar periode diskon: tidak ada potongan penjualan."
+  },
+  {
+   "no": 136,
+   "date": "2024-12-18",
+   "level": "Intermediate",
+   "topic": "Beban gaji",
+   "lines": [
+    {
+     "code": "6-1000",
+     "name": "Beban Gaji dan Upah",
+     "debit": 166000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 0,
+     "credit": 166000000
+    }
+   ],
+   "explain": "Beban gaji + THR."
+  },
+  {
+   "no": 137,
+   "date": "2024-12-20",
+   "level": "Expert",
+   "topic": "Kontrak sepanjang waktu: pengakuan Desember",
+   "lines": [
+    {
+     "code": "5-1000",
+     "name": "Harga Pokok Penjualan",
+     "debit": 192000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 0,
+     "credit": 192000000
+    },
+    {
+     "code": "1-1900",
+     "name": "Aset Kontrak / (Liabilitas Kontrak)",
+     "debit": 256000000,
+     "credit": 0
+    },
+    {
+     "code": "4-2000",
+     "name": "Pendapatan Jasa Instalasi/Proyek",
+     "debit": 0,
+     "credit": 256000000
+    }
+   ],
+   "explain": "% penyelesaian kumulatif = Rp720.000.000/Rp720.000.000 = 100.00%. Pendapatan kumulatif = 100.00% x Rp960.000.000 = Rp960.000.000. Pendapatan bulan ini = Rp256.000.000. Biaya proyek diakui sebagai beban pokok (5-1000)."
+  },
+  {
+   "no": 138,
+   "date": "2024-12-22",
+   "level": "Advanced",
+   "topic": "Penghapusan piutang (kepailitan)",
+   "lines": [
+    {
+     "code": "1-1210",
+     "name": "Cadangan Kerugian Penurunan Nilai Piutang",
+     "debit": 38000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1200",
+     "name": "Piutang Usaha",
+     "debit": 0,
+     "credit": 38000000
+    }
+   ],
+   "explain": "Metode cadangan: piutang tak tertagih dihapus terhadap Cadangan. Piutang faktur No.133 tidak terpengaruh."
+  },
+  {
+   "no": 139,
+   "date": "2024-12-24",
+   "level": "Intermediate",
+   "topic": "Pembelian tunai",
+   "lines": [
+    {
+     "code": "1-1400",
+     "name": "Persediaan Barang Dagang",
+     "debit": 8500000,
+     "credit": 0
+    },
+    {
+     "code": "1-1000",
+     "name": "Kas",
+     "debit": 0,
+     "credit": 8500000
+    }
+   ],
+   "explain": "Pembelian tunai: persediaan bertambah, kas berkurang."
+  },
+  {
+   "no": 140,
+   "date": "2024-12-26",
+   "level": "Intermediate",
+   "topic": "Penjualan tunai + HPP",
+   "lines": [
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 430000000,
+     "credit": 0
+    },
+    {
+     "code": "4-1000",
+     "name": "Penjualan",
+     "debit": 0,
+     "credit": 430000000
+    },
+    {
+     "code": "5-1000",
+     "name": "Harga Pokok Penjualan",
+     "debit": 258000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1400",
+     "name": "Persediaan Barang Dagang",
+     "debit": 0,
+     "credit": 258000000
+    }
+   ],
+   "explain": "Penjualan tunai + HPP."
+  },
+  {
+   "no": 141,
+   "date": "2024-12-28",
+   "level": "Advanced",
+   "topic": "Beban jasa profesional",
+   "lines": [
+    {
+     "code": "6-2400",
+     "name": "Beban Lain-Lain",
+     "debit": 15000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 0,
+     "credit": 15000000
+    }
+   ],
+   "explain": "Jasa sudah diterima seluruhnya: beban periode berjalan, bukan biaya dibayar di muka."
+  },
+  {
+   "no": 142,
+   "date": "2024-12-29",
+   "level": "Advanced",
+   "topic": "Pelepasan investasi FVTPL",
+   "lines": [
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 96000000,
+     "credit": 0
+    },
+    {
+     "code": "1-2900",
+     "name": "Investasi Saham (FVTPL)",
+     "debit": 0,
+     "credit": 85000000
+    },
+    {
+     "code": "4-8400",
+     "name": "Keuntungan Perubahan Nilai Wajar Investasi Saham",
+     "debit": 0,
+     "credit": 11000000
+    }
+   ],
+   "explain": "Selisih hasil penjualan Rp96jt dan nilai tercatat Rp85jt = keuntungan Rp11jt dalam laba rugi. Efek untuk diperdagangkan: arus kas disajikan di aktivitas operasi (PSAK 207 par.16)."
+  },
+  {
+   "no": 143,
+   "date": "2024-12-30",
+   "level": "Advanced",
+   "topic": "Pembayaran angsuran pokok utang",
+   "lines": [
+    {
+     "code": "2-1900",
+     "name": "Bagian Lancar Liabilitas Jangka Panjang",
+     "debit": 100000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 0,
+     "credit": 100000000
+    }
+   ],
+   "explain": "Pembayaran pokok mengurangi bagian lancar utang bank jangka panjang (2-1900); bunga tidak termasuk di sini."
+  },
+  {
+   "no": 144,
+   "date": "2024-12-31",
+   "level": "Expert",
+   "topic": "Distractor: kontrak belum berlaku",
+   "lines": [
+    {
+     "code": "-",
+     "name": "TIDAK ADA JURNAL",
+     "debit": 0,
+     "credit": 0
+    }
+   ],
+   "explain": "Belum ada barang/jasa diserahkan dan belum ada pembayaran -> tidak ada pendapatan atau piutang di 2024. Tidak ada jurnal."
+  },
+  {
+   "no": 145,
+   "date": "2024-12-31",
+   "level": "Expert",
+   "topic": "Informasi untuk penyesuaian: LCNRV",
+   "lines": [
+    {
+     "code": "-",
+     "name": "TIDAK ADA JURNAL",
+     "debit": 0,
+     "credit": 0
+    }
+   ],
+   "explain": "Bukan transaksi; dasar penyesuaian AJ persediaan (LCNRV). Tidak ada jurnal transaksi."
+  },
+  {
+   "no": 146,
+   "date": "2024-12-31",
+   "level": "Advanced",
+   "topic": "Distractor: pendapatan bunga deposito semester II",
+   "lines": [
+    {
+     "code": "-",
+     "name": "TIDAK ADA JURNAL",
+     "debit": 0,
+     "credit": 0
+    }
+   ],
+   "explain": "Bunga sudah menjadi hak (sudah berjalan) -> AJ pendapatan yang masih harus diterima (piutang bunga), bukan transaksi hari ini."
+  },
+  {
+   "no": 147,
+   "date": "2024-12-31",
+   "level": "Advanced",
+   "topic": "Pembayaran kupon obligasi terbit",
+   "lines": [
+    {
+     "code": "7-1000",
+     "name": "Beban Bunga",
+     "debit": 20625000,
+     "credit": 0
+    },
+    {
+     "code": "1-1100",
+     "name": "Bank Mandiri",
+     "debit": 0,
+     "credit": 20625000
+    }
+   ],
+   "explain": "Kupon tunai Rp20.625.000 dibebankan sebagai bunga (kupon). Selisih terhadap beban efektif ditambahkan lewat AJ amortisasi diskonto. Catatan: dicatat sebagai beban bunga sementara; AJ15 menambah beban sebesar amortisasi diskonto saja."
+  }
+ ],
+ "readableAdj": [
+  {
+   "code": "AJ01",
+   "category": "Beban dibayar di muka",
+   "lines": [
+    {
+     "code": "6-1100",
+     "name": "Beban Sewa",
+     "debit": 108000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1600",
+     "name": "Sewa Dibayar di Muka",
+     "debit": 0,
+     "credit": 108000000
+    }
+   ],
+   "calc": "(72.000.000 x 12/12) + 36.000.000 (saldo awal) = 108.000.000",
+   "explain": "Sewa baru Rp72jt: seluruh 12 bulan habis (Rp72jt). Saldo awal Sewa Dibayar di Muka Rp36jt (sewa Jan-Mar 2024) juga habis. Total beban sewa dari akun ini = Rp108jt."
+  },
+  {
+   "code": "AJ02",
+   "category": "Beban dibayar di muka",
+   "lines": [
+    {
+     "code": "6-1100",
+     "name": "Beban Sewa",
+     "debit": 21000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1600",
+     "name": "Sewa Dibayar di Muka",
+     "debit": 0,
+     "credit": 21000000
+    }
+   ],
+   "calc": "21.000.000 x 3/3",
+   "explain": "Seluruh 3 bulan telah lewat sebelum akhir tahun -> Rp21jt dibebankan penuh."
+  },
+  {
+   "code": "AJ03",
+   "category": "Beban dibayar di muka",
+   "lines": [
+    {
+     "code": "6-1300",
+     "name": "Beban Asuransi",
+     "debit": 41000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1700",
+     "name": "Asuransi Dibayar di Muka",
+     "debit": 0,
+     "credit": 41000000
+    }
+   ],
+   "calc": "(24.000.000 x 11,5/12 = 23.000.000) + 18.000.000 (saldo awal) = 41.000.000",
+   "explain": "Premi baru: 24.000.000 x 11,5/12 = Rp23.000.000; sisa Rp1.000.000 tetap aset (manfaat 14 hari 2025). Saldo awal Asuransi Dibayar di Muka Rp18jt (periode Jan-Jun 2024) habis. Total beban = Rp41jt."
+  },
+  {
+   "code": "AJ04",
+   "category": "Beban dibayar di muka",
+   "lines": [
+    {
+     "code": "6-1300",
+     "name": "Beban Asuransi",
+     "debit": 9425000,
+     "credit": 0
+    },
+    {
+     "code": "1-1700",
+     "name": "Asuransi Dibayar di Muka",
+     "debit": 0,
+     "credit": 9425000
+    }
+   ],
+   "calc": "15.600.000 x 7,25/12 = 9,425,000",
+   "explain": "Beban = 15.600.000 x 7,25/12 = Rp9.425.000; sisa Rp6.175.000 tetap sebagai aset."
+  },
+  {
+   "code": "AJ05",
+   "category": "Perlengkapan terpakai",
+   "lines": [
+    {
+     "code": "6-1200",
+     "name": "Beban Perlengkapan Kantor",
+     "debit": 17700000,
+     "credit": 0
+    },
+    {
+     "code": "1-1500",
+     "name": "Perlengkapan Kantor",
+     "debit": 0,
+     "credit": 17700000
+    }
+   ],
+   "calc": "25,600,000 - 7,900,000 = 17,700,000",
+   "explain": "Terpakai = saldo buku - sisa fisik = Rp25.600.000 - Rp7.900.000 = Rp17.700.000."
+  },
+  {
+   "code": "AJ06",
+   "category": "Penyusutan bangunan",
+   "lines": [
+    {
+     "code": "6-1400",
+     "name": "Beban Penyusutan Bangunan",
+     "debit": 44000000,
+     "credit": 0
+    },
+    {
+     "code": "1-2210",
+     "name": "Akumulasi Penyusutan Bangunan",
+     "debit": 0,
+     "credit": 44000000
+    }
+   ],
+   "calc": "1.100.000.000 / 25 = 44.000.000",
+   "explain": "Hanya bangunan yang tersisa (Rp1.100jt) disusutkan 12 bulan = Rp44.000.000. Penyusutan bagian yang direklasifikasi (Rp1.533.333, 1 Jan-20 Mei) sudah dibebankan pada transaksi reklasifikasi."
+  },
+  {
+   "code": "AJ07",
+   "category": "Penyusutan + perubahan estimasi umur (mesin baru)",
+   "lines": [
+    {
+     "code": "6-1600",
+     "name": "Beban Penyusutan Mesin & Peralatan",
+     "debit": 30166667,
+     "credit": 0
+    },
+    {
+     "code": "1-2410",
+     "name": "Akumulasi Penyusutan Mesin & Peralatan",
+     "debit": 0,
+     "credit": 30166667
+    }
+   ],
+   "calc": "8,000,000 + 22,166,667 = 30,166,667",
+   "explain": "Mei-Jun: (Rp510.000.000-Rp30.000.000)/120 x 2 = Rp8.000.000. Nilai tercatat sebelum overhaul = Rp502.000.000. Jul-Des: (Rp502.000.000+Rp60.000.000-Rp30.000.000)/144 x 6 = Rp22.166.667. Total = Rp30.166.667. Perubahan estimasi = prospektif, tidak ada penyajian ulang."
+  },
+  {
+   "code": "AJ08",
+   "category": "Penyusutan mesin lama",
+   "lines": [
+    {
+     "code": "6-1600",
+     "name": "Beban Penyusutan Mesin & Peralatan",
+     "debit": 54989474,
+     "credit": 0
+    },
+    {
+     "code": "1-2410",
+     "name": "Akumulasi Penyusutan Mesin & Peralatan",
+     "debit": 0,
+     "credit": 54989474
+    }
+   ],
+   "calc": "56.000.000 - 3.000.000 + (63.000.000/95 x 3 = 1.989.474) = 54.989.474",
+   "explain": "Pool mesin lama = 560jt/10 = Rp56jt/tahun. Mesin yang diturunkan nilainya disusutkan Rp1jt/bulan sebelum 25 September; setelah itu dari nilai tercatat baru Rp63jt/95 bulan = Rp1.989.474 untuk 3 bulan (bukan Rp3jt)."
+  },
+  {
+   "code": "AJ09",
+   "category": "Penyusutan kendaraan (multi-unit)",
+   "lines": [
+    {
+     "code": "6-1500",
+     "name": "Beban Penyusutan Kendaraan",
+     "debit": 74713542,
+     "credit": 0
+    },
+    {
+     "code": "1-2310",
+     "name": "Akumulasi Penyusutan Kendaraan",
+     "debit": 0,
+     "credit": 74713542
+    }
+   ],
+   "calc": "9,375,000+26,250,000+34,713,542+4,375,000 = 74,713,542",
+   "explain": "Jual: 180jt/8x5/12 = Rp9.375.000; Tukar: 240jt/8x10,5/12 = Rp26.250.000; Boks baru: 310jt/8x10,75/12 = Rp34.713.542; Hasil tukar: 280jt/8x1,5/12 = Rp4.375.000. Total Rp74.713.542."
+  },
+  {
+   "code": "AJ10",
+   "category": "Penyusutan peralatan kantor",
+   "lines": [
+    {
+     "code": "6-1700",
+     "name": "Beban Penyusutan Peralatan Kantor",
+     "debit": 10600000,
+     "credit": 0
+    },
+    {
+     "code": "1-2510",
+     "name": "Akumulasi Penyusutan Peralatan Kantor",
+     "debit": 0,
+     "credit": 10600000
+    }
+   ],
+   "calc": "53.000.000 / 5 = 10,600,000",
+   "explain": "Penyusutan = 53.000.000 / 5 = Rp10.600.000."
+  },
+  {
+   "code": "AJ11",
+   "category": "Sewa: penyusutan aset hak-guna",
+   "lines": [
+    {
+     "code": "6-1750",
+     "name": "Beban Penyusutan Aset Hak-Guna",
+     "debit": 15849327,
+     "credit": 0
+    },
+    {
+     "code": "1-2710",
+     "name": "Akumulasi Penyusutan Aset Hak-Guna",
+     "debit": 0,
+     "credit": 15849327
+    }
+   ],
+   "calc": "95,095,963/48 x 8 = 15,849,327",
+   "explain": "Amortisasi = Rp95.095.963/48 x 8 = Rp15.849.327."
+  },
+  {
+   "code": "AJ12",
+   "category": "Sewa: bunga liabilitas sewa (OMISSION yang sering terlewat)",
+   "lines": [
+    {
+     "code": "7-1000",
+     "name": "Beban Bunga",
+     "debit": 6339731,
+     "credit": 0
+    },
+    {
+     "code": "2-1700",
+     "name": "Liabilitas Sewa - Bagian Lancar",
+     "debit": 0,
+     "credit": 6339731
+    }
+   ],
+   "calc": "95,095,963 x 10% x 8/12 = 6,339,731",
+   "explain": "Bunga = Rp95.095.963 x 10% x 8/12 = Rp6.339.731; ditambahkan ke liabilitas sewa (belum dibayar). Bagian ini dicatat di bagian lancar pada latihan ini."
+  },
+  {
+   "code": "AJ13",
+   "category": "Beban bunga yang masih harus dibayar",
+   "lines": [
+    {
+     "code": "7-1000",
+     "name": "Beban Bunga",
+     "debit": 8125000,
+     "credit": 0
+    },
+    {
+     "code": "2-1300",
+     "name": "Utang Bunga",
+     "debit": 0,
+     "credit": 8125000
+    }
+   ],
+   "calc": "150.000.000 x 10% x 6,5/12 = 8,125,000",
+   "explain": "Bunga = 150jt x 10% x 6,5/12 = Rp8.125.000."
+  },
+  {
+   "code": "AJ14",
+   "category": "Beban bunga yang masih harus dibayar",
+   "lines": [
+    {
+     "code": "7-1000",
+     "name": "Beban Bunga",
+     "debit": 10000000,
+     "credit": 0
+    },
+    {
+     "code": "2-1300",
+     "name": "Utang Bunga",
+     "debit": 0,
+     "credit": 10000000
+    }
+   ],
+   "calc": "500.000.000 x 8% x 3/12 = 10,000,000",
+   "explain": "Bunga = 500jt x 8% x 3/12 = Rp10.000.000."
+  },
+  {
+   "code": "AJ15",
+   "category": "Utang obligasi: amortisasi diskonto (suku bunga efektif)",
+   "lines": [
+    {
+     "code": "7-1000",
+     "name": "Beban Bunga",
+     "debit": 1419740,
+     "credit": 0
+    },
+    {
+     "code": "2-2010",
+     "name": "Diskonto/Premium Utang Obligasi (Contra)",
+     "debit": 0,
+     "credit": 1419740
+    }
+   ],
+   "calc": "22.044.740 - 20.625.000 = 1.419.740",
+   "explain": "Beban efektif = Rp480.976.155 x 10% x 5,5/12 = Rp22.044.740. Kupon sudah dibebankan Rp20.625.000. Kekurangan beban = amortisasi diskonto = Rp1.419.740 (mengurangi saldo diskonto, menaikkan nilai tercatat)."
+  },
+  {
+   "code": "AJ16",
+   "category": "Investasi obligasi: bunga efektif (piutang bunga)",
+   "lines": [
+    {
+     "code": "1-1300",
+     "name": "Piutang Bunga",
+     "debit": 8000000,
+     "credit": 0
+    },
+    {
+     "code": "1-2800",
+     "name": "Investasi Obligasi (Biaya Diamortisasi) - Tidak Lancar",
+     "debit": 1503287,
+     "credit": 0
+    },
+    {
+     "code": "4-8000",
+     "name": "Pendapatan Bunga",
+     "debit": 0,
+     "credit": 9503287
+    }
+   ],
+   "calc": "190.637.650 x 9,97% x 1/2 = 9.503.287",
+   "explain": "Bunga efektif = Rp190.637.650 x 9,97% x 180/360 = Rp9.503.287. Kupon terutang = Rp8.000.000 (piutang bunga). Amortisasi diskonto Rp1.503.287 menambah nilai tercatat."
+  },
+  {
+   "code": "AJ17",
+   "category": "Pendapatan yang masih harus diterima",
+   "lines": [
+    {
+     "code": "1-1300",
+     "name": "Piutang Bunga",
+     "debit": 7500000,
+     "credit": 0
+    },
+    {
+     "code": "4-8000",
+     "name": "Pendapatan Bunga",
+     "debit": 0,
+     "credit": 7500000
+    }
+   ],
+   "calc": "250.000.000 x 6% x 6/12 = 7.500.000",
+   "explain": "Bunga = 250jt x 6% x 6/12 = Rp7.500.000. Sudah menjadi hak perusahaan (accrued revenue)."
+  },
+  {
+   "code": "AJ19",
+   "category": "Persediaan: LCNRV",
+   "lines": [
+    {
+     "code": "5-1000",
+     "name": "Harga Pokok Penjualan",
+     "debit": 11000000,
+     "credit": 0
+    },
+    {
+     "code": "1-1400",
+     "name": "Persediaan Barang Dagang",
+     "debit": 0,
+     "credit": 11000000
+    }
+   ],
+   "calc": "32.000.000 - 21.000.000 = 11.000.000",
+   "explain": "Penurunan = 32jt - 21jt = Rp11.000.000; diakui ke HPP."
+  },
+  {
+   "code": "AJ20",
+   "category": "Pembalikan rugi penurunan nilai (PSAK 236)",
+   "lines": [
+    {
+     "code": "1-2410",
+     "name": "Akumulasi Penyusutan Mesin & Peralatan",
+     "debit": 8989474,
+     "credit": 0
+    },
+    {
+     "code": "6-2500",
+     "name": "Kerugian Penurunan Nilai Aset",
+     "debit": 0,
+     "credit": 8989474
+    }
+   ],
+   "calc": "min(70jt, 92jt) - 61.010.526 = 8.989.474",
+   "explain": "Nilai tercatat sebelum pembalikan = 63.000.000 - 1.989.474 (penyusutan setelah impairment) = Rp61.010.526. Pembalikan dibatasi oleh nilai terkecil antara jumlah terpulihkan (Rp70jt) dan nilai tercatat seandainya tidak ada impairment (Rp92jt) = Rp70jt. Pembalikan = Rp70jt - Rp61.010.526 = Rp8.989.474."
+  },
+  {
+   "code": "AJ21",
+   "category": "Provisi garansi (nilai ekspektasian)",
+   "lines": [
+    {
+     "code": "6-1900",
+     "name": "Beban Garansi",
+     "debit": 44460000,
+     "credit": 0
+    },
+    {
+     "code": "2-1800",
+     "name": "Provisi Garansi",
+     "debit": 0,
+     "credit": 44460000
+    }
+   ],
+   "calc": "260 x (0,12x800.000 + 0,03x2.500.000) = 44,460,000",
+   "explain": "Biaya ekspektasian per unit = 12% x 800.000 + 3% x 2.500.000 = Rp171.000. Provisi = 260 x Rp171.000 = Rp44.460.000."
+  },
+  {
+   "code": "AJ22",
+   "category": "Imbalan kerja jangka panjang (estimasi sederhana)",
+   "lines": [
+    {
+     "code": "6-2300",
+     "name": "Beban Imbalan Kerja",
+     "debit": 38000000,
+     "credit": 0
+    },
+    {
+     "code": "2-2300",
+     "name": "Provisi Imbalan Kerja",
+     "debit": 0,
+     "credit": 38000000
+    }
+   ],
+   "calc": "Estimasi diberikan",
+   "explain": "Beban imbalan kerja periode berjalan dan provisi jangka panjang bertambah Rp38jt."
+  },
+  {
+   "code": "AJ23",
+   "category": "Provisi restorasi: akresi (unwinding of discount)",
+   "lines": [
+    {
+     "code": "7-1000",
+     "name": "Beban Bunga",
+     "debit": 1440000,
+     "credit": 0
+    },
+    {
+     "code": "2-2400",
+     "name": "Provisi Restorasi Aset",
+     "debit": 0,
+     "credit": 1440000
+    }
+   ],
+   "calc": "24.000.000 x 8% x 9/12 = 1.440.000",
+   "explain": "Akresi = 24jt x 8% x 9/12 (2 April-31 Desember) = Rp1.440.000; diakui sebagai beban bunga, menaikkan provisi."
+  },
+  {
+   "code": "AJ24",
+   "category": "Reklasifikasi liabilitas jangka panjang",
+   "lines": [
+    {
+     "code": "2-2100",
+     "name": "Utang Bank Jangka Panjang",
+     "debit": 100000000,
+     "credit": 0
+    },
+    {
+     "code": "2-1900",
+     "name": "Bagian Lancar Liabilitas Jangka Panjang",
+     "debit": 0,
+     "credit": 100000000
+    }
+   ],
+   "calc": "Diberikan",
+   "explain": "Bagian yang jatuh tempo dalam 12 bulan disajikan sebagai liabilitas jangka pendek."
+  },
+  {
+   "code": "AJ25",
+   "category": "Properti investasi: pengukuran nilai wajar",
+   "lines": [
+    {
+     "code": "1-2600",
+     "name": "Properti Investasi",
+     "debit": 36533333,
+     "credit": 0
+    },
+    {
+     "code": "4-8300",
+     "name": "Keuntungan Perubahan Nilai Wajar Properti Investasi",
+     "debit": 0,
+     "credit": 36533333
+    }
+   ],
+   "calc": "205.000.000 - 168.466.667 = 36.533.333",
+   "explain": "Model nilai wajar: selisih Rp36.533.333 diakui ke laba rugi (bukan OCI) dan properti tidak disusutkan."
+  },
+  {
+   "code": "AJ18",
+   "category": "Cadangan kerugian piutang (aging schedule)",
+   "lines": [
+    {
+     "code": "6-1800",
+     "name": "Beban Kerugian Piutang",
+     "debit": 13900000,
+     "credit": 0
+    },
+    {
+     "code": "1-1210",
+     "name": "Cadangan Kerugian Penurunan Nilai Piutang",
+     "debit": 0,
+     "credit": 13900000
+    }
+   ],
+   "calc": "27.900.000 - 14.000.000 = 13.900.000",
+   "explain": "Cadangan dibutuhkan = 240.000.000 x 1% + 85.000.000 x 30% = Rp27.900.000. Tambahan = Rp27.900.000 - Rp14.000.000 = Rp13.900.000."
+  },
+  {
+   "code": "AJ26",
+   "category": "Pajak penghasilan kini (dengan kompensasi angsuran)",
+   "lines": [
+    {
+     "code": "7-1200",
+     "name": "Beban Pajak Penghasilan - Kini",
+     "debit": 212627729,
+     "credit": 0
+    },
+    {
+     "code": "1-1800",
+     "name": "Pajak Dibayar di Muka (PPh 25)",
+     "debit": 0,
+     "credit": 180000000
+    },
+    {
+     "code": "2-1500",
+     "name": "Utang Pajak Penghasilan",
+     "debit": 0,
+     "credit": 32627729
+    }
+   ],
+   "calc": "(856.019.153 + 110.470.526) x 22% = 212.627.729; utang = 212.627.729 - 180.000.000 = 32.627.729",
+   "explain": "Laba kena pajak = Rp856.019.153 + Rp110.470.526 = Rp966.489.679. Pajak kini = 22% x Rp966.489.679 = Rp212.627.729. Angsuran Rp180.000.000 dikompensasikan (mengkredit Pajak Dibayar di Muka); sisa Rp32.627.729 menjadi Utang Pajak Penghasilan."
+  },
+  {
+   "code": "AJ27",
+   "category": "Pajak tangguhan (aset pajak tangguhan)",
+   "lines": [
+    {
+     "code": "1-2990",
+     "name": "Aset Pajak Tangguhan",
+     "debit": 24303516,
+     "credit": 0
+    },
+    {
+     "code": "7-1300",
+     "name": "Beban (Manfaat) Pajak Tangguhan",
+     "debit": 0,
+     "credit": 24303516
+    }
+   ],
+   "calc": "110.470.526 x 22% = 24.303.516",
+   "explain": "Aset pajak tangguhan = 22% x Rp110.470.526 = Rp24.303.516. Dikredit ke Beban (Manfaat) Pajak Tangguhan: mengurangi total beban pajak periode ini."
+  },
+  {
+   "code": "AJ28",
+   "category": "Beban yang masih harus dibayar",
+   "lines": [
+    {
+     "code": "6-2000",
+     "name": "Beban Listrik, Air & Telekomunikasi",
+     "debit": 93600000,
+     "credit": 0
+    },
+    {
+     "code": "2-1200",
+     "name": "Beban Yang Masih Harus Dibayar",
+     "debit": 0,
+     "credit": 93600000
+    }
+   ],
+   "calc": "6 bulan x 15.600.000 = 93.600.000",
+   "explain": "Beban listrik, air, dan telekomunikasi Juli-Desember 2024 diakui pada periode terjadinya (dasar akrual) dan dikreditkan ke Beban Yang Masih Harus Dibayar."
+  }
+ ],
+ "expectedTB": {
+  "1-1000": {
+   "pre": 201900000,
+   "adj": 201900000
+  },
+  "1-1100": {
+   "pre": 837578378,
+   "adj": 837578378
+  },
+  "1-1150": {
+   "pre": 250000000,
+   "adj": 250000000
+  },
+  "1-1200": {
+   "pre": 325000000,
+   "adj": 325000000
+  },
+  "1-1210": {
+   "pre": -14000000,
+   "adj": -27900000
+  },
+  "1-1300": {
+   "pre": 0,
+   "adj": 15500000
+  },
+  "1-1310": {
+   "pre": 0,
+   "adj": 0
+  },
+  "1-1400": {
+   "pre": 513490000,
+   "adj": 502490000
+  },
+  "1-1500": {
+   "pre": 25600000,
+   "adj": 7900000
+  },
+  "1-1600": {
+   "pre": 129000000,
+   "adj": 0
+  },
+  "1-1700": {
+   "pre": 57600000,
+   "adj": 7175000
+  },
+  "1-1800": {
+   "pre": 180000000,
+   "adj": 0
+  },
+  "1-1900": {
+   "pre": 0,
+   "adj": 0
+  },
+  "1-2100": {
+   "pre": 1198000000,
+   "adj": 1198000000
+  },
+  "1-2200": {
+   "pre": 1100000000,
+   "adj": 1100000000
+  },
+  "1-2210": {
+   "pre": -220000000,
+   "adj": -264000000
+  },
+  "1-2300": {
+   "pre": 590000000,
+   "adj": 590000000
+  },
+  "1-2310": {
+   "pre": 35625000,
+   "adj": -39088542
+  },
+  "1-2400": {
+   "pre": 1130000000,
+   "adj": 1130000000
+  },
+  "1-2410": {
+   "pre": -228000000,
+   "adj": -304166667
+  },
+  "1-2500": {
+   "pre": 53000000,
+   "adj": 53000000
+  },
+  "1-2510": {
+   "pre": -7000000,
+   "adj": -17600000
+  },
+  "1-2600": {
+   "pre": 168466667,
+   "adj": 205000000
+  },
+  "1-2700": {
+   "pre": 95095963,
+   "adj": 95095963
+  },
+  "1-2710": {
+   "pre": 0,
+   "adj": -15849327
+  },
+  "1-2800": {
+   "pre": 190637650,
+   "adj": 192140937
+  },
+  "1-2900": {
+   "pre": 0,
+   "adj": 0
+  },
+  "1-2950": {
+   "pre": 70000000,
+   "adj": 70000000
+  },
+  "1-2990": {
+   "pre": 0,
+   "adj": 24303516
+  },
+  "2-1000": {
+   "pre": -298200000,
+   "adj": -298200000
+  },
+  "2-1100": {
+   "pre": -150000000,
+   "adj": -150000000
+  },
+  "2-1200": {
+   "pre": 0,
+   "adj": -93600000
+  },
+  "2-1300": {
+   "pre": 0,
+   "adj": -18125000
+  },
+  "2-1400": {
+   "pre": -51000000,
+   "adj": -51000000
+  },
+  "2-1500": {
+   "pre": 0,
+   "adj": -32627729
+  },
+  "2-1600": {
+   "pre": -7200000,
+   "adj": -7200000
+  },
+  "2-1700": {
+   "pre": -20490404,
+   "adj": -26830135
+  },
+  "2-1800": {
+   "pre": 0,
+   "adj": -44460000
+  },
+  "2-1900": {
+   "pre": 0,
+   "adj": -100000000
+  },
+  "2-2000": {
+   "pre": -500000000,
+   "adj": -500000000
+  },
+  "2-2010": {
+   "pre": 19023845,
+   "adj": 17604105
+  },
+  "2-2100": {
+   "pre": -400000000,
+   "adj": -300000000
+  },
+  "2-2200": {
+   "pre": -74605559,
+   "adj": -74605559
+  },
+  "2-2300": {
+   "pre": 0,
+   "adj": -38000000
+  },
+  "2-2400": {
+   "pre": -24000000,
+   "adj": -25440000
+  },
+  "2-2500": {
+   "pre": 0,
+   "adj": 0
+  },
+  "3-1000": {
+   "pre": -2400000000,
+   "adj": -2400000000
+  },
+  "3-1100": {
+   "pre": -150000000,
+   "adj": -150000000
+  },
+  "3-2000": {
+   "pre": -1236300000,
+   "adj": -1236300000
+  },
+  "3-3000": {
+   "pre": 0,
+   "adj": 0
+  },
+  "3-9000": {
+   "pre": 60000000,
+   "adj": 60000000
+  },
+  "4-1000": {
+   "pre": -6276800000,
+   "adj": -6276800000
+  },
+  "4-1100": {
+   "pre": 9500000,
+   "adj": 9500000
+  },
+  "4-1200": {
+   "pre": 29500000,
+   "adj": 29500000
+  },
+  "4-2000": {
+   "pre": -1005000000,
+   "adj": -1005000000
+  },
+  "4-8000": {
+   "pre": -11604317,
+   "adj": -28607604
+  },
+  "4-8100": {
+   "pre": 0,
+   "adj": 0
+  },
+  "4-8200": {
+   "pre": -6875000,
+   "adj": -6875000
+  },
+  "4-8300": {
+   "pre": 0,
+   "adj": -36533333
+  },
+  "4-8400": {
+   "pre": -11000000,
+   "adj": -11000000
+  },
+  "4-8500": {
+   "pre": 0,
+   "adj": 0
+  },
+  "5-1000": {
+   "pre": 4509980000,
+   "adj": 4520980000
+  },
+  "6-1000": {
+   "pre": 1002000000,
+   "adj": 1002000000
+  },
+  "6-1100": {
+   "pre": 0,
+   "adj": 129000000
+  },
+  "6-1200": {
+   "pre": 0,
+   "adj": 17700000
+  },
+  "6-1300": {
+   "pre": 0,
+   "adj": 50425000
+  },
+  "6-1400": {
+   "pre": 1533333,
+   "adj": 45533333
+  },
+  "6-1500": {
+   "pre": 0,
+   "adj": 74713542
+  },
+  "6-1600": {
+   "pre": 0,
+   "adj": 85156141
+  },
+  "6-1700": {
+   "pre": 0,
+   "adj": 10600000
+  },
+  "6-1750": {
+   "pre": 0,
+   "adj": 15849327
+  },
+  "6-1800": {
+   "pre": 0,
+   "adj": 13900000
+  },
+  "6-1900": {
+   "pre": 0,
+   "adj": 44460000
+  },
+  "6-2000": {
+   "pre": 90200000,
+   "adj": 183800000
+  },
+  "6-2100": {
+   "pre": 13100000,
+   "adj": 13100000
+  },
+  "6-2200": {
+   "pre": 18000000,
+   "adj": 18000000
+  },
+  "6-2300": {
+   "pre": 0,
+   "adj": 38000000
+  },
+  "6-2400": {
+   "pre": 75425000,
+   "adj": 75425000
+  },
+  "6-2500": {
+   "pre": 37000000,
+   "adj": 28010526
+  },
+  "6-2600": {
+   "pre": 0,
+   "adj": 0
+  },
+  "7-1000": {
+   "pre": 62069444,
+   "adj": 89393915
+  },
+  "7-1100": {
+   "pre": 13750000,
+   "adj": 13750000
+  },
+  "7-1200": {
+   "pre": 0,
+   "adj": 212627729
+  },
+  "7-1300": {
+   "pre": 0,
+   "adj": -24303516
+  }
+ },
+ "expectedStatements": [
+  {
+   "item": "Total pendapatan (penjualan neto + jasa)",
+   "sheet": "12",
+   "value": 7242800000
+  },
+  {
+   "item": "Laba kotor",
+   "sheet": "12",
+   "value": 2721820000
+  },
+  {
+   "item": "Laba usaha (EBIT)",
+   "sheet": "12",
+   "value": 876147131
+  },
+  {
+   "item": "Laba sebelum pajak",
+   "sheet": "12",
+   "value": 856019153
+  },
+  {
+   "item": "Total beban pajak penghasilan",
+   "sheet": "12",
+   "value": 188324213
+  },
+  {
+   "item": "Laba bersih tahun berjalan",
+   "sheet": "12",
+   "value": 667694940
+  },
+  {
+   "item": "Saldo laba akhir",
+   "sheet": "13",
+   "value": 1843994940
+  },
+  {
+   "item": "Total aset",
+   "sheet": "14",
+   "value": 6136479258
+  },
+  {
+   "item": "Total liabilitas",
+   "sheet": "14",
+   "value": 1742484318
+  },
+  {
+   "item": "Total ekuitas",
+   "sheet": "14",
+   "value": 4393994940
+  },
+  {
+   "item": "Arus kas neto dari aktivitas operasi",
+   "sheet": "15",
+   "value": 1097502223
+  },
+  {
+   "item": "Arus kas neto dari aktivitas investasi",
+   "sheet": "15",
+   "value": -1334000000
+  },
+  {
+   "item": "Arus kas neto dari aktivitas pendanaan",
+   "sheet": "15",
+   "value": 520976155
+  },
+  {
+   "item": "Kas dan setara kas akhir tahun",
+   "sheet": "15",
+   "value": 1289478378
+  }
+ ]
+}

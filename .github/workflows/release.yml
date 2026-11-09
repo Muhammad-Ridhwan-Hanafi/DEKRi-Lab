@@ -1,0 +1,53 @@
+name: Release (Windows)
+
+# Dipicu oleh tag versi, misalnya: git tag v1.0.0 && git push origin v1.0.0
+# Hanya pemilik repositori yang sebaiknya bisa membuat tag (atur lewat tag ruleset; lihat docs/GITHUB_SETUP.md).
+on:
+  push:
+    tags: ['v*']
+
+permissions:
+  contents: read
+
+jobs:
+  windows:
+    runs-on: windows-latest
+    timeout-minutes: 40
+    permissions:
+      contents: write # hanya untuk membuat GitHub Release
+    steps:
+      # SHA dikunci (diverifikasi dari halaman rilis dan halaman commit di github.com saat audit, Nov 2026); Dependabot memperbaruinya.
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: 22
+          cache: npm
+      - name: Pastikan tag cocok dengan versi package.json
+        shell: bash
+        run: |
+          v="$(node -p "require('./package.json').version")"
+          if [ "$GITHUB_REF_NAME" != "v$v" ]; then
+            echo "Tag $GITHUB_REF_NAME tidak sama dengan v$v di package.json" && exit 1
+          fi
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm test
+      - run: npm audit --omit=dev --audit-level=high
+      - run: npm run build:single
+      - run: npx electron-builder --win nsis --publish never
+      - name: Checksum SHA-256 dan SBOM
+        shell: pwsh
+        run: |
+          $f = Get-Item "release/DEKRi-Lab-Setup-*.exe"
+          $h = (Get-FileHash $f.FullName -Algorithm SHA256).Hash.ToLower()
+          "$h  $($f.Name)" | Out-File -Encoding ascii "release/SHA256SUMS.txt"
+          npm sbom --sbom-format cyclonedx | Out-File -Encoding utf8 "release/sbom.cdx.json"
+      - name: Buat GitHub Release (draf, ditinjau pemilik sebelum dipublikasikan)
+        shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release create "$GITHUB_REF_NAME" release/DEKRi-Lab-Setup-*.exe release/SHA256SUMS.txt release/sbom.cdx.json \
+            --draft --title "DEKRi Lab $GITHUB_REF_NAME" --generate-notes

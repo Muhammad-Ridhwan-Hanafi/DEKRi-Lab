@@ -1,0 +1,30 @@
+{
+ "source": "Accounting_Practice_Workbook_Rapi_dan_Audit_v4.xlsx",
+ "warnings": [
+  "06_TRANSACTION_ANALYSIS: 222 sel rumus tanpa nilai tersimpan (data pengguna kosong atau belum dihitung)",
+  "07_GENERAL_JOURNAL: 2431 sel rumus tanpa nilai tersimpan (data pengguna kosong atau belum dihitung)",
+  "08_GENERAL_LEDGER: 596 sel rumus tanpa nilai tersimpan (data pengguna kosong atau belum dihitung)",
+  "10_ADJUSTING_ENTRIES: 280 sel rumus tanpa nilai tersimpan (data pengguna kosong atau belum dihitung)",
+  "18_REVERSING_ENTRIES: 6 sel rumus tanpa nilai tersimpan (data pengguna kosong atau belum dihitung)",
+  "19_CORRECTING_ENTRIES: 48 sel rumus tanpa nilai tersimpan (data pengguna kosong atau belum dihitung)"
+ ],
+ "counts": {
+  "coa": 84,
+  "openingBalances": 29,
+  "transactions": 147,
+  "distractors": 11,
+  "adjustments": 28,
+  "scenarios": 26,
+  "auditFindings": 25,
+  "correctingCases": 12,
+  "detectCases": 12,
+  "closingRows": 35,
+  "reversingCases": 2,
+  "keyTxnNet": 136,
+  "keyAdjNet": 28,
+  "keyReadableTxn": 147,
+  "keyReadableAdj": 28,
+  "keyExpectedTB": 84,
+  "keyExpectedStatements": 14
+ }
+}

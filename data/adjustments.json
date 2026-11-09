@@ -1,0 +1,170 @@
+[
+ {
+  "code": "AJ01",
+  "level": "Intermediate",
+  "category": "Beban dibayar di muka",
+  "facts": "Sewa gudang tambahan dibayar 3 Januari 2024 untuk periode 1 Januari s.d. 31 Desember 2024 (transaksi sewa gudang). Selain itu, saldo awal Sewa Dibayar di Muka Rp36.000.000 adalah sewa gudang utama periode 1 Januari s.d. 31 Maret 2024 (dibayar 2023) dan seluruhnya menjadi beban 2024. Hitung total beban sewa yang berasal dari akun Sewa Dibayar di Muka.\n\nDiketahui: Sewa baru Rp72.000.000 untuk 12 bulan; saldo awal Sewa Dibayar di Muka Rp36.000.000 (habis dalam 2024)."
+ },
+ {
+  "code": "AJ02",
+  "level": "Intermediate",
+  "category": "Beban dibayar di muka",
+  "facts": "Sewa kendaraan dibayar 1 Maret 2024 untuk Maret-Mei 2024. Hitung bagian yang menjadi beban tahun 2024.\n\nDiketahui: Sewa dibayar Rp21.000.000 untuk 3 bulan."
+ },
+ {
+  "code": "AJ03",
+  "level": "Intermediate",
+  "category": "Beban dibayar di muka",
+  "facts": "Premi asuransi kebakaran Rp24.000.000 dibayar 15 Januari 2024 untuk polis sampai 14 Januari 2025. Hitung beban 2024 dengan basis bulan (15 Jan - 31 Des = 11,5 bulan). Selain itu, saldo awal Asuransi Dibayar di Muka Rp18.000.000 adalah premi periode 1 Januari s.d. 30 Juni 2024 dan seluruhnya menjadi beban 2024.\n\nDiketahui: Premi Rp24.000.000; periode manfaat 12 bulan; lewat 11,5 bulan; saldo awal Asuransi Dibayar di Muka Rp18.000.000 (habis dalam 2024)."
+ },
+ {
+  "code": "AJ04",
+  "level": "Intermediate",
+  "category": "Beban dibayar di muka",
+  "facts": "Premi asuransi mobil boks Rp15.600.000 dibayar 24 Mei 2024 untuk polis sampai 23 Mei 2025. Hitung beban 2024 (24 Mei - 31 Des = 7,25 bulan).\n\nDiketahui: Premi Rp15.600.000; 12 bulan; 7,25 bulan telah berjalan."
+ },
+ {
+  "code": "AJ05",
+  "level": "Intermediate",
+  "category": "Perlengkapan terpakai",
+  "facts": "Stock opname 31 Desember 2024 menunjukkan perlengkapan yang belum terpakai senilai Rp7.900.000. Saldo akun Perlengkapan Kantor sebelum penyesuaian dapat dilihat pada neraca saldo. Hitung beban perlengkapan.\n\nDiketahui: Saldo pra-AJ Rp25.600.000; sisa fisik Rp7.900.000."
+ },
+ {
+  "code": "AJ06",
+  "level": "Advanced",
+  "category": "Penyusutan bangunan",
+  "facts": "Bangunan (harga perolehan awal Rp1.200.000.000) disusutkan garis lurus 25 tahun tanpa nilai residu. Pada 20 Mei 2024 bagian bangunan berharga perolehan Rp100.000.000 direklasifikasi ke properti investasi (lihat transaksi reklasifikasi; penyusutan 1 Januari-20 Mei Rp1.533.333 sudah dibebankan pada transaksi tersebut) dan sejak itu tidak disusutkan. Hitung beban penyusutan 2024 untuk bangunan yang tersisa (12 bulan).\n\nDiketahui: Bangunan sisa Rp1.100.000.000 (setelah reklasifikasi); umur 25 tahun."
+ },
+ {
+  "code": "AJ07",
+  "level": "Expert",
+  "category": "Penyusutan + perubahan estimasi umur (mesin baru)",
+  "facts": "Mesin baru (transaksi pembelian mesin) mulai dipakai 1 Mei 2024, umur 10 tahun, residu Rp30.000.000, garis lurus. Pada 5 Juli 2024 dilakukan overhaul yang dikapitalisasi (Rp60.000.000) dan memperpanjang sisa umur manfaat menjadi 12 tahun sejak 5 Juli. Perubahan estimasi diterapkan prospektif. Gunakan pendekatan disederhanakan: Mei-Juni = 2 bulan dengan estimasi lama, Juli-Desember = 6 bulan dengan estimasi baru.\n\nDiketahui: Biaya perolehan awal Rp510.000.000; overhaul Rp60.000.000; residu Rp30.000.000; umur baru 12 tahun (144 bulan)."
+ },
+ {
+  "code": "AJ08",
+  "level": "Advanced",
+  "category": "Penyusutan mesin lama",
+  "facts": "Mesin dan peralatan lama (saldo awal Rp560.000.000, akumulasi penyusutan awal Rp196.000.000, sisa umur manfaat rata-rata 10 tahun, tanpa nilai residu) disusutkan garis lurus. Mesin yang diturunkan nilainya (rugi Rp32.000.000, No.100) termasuk dalam perhitungan tersebut dengan penyusutan Rp1.000.000 per bulan sebelum penurunan nilai (nilai tercatat Rp95.000.000, sisa umur 95 bulan pada 25 September 2024). Setelah penurunan nilai (nilai tercatat Rp63.000.000), penyusutan dihitung dari nilai tercatat baru selama sisa umur 95 bulan; 25 September-31 Desember dihitung 3 bulan. Hitung beban penyusutan 2024 mesin lama.\n\nDiketahui: Harga perolehan Rp560.000.000; umur 10 tahun; mesin yang diturunkan nilainya disusutkan Rp1.000.000/bulan sebelum dan Rp63.000.000/95 per bulan sesudah penurunan nilai."
+ },
+ {
+  "code": "AJ09",
+  "level": "Advanced",
+  "category": "Penyusutan kendaraan (multi-unit)",
+  "facts": "Kendaraan disusutkan garis lurus 8 tahun tanpa residu. Unit yang dijual (harga perolehan Rp180.000.000, sampai 5 Juni = 5 bulan), unit yang ditukar (Rp240.000.000, sampai 18 November = 10,5 bulan), mobil boks baru (Rp310.000.000, 10 Februari s.d. 31 Desember = 10,75 bulan), dan mobil hasil tukar (Rp280.000.000, 18 November s.d. 31 Desember = 1,5 bulan). Hitung total beban penyusutan 2024.\n\nDiketahui: Umur 8 tahun; residu nol; unit dan tanggal seperti tertera."
+ },
+ {
+  "code": "AJ10",
+  "level": "Intermediate",
+  "category": "Penyusutan peralatan kantor",
+  "facts": "Peralatan kantor yang masih digunakan sepanjang tahun (harga perolehan Rp53.000.000 setelah pembuangan peralatan lama) disusutkan garis lurus 5 tahun, tanpa residu, ditambah perlengkapan yang dikapitalisasi tidak ada. Hitung beban penyusutan tahun 2024 (basis 12 bulan).\n\nDiketahui: Harga perolehan Rp53.000.000; umur 5 tahun."
+ },
+ {
+  "code": "AJ11",
+  "level": "Expert",
+  "category": "Sewa: penyusutan aset hak-guna",
+  "facts": "Aset hak-guna forklift diakui pada 20 April 2024 sebesar nilai kini pembayaran sewa dan disusutkan garis lurus selama 48 bulan tanpa residu. Gunakan 8 bulan penuh untuk 2024 (20 April - 31 Desember disederhanakan).\n\nDiketahui: ROU Rp95.095.963; masa sewa 48 bulan."
+ },
+ {
+  "code": "AJ12",
+  "level": "Expert",
+  "category": "Sewa: bunga liabilitas sewa (OMISSION yang sering terlewat)",
+  "facts": "Liabilitas sewa forklift menimbulkan beban bunga sejak pengakuan awal, meskipun pembayaran pertama baru jatuh tempo 20 April 2025. Hitung beban bunga liabilitas sewa untuk 8 bulan pertama (tingkat bunga implisit 10%).\n\nDiketahui: Liabilitas sewa awal Rp95.095.963; bunga implisit 10% p.a.; 8/12 tahun."
+ },
+ {
+  "code": "AJ13",
+  "level": "Intermediate",
+  "category": "Beban bunga yang masih harus dibayar",
+  "facts": "Sisa pokok kredit mobil boks Rp150.000.000 (setelah cicilan 15 Juni) berbunga 10% p.a. Bunga sejak 15 Juni sampai 31 Desember (6,5 bulan) belum dibayar dan belum dicatat.\n\nDiketahui: Pokok Rp150.000.000; 10% p.a.; 6,5 bulan."
+ },
+ {
+  "code": "AJ14",
+  "level": "Advanced",
+  "category": "Beban bunga yang masih harus dibayar",
+  "facts": "Kredit investasi jangka panjang (pokok Rp500.000.000 sampai 30 Desember, bunga 8% p.a.). Bunga Januari-September telah dibayar; hitung bunga Oktober-Desember yang masih harus dibayar. Angsuran pokok Rp100.000.000 baru dibayar 30 Desember sehingga tidak mengurangi basis bunga hingga tanggal itu.\n\nDiketahui: Pokok Rp500.000.000; 8% p.a.; 3 bulan."
+ },
+ {
+  "code": "AJ15",
+  "level": "Expert",
+  "category": "Utang obligasi: amortisasi diskonto (suku bunga efektif)",
+  "facts": "Obligasi diterbitkan 15 Juli 2024 (nominal Rp500.000.000, kupon 9%, suku bunga efektif 10%). Kupon 5,5 bulan pertama sudah dibayar dan dibebankan pada transaksi 31 Desember. Hitung beban bunga efektif 15 Juli - 31 Desember (5,5 bulan), lalu tentukan jurnal penyesuaian untuk amortisasi diskonto.\n\nDiketahui: Nilai tercatat awal Rp480.976.155; nominal Rp500.000.000; kupon 9%; SBE 10%; kupon 5,5 bulan sudah dibebankan Rp20.625.000."
+ },
+ {
+  "code": "AJ16",
+  "level": "Advanced",
+  "category": "Investasi obligasi: bunga efektif (piutang bunga)",
+  "facts": "Investasi obligasi biaya diamortisasi (nominal Rp200.000.000, kupon 8% dibayar 30 Juni dan 31 Desember). Kupon periode 1 Juli-31 Desember jatuh tempo 31 Desember 2024 namun belum diterima kas hingga awal Januari 2025. Hitung pendapatan bunga efektif (basis 30/360, 180 hari), kupon terutang, dan amortisasi diskonto.\n\nDiketahui: Nilai tercatat 30 Juni Rp190.637.650; SBE 9,97%; nominal Rp200.000.000; kupon 8%."
+ },
+ {
+  "code": "AJ17",
+  "level": "Intermediate",
+  "category": "Pendapatan yang masih harus diterima",
+  "facts": "Deposito berjangka BCA Rp250.000.000 berbunga 6% p.a. Bunga semester II (1 Juli - 31 Desember) baru cair 5 Januari 2025. Hitung pendapatan bunga yang harus diakui untuk 2024.\n\nDiketahui: Deposito Rp250.000.000; 6% p.a.; 6 bulan."
+ },
+ {
+  "code": "AJ19",
+  "level": "Advanced",
+  "category": "Persediaan: LCNRV",
+  "facts": "Hasil stock opname: sekelompok persediaan model lama berbiaya perolehan Rp32.000.000 diperkirakan hanya dapat dijual dengan hasil Rp21.000.000 setelah biaya untuk menjual. Kebijakan: persediaan diukur pada yang lebih rendah antara biaya dan nilai realisasi neto (LCNRV). Hitung penurunan nilai.\n\nDiketahui: Biaya Rp32.000.000; NRV Rp21.000.000."
+ },
+ {
+  "code": "AJ20",
+  "level": "Expert",
+  "category": "Pembalikan rugi penurunan nilai (PSAK 236)",
+  "facts": "Pada 25 September 2024 diakui rugi penurunan nilai mesin lama Rp32.000.000 (nilai tercatat Rp95.000.000 menjadi Rp63.000.000). Pada 31 Desember estimasi jumlah terpulihkan naik menjadi Rp70.000.000. Nilai tercatat SEANDAINYA tidak ada penurunan nilai (setelah penyusutan normal Rp3.000.000) adalah Rp92.000.000. Setelah penurunan nilai mesin disusutkan Rp1.989.474 (lihat AJ08) sehingga nilai tercatat 31 Desember sebelum pembalikan Rp61.010.526. Tentukan besar pembalikan yang boleh diakui dan buat jurnalnya.\n\nDiketahui: Nilai tercatat sebelum pembalikan Rp61.010.526; jumlah terpulihkan baru Rp70.000.000; batas Rp92.000.000."
+ },
+ {
+  "code": "AJ21",
+  "level": "Expert",
+  "category": "Provisi garansi (nilai ekspektasian)",
+  "facts": "Perusahaan memberi garansi 1 tahun. Tahun ini terjual 260 unit rakitan bergaransi. Pengalaman historis: 85% tanpa klaim; 12% klaim ringan (biaya rata-rata Rp800.000); 3% klaim berat (biaya rata-rata Rp2.500.000). Hitung provisi garansi menggunakan nilai ekspektasian. Belum ada provisi yang dicatat sebelumnya.\n\nDiketahui: 260 unit; distribusi probabilitas dan biaya seperti tertera."
+ },
+ {
+  "code": "AJ22",
+  "level": "Advanced",
+  "category": "Imbalan kerja jangka panjang (estimasi sederhana)",
+  "facts": "Berdasarkan estimasi manajemen (pendekatan sederhana, di luar inti materi - bukan perhitungan aktuaria penuh), kewajiban imbalan pasca-kerja yang harus diakui tahun ini adalah Rp38.000.000. Buat jurnalnya.\n\nDiketahui: Estimasi manajemen Rp38.000.000."
+ },
+ {
+  "code": "AJ23",
+  "level": "Expert",
+  "category": "Provisi restorasi: akresi (unwinding of discount)",
+  "facts": "Provisi pembongkaran mesin baru diakui Rp24.000.000 (nilai kini) pada 2 April 2024 menggunakan tingkat diskonto 8% p.a. Nilai kini provisi harus 'diakresi' setiap periode karena berlalunya waktu. Hitung akresi 2024 (basis 9 bulan: 2 April-31 Desember) dan buat jurnalnya.\n\nDiketahui: Provisi awal Rp24.000.000; diskonto 8%; 9 bulan."
+ },
+ {
+  "code": "AJ24",
+  "level": "Intermediate",
+  "category": "Reklasifikasi liabilitas jangka panjang",
+  "facts": "Sisa utang bank jangka panjang Rp400.000.000 memiliki angsuran pokok Rp100.000.000 yang jatuh tempo dalam 12 bulan setelah tanggal pelaporan. Sesuai kebijakan penyajian, reklasifikasikan bagian jatuh tempo ke liabilitas jangka pendek.\n\nDiketahui: Angsuran pokok 2025 Rp100.000.000."
+ },
+ {
+  "code": "AJ25",
+  "level": "Expert",
+  "category": "Properti investasi: pengukuran nilai wajar",
+  "facts": "Penilai independen menetapkan nilai wajar properti investasi (dicatat Rp168.466.667) pada 31 Desember 2024 sebesar Rp205.000.000. Perusahaan memakai model nilai wajar. Buat jurnalnya.\n\nDiketahui: Nilai tercatat Rp168.466.667; nilai wajar Rp205.000.000"
+ },
+ {
+  "code": "AJ18",
+  "level": "Advanced",
+  "category": "Cadangan kerugian piutang (aging schedule)",
+  "facts": "Umur piutang usaha per 31 Desember 2024 tersedia pada tabel aging di tab Profil pada halaman Kasus. Saldo Cadangan Kerugian Penurunan Nilai Piutang sebelum penyesuaian dapat dilihat pada neraca saldo. Hitung cadangan yang dibutuhkan, lalu tambahan yang harus dibukukan.\n\nDiketahui: Saldo piutang usaha Rp325.000.000; saldo cadangan sebelum AJ Rp14.000.000 (kredit); tarif per kelompok umur pada tabel aging."
+ },
+ {
+  "code": "AJ28",
+  "level": "Advanced",
+  "category": "Beban yang masih harus dibayar (listrik, air & telekomunikasi)",
+  "facts": "Perusahaan menerima tagihan listrik, air, dan telekomunikasi secara semesteran. Tagihan Februari-Juni sudah dibayar (transaksi pembayaran Juni). Tagihan Juli-Desember 2024 baru diterima dan dibayar pada Januari 2025, belum dicatat. Buat jurnal penyesuaian pengakuan beban yang masih harus dibayar.\n\nDiketahui: Tagihan Juli-Desember Rp93.600.000 (6 bulan x Rp15.600.000); belum dicatat dan belum dibayar per 31 Desember 2024."
+ },
+ {
+  "code": "AJ26",
+  "level": "Expert",
+  "category": "Pajak penghasilan kini (dengan kompensasi angsuran)",
+  "facts": "Laba akuntansi sebelum pajak dapat dihitung dari neraca saldo setelah penyesuaian AJ01-AJ25 dan AJ28 (pendapatan dikurangi beban, tanpa akun pajak). Koreksi fiskal positif (beda temporer boleh dikurangkan): provisi garansi Rp44.460.000, provisi imbalan kerja Rp38.000.000, dan rugi penurunan nilai neto Rp28.010.526 (rugi mesin dan rugi aset dikuasai untuk dijual dikurangi pembalikan; tidak boleh dikurangkan fiskal pada periode ini). Tarif pajak 22%; tidak ada beda tetap. Perusahaan sudah membayar angsuran pajak (PPh 25) tiga kali selama 2024, tercatat pada akun Pajak Dibayar di Muka. Hitung beban pajak kini, kompensasikan angsuran, dan tentukan utang pajak yang tersisa.\n\nDiketahui: Laba sebelum pajak Rp856.019.153; koreksi fiskal positif Rp110.470.526; tarif 22%; saldo Pajak Dibayar di Muka Rp180.000.000."
+ },
+ {
+  "code": "AJ27",
+  "level": "Expert",
+  "category": "Pajak tangguhan (aset pajak tangguhan)",
+  "facts": "Beda temporer yang boleh dikurangkan pada masa depan: provisi garansi Rp44.460.000, provisi imbalan kerja Rp38.000.000, dan rugi penurunan nilai neto Rp28.010.526, total Rp110.470.526. Tarif pajak 22%. Pada awal tahun tidak ada saldo aset/liabilitas pajak tangguhan. Manajemen menilai besar kemungkinan tersedia laba kena pajak masa depan yang memadai untuk memanfaatkan beda temporer tersebut. Hitung dan jurnal aset pajak tangguhan yang diakui serta manfaat pajak tangguhan.\n\nDiketahui: Beda temporer boleh dikurangkan Rp110.470.526; tarif 22%; saldo awal aset pajak tangguhan nol."
+ }
+]

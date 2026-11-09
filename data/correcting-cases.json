@@ -1,0 +1,116 @@
+{
+ "correcting": [
+  {
+   "no": 1,
+   "event": "Staf mencatat pembelian mobil pengangkut senilai Rp85.000.000 secara tunai ke akun Peralatan Kantor, padahal barang tersebut adalah kendaraan operasional.\n\nJurnal yang telah dibukukan (SALAH):\n  Dr. 1-2500  85.000.000\n  Cr. 1-1100  85.000.000\n\nReferensi materi: BAB 3 - Pencatatan"
+  },
+  {
+   "no": 2,
+   "event": "Penerimaan pelunasan piutang Rp120.000.000 dicatat dengan Piutang Usaha di sisi debit dan Bank di sisi kredit.\n\nJurnal yang telah dibukukan (SALAH):\n  Dr. 1-1200  120.000.000\n  Cr. 1-1100  120.000.000\n\nReferensi materi: BAB 2 - Analisis Transaksi"
+  },
+  {
+   "no": 3,
+   "event": "Pembayaran gaji Rp82.000.000 dicatat Rp28.000.000 di kedua sisi (angka tertukar).\n\nJurnal yang telah dibukukan (SALAH):\n  Dr. 6-1000  28.000.000\n  Cr. 1-1100  28.000.000\n\nReferensi materi: BAB 3 - Pencatatan"
+  },
+  {
+   "no": 4,
+   "event": "Penjualan kredit Rp150.000.000 (HPP Rp90.000.000) ditemukan belum dibukukan sama sekali, padahal barang sudah dikirim dan faktur terbit pada Desember.\n\nJurnal yang telah dibukukan: TIDAK ADA (transaksi belum dicatat sama sekali).\n\nReferensi materi: BAB 3 - Pencatatan"
+  },
+  {
+   "no": 5,
+   "event": "Pembelian perlengkapan Rp3.800.000 tercatat dua kali karena gangguan sistem (jurnal identik), sehingga saldo perlengkapan terlalu tinggi dan kas terlalu rendah.\n\nJurnal yang telah dibukukan (SALAH):\n  Dr. 1-1500  7.600.000\n  Cr. 1-1000  7.600.000\n\nReferensi materi: BAB 3 - Pencatatan"
+  },
+  {
+   "no": 6,
+   "event": "Bunga deposito semester II Rp7.500.000 baru dicatat saat kas diterima 5 Januari 2025 dan ditolak sebagai pendapatan 2024 (dianggap pendapatan tahun depan).\n\nJurnal yang telah dibukukan: TIDAK ADA (transaksi belum dicatat sama sekali).\n\nReferensi materi: BAB 4 - Penyesuaian"
+  },
+  {
+   "no": 7,
+   "event": "Biaya overhaul mesin yang memperpanjang umur, Rp60.000.000, dibebankan ke Beban Pemeliharaan padahal memenuhi kriteria aset.\n\nJurnal yang telah dibukukan (SALAH):\n  Dr. 6-2100  60.000.000\n  Cr. 1-1100  60.000.000\n\nReferensi materi: BAB 9 - Aset Tetap"
+  },
+  {
+   "no": 8,
+   "event": "Bunga liabilitas sewa selama 8 bulan (Rp6.339.731) tidak pernah dijurnal pada akhir tahun.\n\nJurnal yang telah dibukukan: TIDAK ADA (transaksi belum dicatat sama sekali).\n\nReferensi materi: BAB 4 - Penyesuaian"
+  },
+  {
+   "no": 9,
+   "event": "Staf menghitung penyusutan mesin baru 2024 = 510jt/10/12 x 8 = Rp34.000.000 tanpa memperhitungkan nilai residu, overhaul, dan perubahan umur manfaat.\n\nJurnal yang telah dibukukan (SALAH):\n  Dr. 6-1600  34.000.000\n  Cr. 1-2410  34.000.000\n\nReferensi materi: BAB 9 - Penyusutan"
+  },
+  {
+   "no": 10,
+   "event": "Staf mencatat beban kerugian piutang sebesar seluruh cadangan yang dibutuhkan Rp27.900.000, padahal saldo cadangan sebelum penyesuaian sudah Rp14.000.000 (kredit).\n\nJurnal yang telah dibukukan (SALAH):\n  Dr. 6-1800  27.900.000\n  Cr. 1-1210  27.900.000\n\nReferensi materi: BAB 7 - Penurunan Nilai Piutang"
+  },
+  {
+   "no": 11,
+   "event": "Penerimaan kas dari penerbitan obligasi Rp480.976.155 disajikan dalam Arus Kas dari Aktivitas Operasi.\n\nJurnal yang telah dibukukan (SALAH):\n  Dr. 1-1100  480.976.155\n  Dr. 2-2010  19.023.845\n  Cr. 2-2000  500.000.000\n\nReferensi materi: BAB 5 - Laporan Arus Kas"
+  },
+  {
+   "no": 12,
+   "event": "Uang muka proyek Rp45.000.000 yang diterima sebelum pekerjaan dimulai langsung dicatat ke Pendapatan Jasa.\n\nJurnal yang telah dibukukan (SALAH):\n  Dr. 1-1100  45.000.000\n  Cr. 4-2000  45.000.000\n\nReferensi materi: BAB 17 - Pendapatan"
+  }
+ ],
+ "detect": [
+  {
+   "no": 1,
+   "event": "Staf mencatat pembelian mobil pengangkut senilai Rp85.000.000 secara tunai ke akun Peralatan Kantor, padahal barang tersebut adalah kendaraan operasional."
+  },
+  {
+   "no": 2,
+   "event": "Penerimaan pelunasan piutang Rp120.000.000 dicatat dengan Piutang Usaha di sisi debit dan Bank di sisi kredit."
+  },
+  {
+   "no": 3,
+   "event": "Pembayaran gaji Rp82.000.000 dicatat Rp28.000.000 di kedua sisi (angka tertukar)."
+  },
+  {
+   "no": 4,
+   "event": "Penjualan kredit Rp150.000.000 (HPP Rp90.000.000) ditemukan belum dibukukan sama sekali, padahal barang sudah dikirim dan faktur terbit pada Desember."
+  },
+  {
+   "no": 5,
+   "event": "Pembelian perlengkapan Rp3.800.000 tercatat dua kali karena gangguan sistem (jurnal identik), sehingga saldo perlengkapan terlalu tinggi dan kas terlalu rendah."
+  },
+  {
+   "no": 6,
+   "event": "Bunga deposito semester II Rp7.500.000 baru dicatat saat kas diterima 5 Januari 2025 dan ditolak sebagai pendapatan 2024 (dianggap pendapatan tahun depan)."
+  },
+  {
+   "no": 7,
+   "event": "Biaya overhaul mesin yang memperpanjang umur, Rp60.000.000, dibebankan ke Beban Pemeliharaan padahal memenuhi kriteria aset."
+  },
+  {
+   "no": 8,
+   "event": "Bunga liabilitas sewa selama 8 bulan (Rp6.339.731) tidak pernah dijurnal pada akhir tahun."
+  },
+  {
+   "no": 9,
+   "event": "Staf menghitung penyusutan mesin baru 2024 = 510jt/10/12 x 8 = Rp34.000.000 tanpa memperhitungkan nilai residu, overhaul, dan perubahan umur manfaat."
+  },
+  {
+   "no": 10,
+   "event": "Staf mencatat beban kerugian piutang sebesar seluruh cadangan yang dibutuhkan Rp27.900.000, padahal saldo cadangan sebelum penyesuaian sudah Rp14.000.000 (kredit)."
+  },
+  {
+   "no": 11,
+   "event": "Penerimaan kas dari penerbitan obligasi Rp480.976.155 disajikan dalam Arus Kas dari Aktivitas Operasi."
+  },
+  {
+   "no": 12,
+   "event": "Uang muka proyek Rp45.000.000 yang diterima sebelum pekerjaan dimulai langsung dicatat ke Pendapatan Jasa."
+  }
+ ],
+ "errorTypeOptions": [
+  "Salah akun",
+  "Salah sisi debit/kredit",
+  "Salah nominal",
+  "Transaksi belum dicatat",
+  "Pencatatan ganda",
+  "Salah periode",
+  "Salah klasifikasi",
+  "Penyesuaian terlewat",
+  "Salah hitung penyusutan",
+  "Salah hitung cadangan",
+  "Salah klasifikasi arus kas",
+  "Salah pengakuan pendapatan"
+ ]
+}

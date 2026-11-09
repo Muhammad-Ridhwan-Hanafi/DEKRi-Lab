@@ -1,0 +1,278 @@
+/* Splash startup DEKRi Lab, selaras dengan bahasa visual aplikasi (neo-brutalis: garis tebal, bayangan keras, pastel).
+   Semua kelas berawalan ap-splash agar tidak bentrok dengan Tailwind. Latar dan pola titik sama dengan #ap-boot di index.html. */
+.ap-splash {
+  --ap-splash-bg: #fff9ec;
+  --ap-splash-dot: rgba(17, 17, 17, 0.13);
+  --ap-splash-ink: #111111;
+  --ap-splash-name: #111111;
+  --ap-splash-sub: #3f3f46;
+  --ap-splash-card: #ffffff;
+  --ap-splash-shadow: #111111;
+  --ap-splash-track: #ffffff;
+  --ap-splash-bar: #4d49fc;
+  --ap-splash-tag-bg: #e4ff97;
+  --ap-splash-tag-fg: #2f3d00;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  color: var(--ap-splash-name);
+  font-family: 'Inter Variable', Inter, 'Segoe UI', Arial, sans-serif;
+  /* Opak sejak frame pertama (tanpa fade-in pada wadah) agar aplikasi di belakangnya tidak pernah terlihat tembus. */
+  background-color: var(--ap-splash-bg);
+  background-image: radial-gradient(circle, var(--ap-splash-dot) 1.5px, transparent 1.5px);
+  background-size: 24px 24px;
+  opacity: 1;
+  transition: opacity 300ms ease-out;
+}
+:root.dark .ap-splash {
+  --ap-splash-bg: #0b1220;
+  --ap-splash-dot: rgba(232, 229, 255, 0.12);
+  --ap-splash-ink: #e9e5ff;
+  --ap-splash-name: #f8fafc;
+  --ap-splash-sub: #c7d2e2;
+  --ap-splash-card: #141b34;
+  --ap-splash-shadow: #4d49fc;
+  --ap-splash-track: #0b1220;
+  --ap-splash-bar: #a8a5ff;
+  --ap-splash-tag-bg: #34400f;
+  --ap-splash-tag-fg: #e4ff97;
+}
+.ap-splash[data-leaving='true'] {
+  opacity: 0;
+  pointer-events: none;
+}
+.ap-splash[data-leaving='true'] .ap-splash__content {
+  transform: translateY(-10px);
+}
+
+.ap-splash__content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: min(92vw, 560px);
+  text-align: center;
+  transition: transform 300ms ease-out;
+}
+
+/* Kartu stiker berisi logo: "dicap" ke layar (bergeser dari bayangannya ke posisi akhir). */
+.ap-splash__card {
+  display: grid;
+  place-items: center;
+  padding: clamp(18px, 3.4vh, 30px);
+  border: 2px solid var(--ap-splash-ink);
+  border-radius: 28px;
+  background: var(--ap-splash-card);
+  box-shadow: 6px 6px 0 var(--ap-splash-shadow);
+  animation: ap-splash-stamp 560ms cubic-bezier(0.2, 0.9, 0.25, 1.15) 80ms both;
+}
+.ap-splash__mark {
+  width: clamp(220px, 40vh, 380px);
+  height: auto;
+  display: block;
+}
+.ap-splash__name {
+  margin-top: clamp(22px, 4.2vh, 38px);
+  font-size: clamp(30px, 5.4vh, 52px);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  animation: ap-splash-up 450ms cubic-bezier(0.2, 0.7, 0.2, 1) 380ms both;
+}
+/* Tagline sebagai stiker lime bergaris. Teks tetap satu elemen. */
+.ap-splash__tagline {
+  margin-top: 14px;
+  padding: 4px 16px;
+  border: 2px solid var(--ap-splash-ink);
+  border-radius: 999px;
+  background: var(--ap-splash-tag-bg);
+  color: var(--ap-splash-tag-fg);
+  font-size: clamp(13px, 2vh, 16px);
+  font-weight: 650;
+  letter-spacing: 0.01em;
+  box-shadow: 3px 3px 0 var(--ap-splash-shadow);
+  animation: ap-splash-pop 420ms cubic-bezier(0.2, 0.9, 0.25, 1.2) 560ms both;
+}
+/* Bar muat tebal bergaris; potongan indigo berstrip meluncur bolak-balik (indeterminate). */
+.ap-splash__progress {
+  position: relative;
+  width: 240px;
+  max-width: 70vw;
+  height: 18px;
+  margin-top: clamp(26px, 5vh, 46px);
+  overflow: hidden;
+  border: 2px solid var(--ap-splash-ink);
+  border-radius: 999px;
+  background: var(--ap-splash-track);
+  box-shadow: 3px 3px 0 var(--ap-splash-shadow);
+  animation: ap-splash-fade 350ms ease-out 700ms both;
+}
+.ap-splash__bar {
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 38%;
+  border-right: 2px solid var(--ap-splash-ink);
+  border-radius: 999px;
+  background-color: var(--ap-splash-bar);
+  background-image: repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0.3) 0 6px, transparent 6px 12px);
+  animation: ap-splash-indeterminate 1.3s ease-in-out infinite;
+}
+.ap-splash__status {
+  margin-top: 16px;
+  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ap-splash-sub);
+  animation: ap-splash-fade 350ms ease-out 760ms both;
+}
+
+/* Bentuk pastel dekoratif: statis setelah muncul, tidak dibaca pembaca layar. */
+.ap-splash__shape {
+  position: absolute;
+  border: 2px solid var(--ap-splash-ink);
+  box-shadow: 4px 4px 0 var(--ap-splash-shadow);
+  animation: ap-splash-pop 480ms cubic-bezier(0.2, 0.9, 0.25, 1.25) both;
+}
+.ap-splash__shape--a {
+  top: -13vh;
+  left: -22%;
+  width: clamp(56px, 10vh, 96px);
+  height: clamp(56px, 10vh, 96px);
+  border-radius: 50%;
+  background: #e4ff97;
+  animation-delay: 420ms;
+}
+.ap-splash__shape--b {
+  right: -20%;
+  top: -5vh;
+  width: clamp(48px, 8.5vh, 80px);
+  height: clamp(48px, 8.5vh, 80px);
+  border-radius: 18px;
+  background: #ffc9c1;
+  rotate: 12deg;
+  animation-delay: 500ms;
+}
+.ap-splash__shape--c {
+  bottom: -14vh;
+  left: -16%;
+  width: clamp(88px, 15vh, 140px);
+  height: clamp(30px, 5vh, 46px);
+  border-radius: 999px;
+  background: #c7f8fb;
+  rotate: -8deg;
+  animation-delay: 620ms;
+}
+.ap-splash__shape--d {
+  bottom: -10vh;
+  right: -14%;
+  width: clamp(40px, 7vh, 64px);
+  height: clamp(40px, 7vh, 64px);
+  border-radius: 14px;
+  background: #c4baff;
+  rotate: -14deg;
+  animation-delay: 700ms;
+}
+:root.dark .ap-splash__shape--a {
+  background: #34400f;
+}
+:root.dark .ap-splash__shape--b {
+  background: #4a211b;
+}
+:root.dark .ap-splash__shape--c {
+  background: #0f3a3e;
+}
+:root.dark .ap-splash__shape--d {
+  background: #2a2870;
+}
+@media (max-width: 640px) {
+  .ap-splash__shape {
+    display: none;
+  }
+}
+
+/* Cegah scrollbar saat splash tampil. */
+html.ap-splash-lock,
+html.ap-splash-lock body {
+  overflow: hidden;
+}
+
+@keyframes ap-splash-stamp {
+  0% {
+    opacity: 0;
+    transform: translate(8px, 8px) scale(0.94);
+    box-shadow: 0 0 0 var(--ap-splash-shadow);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+    box-shadow: 6px 6px 0 var(--ap-splash-shadow);
+  }
+}
+@keyframes ap-splash-up {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes ap-splash-pop {
+  0% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes ap-splash-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes ap-splash-indeterminate {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(263%);
+  }
+}
+
+/* Reduce Motion: tanpa gerak dekoratif. Indikator tidak bergerak dan diisi penuh agar tidak terbaca sebagai persentase. */
+@media (prefers-reduced-motion: reduce) {
+  .ap-splash__card,
+  .ap-splash__name,
+  .ap-splash__tagline,
+  .ap-splash__progress,
+  .ap-splash__status,
+  .ap-splash__shape {
+    animation: none;
+  }
+  .ap-splash,
+  .ap-splash__content {
+    transition-duration: 80ms;
+  }
+  .ap-splash__bar {
+    animation: none;
+    width: 100%;
+    opacity: 0.55;
+  }
+}
+
+@media print {
+  .ap-splash {
+    display: none;
+  }
+}

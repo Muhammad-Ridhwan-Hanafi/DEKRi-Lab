@@ -1,0 +1,590 @@
+[
+ {
+  "code": "1-1000",
+  "name": "Kas",
+  "type": "Asset",
+  "normal": "Debit",
+  "reportClass": "Current Asset"
+ },
+ {
+  "code": "1-1100",
+  "name": "Bank Mandiri",
+  "type": "Asset",
+  "normal": "Debit",
+  "reportClass": "Current Asset"
+ },
+ {
+  "code": "1-1150",
+  "name": "Bank BCA (Deposito)",
+  "type": "Asset",
+  "normal": "Debit",
+  "reportClass": "Current Asset"
+ },
+ {
+  "code": "1-1200",
+  "name": "Piutang Usaha",
+  "type": "Asset",
+  "normal": "Debit",
+  "reportClass": "Current Asset"
+ },
+ {
+  "code": "1-1210",
+  "name": "Cadangan Kerugian Penurunan Nilai Piutang",
+  "type": "Asset",
+  "normal": "Credit",
+  "reportClass": "Current Asset (Contra)"
+ },
+ {
+  "code": "1-1300",
+  "name": "Piutang Bunga",
+  "type": "Asset",
+  "normal": "Debit",
+  "reportClass": "Current Asset"
+ },
+ {
+  "code": "1-1310",
+  "name": "Piutang Karyawan",
+  "type": "Asset",
+  "normal": "Debit",
+  "reportClass": "Current Asset"
+ },
+ {
+  "code": "1-1400",
+  "name": "Persediaan Barang Dagang",
+  "type": "Asset",
+  "normal": "Debit",
+  "reportClass": "Current Asset"
+ },
+ {
+  "code": "1-1500",
+  "name": "Perlengkapan Kantor",
+  "type": "Asset",
+  "normal": "Debit",
+  "reportClass": "Current Asset"
+ },
+ {
+  "code": "1-1600",
+  "name": "Sewa Dibayar di Muka",
+  "type": "Asset",
+  "normal": "Debit",
+  "reportClass": "Current Asset"
+ },
+ {
+  "code": "1-1700",
+  "name": "Asuransi Dibayar di Muka",
+  "type": "Asset",
+  "normal": "Debit",
+  "reportClass": "Current Asset"
+ },
+ {
+  "code": "1-1800",
+  "name": "Pajak Dibayar di Muka (PPh 25)",
+  "type": "Asset",
+  "normal": "Debit",
+  "reportClass": "Current Asset"
+ },
+ {
+  "code": "1-1900",
+  "name": "Aset Kontrak / (Liabilitas Kontrak)",
+  "type": "Asset",
+  "normal": "Debit",
+  "reportClass": "Current Asset"
+ },
+ {
+  "code": "1-2100",
+  "name": "Tanah",
+  "type": "Asset",
+  "normal": "Debit",
+  "reportClass": "Non-Current Asset"
+ },
+ {
+  "code": "1-2200",
+  "name": "Bangunan",
+  "type": "Asset",
+  "normal": "Debit",
+  "reportClass": "Non-Current Asset"
+ },
+ {
+  "code": "1-2210",
+  "name": "Akumulasi Penyusutan Bangunan",
+  "type": "Asset",
+  "normal": "Credit",
+  "reportClass": "Non-Current Asset (Contra)"
+ },
+ {
+  "code": "1-2300",
+  "name": "Kendaraan Operasional",
+  "type": "Asset",
+  "normal": "Debit",
+  "reportClass": "Non-Current Asset"
+ },
+ {
+  "code": "1-2310",
+  "name": "Akumulasi Penyusutan Kendaraan",
+  "type": "Asset",
+  "normal": "Credit",
+  "reportClass": "Non-Current Asset (Contra)"
+ },
+ {
+  "code": "1-2400",
+  "name": "Mesin & Peralatan Perakitan",
+  "type": "Asset",
+  "normal": "Debit",
+  "reportClass": "Non-Current Asset"
+ },
+ {
+  "code": "1-2410",
+  "name": "Akumulasi Penyusutan Mesin & Peralatan",
+  "type": "Asset",
+  "normal": "Credit",
+  "reportClass": "Non-Current Asset (Contra)"
+ },
+ {
+  "code": "1-2500",
+  "name": "Peralatan Kantor",
+  "type": "Asset",
+  "normal": "Debit",
+  "reportClass": "Non-Current Asset"
+ },
+ {
+  "code": "1-2510",
+  "name": "Akumulasi Penyusutan Peralatan Kantor",
+  "type": "Asset",
+  "normal": "Credit",
+  "reportClass": "Non-Current Asset (Contra)"
+ },
+ {
+  "code": "1-2600",
+  "name": "Properti Investasi",
+  "type": "Asset",
+  "normal": "Debit",
+  "reportClass": "Non-Current Asset"
+ },
+ {
+  "code": "1-2700",
+  "name": "Aset Hak-Guna (ROU Asset)",
+  "type": "Asset",
+  "normal": "Debit",
+  "reportClass": "Non-Current Asset"
+ },
+ {
+  "code": "1-2710",
+  "name": "Akumulasi Penyusutan Aset Hak-Guna",
+  "type": "Asset",
+  "normal": "Credit",
+  "reportClass": "Non-Current Asset (Contra)"
+ },
+ {
+  "code": "1-2800",
+  "name": "Investasi Obligasi (Biaya Diamortisasi) - Tidak Lancar",
+  "type": "Asset",
+  "normal": "Debit",
+  "reportClass": "Non-Current Asset"
+ },
+ {
+  "code": "1-2900",
+  "name": "Investasi Saham (FVTPL)",
+  "type": "Asset",
+  "normal": "Debit",
+  "reportClass": "Current Asset"
+ },
+ {
+  "code": "1-2950",
+  "name": "Aset Tidak Lancar Dimiliki untuk Dijual",
+  "type": "Asset",
+  "normal": "Debit",
+  "reportClass": "Current Asset"
+ },
+ {
+  "code": "1-2990",
+  "name": "Aset Pajak Tangguhan",
+  "type": "Asset",
+  "normal": "Debit",
+  "reportClass": "Non-Current Asset"
+ },
+ {
+  "code": "2-1000",
+  "name": "Utang Usaha",
+  "type": "Liability",
+  "normal": "Credit",
+  "reportClass": "Current Liability"
+ },
+ {
+  "code": "2-1100",
+  "name": "Utang Bank Jangka Pendek",
+  "type": "Liability",
+  "normal": "Credit",
+  "reportClass": "Current Liability"
+ },
+ {
+  "code": "2-1200",
+  "name": "Beban Yang Masih Harus Dibayar",
+  "type": "Liability",
+  "normal": "Credit",
+  "reportClass": "Current Liability"
+ },
+ {
+  "code": "2-1300",
+  "name": "Utang Bunga",
+  "type": "Liability",
+  "normal": "Credit",
+  "reportClass": "Current Liability"
+ },
+ {
+  "code": "2-1400",
+  "name": "Pendapatan Diterima di Muka",
+  "type": "Liability",
+  "normal": "Credit",
+  "reportClass": "Current Liability"
+ },
+ {
+  "code": "2-1500",
+  "name": "Utang Pajak Penghasilan",
+  "type": "Liability",
+  "normal": "Credit",
+  "reportClass": "Current Liability"
+ },
+ {
+  "code": "2-1600",
+  "name": "Liabilitas Pengembalian (Refund)",
+  "type": "Liability",
+  "normal": "Credit",
+  "reportClass": "Current Liability"
+ },
+ {
+  "code": "2-1700",
+  "name": "Liabilitas Sewa - Bagian Lancar",
+  "type": "Liability",
+  "normal": "Credit",
+  "reportClass": "Current Liability"
+ },
+ {
+  "code": "2-1800",
+  "name": "Provisi Garansi",
+  "type": "Liability",
+  "normal": "Credit",
+  "reportClass": "Current Liability"
+ },
+ {
+  "code": "2-1900",
+  "name": "Bagian Lancar Liabilitas Jangka Panjang",
+  "type": "Liability",
+  "normal": "Credit",
+  "reportClass": "Current Liability"
+ },
+ {
+  "code": "2-2000",
+  "name": "Utang Obligasi",
+  "type": "Liability",
+  "normal": "Credit",
+  "reportClass": "Non-Current Liability"
+ },
+ {
+  "code": "2-2010",
+  "name": "Diskonto/Premium Utang Obligasi (Contra)",
+  "type": "Liability",
+  "normal": "Debit",
+  "reportClass": "Non-Current Liability (Contra)"
+ },
+ {
+  "code": "2-2100",
+  "name": "Utang Bank Jangka Panjang",
+  "type": "Liability",
+  "normal": "Credit",
+  "reportClass": "Non-Current Liability"
+ },
+ {
+  "code": "2-2200",
+  "name": "Liabilitas Sewa - Bagian Tidak Lancar",
+  "type": "Liability",
+  "normal": "Credit",
+  "reportClass": "Non-Current Liability"
+ },
+ {
+  "code": "2-2300",
+  "name": "Provisi Imbalan Kerja",
+  "type": "Liability",
+  "normal": "Credit",
+  "reportClass": "Non-Current Liability"
+ },
+ {
+  "code": "2-2400",
+  "name": "Provisi Restorasi Aset",
+  "type": "Liability",
+  "normal": "Credit",
+  "reportClass": "Non-Current Liability"
+ },
+ {
+  "code": "2-2500",
+  "name": "Liabilitas Pajak Tangguhan",
+  "type": "Liability",
+  "normal": "Credit",
+  "reportClass": "Non-Current Liability"
+ },
+ {
+  "code": "3-1000",
+  "name": "Modal Saham",
+  "type": "Equity",
+  "normal": "Credit",
+  "reportClass": "Equity"
+ },
+ {
+  "code": "3-1100",
+  "name": "Tambahan Modal Disetor",
+  "type": "Equity",
+  "normal": "Credit",
+  "reportClass": "Equity"
+ },
+ {
+  "code": "3-2000",
+  "name": "Saldo Laba",
+  "type": "Equity",
+  "normal": "Credit",
+  "reportClass": "Equity"
+ },
+ {
+  "code": "3-3000",
+  "name": "Ikhtisar Laba Rugi",
+  "type": "Equity",
+  "normal": "Credit",
+  "reportClass": "Equity (Closing)"
+ },
+ {
+  "code": "3-9000",
+  "name": "Dividen",
+  "type": "Equity",
+  "normal": "Debit",
+  "reportClass": "Equity (Contra)"
+ },
+ {
+  "code": "4-1000",
+  "name": "Penjualan",
+  "type": "Revenue",
+  "normal": "Credit",
+  "reportClass": "Revenue"
+ },
+ {
+  "code": "4-1100",
+  "name": "Retur Penjualan dan Pengurangan Harga",
+  "type": "Revenue",
+  "normal": "Debit",
+  "reportClass": "Revenue (Contra)"
+ },
+ {
+  "code": "4-1200",
+  "name": "Potongan Penjualan",
+  "type": "Revenue",
+  "normal": "Debit",
+  "reportClass": "Revenue (Contra)"
+ },
+ {
+  "code": "4-2000",
+  "name": "Pendapatan Jasa Instalasi/Proyek",
+  "type": "Revenue",
+  "normal": "Credit",
+  "reportClass": "Revenue"
+ },
+ {
+  "code": "4-8000",
+  "name": "Pendapatan Bunga",
+  "type": "Revenue",
+  "normal": "Credit",
+  "reportClass": "Other Income"
+ },
+ {
+  "code": "4-8100",
+  "name": "Pendapatan Sewa",
+  "type": "Revenue",
+  "normal": "Credit",
+  "reportClass": "Other Income"
+ },
+ {
+  "code": "4-8200",
+  "name": "Keuntungan Penjualan Aset Tetap",
+  "type": "Revenue",
+  "normal": "Credit",
+  "reportClass": "Other Income"
+ },
+ {
+  "code": "4-8300",
+  "name": "Keuntungan Perubahan Nilai Wajar Properti Investasi",
+  "type": "Revenue",
+  "normal": "Credit",
+  "reportClass": "Other Income"
+ },
+ {
+  "code": "4-8400",
+  "name": "Keuntungan Perubahan Nilai Wajar Investasi Saham",
+  "type": "Revenue",
+  "normal": "Credit",
+  "reportClass": "Other Income"
+ },
+ {
+  "code": "4-8500",
+  "name": "Keuntungan Pertukaran Aset Tetap",
+  "type": "Revenue",
+  "normal": "Credit",
+  "reportClass": "Other Income"
+ },
+ {
+  "code": "5-1000",
+  "name": "Harga Pokok Penjualan",
+  "type": "Expense",
+  "normal": "Debit",
+  "reportClass": "Cost of Sales"
+ },
+ {
+  "code": "6-1000",
+  "name": "Beban Gaji dan Upah",
+  "type": "Expense",
+  "normal": "Debit",
+  "reportClass": "Operating Expense"
+ },
+ {
+  "code": "6-1100",
+  "name": "Beban Sewa",
+  "type": "Expense",
+  "normal": "Debit",
+  "reportClass": "Operating Expense"
+ },
+ {
+  "code": "6-1200",
+  "name": "Beban Perlengkapan Kantor",
+  "type": "Expense",
+  "normal": "Debit",
+  "reportClass": "Operating Expense"
+ },
+ {
+  "code": "6-1300",
+  "name": "Beban Asuransi",
+  "type": "Expense",
+  "normal": "Debit",
+  "reportClass": "Operating Expense"
+ },
+ {
+  "code": "6-1400",
+  "name": "Beban Penyusutan Bangunan",
+  "type": "Expense",
+  "normal": "Debit",
+  "reportClass": "Operating Expense"
+ },
+ {
+  "code": "6-1500",
+  "name": "Beban Penyusutan Kendaraan",
+  "type": "Expense",
+  "normal": "Debit",
+  "reportClass": "Operating Expense"
+ },
+ {
+  "code": "6-1600",
+  "name": "Beban Penyusutan Mesin & Peralatan",
+  "type": "Expense",
+  "normal": "Debit",
+  "reportClass": "Operating Expense"
+ },
+ {
+  "code": "6-1700",
+  "name": "Beban Penyusutan Peralatan Kantor",
+  "type": "Expense",
+  "normal": "Debit",
+  "reportClass": "Operating Expense"
+ },
+ {
+  "code": "6-1750",
+  "name": "Beban Penyusutan Aset Hak-Guna",
+  "type": "Expense",
+  "normal": "Debit",
+  "reportClass": "Operating Expense"
+ },
+ {
+  "code": "6-1800",
+  "name": "Beban Kerugian Piutang",
+  "type": "Expense",
+  "normal": "Debit",
+  "reportClass": "Operating Expense"
+ },
+ {
+  "code": "6-1900",
+  "name": "Beban Garansi",
+  "type": "Expense",
+  "normal": "Debit",
+  "reportClass": "Operating Expense"
+ },
+ {
+  "code": "6-2000",
+  "name": "Beban Listrik, Air & Telekomunikasi",
+  "type": "Expense",
+  "normal": "Debit",
+  "reportClass": "Operating Expense"
+ },
+ {
+  "code": "6-2100",
+  "name": "Beban Pemeliharaan & Perbaikan",
+  "type": "Expense",
+  "normal": "Debit",
+  "reportClass": "Operating Expense"
+ },
+ {
+  "code": "6-2200",
+  "name": "Beban Iklan & Pemasaran",
+  "type": "Expense",
+  "normal": "Debit",
+  "reportClass": "Operating Expense"
+ },
+ {
+  "code": "6-2300",
+  "name": "Beban Imbalan Kerja",
+  "type": "Expense",
+  "normal": "Debit",
+  "reportClass": "Operating Expense"
+ },
+ {
+  "code": "6-2400",
+  "name": "Beban Lain-Lain",
+  "type": "Expense",
+  "normal": "Debit",
+  "reportClass": "Operating Expense"
+ },
+ {
+  "code": "6-2500",
+  "name": "Kerugian Penurunan Nilai Aset",
+  "type": "Expense",
+  "normal": "Debit",
+  "reportClass": "Operating Expense"
+ },
+ {
+  "code": "6-2600",
+  "name": "Kerugian Penurunan Nilai Investasi",
+  "type": "Expense",
+  "normal": "Debit",
+  "reportClass": "Operating Expense"
+ },
+ {
+  "code": "7-1000",
+  "name": "Beban Bunga",
+  "type": "Expense",
+  "normal": "Debit",
+  "reportClass": "Other Expense"
+ },
+ {
+  "code": "7-1100",
+  "name": "Kerugian Penjualan Aset Tetap",
+  "type": "Expense",
+  "normal": "Debit",
+  "reportClass": "Other Expense"
+ },
+ {
+  "code": "7-1200",
+  "name": "Beban Pajak Penghasilan - Kini",
+  "type": "Expense",
+  "normal": "Debit",
+  "reportClass": "Tax Expense"
+ },
+ {
+  "code": "7-1300",
+  "name": "Beban (Manfaat) Pajak Tangguhan",
+  "type": "Expense",
+  "normal": "Debit",
+  "reportClass": "Tax Expense"
+ }
+]

@@ -1,0 +1,406 @@
+{
+ "title": "01 - LATAR BELAKANG KASUS",
+ "intro": "Baca seluruh informasi ini sebelum mengerjakan. Beberapa informasi baru dipakai pada transaksi/penyesuaian tertentu.",
+ "background": [
+  [
+   "PROFIL PERUSAHAAN",
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  [
+   "Nama perusahaan",
+   "PT Sumber Cahaya Elektrindo",
+   null,
+   null,
+   null,
+   null
+  ],
+  [
+   "Jenis usaha",
+   "Distributor & perakitan ringan komponen elektronik untuk pelanggan ritel dan proyek (B2B)",
+   null,
+   null,
+   null,
+   null
+  ],
+  [
+   "Bentuk entitas",
+   "Perseroan Terbatas (PT) — tertutup, belum listed",
+   null,
+   null,
+   null,
+   null
+  ],
+  [
+   "Alamat",
+   "Jl. Puri Kencana Raya No. 88, Kawasan Industri Marunda, Bekasi, Jawa Barat",
+   null,
+   null,
+   null,
+   null
+  ],
+  [
+   "NPWP (fiktif)",
+   "01.987.654.3-021.000",
+   null,
+   null,
+   null,
+   null
+  ],
+  [
+   "Periode akuntansi",
+   "1 Januari 2024 s.d. 31 Desember 2024 (satu tahun penuh)",
+   null,
+   null,
+   null,
+   null
+  ],
+  [
+   "Mata uang penyajian",
+   "Rupiah Indonesia (Rp)",
+   null,
+   null,
+   null,
+   null
+  ],
+  [
+   "Metode persediaan",
+   "Perpetual, Rata-rata Tertimbang (Weighted Average)",
+   null,
+   null,
+   null,
+   null
+  ],
+  [
+   "Model bisnis",
+   "Membeli komponen elektronik dari pemasok, menjual ke toko ritel (tunai/kredit) dan pelanggan proyek (kredit), serta mengerjakan instalasi kelistrikan (jasa proyek).",
+   null,
+   null,
+   null,
+   null
+  ],
+  [
+   "Pemasok utama",
+   "PT Komponen Nusantara (2/10, n/30); PT Sinar Elektro Global (1/15, n/45); Global Electronics Supplier Pte Ltd (valas, n/60).",
+   null,
+   null,
+   null,
+   null
+  ],
+  [
+   "Pelanggan utama",
+   "PT Bangun Cipta Elektrik; PT Retail Elektronik Sentosa; PT Distribusi Elektro Timur (proyek/korporat, kredit); toko ritel (tunai); CV Mitra Listrik Abadi (pelanggan lama).",
+   null,
+   null,
+   null,
+   null
+  ],
+  [
+   "Informasi pembiayaan",
+   "Kredit modal kerja Bank Mitra Usaha; kredit investasi Rp500.000.000 dari Bank Investasi Nasional (bunga 8% p.a., angsuran pokok Rp100 juta per tahun setiap 30 Desember); obligasi korporasi diterbitkan Juli 2024.",
+   null,
+   null,
+   null,
+   null
+  ],
+  [
+   "Informasi investasi",
+   "Deposito BCA Rp250 juta (6% p.a.; berjangka 3 bulan, diperpanjang otomatis dan dapat dicairkan tanpa penalti sehingga memenuhi definisi setara kas); obligasi pihak lain (biaya diamortisasi); saham perdagangan jangka pendek (FVTPL).",
+   null,
+   null,
+   null,
+   null
+  ],
+  [
+   "Informasi sewa",
+   "Sewa forklift 4 tahun (PSAK 116, penyewa). Sewa gudang dan kendaraan tambahan dibayar di muka.",
+   null,
+   null,
+   null,
+   null
+  ],
+  [
+   "Informasi tenaga kerja",
+   "Gaji bulanan sekitar Rp68-83 juta; THR satu kali gaji pada Desember; estimasi imbalan pasca-kerja ditentukan manajemen. Gaji Februari dan Maret 2024 dibayar bersamaan dengan gaji April. Listrik, air, dan telekomunikasi ditagih per semester; tagihan semester II 2024 diterima dan dibayar Januari 2025.",
+   null,
+   null,
+   null,
+   null
+  ],
+  [
+   "Informasi pajak",
+   "Tarif pajak penghasilan badan 22%. Beda temporer yang diperhitungkan: provisi garansi, provisi imbalan kerja, dan rugi penurunan nilai aset non-keuangan (termasuk aset dikuasai untuk dijual). Cadangan piutang, penurunan nilai persediaan, dan akresi provisi diasumsikan dapat dikurangkan secara fiskal pada latihan ini. Tidak ada beda tetap. PPN, PPh 21, dan PPh 23 diabaikan; seluruh harga dalam soal adalah neto.",
+   null,
+   null,
+   null,
+   null
+  ],
+  [
+   "Saldo awal akun deferral",
+   "Sewa Dibayar di Muka Rp36 juta (sewa Januari-Maret 2024) dan Asuransi Dibayar di Muka Rp18 juta (periode Januari-Juni 2024) seluruhnya menjadi beban 2024. Pendapatan Diterima di Muka Rp45 juta adalah uang muka jasa instalasi yang pelaksanaannya dijadwalkan pada 2025; tidak ada bagian yang diakui pada 2024.",
+   null,
+   null,
+   null,
+   null
+  ],
+  [
+   "TABEL AGING PIUTANG USAHA - 31 DESEMBER 2024 (dipakai pada AJ18)",
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  [
+   "Kelompok Umur",
+   "Saldo (Rp)",
+   "% Cadangan",
+   "Cadangan Dibutuhkan (Rp)",
+   null,
+   null
+  ],
+  [
+   "Belum jatuh tempo",
+   "240000000",
+   "0.01",
+   "2400000",
+   null,
+   null
+  ],
+  [
+   "1-30 hari",
+   "0",
+   "0.03",
+   "0",
+   null,
+   null
+  ],
+  [
+   "31-60 hari",
+   "0",
+   "0.1",
+   "0",
+   null,
+   null
+  ],
+  [
+   ">60 hari",
+   "85000000",
+   "0.3",
+   "25500000",
+   null,
+   null
+  ],
+  [
+   "TOTAL",
+   "325000000",
+   null,
+   "27900000",
+   null,
+   null
+  ],
+  [
+   "Total piutang usaha per tabel ini harus sama dengan saldo akun Piutang Usaha (1-1200) pada Neraca Saldo Setelah Penyesuaian SEBELUM AJ18 diproses (Rp325.000.000). Total cadangan yang dibutuhkan menurut tabel ini: Rp27.900.000. Rincian faktur terbuka: Rp240.000.000 = faktur No.133 (jatuh tempo 11 Januari 2025, belum jatuh tempo); Rp85.000.000 = sisa piutang saldo awal setelah penagihan dan penghapusan (lebih dari 60 hari). Kelompok umur lain tidak memiliki saldo.",
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  [
+   "PETUNJUK PENGGUNAAN",
+   null,
+   null,
+   null,
+   null,
+   null
+  ],
+  [
+   "•",
+   "Kerjakan berurutan: Transaksi (analisis dan jurnal umum) -> Penyesuaian -> Laporan -> Penutup.",
+   null,
+   null,
+   null,
+   null
+  ],
+  [
+   "•",
+   "Pilih akun dan isi nominal, lalu tekan Periksa. Status memberi petunjuk, bukan jawaban langsung.",
+   null,
+   null,
+   null,
+   null
+  ],
+  [
+   "•",
+   "Urutan baris jurnal tidak memengaruhi penilaian; baris dengan akun sama boleh digabung selama neto per akun cocok.",
+   null,
+   null,
+   null,
+   null
+  ],
+  [
+   "•",
+   "Beberapa transaksi SENGAJA tidak memerlukan jurnal. Menentukan bahwa 'tidak ada jurnal' juga bagian dari penilaian.",
+   null,
+   null,
+   null,
+   null
+  ]
+ ],
+ "policies": [
+  [
+   "Area",
+   "Kebijakan"
+  ],
+  [
+   "Dasar Penyusunan",
+   "Laporan keuangan disusun berdasarkan SAK di Indonesia (mengacu PSAK), menggunakan konsep biaya historis kecuali dinyatakan lain, dan dasar akrual."
+  ],
+  [
+   "Persediaan",
+   "Diukur pada nilai yang lebih rendah antara biaya perolehan (rata-rata tertimbang) dan nilai realisasi neto (Lower of Cost or Net Realizable Value)."
+  ],
+  [
+   "Piutang Usaha",
+   "Disajikan sebesar nilai neto setelah dikurangi cadangan kerugian penurunan nilai. Cadangan diukur sebesar kerugian kredit ekspektasian sepanjang umur piutang (pendekatan yang disederhanakan menurut PSAK 109), diestimasi dengan matriks provisi berdasarkan persentase umur piutang (aging schedule)."
+  ],
+  [
+   "Aset Tetap",
+   "Diakui sebesar biaya perolehan dikurangi akumulasi penyusutan dan akumulasi rugi penurunan nilai. Biaya perolehan mencakup seluruh biaya yang dapat diatribusikan langsung untuk membawa aset ke lokasi dan kondisi siap digunakan, termasuk estimasi biaya pembongkaran bila relevan. Penyusutan menggunakan metode garis lurus sesuai estimasi masa manfaat, mulai dibebankan sejak aset siap digunakan."
+  ],
+  [
+   "Properti Investasi",
+   "Properti yang dikuasai untuk memperoleh sewa dan/atau kenaikan nilai, diukur dengan model nilai wajar; perubahan nilai wajar diakui dalam laba rugi."
+  ],
+  [
+   "Penurunan Nilai Aset Non-Keuangan",
+   "Entitas menelaah indikasi penurunan nilai pada setiap akhir periode pelaporan; jika terdapat indikasi, jumlah terpulihkan (nilai wajar dikurangi biaya pelepasan, atau nilai pakai, mana yang lebih tinggi) diestimasi dan dibandingkan dengan jumlah tercatat."
+  ],
+  [
+   "Provisi",
+   "Diakui ketika entitas memiliki kewajiban kini akibat peristiwa masa lalu, kemungkinan besar terjadi arus keluar sumber daya, dan jumlahnya dapat diestimasi secara andal. Liabilitas kontinjensi tidak diakui; diungkapkan kecuali kemungkinan arus keluar sumber daya sangat kecil (remote)."
+  ],
+  [
+   "Investasi",
+   "Aset keuangan berupa instrumen utang diukur pada biaya perolehan diamortisasi bila dikelola dalam model bisnis untuk menagih arus kas kontraktual (hold-to-collect) dan arus kas kontraktualnya semata pembayaran pokok dan bunga atas pokok terutang (SPPI), menggunakan suku bunga efektif. Investasi ekuitas (di luar entitas anak, asosiasi, dan ventura bersama) diukur pada nilai wajar melalui laba rugi (FVTPL). Untuk ekuitas yang tidak dimiliki untuk diperdagangkan, entitas dapat membuat pilihan tak terbatalkan pada pengakuan awal untuk menyajikan perubahan nilai wajar di penghasilan komprehensif lain; kasus ini tidak memakai pilihan tersebut."
+  ],
+  [
+   "Sewa",
+   "Entitas sebagai penyewa mengakui aset hak-guna dan liabilitas sewa pada tanggal permulaan sewa (PSAK 116). Aset hak-guna disusutkan; liabilitas sewa bertambah karena bunga (suku bunga efektif) dan berkurang karena pembayaran. Entitas dapat memilih pengecualian pengakuan untuk sewa jangka pendek (masa sewa 12 bulan atau kurang pada tanggal permulaan dan tanpa opsi beli; pilihan dibuat per kelas aset pendasar) dan sewa aset bernilai rendah (pilihan dibuat per sewa). Pada sewa yang memakai pengecualian, pembayaran sewa dibebankan secara garis lurus selama masa sewa atau dasar sistematis lain yang lebih mencerminkan pola manfaat."
+  ],
+  [
+   "Pengakuan Pendapatan",
+   "Pendapatan diakui ketika (atau selama) entitas memenuhi kewajiban pelaksanaan dengan mengalihkan pengendalian barang atau jasa kepada pelanggan (PSAK 115). Penjualan barang diakui pada suatu titik waktu, yaitu saat pengendalian berpindah ke pelanggan. Jasa instalasi/proyek yang kewajiban pelaksanaannya dipenuhi sepanjang waktu diakui berdasarkan ukuran kemajuan yang menggambarkan pengalihan pengendalian, memakai metode input (biaya yang terjadi terhadap total estimasi biaya) bila kemajuan dapat diukur secara andal. Dalam kasus ini seluruh biaya yang terjadi mencerminkan kemajuan dan tidak ada material signifikan yang belum terpasang."
+  ],
+  [
+   "Imbalan Kerja",
+   "Imbalan kerja jangka pendek diakui sebagai beban pada periode jasa diberikan. Estimasi imbalan pasca-kerja diakui sebagai provisi sesuai kebijakan internal perusahaan (di luar inti materi: latihan ini hanya menyimulasikan jurnal berbasis estimasi sederhana dan bukan pengukuran aktuaria penuh menurut PSAK 219)."
+  ],
+  [
+   "Pajak Penghasilan",
+   "Beban pajak kini dihitung berdasarkan penghasilan kena pajak. Pajak tangguhan diakui atas beda temporer antara dasar pengenaan pajak aset/liabilitas dan jumlah tercatatnya, menggunakan tarif pajak yang berlaku. Aset pajak tangguhan atas beda temporer yang boleh dikurangkan diakui sepanjang besar kemungkinan tersedia laba kena pajak masa depan untuk memanfaatkannya; dalam kasus ini manajemen menilai laba kena pajak masa depan memadai."
+  ]
+ ],
+ "sak": [
+  [
+   "PETA PENOMORAN PSAK"
+  ],
+  [
+   "Topik",
+   "PSAK lama",
+   "PSAK sekarang",
+   "Catatan"
+  ],
+  [
+   "Sewa",
+   "73",
+   "116",
+   "Selaras IFRS 16."
+  ],
+  [
+   "Pendapatan dari kontrak dengan pelanggan",
+   "72",
+   "115",
+   "Selaras IFRS 15; menggantikan PSAK 23 dan PSAK 34."
+  ],
+  [
+   "Instrumen keuangan",
+   "71",
+   "109",
+   "Selaras IFRS 9."
+  ],
+  [
+   "Penurunan nilai aset",
+   "48",
+   "236",
+   "Selaras IAS 36."
+  ],
+  [
+   "Aset tidak lancar yang dikuasai untuk dijual dan operasi yang dihentikan",
+   "58",
+   "105",
+   "Selaras IFRS 5."
+  ],
+  [
+   "Pajak penghasilan",
+   "46",
+   "212",
+   "Selaras IAS 12."
+  ],
+  [
+   "Imbalan kerja",
+   "24",
+   "219",
+   "Selaras IAS 19."
+  ],
+  [
+   "Provisi, liabilitas kontinjensi, dan aset kontinjensi",
+   "57",
+   "237",
+   "Selaras IAS 37."
+  ],
+  [
+   "Aset tetap",
+   "16",
+   "216",
+   "Selaras IAS 16."
+  ],
+  [
+   "Persediaan",
+   "14",
+   "202",
+   "Selaras IAS 2."
+  ],
+  [
+   "Properti investasi",
+   "13",
+   "240",
+   "Selaras IAS 40."
+  ],
+  [
+   "Laporan arus kas",
+   "2",
+   "207",
+   "Selaras IAS 7."
+  ],
+  [
+   "Penyajian laporan keuangan",
+   "1",
+   "201",
+   "Selaras IAS 1. PSAK 118 menggantikan PSAK 201 mulai 1 Januari 2027."
+  ],
+  [
+   "Pengaruh perubahan kurs valuta asing",
+   "10",
+   "221",
+   "Selaras IAS 21."
+  ],
+  [
+   "Penomoran baru berlaku efektif 1 Januari 2024 dan tidak mengubah substansi, sehingga kasus tahun buku 2024 memakai nomor baru. Polanya mengikuti nomor IFRS/IAS yang diadopsi (mis. IFRS 16 -> PSAK 116, IAS 36 -> PSAK 236)."
+  ]
+ ]
+}

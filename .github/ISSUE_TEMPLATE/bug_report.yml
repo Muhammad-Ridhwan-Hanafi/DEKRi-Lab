@@ -1,0 +1,27 @@
+name: Laporan bug
+description: Ada yang tidak berfungsi atau angka akuntansi yang tampak salah
+labels: [bug]
+body:
+  - type: textarea
+    id: apa
+    attributes:
+      label: Apa yang terjadi?
+      description: Jelaskan langkah yang Anda lakukan dan hasil yang Anda harapkan.
+    validations:
+      required: true
+  - type: dropdown
+    id: versi
+    attributes:
+      label: Cara menjalankan
+      options: [EXE Windows, HTML mandiri (dist-single), Dev server]
+    validations:
+      required: true
+  - type: input
+    id: ver
+    attributes:
+      label: Versi (Pengaturan > Tentang)
+  - type: textarea
+    id: lain
+    attributes:
+      label: Screenshot atau info tambahan
+      description: Jangan unggah berkas cadangan yang berisi data pribadi.

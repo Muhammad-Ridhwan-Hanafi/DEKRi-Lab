@@ -1,0 +1,17 @@
+{
+ "cashClass": [
+  "Pendanaan",
+  "Investasi",
+  "Operasi",
+  "Non-kas / Reklasifikasi",
+  "Tidak ada transaksi"
+ ],
+ "yesNo": [
+  "Ya",
+  "Tidak"
+ ],
+ "decision": [
+  "Perlu jurnal",
+  "Tidak perlu jurnal"
+ ]
+}

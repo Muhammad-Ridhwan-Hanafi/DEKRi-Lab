@@ -1,0 +1,193 @@
+{
+ "closingRows": [
+  {
+   "code": "4-1000",
+   "group": "Pendapatan",
+   "instruction": "Tutup saldo KREDIT akun ini dengan mendebitnya, kreditkan Ikhtisar Laba Rugi (3-3000)."
+  },
+  {
+   "code": "4-1100",
+   "group": "Pendapatan",
+   "instruction": "Akun kontra-pendapatan bersaldo DEBIT: tutup dengan MENGKREDITNYA, debitkan Ikhtisar Laba Rugi (3-3000)."
+  },
+  {
+   "code": "4-1200",
+   "group": "Pendapatan",
+   "instruction": "Akun kontra-pendapatan bersaldo DEBIT: tutup dengan MENGKREDITNYA, debitkan Ikhtisar Laba Rugi (3-3000)."
+  },
+  {
+   "code": "4-2000",
+   "group": "Pendapatan",
+   "instruction": "Tutup saldo KREDIT akun ini dengan mendebitnya, kreditkan Ikhtisar Laba Rugi (3-3000)."
+  },
+  {
+   "code": "4-8000",
+   "group": "Pendapatan",
+   "instruction": "Tutup saldo KREDIT akun ini dengan mendebitnya, kreditkan Ikhtisar Laba Rugi (3-3000)."
+  },
+  {
+   "code": "4-8100",
+   "group": "Pendapatan",
+   "instruction": "Tutup saldo KREDIT akun ini dengan mendebitnya, kreditkan Ikhtisar Laba Rugi (3-3000)."
+  },
+  {
+   "code": "4-8200",
+   "group": "Pendapatan",
+   "instruction": "Tutup saldo KREDIT akun ini dengan mendebitnya, kreditkan Ikhtisar Laba Rugi (3-3000)."
+  },
+  {
+   "code": "4-8300",
+   "group": "Pendapatan",
+   "instruction": "Tutup saldo KREDIT akun ini dengan mendebitnya, kreditkan Ikhtisar Laba Rugi (3-3000)."
+  },
+  {
+   "code": "4-8400",
+   "group": "Pendapatan",
+   "instruction": "Tutup saldo KREDIT akun ini dengan mendebitnya, kreditkan Ikhtisar Laba Rugi (3-3000)."
+  },
+  {
+   "code": "4-8500",
+   "group": "Pendapatan",
+   "instruction": "Tutup saldo KREDIT akun ini dengan mendebitnya, kreditkan Ikhtisar Laba Rugi (3-3000)."
+  },
+  {
+   "code": "5-1000",
+   "group": "Beban",
+   "instruction": "Tutup saldo DEBIT akun ini dengan mengkreditnya, debitkan Ikhtisar Laba Rugi (3-3000)."
+  },
+  {
+   "code": "6-1000",
+   "group": "Beban",
+   "instruction": "Tutup saldo DEBIT akun ini dengan mengkreditnya, debitkan Ikhtisar Laba Rugi (3-3000)."
+  },
+  {
+   "code": "6-1100",
+   "group": "Beban",
+   "instruction": "Tutup saldo DEBIT akun ini dengan mengkreditnya, debitkan Ikhtisar Laba Rugi (3-3000)."
+  },
+  {
+   "code": "6-1200",
+   "group": "Beban",
+   "instruction": "Tutup saldo DEBIT akun ini dengan mengkreditnya, debitkan Ikhtisar Laba Rugi (3-3000)."
+  },
+  {
+   "code": "6-1300",
+   "group": "Beban",
+   "instruction": "Tutup saldo DEBIT akun ini dengan mengkreditnya, debitkan Ikhtisar Laba Rugi (3-3000)."
+  },
+  {
+   "code": "6-1400",
+   "group": "Beban",
+   "instruction": "Tutup saldo DEBIT akun ini dengan mengkreditnya, debitkan Ikhtisar Laba Rugi (3-3000)."
+  },
+  {
+   "code": "6-1500",
+   "group": "Beban",
+   "instruction": "Tutup saldo DEBIT akun ini dengan mengkreditnya, debitkan Ikhtisar Laba Rugi (3-3000)."
+  },
+  {
+   "code": "6-1600",
+   "group": "Beban",
+   "instruction": "Tutup saldo DEBIT akun ini dengan mengkreditnya, debitkan Ikhtisar Laba Rugi (3-3000)."
+  },
+  {
+   "code": "6-1700",
+   "group": "Beban",
+   "instruction": "Tutup saldo DEBIT akun ini dengan mengkreditnya, debitkan Ikhtisar Laba Rugi (3-3000)."
+  },
+  {
+   "code": "6-1750",
+   "group": "Beban",
+   "instruction": "Tutup saldo DEBIT akun ini dengan mengkreditnya, debitkan Ikhtisar Laba Rugi (3-3000)."
+  },
+  {
+   "code": "6-1800",
+   "group": "Beban",
+   "instruction": "Tutup saldo DEBIT akun ini dengan mengkreditnya, debitkan Ikhtisar Laba Rugi (3-3000)."
+  },
+  {
+   "code": "6-1900",
+   "group": "Beban",
+   "instruction": "Tutup saldo DEBIT akun ini dengan mengkreditnya, debitkan Ikhtisar Laba Rugi (3-3000)."
+  },
+  {
+   "code": "6-2000",
+   "group": "Beban",
+   "instruction": "Tutup saldo DEBIT akun ini dengan mengkreditnya, debitkan Ikhtisar Laba Rugi (3-3000)."
+  },
+  {
+   "code": "6-2100",
+   "group": "Beban",
+   "instruction": "Tutup saldo DEBIT akun ini dengan mengkreditnya, debitkan Ikhtisar Laba Rugi (3-3000)."
+  },
+  {
+   "code": "6-2200",
+   "group": "Beban",
+   "instruction": "Tutup saldo DEBIT akun ini dengan mengkreditnya, debitkan Ikhtisar Laba Rugi (3-3000)."
+  },
+  {
+   "code": "6-2300",
+   "group": "Beban",
+   "instruction": "Tutup saldo DEBIT akun ini dengan mengkreditnya, debitkan Ikhtisar Laba Rugi (3-3000)."
+  },
+  {
+   "code": "6-2400",
+   "group": "Beban",
+   "instruction": "Tutup saldo DEBIT akun ini dengan mengkreditnya, debitkan Ikhtisar Laba Rugi (3-3000)."
+  },
+  {
+   "code": "6-2500",
+   "group": "Beban",
+   "instruction": "Tutup saldo DEBIT akun ini dengan mengkreditnya, debitkan Ikhtisar Laba Rugi (3-3000)."
+  },
+  {
+   "code": "6-2600",
+   "group": "Beban",
+   "instruction": "Tutup saldo DEBIT akun ini dengan mengkreditnya, debitkan Ikhtisar Laba Rugi (3-3000)."
+  },
+  {
+   "code": "7-1000",
+   "group": "Beban",
+   "instruction": "Tutup saldo DEBIT akun ini dengan mengkreditnya, debitkan Ikhtisar Laba Rugi (3-3000)."
+  },
+  {
+   "code": "7-1100",
+   "group": "Beban",
+   "instruction": "Tutup saldo DEBIT akun ini dengan mengkreditnya, debitkan Ikhtisar Laba Rugi (3-3000)."
+  },
+  {
+   "code": "7-1200",
+   "group": "Beban",
+   "instruction": "Tutup saldo DEBIT akun ini dengan mengkreditnya, debitkan Ikhtisar Laba Rugi (3-3000)."
+  },
+  {
+   "code": "7-1300",
+   "group": "Beban",
+   "instruction": "Akun ini bersaldo KREDIT (manfaat pajak tangguhan): tutup dengan MENDEBITNYA, kreditkan Ikhtisar Laba Rugi (3-3000)."
+  },
+  {
+   "code": "3-3000",
+   "group": "Penutup",
+   "instruction": "Baris ini mewakili PENUTUPAN Ikhtisar Laba Rugi: isi kolom Debit SAJA dengan jumlah laba bersih tahun berjalan (dari Laporan Laba Rugi). Pasangannya (kredit ke Saldo Laba) otomatis diperhitungkan."
+  },
+  {
+   "code": "3-9000",
+   "group": "Penutup",
+   "instruction": "Tutup saldo Dividen ke Saldo Laba: isi kolom Kredit (F) dengan saldo Dividen (mengkredit/menghabiskan akun Dividen; pasangannya mendebit Saldo Laba otomatis)."
+  }
+ ],
+ "reversingCases": [
+  {
+   "no": 1,
+   "reversed": "Utang bunga (AJ13 + AJ14)",
+   "why": "Bunga kredit bank yang masih harus dibayar diakui 31 Des 2024. Saat bank mendebet bunga pada 2025, staf cukup mendebit Beban Bunga penuh tanpa menelusuri porsi 2024 - pembalik menghilangkan risiko pencatatan ganda."
+  },
+  {
+   "no": 2,
+   "reversed": "Piutang bunga (AJ16 + AJ17)",
+   "why": "Piutang bunga obligasi dan deposito diakui 31 Des 2024. Saat kas bunga diterima 2025, seluruhnya dikredit ke Pendapatan Bunga; pembalik mengeluarkan porsi 2024 dari pendapatan 2025."
+  }
+ ],
+ "closingIntro": "Tutup seluruh akun nominal (pendapatan & beban) ke Ikhtisar Laba Rugi, lalu tutup Ikhtisar Laba Rugi dan Dividen/Prive ke Saldo Laba. Nominal harus sama dengan saldo akun tersebut pada Neraca Saldo Setelah Penyesuaian (11).",
+ "reversingIntro": "Jurnal pembalik bersifat OPSIONAL. Dibuat hanya untuk penyesuaian AKRUAL (accrued expense/revenue) yang akan diikuti transaksi kas rutin tahun berikutnya. TIDAK dibuat untuk penyusutan, estimasi (provisi/cadangan), penyesuaian deferral, maupun pengukuran nilai wajar. Nominal = saldo akun akrual pada Neraca Saldo Setelah Penyesuaian (11)."
+}

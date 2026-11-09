@@ -1,0 +1,276 @@
+[
+ {
+  "no": 1,
+  "topic": "Aset tetap: komponen biaya\n(BAB 9 - Aset Tetap)",
+  "caseAndFacts": "CASE: Pembelian mesin pemotong presisi\n\nFACTS: Harga faktur Rp600.000.000, dan pemasok memberikan potongan 4% atas harga faktur secara terpisah. Biaya pengiriman Rp15.000.000; fondasi mesin Rp20.000.000; biaya uji coba Rp8.000.000 (menghasilkan barang contoh yang dijual Rp3.000.000); pelatihan operator Rp5.000.000; biaya administrasi umum Rp7.000.000 yang dialokasikan ke proyek.",
+  "question": "Berapa biaya perolehan mesin yang dikapitalisasi?",
+  "kind": "numeric",
+  "options": null,
+  "userResponsePrompt": "(tuliskan alasan/perhitungan Anda di sini sebelum menjawab)"
+ },
+ {
+  "no": 2,
+  "topic": "Subsequent cost\n(BAB 9 - Aset Tetap)",
+  "caseAndFacts": "CASE: Pengeluaran atas bangunan pabrik\n\nFACTS: Dalam tahun ini: (a) pengecatan ulang dinding Rp12.000.000; (b) penambahan lantai mezanin baru yang menambah kapasitas Rp90.000.000; (c) penggantian atap yang bocor dengan kualitas sama Rp25.000.000 (atap lama masih tercatat Rp10.000.000 dan dibongkar).",
+  "question": "Berapa total yang dikapitalisasi ke aset bangunan pada tahun ini, dengan asumsi penggantian bagian (atap) dikapitalisasi dan nilai tercatat komponen lama dihapus (dibebankan sebagai rugi pelepasan)?",
+  "kind": "numeric",
+  "options": null,
+  "userResponsePrompt": "(tuliskan alasan/perhitungan Anda di sini sebelum menjawab)"
+ },
+ {
+  "no": 3,
+  "topic": "Perubahan estimasi umur\n(BAB 9 - Aset Tetap)",
+  "caseAndFacts": "CASE: Revisi umur manfaat mesin\n\nFACTS: Mesin dibeli 1 Januari 2021 seharga Rp900.000.000, umur 10 tahun, residu Rp60.000.000, garis lurus. Pada 1 Januari 2024 manajemen merevisi sisa umur dari 7 tahun menjadi 9 tahun dan residu menjadi Rp90.000.000.",
+  "question": "Berapa beban penyusutan tahun 2024?",
+  "kind": "numeric",
+  "options": null,
+  "userResponsePrompt": "(tuliskan alasan/perhitungan Anda di sini sebelum menjawab)"
+ },
+ {
+  "no": 4,
+  "topic": "Pelepasan aset\n(BAB 9 - Aset Tetap)",
+  "caseAndFacts": "CASE: Penjualan mesin sebelum akhir tahun\n\nFACTS: Harga perolehan Rp400.000.000; akumulasi penyusutan pada 1 Januari Rp240.000.000; penyusutan tahunan Rp40.000.000; mesin dijual 1 Oktober seharga Rp170.000.000.",
+  "question": "Berapa keuntungan atau (kerugian) penjualan? (Kerugian dinyatakan negatif.)",
+  "kind": "numeric",
+  "options": null,
+  "userResponsePrompt": "(tuliskan alasan/perhitungan Anda di sini sebelum menjawab)"
+ },
+ {
+  "no": 5,
+  "topic": "Impairment\n(BAB 11 - Penurunan Nilai)",
+  "caseAndFacts": "CASE: Uji penurunan nilai lini produksi\n\nFACTS: Nilai tercatat Rp850.000.000. Nilai wajar dikurangi biaya pelepasan Rp700.000.000. Nilai pakai (PV arus kas) Rp760.000.000.",
+  "question": "Berapa rugi penurunan nilai yang diakui?",
+  "kind": "numeric",
+  "options": null,
+  "userResponsePrompt": "(tuliskan alasan/perhitungan Anda di sini sebelum menjawab)"
+ },
+ {
+  "no": 6,
+  "topic": "Impairment: batas pembalikan\n(BAB 11 - Penurunan Nilai)",
+  "caseAndFacts": "CASE: Pembalikan rugi penurunan nilai\n\nFACTS: Aset dibeli Rp500.000.000, umur 10 tahun, tanpa residu. Setelah 4 tahun (nilai tercatat Rp300.000.000) diakui impairment sehingga jumlah terpulihkan menjadi Rp180.000.000 dengan sisa umur 6 tahun. Setelah 2 tahun berikutnya (nilai tercatat Rp120.000.000), jumlah terpulihkan naik menjadi Rp260.000.000.",
+  "question": "Berapa nilai maksimum pembalikan yang boleh diakui?",
+  "kind": "numeric",
+  "options": null,
+  "userResponsePrompt": "(tuliskan alasan/perhitungan Anda di sini sebelum menjawab)"
+ },
+ {
+  "no": 7,
+  "topic": "Provisi vs kontinjensi\n(BAB 12 - Provisi)",
+  "caseAndFacts": "CASE: Klaim pelanggan atas produk cacat\n\nFACTS: Tiga klaim hukum: (A) pelanggan menggugat, penasihat hukum menilai peluang kalah 80% dengan estimasi Rp120jt andal; (B) gugatan lain peluang kalah 30%, Rp60jt; (C) gugatan lain peluang kalah 70% tetapi jumlah tidak dapat diestimasi andal.",
+  "question": "Klaim mana yang diakui sebagai provisi?",
+  "kind": "choice",
+  "options": [
+   "Hanya A",
+   "A dan C",
+   "Ketiganya (A-B-C)",
+   "Tidak ada"
+  ],
+  "userResponsePrompt": "(jelaskan alasan pemilihan Anda)"
+ },
+ {
+  "no": 8,
+  "topic": "Provisi: nilai ekspektasian\n(BAB 12 - Provisi)",
+  "caseAndFacts": "CASE: Estimasi biaya perbaikan garansi\n\nFACTS: Populasi klaim besar: 70% tanpa klaim, 20% klaim ringan Rp1.500.000, 10% klaim berat Rp6.000.000. Terjual 400 unit.",
+  "question": "Berapa provisi garansi (nilai ekspektasian)?",
+  "kind": "numeric",
+  "options": null,
+  "userResponsePrompt": "(tuliskan alasan/perhitungan Anda di sini sebelum menjawab)"
+ },
+ {
+  "no": 9,
+  "topic": "Kontinjensi aset\n(BAB 12 - Provisi & Kontinjensi)",
+  "caseAndFacts": "CASE: Klaim asuransi atas kebakaran gudang\n\nFACTS: Perusahaan mengajukan klaim asuransi Rp250.000.000. Perusahaan asuransi belum menyetujui. Penasihat hukum menilai realisasi 'kemungkinan besar' (probable) tetapi bukan 'virtually certain'.",
+  "question": "Bagaimana perlakuannya?",
+  "kind": "choice",
+  "options": [
+   "Diakui sebagai aset",
+   "Diungkapkan sebagai aset kontinjensi",
+   "Diakui sebagai pendapatan",
+   "Tidak perlu diungkapkan"
+  ],
+  "userResponsePrompt": "(jelaskan alasan pemilihan Anda)"
+ },
+ {
+  "no": 10,
+  "topic": "Persediaan LCNRV\n(BAB 8 - Persediaan)",
+  "caseAndFacts": "CASE: Penilaian persediaan akhir tahun\n\nFACTS: Empat kelompok: (1) biaya 120jt, NRV 150jt; (2) biaya 90jt, NRV 70jt; (3) biaya 60jt, NRV 55jt; (4) biaya 40jt, NRV 48jt. Diterapkan item per item.",
+  "question": "Berapa total nilai persediaan akhir setelah LCNRV?",
+  "kind": "numeric",
+  "options": null,
+  "userResponsePrompt": "(tuliskan alasan/perhitungan Anda di sini sebelum menjawab)"
+ },
+ {
+  "no": 11,
+  "topic": "Persediaan: kepemilikan (FOB)\n(BAB 8 - Persediaan)",
+  "caseAndFacts": "CASE: Barang dalam perjalanan\n\nFACTS: Pada 31 Desember, persediaan menurut catatan belum memuat item berikut: (a) pembelian Rp80jt FOB shipping point, barang di kapal menuju gudang; (b) pembelian Rp50jt FOB destination, barang di kapal menuju gudang; (c) barang konsinyasi milik pihak lain di gudang Rp30jt.",
+  "question": "Berapa nilai yang harus ditambahkan ke persediaan perusahaan?",
+  "kind": "numeric",
+  "options": null,
+  "userResponsePrompt": "(tuliskan alasan/perhitungan Anda di sini sebelum menjawab)"
+ },
+ {
+  "no": 12,
+  "topic": "Piutang: metode cadangan\n(BAB 7 - Piutang)",
+  "caseAndFacts": "CASE: Cadangan berdasarkan aging\n\nFACTS: Piutang: belum jatuh tempo 800jt (1%); 1-30 hari 300jt (4%); 31-60 hari 150jt (12%); >60 hari 100jt (40%). Saldo kredit cadangan sebelum penyesuaian Rp20jt.",
+  "question": "Berapa beban kerugian piutang tahun ini?",
+  "kind": "numeric",
+  "options": null,
+  "userResponsePrompt": "(tuliskan alasan/perhitungan Anda di sini sebelum menjawab)"
+ },
+ {
+  "no": 13,
+  "topic": "Pendapatan: kapan diakui\n(BAB 17 - Pendapatan)",
+  "caseAndFacts": "CASE: Penjualan dengan hak retur tanpa estimasi andal\n\nFACTS: Perusahaan menjual produk baru Rp200jt dengan hak retur 30 hari. Tidak ada pengalaman historis untuk mengestimasi retur secara andal.",
+  "question": "Bagaimana pengakuan pendapatan pada saat penyerahan?",
+  "kind": "choice",
+  "options": [
+   "Diakui penuh Rp200jt",
+   "Ditangguhkan sampai ketidakpastian retur selesai / batas dibatasi",
+   "Diakui 50%",
+   "Tidak ada jurnal sama sekali"
+  ],
+  "userResponsePrompt": "(jelaskan alasan pemilihan Anda)"
+ },
+ {
+  "no": 14,
+  "topic": "Kontrak sepanjang waktu\n(BAB 17 - Pendapatan / Kontrak)",
+  "caseAndFacts": "CASE: Pengakuan pendapatan kontrak dengan metode input (kewajiban pelaksanaan dipenuhi sepanjang waktu; pelanggan mengendalikan aset seiring dibangun)\n\nFACTS: Kontrak Rp2.400jt. Estimasi total biaya Rp1.800jt. Biaya kumulatif akhir tahun 1 = Rp540jt; tahun 2 = Rp1.260jt (estimasi total tetap).",
+  "question": "Berapa pendapatan yang diakui pada tahun 2?",
+  "kind": "numeric",
+  "options": null,
+  "userResponsePrompt": "(tuliskan alasan/perhitungan Anda di sini sebelum menjawab)"
+ },
+ {
+  "no": 15,
+  "topic": "Sewa (PSAK 116): penyewa\n(BAB 14 - Sewa)",
+  "caseAndFacts": "CASE: Kontrak sewa jangka pendek\n\nFACTS: Sewa alat berat selama 10 bulan, tanpa opsi perpanjangan atau pembelian, biaya sewa Rp15jt/bulan, dibayar di muka.",
+  "question": "Bagaimana penyewa mengakuinya menurut kebijakan?",
+  "kind": "choice",
+  "options": [
+   "Aset hak-guna dan liabilitas sewa",
+   "Beban sewa garis lurus (pengecualian sewa jangka pendek)",
+   "Sebagai pembelian aset",
+   "Ditangguhkan seluruhnya"
+  ],
+  "userResponsePrompt": "(jelaskan alasan pemilihan Anda)"
+ },
+ {
+  "no": 16,
+  "topic": "Sewa: liabilitas awal\n(BAB 14 - Sewa)",
+  "caseAndFacts": "CASE: Pengukuran liabilitas sewa\n\nFACTS: Pembayaran sewa Rp50.000.000 di akhir setiap tahun selama 5 tahun; suku bunga implisit 8%. PV anuitas 5 tahun pada 8% = 3,99271.",
+  "question": "Berapa liabilitas sewa pada tanggal permulaan?",
+  "kind": "numeric",
+  "options": null,
+  "userResponsePrompt": "(tuliskan alasan/perhitungan Anda di sini sebelum menjawab)"
+ },
+ {
+  "no": 17,
+  "topic": "Obligasi: nilai tercatat\n(BAB 15 - Liabilitas Jangka Panjang)",
+  "caseAndFacts": "CASE: Amortisasi diskonto obligasi\n\nFACTS: Obligasi nominal Rp1.000jt diterbitkan Rp920jt; kupon 8% tahunan; suku bunga efektif 10%.",
+  "question": "Berapa beban bunga tahun pertama dan nilai tercatat akhir tahun pertama? (Isi nilai tercatat akhir.)",
+  "kind": "numeric",
+  "options": null,
+  "userResponsePrompt": "(tuliskan alasan/perhitungan Anda di sini sebelum menjawab)"
+ },
+ {
+  "no": 18,
+  "topic": "Investasi biaya diamortisasi\n(BAB 13 - Investasi)",
+  "caseAndFacts": "CASE: Pendapatan bunga efektif\n\nFACTS: Perusahaan membeli obligasi nominal Rp300jt seharga Rp285jt, kupon 6% tahunan, SBE 7,6%. Hold-to-collect.",
+  "question": "Berapa pendapatan bunga tahun pertama?",
+  "kind": "numeric",
+  "options": null,
+  "userResponsePrompt": "(tuliskan alasan/perhitungan Anda di sini sebelum menjawab)"
+ },
+ {
+  "no": 19,
+  "topic": "Klasifikasi investasi\n(BAB 13 - Investasi)",
+  "caseAndFacts": "CASE: Saham untuk diperdagangkan\n\nFACTS: Perusahaan membeli saham perusahaan terbuka untuk memperoleh laba dari fluktuasi harga jangka pendek. Tidak ada pengaruh signifikan.",
+  "question": "Bagaimana klasifikasi dan pengukuran setelah pengakuan awal?",
+  "kind": "choice",
+  "options": [
+   "Biaya diamortisasi",
+   "Nilai wajar melalui laba rugi",
+   "Metode ekuitas",
+   "Biaya perolehan"
+  ],
+  "userResponsePrompt": "(jelaskan alasan pemilihan Anda)"
+ },
+ {
+  "no": 20,
+  "topic": "Pajak tangguhan\n(BAB 18 - Pajak Penghasilan)",
+  "caseAndFacts": "CASE: Provisi garansi dan pajak tangguhan\n\nFACTS: Laba sebelum pajak Rp800jt. Beban garansi Rp60jt dibukukan tetapi baru boleh dikurangkan fiskal saat klaim dibayar. Tarif 22%.",
+  "question": "Berapa aset pajak tangguhan yang diakui?",
+  "kind": "numeric",
+  "options": null,
+  "userResponsePrompt": "(tuliskan alasan/perhitungan Anda di sini sebelum menjawab)"
+ },
+ {
+  "no": 21,
+  "topic": "Pajak kini\n(BAB 18 - Pajak Penghasilan)",
+  "caseAndFacts": "CASE: Perhitungan pajak kini\n\nFACTS: Laba sebelum pajak Rp800jt. Koreksi fiskal positif beda temporer Rp60jt; beda tetap (denda pajak) Rp10jt; koreksi negatif (penyusutan fiskal lebih besar) Rp30jt. Tarif 22%.",
+  "question": "Berapa beban pajak kini?",
+  "kind": "numeric",
+  "options": null,
+  "userResponsePrompt": "(tuliskan alasan/perhitungan Anda di sini sebelum menjawab)"
+ },
+ {
+  "no": 22,
+  "topic": "Aset dimiliki untuk dijual\n(BAB 10 - Aset Dimiliki untuk Dijual)",
+  "caseAndFacts": "CASE: Reklasifikasi ke held-for-sale\n\nFACTS: Aset nilai tercatat Rp430jt; nilai wajar dikurangi biaya menjual Rp400jt; memenuhi kriteria held-for-sale. Tidak disusutkan setelahnya.",
+  "question": "Berapa rugi penurunan nilai saat reklasifikasi?",
+  "kind": "numeric",
+  "options": null,
+  "userResponsePrompt": "(tuliskan alasan/perhitungan Anda di sini sebelum menjawab)"
+ },
+ {
+  "no": 23,
+  "topic": "Properti investasi\n(BAB 10 - Properti Investasi)",
+  "caseAndFacts": "CASE: Model nilai wajar\n\nFACTS: Properti investasi dicatat Rp1.200jt; nilai wajar akhir tahun Rp1.290jt. Perusahaan memakai model nilai wajar.",
+  "question": "Bagaimana perlakuan selisih nilai wajar?",
+  "kind": "choice",
+  "options": [
+   "Diakui di penghasilan komprehensif lain",
+   "Diakui dalam laba rugi",
+   "Menambah tambahan modal disetor",
+   "Tidak diakui"
+  ],
+  "userResponsePrompt": "(jelaskan alasan pemilihan Anda)"
+ },
+ {
+  "no": 24,
+  "topic": "Ekuitas: dividen\n(BAB 16 - Ekuitas)",
+  "caseAndFacts": "CASE: Deklarasi dan pembayaran dividen\n\nFACTS: RUPS mengumumkan dividen tunai Rp90jt pada 20 Desember, dibayar 15 Januari tahun berikutnya.",
+  "question": "Bagaimana perlakuannya per 31 Desember?",
+  "kind": "choice",
+  "options": [
+   "Beban dan tidak ada liabilitas",
+   "Liabilitas (utang dividen) dan pengurang ekuitas",
+   "Hanya diungkapkan",
+   "Diakui saat dibayar"
+  ],
+  "userResponsePrompt": "(jelaskan alasan pemilihan Anda)"
+ },
+ {
+  "no": 25,
+  "topic": "Selisih kurs (di luar inti materi)",
+  "caseAndFacts": "CASE: Utang valuta asing pada akhir periode\n\nFACTS: Utang USD 10.000 dicatat kurs Rp15.000; kurs penutup Rp15.600.",
+  "question": "Berapa kerugian selisih kurs yang diakui?",
+  "kind": "numeric",
+  "options": null,
+  "userResponsePrompt": "(tuliskan alasan/perhitungan Anda di sini sebelum menjawab)"
+ },
+ {
+  "no": 26,
+  "topic": "Konsinyasi & pengakuan\n(BAB 17 - Pendapatan)",
+  "caseAndFacts": "CASE: Barang konsinyasi\n\nFACTS: Perusahaan mengirim barang ke distributor secara konsinyasi (distributor tidak berkewajiban membeli). Biaya barang Rp100jt; distributor menjual sebagian seharga Rp60jt (biaya Rp36jt), komisi 10%.",
+  "question": "Kapan perusahaan mengakui pendapatan? Pilih yang benar.",
+  "kind": "choice",
+  "options": [
+   "Saat barang dikirim ke distributor",
+   "Saat distributor menjual ke pihak ketiga",
+   "Saat kas komisi diterima",
+   "Saat kontrak ditandatangani"
+  ],
+  "userResponsePrompt": "(jelaskan alasan pemilihan Anda)"
+ }
+]

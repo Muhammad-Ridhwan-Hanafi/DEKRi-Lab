@@ -1,0 +1,153 @@
+{
+  "app": "akuntansi-practice-pack",
+  "version": 1,
+  "id": "psak216-lanjutan",
+  "title": "PSAK 216: Aset Tetap Lanjutan (kompensasi dan revaluasi)",
+  "description": "Bagan akun khusus paket ini. Nominal dalam rupiah penuh. Dampak pajak (termasuk pajak tangguhan atas revaluasi, lihat PSAK 212) diabaikan sebagai asumsi soal.",
+  "accounts": [
+    {
+      "code": "AT-1100",
+      "name": "Piutang Klaim Asuransi",
+      "type": "Asset",
+      "normal": "Debit",
+      "reportClass": "Current Asset"
+    },
+    {
+      "code": "AT-1200",
+      "name": "Tanah",
+      "type": "Asset",
+      "normal": "Debit",
+      "reportClass": "Fixed Asset"
+    },
+    {
+      "code": "AT-1300",
+      "name": "Bangunan",
+      "type": "Asset",
+      "normal": "Debit",
+      "reportClass": "Fixed Asset"
+    },
+    {
+      "code": "AT-1310",
+      "name": "Akumulasi Penyusutan Bangunan",
+      "type": "Asset",
+      "normal": "Credit",
+      "reportClass": "Contra Asset"
+    },
+    {
+      "code": "AT-1400",
+      "name": "Mesin",
+      "type": "Asset",
+      "normal": "Debit",
+      "reportClass": "Fixed Asset"
+    },
+    {
+      "code": "AT-1410",
+      "name": "Akumulasi Penyusutan Mesin",
+      "type": "Asset",
+      "normal": "Credit",
+      "reportClass": "Contra Asset"
+    },
+    {
+      "code": "AT-3100",
+      "name": "Surplus Revaluasi (OCI)",
+      "type": "Equity",
+      "normal": "Credit",
+      "reportClass": "Equity"
+    },
+    {
+      "code": "AT-4100",
+      "name": "Kompensasi Asuransi (Penghasilan Lain-lain)",
+      "type": "Revenue",
+      "normal": "Credit",
+      "reportClass": "Revenue"
+    },
+    {
+      "code": "AT-5100",
+      "name": "Kerugian Penghentian Pengakuan Aset Tetap",
+      "type": "Expense",
+      "normal": "Debit",
+      "reportClass": "Expense"
+    }
+  ],
+  "items": [
+    {
+      "id": "al1",
+      "title": "Mesin rusak berat dan klaim asuransi disetujui",
+      "narrative": "Mesin rusak berat karena kebakaran dan tidak dapat dipakai lagi, sehingga pengakuannya dihentikan. Biaya perolehan mesin Rp80.000.000, akumulasi penyusutan Rp30.000.000 (sudah mutakhir sampai tanggal kejadian). Perusahaan asuransi telah memberi persetujuan klaim yang final sebesar Rp45.000.000; jumlah kompensasi sudah ditetapkan dan hak tagih perusahaan sudah timbul, tetapi dana belum dibayar. Catat kerugian penghentian aset dan kompensasi secara terpisah, jangan dinetokan.",
+      "lines": [
+        {
+          "code": "AT-1410",
+          "debit": 30000000,
+          "credit": 0
+        },
+        {
+          "code": "AT-5100",
+          "debit": 50000000,
+          "credit": 0
+        },
+        {
+          "code": "AT-1400",
+          "debit": 0,
+          "credit": 80000000
+        },
+        {
+          "code": "AT-1100",
+          "debit": 45000000,
+          "credit": 0
+        },
+        {
+          "code": "AT-4100",
+          "debit": 0,
+          "credit": 45000000
+        }
+      ],
+      "explain": "Nilai tercatat 80 - 30 = 50 dihentikan pengakuannya sebagai kerugian 50. Kompensasi dari pihak ketiga diakui di laba rugi ketika menjadi piutang (45), terpisah dari kerugian; keduanya peristiwa ekonomi yang berbeda sehingga tidak disajikan sebagai kerugian neto 5. Dasar: PSAK 216 par.65-66 (kompensasi pihak ketiga) serta par.65-68 dan 71 (penghentian pengakuan) (cek par. ke naskah resmi). Asumsi: pajak diabaikan."
+    },
+    {
+      "id": "al2",
+      "title": "Revaluasi tanah (surplus)",
+      "narrative": "Perusahaan memakai model revaluasi untuk seluruh aset tetap kelas tanah. Penilai menetapkan nilai wajar tanah Rp650.000.000 sedangkan nilai tercatatnya Rp500.000.000. Tanah ini belum pernah mengalami penurunan revaluasi yang sebelumnya diakui di laba rugi. Catat revaluasi.",
+      "lines": [
+        {
+          "code": "AT-1200",
+          "debit": 150000000,
+          "credit": 0
+        },
+        {
+          "code": "AT-3100",
+          "debit": 0,
+          "credit": 150000000
+        }
+      ],
+      "explain": "Kenaikan nilai tercatat akibat revaluasi (650 - 500 = 150) diakui di penghasilan komprehensif lain dan terkumpul di ekuitas sebagai surplus revaluasi, bukan di laba rugi. Bila sebelumnya ada penurunan revaluasi atas aset yang sama yang diakui di laba rugi, kenaikan berikutnya harus lebih dulu membalik penurunan itu di laba rugi; soal ini mengasumsikan tidak ada. Dasar: PSAK 216 par.31 dan 36-39 (model revaluasi, satu kelas aset, surplus di OCI) (cek par. ke naskah resmi). Asumsi: pajak tangguhan atas revaluasi (PSAK 216 par.42, PSAK 212) diabaikan."
+    },
+    {
+      "id": "al3",
+      "title": "Revaluasi bangunan dengan eliminasi akumulasi penyusutan",
+      "narrative": "Perusahaan memakai model revaluasi untuk seluruh aset tetap kelas bangunan dan mengeliminasi akumulasi penyusutan terhadap jumlah bruto aset pada tanggal revaluasi. Bangunan: biaya perolehan Rp800.000.000, akumulasi penyusutan Rp200.000.000 (mutakhir), nilai wajar Rp720.000.000. Tidak ada penurunan revaluasi sebelumnya yang harus dipulihkan melalui laba rugi. Catat revaluasi (boleh dalam satu jurnal).",
+      "lines": [
+        {
+          "code": "AT-1310",
+          "debit": 200000000,
+          "credit": 0
+        },
+        {
+          "code": "AT-1300",
+          "debit": 0,
+          "credit": 200000000
+        },
+        {
+          "code": "AT-1300",
+          "debit": 120000000,
+          "credit": 0
+        },
+        {
+          "code": "AT-3100",
+          "debit": 0,
+          "credit": 120000000
+        }
+      ],
+      "explain": "Tahap 1, eliminasi akumulasi penyusutan: Dr Akumulasi 200; Cr Bangunan 200, sehingga bangunan tercatat 600 tanpa akumulasi. Tahap 2, naikkan ke nilai wajar: Dr Bangunan 120; Cr Surplus revaluasi 120, sehingga bangunan menjadi 720. Bila digabung: Dr Akumulasi 200; Cr Bangunan 80; Cr Surplus revaluasi 120 (juga diterima). Dasar: PSAK 216 par.35(b) dan 36-39 (cek par. ke naskah resmi). Asumsi: pajak tangguhan diabaikan."
+    }
+  ]
+}

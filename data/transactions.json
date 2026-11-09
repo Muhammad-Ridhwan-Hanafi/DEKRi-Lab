@@ -1,0 +1,1472 @@
+[
+ {
+  "no": 1,
+  "date": "2024-01-02",
+  "level": "Intermediate",
+  "topic": "Modal saham",
+  "narrative": "Pemegang saham menyetor tambahan modal tunai untuk memperkuat modal kerja. Dana masuk ke rekening Bank Mandiri.",
+  "party": "Pemegang saham",
+  "amountInfo": "Setoran 400.000 lembar saham, nilai nominal Rp1.000 per lembar, harga terbit Rp1.000 per lembar.",
+  "isDistractor": false
+ },
+ {
+  "no": 2,
+  "date": "2024-01-03",
+  "level": "Intermediate",
+  "topic": "Beban dibayar di muka",
+  "narrative": "Perusahaan menyewa gudang tambahan dan membayar sewa untuk seluruh masa kontrak melalui Bank Mandiri.",
+  "party": "CV Gudang Marunda Sejahtera",
+  "amountInfo": "Sewa Rp72.000.000 untuk 12 bulan, 1 Januari s.d. 31 Desember 2024.",
+  "isDistractor": false
+ },
+ {
+  "no": 3,
+  "date": "2024-01-05",
+  "level": "Intermediate",
+  "topic": "Pembelian kredit",
+  "narrative": "Membeli komponen elektronik secara kredit dari PT Komponen Nusantara.",
+  "party": "PT Komponen Nusantara",
+  "amountInfo": "Harga faktur Rp186.000.000. Syarat 2/10, n/30.",
+  "isDistractor": false
+ },
+ {
+  "no": 4,
+  "date": "2024-01-08",
+  "level": "Intermediate",
+  "topic": "Penjualan tunai + HPP",
+  "narrative": "Menjual komponen kepada toko ritel; pembayaran diterima via transfer Bank Mandiri.",
+  "party": "Toko Elektronik Makmur Jaya",
+  "amountInfo": "Harga jual Rp95.000.000. Kartu persediaan menunjukkan biaya barang yang dijual Rp57.000.000.",
+  "isDistractor": false
+ },
+ {
+  "no": 5,
+  "date": "2024-01-10",
+  "level": "Intermediate",
+  "topic": "Pelunasan utang dengan diskon",
+  "narrative": "Melunasi faktur pembelian No.3 dari PT Komponen Nusantara dalam periode diskon.",
+  "party": "PT Komponen Nusantara",
+  "amountInfo": "Tagihan Rp186.000.000. Syarat 2/10, n/30, dibayar dalam periode diskon via Bank Mandiri.",
+  "isDistractor": false
+ },
+ {
+  "no": 6,
+  "date": "2024-01-12",
+  "level": "Intermediate",
+  "topic": "Penjualan kredit",
+  "narrative": "Menjual komponen elektronik secara kredit kepada PT Bangun Cipta Elektrik.",
+  "party": "PT Bangun Cipta Elektrik",
+  "amountInfo": "Harga faktur Rp180.000.000. Syarat 2/10, n/30. HPP menurut kartu persediaan Rp108.000.000.",
+  "isDistractor": false
+ },
+ {
+  "no": 7,
+  "date": "2024-01-15",
+  "level": "Intermediate",
+  "topic": "Beban dibayar di muka",
+  "narrative": "Membayar premi asuransi kebakaran gedung dan gudang untuk satu tahun polis melalui Bank Mandiri.",
+  "party": "PT Asuransi Cakra Abadi",
+  "amountInfo": "Premi Rp24.000.000. Periode polis 15 Januari 2024 s.d. 14 Januari 2025.",
+  "isDistractor": false
+ },
+ {
+  "no": 8,
+  "date": "2024-01-15",
+  "level": "Intermediate",
+  "topic": "Pelunasan saldo awal utang usaha",
+  "narrative": "Melunasi sebagian utang usaha saldo awal (faktur tahun lalu) kepada PT Komponen Nusantara. Utang ini sudah jatuh tempo dan tidak ada diskon.",
+  "party": "PT Komponen Nusantara",
+  "amountInfo": "Rp180.000.000 dari saldo utang 1 Januari 2024, dibayar via Bank Mandiri.",
+  "isDistractor": false
+ },
+ {
+  "no": 9,
+  "date": "2024-01-18",
+  "level": "Intermediate",
+  "topic": "Perlengkapan",
+  "narrative": "Membeli perlengkapan kantor secara tunai dari kas kecil.",
+  "party": "Toko Alat Tulis Sejahtera",
+  "amountInfo": "Nota tunai Rp6.500.000.",
+  "isDistractor": false
+ },
+ {
+  "no": 10,
+  "date": "2024-01-20",
+  "level": "Intermediate",
+  "topic": "Pelunasan piutang dengan diskon",
+  "narrative": "PT Bangun Cipta Elektrik melunasi faktur penjualan No.6 sebelum batas periode diskon berakhir.",
+  "party": "PT Bangun Cipta Elektrik",
+  "amountInfo": "Tagihan awal Rp180.000.000. Pelanggan membayar tepat waktu dalam periode diskon 2%.",
+  "isDistractor": false
+ },
+ {
+  "no": 11,
+  "date": "2024-01-22",
+  "level": "Intermediate",
+  "topic": "Beban gaji",
+  "narrative": "Membayar gaji dan upah karyawan bulan Januari melalui transfer bank.",
+  "party": "Karyawan",
+  "amountInfo": "Total gaji bruto Rp68.000.000 dibayar penuh (potongan pajak karyawan diabaikan dalam latihan ini).",
+  "isDistractor": false
+ },
+ {
+  "no": 12,
+  "date": "2024-01-25",
+  "level": "Intermediate",
+  "topic": "Retur penjualan",
+  "narrative": "Sebagian barang pada penjualan tunai tanggal 8 Januari dikembalikan pelanggan karena cacat produksi. Uang dikembalikan lewat transfer, barang masuk gudang dalam kondisi layak jual kembali.",
+  "party": "Toko Elektronik Makmur Jaya",
+  "amountInfo": "Nilai jual barang retur Rp9.500.000; biaya persediaan barang retur Rp5.700.000.",
+  "isDistractor": false
+ },
+ {
+  "no": 13,
+  "date": "2024-01-28",
+  "level": "Intermediate",
+  "topic": "Pendapatan diterima di muka",
+  "narrative": "Pelanggan proyek membayar penuh di muka untuk pekerjaan instalasi panel listrik yang akan dikerjakan mulai Maret 2024.",
+  "party": "PT Graha Properti Indonesia",
+  "amountInfo": "Uang muka Rp45.000.000 diterima via Bank Mandiri. Pekerjaan belum dimulai.",
+  "isDistractor": false
+ },
+ {
+  "no": 14,
+  "date": "2024-01-31",
+  "level": "Intermediate",
+  "topic": "Pelunasan beban yang masih harus dibayar",
+  "narrative": "Membayar beban yang masih harus dibayar dari akhir tahun lalu (gaji Desember 2023 yang dibayar awal Januari).",
+  "party": "Karyawan",
+  "amountInfo": "Rp28.500.000 via Bank Mandiri, sesuai saldo awal.",
+  "isDistractor": false
+ },
+ {
+  "no": 15,
+  "date": "2024-02-01",
+  "level": "Intermediate",
+  "topic": "Pembelian kredit",
+  "narrative": "Membeli komponen elektronik secara kredit dari PT Komponen Nusantara.",
+  "party": "PT Komponen Nusantara",
+  "amountInfo": "Harga faktur Rp224.000.000. Syarat 2/10, n/30.",
+  "isDistractor": false
+ },
+ {
+  "no": 16,
+  "date": "2024-02-03",
+  "level": "Intermediate",
+  "topic": "Penjualan kredit",
+  "narrative": "Menjual komponen elektronik secara kredit kepada Berbagai pelanggan ritel (rekap).",
+  "party": "Berbagai pelanggan ritel (rekap)",
+  "amountInfo": "Harga faktur Rp250.000.000. Syarat n/30 (tanpa diskon). HPP menurut kartu persediaan Rp150.000.000.",
+  "isDistractor": false
+ },
+ {
+  "no": 17,
+  "date": "2024-02-08",
+  "level": "Intermediate",
+  "topic": "Beban operasional",
+  "narrative": "Membayar tagihan listrik, air, dan telekomunikasi bulan Januari melalui Bank Mandiri.",
+  "party": "PLN & Telkom",
+  "amountInfo": "Total tagihan Rp14.200.000.",
+  "isDistractor": false
+ },
+ {
+  "no": 18,
+  "date": "2024-02-10",
+  "level": "Intermediate",
+  "topic": "Pelunasan utang dengan diskon",
+  "narrative": "Melunasi faktur pembelian No.15 dari PT Komponen Nusantara dalam periode diskon.",
+  "party": "PT Komponen Nusantara",
+  "amountInfo": "Tagihan Rp224.000.000. Syarat 2/10, n/30, dibayar dalam periode diskon via Bank Mandiri.",
+  "isDistractor": false
+ },
+ {
+  "no": 19,
+  "date": "2024-02-10",
+  "level": "Intermediate",
+  "topic": "Aset tetap + pembiayaan",
+  "narrative": "Perusahaan membeli satu unit mobil boks. Sebagian dibayar dari rekening bank dan sisanya dibiayai fasilitas kredit bank jangka pendek.",
+  "party": "Dealer Mobil Cahaya Motor",
+  "amountInfo": "Harga Rp310.000.000; uang muka Rp110.000.000; sisa Rp200.000.000 dari kredit bank (bunga 10% p.a., dibayar berkala).",
+  "isDistractor": false
+ },
+ {
+  "no": 20,
+  "date": "2024-02-14",
+  "level": "Intermediate",
+  "topic": "Piutang karyawan",
+  "narrative": "Karyawan melunasi seluruh saldo pinjamannya dengan menyetor tunai ke kasir.",
+  "party": "Karyawan",
+  "amountInfo": "Saldo pinjaman Rp12.000.000, lunas.",
+  "isDistractor": false
+ },
+ {
+  "no": 21,
+  "date": "2024-02-16",
+  "level": "Intermediate",
+  "topic": "Penjualan tunai + HPP",
+  "narrative": "Menjual komponen kepada toko ritel; dibayar via transfer Bank Mandiri.",
+  "party": "Toko Elektronik Makmur Jaya",
+  "amountInfo": "Harga jual Rp120.000.000. Biaya persediaan yang dijual Rp72.000.000.",
+  "isDistractor": false
+ },
+ {
+  "no": 22,
+  "date": "2024-02-20",
+  "level": "Intermediate",
+  "topic": "Beban iklan",
+  "narrative": "Membayar biaya kampanye pemasaran produk baru yang seluruh jasanya sudah diterima perusahaan bulan ini.",
+  "party": "Agensi Kreasi Media",
+  "amountInfo": "Rp18.000.000 via Bank Mandiri; kampanye telah tayang seluruhnya pada Februari-Maret 2024.",
+  "isDistractor": false
+ },
+ {
+  "no": 23,
+  "date": "2024-02-22",
+  "level": "Intermediate",
+  "topic": "Distractor: tidak perlu jurnal",
+  "narrative": "Perusahaan menerima penawaran harga (quotation) tertulis dari pemasok baru untuk pembelian komponen periode April. Belum ada pesanan, uang muka, maupun barang yang berpindah.",
+  "party": "PT Sinar Elektro Global",
+  "amountInfo": "Penawaran berlaku 30 hari, tanpa komitmen mengikat.",
+  "isDistractor": true
+ },
+ {
+  "no": 24,
+  "date": "2024-02-25",
+  "level": "Intermediate",
+  "topic": "Perlengkapan kredit",
+  "narrative": "Membeli perlengkapan kantor tambahan secara kredit.",
+  "party": "Toko Alat Tulis Sejahtera",
+  "amountInfo": "Faktur Rp4.200.000, syarat n/30.",
+  "isDistractor": false
+ },
+ {
+  "no": 25,
+  "date": "2024-03-01",
+  "level": "Intermediate",
+  "topic": "Pelunasan piutang (tanpa diskon)",
+  "narrative": "Berbagai pelanggan ritel (rekap) melunasi faktur penjualan No.16 setelah periode diskon berakhir.",
+  "party": "Berbagai pelanggan ritel (rekap)",
+  "amountInfo": "Tagihan Rp250.000.000 dibayar penuh via transfer Bank Mandiri.",
+  "isDistractor": false
+ },
+ {
+  "no": 26,
+  "date": "2024-03-01",
+  "level": "Intermediate",
+  "topic": "Beban dibayar di muka",
+  "narrative": "Membayar sewa kendaraan pengangkut tambahan untuk periode distribusi musiman.",
+  "party": "PT Rental Armada Prima",
+  "amountInfo": "Rp21.000.000 dibayar via Bank Mandiri untuk Maret, April, dan Mei 2024 (3 bulan).",
+  "isDistractor": false
+ },
+ {
+  "no": 27,
+  "date": "2024-03-04",
+  "level": "Intermediate",
+  "topic": "Pembelian kredit",
+  "narrative": "Membeli komponen elektronik secara kredit dari PT Komponen Nusantara.",
+  "party": "PT Komponen Nusantara",
+  "amountInfo": "Harga faktur Rp312.000.000. Syarat 2/10, n/30.",
+  "isDistractor": false
+ },
+ {
+  "no": 28,
+  "date": "2024-03-07",
+  "level": "Intermediate",
+  "topic": "Kerugian persediaan",
+  "narrative": "Kebocoran atap gudang merusak sebagian barang dagang sehingga tidak dapat dijual sama sekali.",
+  "party": "Internal",
+  "amountInfo": "Biaya perolehan barang yang rusak Rp18.000.000; tidak diasuransikan; dianggap kerugian operasional normal.",
+  "isDistractor": false
+ },
+ {
+  "no": 29,
+  "date": "2024-03-10",
+  "level": "Intermediate",
+  "topic": "Pelunasan utang dengan diskon",
+  "narrative": "Melunasi faktur pembelian No.27 dari PT Komponen Nusantara dalam periode diskon.",
+  "party": "PT Komponen Nusantara",
+  "amountInfo": "Tagihan Rp312.000.000. Syarat 2/10, n/30, dibayar dalam periode diskon via Bank Mandiri.",
+  "isDistractor": false
+ },
+ {
+  "no": 30,
+  "date": "2024-03-15",
+  "level": "Intermediate",
+  "topic": "Trade discount",
+  "narrative": "Menjual komponen secara kredit kepada pelanggan proyek. Faktur dibuat dari harga katalog dikurangi potongan dagang.",
+  "party": "PT Bangun Cipta Elektrik",
+  "amountInfo": "Harga katalog Rp300.000.000, potongan dagang 5%, syarat 2/10, n/30. Biaya persediaan yang dijual Rp171.000.000.",
+  "isDistractor": false
+ },
+ {
+  "no": 31,
+  "date": "2024-03-20",
+  "level": "Intermediate",
+  "topic": "Pendapatan jasa (uang muka)",
+  "narrative": "Proyek instalasi panel untuk PT Graha Properti Indonesia selesai 100% dan diserahterimakan tanpa komplain. Biaya pengerjaan sebesar Rp8.000.000 telah dibayar tunai lewat Bank Mandiri sepanjang Maret.",
+  "party": "PT Graha Properti Indonesia",
+  "amountInfo": "Nilai kontrak Rp45.000.000, seluruhnya telah diterima pada 28 Januari.",
+  "isDistractor": false
+ },
+ {
+  "no": 32,
+  "date": "2024-03-22",
+  "level": "Intermediate",
+  "topic": "Pelunasan piutang dengan diskon",
+  "narrative": "PT Bangun Cipta Elektrik melunasi faktur penjualan No.30 sebelum batas periode diskon berakhir.",
+  "party": "PT Bangun Cipta Elektrik",
+  "amountInfo": "Tagihan awal Rp285.000.000. Pelanggan membayar tepat waktu dalam periode diskon 2%.",
+  "isDistractor": false
+ },
+ {
+  "no": 33,
+  "date": "2024-03-25",
+  "level": "Intermediate",
+  "topic": "Beban pemeliharaan",
+  "narrative": "Membayar servis rutin kendaraan operasional di bengkel.",
+  "party": "Bengkel Mitra Motor",
+  "amountInfo": "Rp9.600.000 via Bank Mandiri; servis berkala, tidak menambah umur atau kapasitas kendaraan.",
+  "isDistractor": false
+ },
+ {
+  "no": 34,
+  "date": "2024-03-30",
+  "level": "Intermediate",
+  "topic": "Pelunasan saldo awal utang usaha",
+  "narrative": "Melunasi sisa utang usaha saldo awal kepada pemasok lama.",
+  "party": "PT Komponen Nusantara",
+  "amountInfo": "Sisa Rp116.000.000 dibayar via Bank Mandiri.",
+  "isDistractor": false
+ },
+ {
+  "no": 35,
+  "date": "2024-03-31",
+  "level": "Intermediate",
+  "topic": "Penerimaan piutang lama (saldo awal)",
+  "narrative": "Menerima pelunasan piutang usaha dari saldo awal (pelanggan lama), dibayar via Bank Mandiri.",
+  "party": "Berbagai pelanggan lama",
+  "amountInfo": "Rp250.000.000 dari saldo piutang 1 Januari 2024.",
+  "isDistractor": false
+ },
+ {
+  "no": 36,
+  "date": "2024-04-02",
+  "level": "Expert",
+  "topic": "Aset tetap: komponen biaya perolehan",
+  "narrative": "Perusahaan membeli mesin perakitan baru. Pembayaran semua tagihan dilakukan lewat Bank Mandiri. Selain itu, perusahaan wajib membongkar mesin dan memulihkan lokasi di akhir masa pakai. Mesin mulai dipakai untuk produksi komersial pada 1 Mei 2024.",
+  "party": "PT Mesin Industri Presisi",
+  "amountInfo": "Tagihan: harga mesin Rp450.000.000; pengangkutan Rp12.000.000; instalasi Rp18.000.000; uji coba sebelum siap pakai Rp6.000.000; pelatihan operator Rp9.000.000 (dibayar terpisah, jurnal terpisah pada No.37). Nilai kini estimasi biaya pembongkaran dan restorasi Rp24.000.000. Umur 10 tahun, nilai residu Rp30.000.000.",
+  "isDistractor": false
+ },
+ {
+  "no": 37,
+  "date": "2024-04-02",
+  "level": "Advanced",
+  "topic": "Aset tetap: biaya yang tidak dikapitalisasi",
+  "narrative": "Perusahaan membayar pelatihan operator mesin baru kepada penyedia pelatihan (lihat tagihan mesin No.36).",
+  "party": "PT Mesin Industri Presisi",
+  "amountInfo": "Rp9.000.000 dibayar via Bank Mandiri.",
+  "isDistractor": false
+ },
+ {
+  "no": 38,
+  "date": "2024-04-05",
+  "level": "Advanced",
+  "topic": "Pembelian kredit",
+  "narrative": "Membeli komponen elektronik secara kredit dari PT Sinar Elektro Global.",
+  "party": "PT Sinar Elektro Global",
+  "amountInfo": "Harga faktur Rp264.000.000. Syarat 1/15, n/45.",
+  "isDistractor": false
+ },
+ {
+  "no": 39,
+  "date": "2024-04-08",
+  "level": "Advanced",
+  "topic": "Penjualan kredit FOB shipping point",
+  "narrative": "Menjual komponen elektronik secara kredit kepada PT Retail Elektronik Sentosa.",
+  "party": "PT Retail Elektronik Sentosa",
+  "amountInfo": "Harga faktur Rp320.000.000. Syarat 2/10, n/30, FOB shipping point. Barang diserahkan ke ekspedisi pada tanggal ini. HPP menurut kartu persediaan Rp192.000.000.",
+  "isDistractor": false
+ },
+ {
+  "no": 40,
+  "date": "2024-04-12",
+  "level": "Advanced",
+  "topic": "Investasi obligasi (biaya diamortisasi)",
+  "narrative": "Perusahaan membeli obligasi korporasi milik pihak lain. Manajemen bermaksud dan mampu menahan obligasi sampai jatuh tempo untuk menerima bunga dan pokok kontraktual (model bisnis menagih arus kas kontraktual). Arus kas kontraktual obligasi hanya berupa pembayaran pokok dan bunga atas pokok terutang (memenuhi SPPI).",
+  "party": "PT Sekuritas Mandiri Investama",
+  "amountInfo": "Nominal Rp200.000.000, dibeli Rp190.000.000, kupon 8% p.a. dibayar 30 Juni dan 31 Desember, jatuh tempo 12 April 2027. Suku bunga efektif 9,97% p.a. Dibayar via Bank Mandiri. Klasifikasi jangka panjang.",
+  "isDistractor": false
+ },
+ {
+  "no": 41,
+  "date": "2024-04-15",
+  "level": "Advanced",
+  "topic": "Pelunasan utang dengan diskon",
+  "narrative": "Melunasi faktur pembelian No.38 dari PT Sinar Elektro Global dalam periode diskon.",
+  "party": "PT Sinar Elektro Global",
+  "amountInfo": "Tagihan Rp264.000.000. Syarat 1/15, n/45, dibayar dalam periode diskon via Bank Mandiri.",
+  "isDistractor": false
+ },
+ {
+  "no": 42,
+  "date": "2024-04-15",
+  "level": "Advanced",
+  "topic": "Pembayaran angsuran pajak",
+  "narrative": "Perusahaan membayar angsuran pajak penghasilan badan triwulan I melalui Bank Mandiri. Angsuran merupakan pembayaran di muka atas pajak tahun berjalan, bukan beban.",
+  "party": "Kantor Pajak",
+  "amountInfo": "Rp60.000.000 via Bank Mandiri. Pajak tahun berjalan baru dihitung pada akhir tahun.",
+  "isDistractor": false
+ },
+ {
+  "no": 43,
+  "date": "2024-04-20",
+  "level": "Expert",
+  "topic": "Sewa (PSAK 116 - penyewa)",
+  "narrative": "Perusahaan menandatangani kontrak sewa forklift untuk gudang. Kontrak tidak dapat dibatalkan, forklift bukan aset bernilai rendah, dan perusahaan mengendalikan penggunaan aset selama masa sewa. Belum ada pembayaran kas pada tanggal ini.",
+  "party": "PT Sewa Guna Alat Berat",
+  "amountInfo": "Masa sewa 4 tahun mulai 20 April 2024. Pembayaran Rp30.000.000 setiap akhir tahun sewa (tahun ke-1 s.d. ke-4). Tingkat bunga implisit 10% p.a. Nilai kini pembayaran sewa = Rp95.095.963. Tidak ada biaya langsung awal atau insentif.",
+  "isDistractor": false
+ },
+ {
+  "no": 44,
+  "date": "2024-04-22",
+  "level": "Intermediate",
+  "topic": "Beban gaji",
+  "narrative": "Membayar gaji karyawan bulan Februari, Maret, dan April sekaligus via Bank Mandiri (pembayaran gaji Februari dan Maret tertunda karena proses administrasi payroll).",
+  "party": "Karyawan",
+  "amountInfo": "Gaji Februari Rp70.000.000, Maret Rp72.000.000, dan April Rp74.000.000; total Rp216.000.000.",
+  "isDistractor": false
+ },
+ {
+  "no": 45,
+  "date": "2024-04-23",
+  "level": "Intermediate",
+  "topic": "Pelunasan piutang (tanpa diskon)",
+  "narrative": "PT Retail Elektronik Sentosa melunasi faktur penjualan No.39 setelah periode diskon berakhir.",
+  "party": "PT Retail Elektronik Sentosa",
+  "amountInfo": "Tagihan Rp320.000.000 dibayar penuh via transfer Bank Mandiri.",
+  "isDistractor": false
+ },
+ {
+  "no": 46,
+  "date": "2024-04-25",
+  "level": "Advanced",
+  "topic": "Investasi ekuitas (FVTPL)",
+  "narrative": "Perusahaan membeli saham perusahaan terbuka di bursa untuk diperdagangkan dalam jangka pendek guna memperoleh laba dari fluktuasi harga.",
+  "party": "Sekuritas Panin",
+  "amountInfo": "10.000 lembar @ Rp8.500 = Rp85.000.000 dibayar via Bank Mandiri. Biaya perantara (komisi broker) dicatat pada transaksi terpisah.",
+  "isDistractor": false
+ },
+ {
+  "no": 47,
+  "date": "2024-04-25",
+  "level": "Advanced",
+  "topic": "Biaya transaksi investasi FVTPL",
+  "narrative": "Sekuritas menagih komisi broker atas pembelian saham perdagangan (lihat pembelian saham di atas). Komisi dibayar via Bank Mandiri.",
+  "party": "Sekuritas Panin",
+  "amountInfo": "Komisi broker Rp425.000.",
+  "isDistractor": false
+ },
+ {
+  "no": 48,
+  "date": "2024-05-02",
+  "level": "Advanced",
+  "topic": "Pembelian kredit",
+  "narrative": "Membeli komponen elektronik secara kredit dari PT Komponen Nusantara.",
+  "party": "PT Komponen Nusantara",
+  "amountInfo": "Harga faktur Rp298.000.000. Syarat 2/10, n/30.",
+  "isDistractor": false
+ },
+ {
+  "no": 49,
+  "date": "2024-05-05",
+  "level": "Intermediate",
+  "topic": "Penjualan tunai + HPP",
+  "narrative": "Rekap penjualan tunai beberapa pelanggan minggu pertama Mei via Bank Mandiri.",
+  "party": "Berbagai pelanggan",
+  "amountInfo": "Total penjualan Rp350.000.000; biaya persediaan Rp210.000.000.",
+  "isDistractor": false
+ },
+ {
+  "no": 50,
+  "date": "2024-05-08",
+  "level": "Expert",
+  "topic": "Kontinjensi (tidak diakui)",
+  "narrative": "Mantan karyawan menyampaikan somasi menuntut tambahan pesangon. Penasihat hukum menilai peluang perusahaan kalah adalah kecil (di bawah 50%) dengan estimasi kerugian Rp40.000.000.",
+  "party": "Mantan karyawan",
+  "amountInfo": "Perkara belum diputus.",
+  "isDistractor": true
+ },
+ {
+  "no": 51,
+  "date": "2024-05-10",
+  "level": "Advanced",
+  "topic": "Pelunasan utang dengan diskon",
+  "narrative": "Melunasi faktur pembelian No.48 dari PT Komponen Nusantara dalam periode diskon.",
+  "party": "PT Komponen Nusantara",
+  "amountInfo": "Tagihan Rp298.000.000. Syarat 2/10, n/30, dibayar dalam periode diskon via Bank Mandiri.",
+  "isDistractor": false
+ },
+ {
+  "no": 52,
+  "date": "2024-05-17",
+  "level": "Expert",
+  "topic": "Pendapatan dengan hak retur",
+  "narrative": "Menjual komponen secara tunai kepada toko ritel dengan hak retur selama 12 bulan (program stock rotation, berlaku sampai 16 Mei 2025). Berdasarkan pengalaman historis yang andal, 4% dari nilai penjualan diperkirakan diretur.",
+  "party": "Toko ritel (tunai)",
+  "amountInfo": "Penerimaan tunai Rp180.000.000 via Bank Mandiri. Biaya persediaan Rp108.000.000; biaya persediaan atas barang yang diperkirakan diretur Rp4.320.000 (4%) tetap dicatat dalam persediaan. Liabilitas pengembalian dicatat pada akun Liabilitas Pengembalian (2-1600).",
+  "isDistractor": false
+ },
+ {
+  "no": 53,
+  "date": "2024-05-20",
+  "level": "Expert",
+  "topic": "Properti investasi (reklasifikasi)",
+  "narrative": "Sebidang tanah dan bagian bangunan yang tidak lagi dipakai operasional dikuasai untuk disewakan kepada pihak ketiga dalam sewa jangka panjang. Belum ada penyewa pada 2024; perjanjian sewa mulai berlaku 1 Januari 2025 sehingga tidak ada pendapatan sewa pada 2024. Manajemen mereklasifikasinya ke properti investasi. Perusahaan menggunakan model nilai wajar untuk pengukuran selanjutnya.",
+  "party": "Internal",
+  "amountInfo": "Tanah: nilai tercatat Rp90.000.000. Bangunan: harga perolehan Rp100.000.000, akumulasi penyusutan per 1 Januari 2024 Rp20.000.000 (konsisten dengan umur 25 tahun dan 5 tahun pemakaian). Penyusutan 1 Januari-20 Mei 2024 Rp1.533.333 (100.000.000/25 x 4,6/12) dibebankan sebelum alih guna sehingga nilai tercatat bangunan Rp78.466.667; properti investasi dicatat Rp168.466.667 pada tanggal alih guna. Nilai wajar pada tanggal alih guna dianggap sama dengan nilai tercatat sehingga tidak timbul selisih pada saat reklasifikasi.",
+  "isDistractor": false
+ },
+ {
+  "no": 54,
+  "date": "2024-05-24",
+  "level": "Intermediate",
+  "topic": "Beban dibayar di muka",
+  "narrative": "Membayar premi asuransi mobil boks baru selama 12 bulan via Bank Mandiri.",
+  "party": "PT Asuransi Cakra Abadi",
+  "amountInfo": "Rp15.600.000; polis 24 Mei 2024 s.d. 23 Mei 2025.",
+  "isDistractor": false
+ },
+ {
+  "no": 55,
+  "date": "2024-06-02",
+  "level": "Advanced",
+  "topic": "Pembelian kredit",
+  "narrative": "Membeli komponen elektronik secara kredit dari PT Sinar Elektro Global.",
+  "party": "PT Sinar Elektro Global",
+  "amountInfo": "Harga faktur Rp275.000.000. Syarat 1/15, n/45.",
+  "isDistractor": false
+ },
+ {
+  "no": 56,
+  "date": "2024-06-05",
+  "level": "Advanced",
+  "topic": "Pelepasan aset tetap (untung)",
+  "narrative": "Perusahaan menjual mobil operasional lama (Unit A) yang sudah tidak efisien kepada pembeli perorangan. Penyusutan sampai tanggal penjualan akan dibukukan pada jurnal penyesuaian (AJ09).",
+  "party": "Bapak Hendra",
+  "amountInfo": "Harga perolehan Rp180.000.000; umur 8 tahun; sudah dipakai 5 tahun 5 bulan sampai tanggal penjualan (garis lurus, tanpa residu). Harga jual Rp65.000.000 diterima tunai ke kas. Hitung akumulasi penyusutan, nilai buku, serta untung/rugi.",
+  "isDistractor": false
+ },
+ {
+  "no": 57,
+  "date": "2024-06-08",
+  "level": "Advanced",
+  "topic": "Penjualan kredit",
+  "narrative": "Menjual komponen elektronik secara kredit kepada PT Bangun Cipta Elektrik.",
+  "party": "PT Bangun Cipta Elektrik",
+  "amountInfo": "Harga faktur Rp240.000.000. Syarat 2/10, n/30. HPP menurut kartu persediaan Rp144.000.000.",
+  "isDistractor": false
+ },
+ {
+  "no": 58,
+  "date": "2024-06-10",
+  "level": "Advanced",
+  "topic": "Pelunasan utang dengan diskon",
+  "narrative": "Melunasi faktur pembelian No.55 dari PT Sinar Elektro Global dalam periode diskon.",
+  "party": "PT Sinar Elektro Global",
+  "amountInfo": "Tagihan Rp275.000.000. Syarat 1/15, n/45, dibayar dalam periode diskon via Bank Mandiri.",
+  "isDistractor": false
+ },
+ {
+  "no": 59,
+  "date": "2024-06-15",
+  "level": "Advanced",
+  "topic": "Angsuran pokok kredit bank",
+  "narrative": "Membayar angsuran pokok pertama kredit bank untuk pembelian mobil boks (No.19) via Bank Mandiri.",
+  "party": "Bank Mitra Usaha",
+  "amountInfo": "Angsuran pokok Rp50.000.000.",
+  "isDistractor": false
+ },
+ {
+  "no": 60,
+  "date": "2024-06-15",
+  "level": "Advanced",
+  "topic": "Pembayaran bunga kredit bank",
+  "narrative": "Bank mendebet bunga kredit mobil boks untuk periode 10 Februari s.d. 15 Juni dari rekening Bank Mandiri.",
+  "party": "Bank Mitra Usaha",
+  "amountInfo": "Bunga periode berjalan Rp6.944.444 (Rp200.000.000 x 10% x 125/360).",
+  "isDistractor": false
+ },
+ {
+  "no": 61,
+  "date": "2024-06-18",
+  "level": "Intermediate",
+  "topic": "Pelunasan piutang dengan diskon",
+  "narrative": "PT Bangun Cipta Elektrik melunasi faktur penjualan No.57 sebelum batas periode diskon berakhir.",
+  "party": "PT Bangun Cipta Elektrik",
+  "amountInfo": "Tagihan awal Rp240.000.000. Pelanggan membayar tepat waktu dalam periode diskon 2%.",
+  "isDistractor": false
+ },
+ {
+  "no": 62,
+  "date": "2024-06-20",
+  "level": "Intermediate",
+  "topic": "Beban gaji",
+  "narrative": "Membayar gaji karyawan Mei dan Juni sekaligus (tertunda karena kendala sistem payroll).",
+  "party": "Karyawan",
+  "amountInfo": "Dua bulan: Rp152.000.000 via Bank Mandiri. Gaji Mei Rp76.000.000 dan Juni Rp76.000.000.",
+  "isDistractor": false
+ },
+ {
+  "no": 63,
+  "date": "2024-06-22",
+  "level": "Expert",
+  "topic": "Distractor: FVTPL belum dinilai ulang",
+  "narrative": "Harga pasar saham yang dibeli untuk diperdagangkan (No.46) naik menjadi Rp9.800 per lembar. Perusahaan hanya menyusun laporan keuangan pada akhir tahun.",
+  "party": "Internal",
+  "amountInfo": "10.000 lembar; harga pasar Rp98.000.000; belum tanggal pelaporan.",
+  "isDistractor": true
+ },
+ {
+  "no": 64,
+  "date": "2024-06-25",
+  "level": "Intermediate",
+  "topic": "Beban operasional",
+  "narrative": "Membayar listrik, air, dan telekomunikasi periode Februari-Juni sekaligus (tagihan dirapel).",
+  "party": "PLN & Telkom",
+  "amountInfo": "Total Rp76.000.000 via Bank Mandiri untuk lima bulan.",
+  "isDistractor": false
+ },
+ {
+  "no": 65,
+  "date": "2024-06-28",
+  "level": "Advanced",
+  "topic": "Pembelian valuta asing",
+  "narrative": "Membeli komponen dari pemasok Singapura secara kredit. Dicatat dengan kurs transaksi. Di luar inti materi: revaluasi kurs pada akhir periode tidak dibahas dalam latihan ini.",
+  "party": "Global Electronics Supplier Pte Ltd",
+  "amountInfo": "USD 20.000, kurs Rp15.600/USD, syarat n/60.",
+  "isDistractor": false
+ },
+ {
+  "no": 66,
+  "date": "2024-06-30",
+  "level": "Advanced",
+  "topic": "Bunga investasi obligasi (biaya diamortisasi)",
+  "narrative": "Menerima kupon obligasi investasi (transaksi No.40) untuk periode 12 April sampai 30 Juni. Akuntansi harus memakai suku bunga efektif atas nilai tercatat.",
+  "party": "PT Sekuritas Mandiri Investama",
+  "amountInfo": "Basis 30/360; 78 hari. Nilai tercatat awal Rp190.000.000; SBE 9,97% p.a.; kupon 8% x nominal Rp200.000.000. Kupon diterima via Bank Mandiri.",
+  "isDistractor": false
+ },
+ {
+  "no": 67,
+  "date": "2024-06-30",
+  "level": "Intermediate",
+  "topic": "Distractor: tidak perlu jurnal",
+  "narrative": "Manajemen melihat laporan umur piutang sebagai monitoring internal. Seluruh piutang masih dalam umur lancar.",
+  "party": "Internal",
+  "amountInfo": "Hanya laporan monitoring, tidak ada keputusan penghapusan atau penyesuaian.",
+  "isDistractor": true
+ },
+ {
+  "no": 68,
+  "date": "2024-06-30",
+  "level": "Advanced",
+  "topic": "Pelunasan utang bank jangka pendek",
+  "narrative": "Membayar seluruh sisa kredit modal kerja (saldo awal) yang jatuh tempo via Bank Mandiri.",
+  "party": "Bank Mitra Usaha",
+  "amountInfo": "Pokok Rp150.000.000 dari saldo 1 Januari 2024.",
+  "isDistractor": false
+ },
+ {
+  "no": 69,
+  "date": "2024-06-30",
+  "level": "Advanced",
+  "topic": "Akun hutang pajak (pembayaran)",
+  "narrative": "Membayar saldo utang pajak penghasilan tahun 2023 kepada kas negara.",
+  "party": "Kantor Pajak",
+  "amountInfo": "Rp32.000.000 via Bank Mandiri (sesuai saldo awal).",
+  "isDistractor": false
+ },
+ {
+  "no": 70,
+  "date": "2024-06-30",
+  "level": "Advanced",
+  "topic": "Pendapatan bunga deposito",
+  "narrative": "Menerima bunga deposito berjangka semester pertama (masuk ke rekening Bank Mandiri).",
+  "party": "Bank BCA",
+  "amountInfo": "Rp7.500.000 (deposito Rp250.000.000, bunga 6% p.a., 6 bulan).",
+  "isDistractor": false
+ },
+ {
+  "no": 71,
+  "date": "2024-06-30",
+  "level": "Advanced",
+  "topic": "Pembayaran bunga kredit bank",
+  "narrative": "Bank mendebet bunga kredit modal kerja yang dilunasi (transaksi pelunasan di atas) dari rekening Bank Mandiri.",
+  "party": "Bank Mitra Usaha",
+  "amountInfo": "Bunga Rp4.500.000.",
+  "isDistractor": false
+ },
+ {
+  "no": 72,
+  "date": "2024-07-02",
+  "level": "Advanced",
+  "topic": "Pembelian kredit",
+  "narrative": "Membeli komponen elektronik secara kredit dari PT Komponen Nusantara.",
+  "party": "PT Komponen Nusantara",
+  "amountInfo": "Harga faktur Rp288.000.000. Syarat 2/10, n/30.",
+  "isDistractor": false
+ },
+ {
+  "no": 73,
+  "date": "2024-07-05",
+  "level": "Expert",
+  "topic": "Subsequent cost: kapitalisasi vs beban",
+  "narrative": "Mesin perakitan baru (No.36) menjalani overhaul besar yang mengganti komponen utama dan memperpanjang umur manfaat mesin. Tagihan overhaul dibayar via Bank Mandiri.",
+  "party": "PT Mesin Industri Presisi",
+  "amountInfo": "Tagihan overhaul Rp60.000.000: menambah umur manfaat dan meningkatkan manfaat ekonomi masa depan mesin.",
+  "isDistractor": false
+ },
+ {
+  "no": 74,
+  "date": "2024-07-05",
+  "level": "Advanced",
+  "topic": "Beban pemeliharaan rutin",
+  "narrative": "Pada kunjungan yang sama teknisi melakukan servis rutin dan penggantian oli mesin. Tagihan terpisah dibayar via Bank Mandiri.",
+  "party": "PT Mesin Industri Presisi",
+  "amountInfo": "Servis rutin dan oli Rp3.500.000; tidak menambah umur atau kapasitas.",
+  "isDistractor": false
+ },
+ {
+  "no": 75,
+  "date": "2024-07-08",
+  "level": "Intermediate",
+  "topic": "Penjualan tunai + HPP",
+  "narrative": "Rekap penjualan tunai pekan kedua Juli via Bank Mandiri.",
+  "party": "Berbagai pelanggan",
+  "amountInfo": "Total penjualan Rp330.000.000; biaya persediaan Rp198.000.000.",
+  "isDistractor": false
+ },
+ {
+  "no": 76,
+  "date": "2024-07-10",
+  "level": "Advanced",
+  "topic": "Pelunasan utang dengan diskon",
+  "narrative": "Melunasi faktur pembelian No.72 dari PT Komponen Nusantara dalam periode diskon.",
+  "party": "PT Komponen Nusantara",
+  "amountInfo": "Tagihan Rp288.000.000. Syarat 2/10, n/30, dibayar dalam periode diskon via Bank Mandiri.",
+  "isDistractor": false
+ },
+ {
+  "no": 77,
+  "date": "2024-07-15",
+  "level": "Expert",
+  "topic": "Penerbitan obligasi (diskonto)",
+  "narrative": "Perusahaan menerbitkan obligasi kepada investor institusi untuk membiayai perluasan gudang. Suku bunga pasar untuk obligasi sejenis lebih tinggi dari kupon, sehingga obligasi terjual di bawah nominal.",
+  "party": "Konsorsium investor institusi",
+  "amountInfo": "Nominal Rp500.000.000, kupon 9% p.a. dibayar setiap 31 Desember, jatuh tempo 15 Juli 2029 (kupon periode pertama 5,5 bulan dan periode terakhir 6,5 bulan dihitung prorata), suku bunga pasar 10%. Hasil penerbitan Rp480.976.155 diterima via Bank Mandiri (nilai kini arus kas pada 10%).",
+  "isDistractor": false
+ },
+ {
+  "no": 78,
+  "date": "2024-07-15",
+  "level": "Advanced",
+  "topic": "Pembayaran angsuran pajak",
+  "narrative": "Perusahaan membayar angsuran pajak penghasilan badan triwulan II melalui Bank Mandiri.",
+  "party": "Kantor Pajak",
+  "amountInfo": "Rp60.000.000 via Bank Mandiri.",
+  "isDistractor": false
+ },
+ {
+  "no": 79,
+  "date": "2024-07-18",
+  "level": "Advanced",
+  "topic": "Pembelian kredit",
+  "narrative": "Membeli komponen elektronik secara kredit dari PT Sinar Elektro Global.",
+  "party": "PT Sinar Elektro Global",
+  "amountInfo": "Harga faktur Rp245.000.000. Syarat 1/15, n/45.",
+  "isDistractor": false
+ },
+ {
+  "no": 80,
+  "date": "2024-07-22",
+  "level": "Advanced",
+  "topic": "Penjualan kredit",
+  "narrative": "Menjual komponen elektronik secara kredit kepada PT Retail Elektronik Sentosa.",
+  "party": "PT Retail Elektronik Sentosa",
+  "amountInfo": "Harga faktur Rp260.000.000. Syarat 2/10, n/30. HPP menurut kartu persediaan Rp156.000.000.",
+  "isDistractor": false
+ },
+ {
+  "no": 81,
+  "date": "2024-07-25",
+  "level": "Intermediate",
+  "topic": "Pelunasan piutang dengan diskon",
+  "narrative": "PT Retail Elektronik Sentosa melunasi faktur penjualan No.80 sebelum batas periode diskon berakhir.",
+  "party": "PT Retail Elektronik Sentosa",
+  "amountInfo": "Tagihan awal Rp260.000.000. Pelanggan membayar tepat waktu dalam periode diskon 2%.",
+  "isDistractor": false
+ },
+ {
+  "no": 82,
+  "date": "2024-07-28",
+  "level": "Expert",
+  "topic": "Kontrak sepanjang waktu: identifikasi",
+  "narrative": "Perusahaan menandatangani kontrak instalasi sistem kelistrikan gedung bertingkat yang dikerjakan Agustus 2024 - Maret 2025. Pelanggan mengendalikan aset seiring dibangun sehingga kewajiban pelaksanaan dipenuhi sepanjang waktu, dan kemajuan dapat diukur secara andal; perusahaan memakai metode input (biaya yang terjadi terhadap total estimasi biaya). Seluruh biaya yang terjadi mencerminkan kemajuan dan tidak ada material signifikan yang belum terpasang.",
+  "party": "PT Menara Perkasa Development",
+  "amountInfo": "Nilai kontrak Rp960.000.000; estimasi total biaya Rp720.000.000. Belum ada kas maupun biaya pada tanggal ini.",
+  "isDistractor": true
+ },
+ {
+  "no": 83,
+  "date": "2024-08-08",
+  "level": "Advanced",
+  "topic": "Pembelian kredit",
+  "narrative": "Membeli komponen elektronik secara kredit dari PT Komponen Nusantara.",
+  "party": "PT Komponen Nusantara",
+  "amountInfo": "Harga faktur Rp336.000.000. Syarat 2/10, n/30.",
+  "isDistractor": false
+ },
+ {
+  "no": 84,
+  "date": "2024-08-12",
+  "level": "Intermediate",
+  "topic": "Penjualan tunai + HPP",
+  "narrative": "Rekap penjualan tunai Agustus via Bank Mandiri.",
+  "party": "Berbagai pelanggan",
+  "amountInfo": "Total penjualan Rp340.000.000; biaya persediaan Rp204.000.000.",
+  "isDistractor": false
+ },
+ {
+  "no": 85,
+  "date": "2024-08-15",
+  "level": "Advanced",
+  "topic": "Pelunasan utang dengan diskon",
+  "narrative": "Melunasi faktur pembelian No.83 dari PT Komponen Nusantara dalam periode diskon.",
+  "party": "PT Komponen Nusantara",
+  "amountInfo": "Tagihan Rp336.000.000. Syarat 2/10, n/30, dibayar dalam periode diskon via Bank Mandiri.",
+  "isDistractor": false
+ },
+ {
+  "no": 86,
+  "date": "2024-08-18",
+  "level": "Expert",
+  "topic": "Distractor: properti investasi belum dinilai",
+  "narrative": "Penilai internal menyampaikan indikasi awal bahwa nilai properti investasi (No.53) mungkin meningkat.",
+  "party": "Internal",
+  "amountInfo": "Belum ada penilaian independen; belum tanggal pelaporan.",
+  "isDistractor": true
+ },
+ {
+  "no": 87,
+  "date": "2024-08-25",
+  "level": "Advanced",
+  "topic": "Aset tetap: biaya perolehan tanah",
+  "narrative": "Perusahaan membeli sebidang tanah untuk perluasan gudang. Selain harga tanah, ada biaya legal yang dibayar via Bank Mandiri.",
+  "party": "Bapak Suryanto",
+  "amountInfo": "Harga tanah Rp380.000.000; notaris dan balik nama Rp14.000.000; BPHTB Rp19.000.000. Pemasangan pagar sementara dicatat pada transaksi terpisah.",
+  "isDistractor": false
+ },
+ {
+  "no": 88,
+  "date": "2024-08-25",
+  "level": "Advanced",
+  "topic": "Biaya sementara yang tidak dikapitalisasi",
+  "narrative": "Perusahaan membayar pemasangan pagar sementara di tanah tersebut selama masa negosiasi (akan dibongkar sebelum konstruksi) via Bank Mandiri.",
+  "party": "CV Pagar Kontraktor",
+  "amountInfo": "Biaya pagar sementara Rp6.000.000.",
+  "isDistractor": false
+ },
+ {
+  "no": 89,
+  "date": "2024-08-31",
+  "level": "Advanced",
+  "topic": "Pelunasan utang tanpa diskon",
+  "narrative": "Melunasi faktur pembelian No.79 dari PT Sinar Elektro Global.",
+  "party": "PT Sinar Elektro Global",
+  "amountInfo": "Tagihan Rp245.000.000. Syarat 1/15, n/45. Dibayar pada hari ke-44 sejak faktur.",
+  "isDistractor": false
+ },
+ {
+  "no": 90,
+  "date": "2024-08-31",
+  "level": "Advanced",
+  "topic": "Pelunasan utang valuta asing",
+  "narrative": "Melunasi utang kepada pemasok Singapura (transaksi valas No.65). Kurs saat bayar sama dengan kurs transaksi, sehingga tidak ada selisih kurs untuk latihan ini.",
+  "party": "Global Electronics Supplier Pte Ltd",
+  "amountInfo": "USD 20.000 x Rp15.600 = Rp312.000.000 via Bank Mandiri.",
+  "isDistractor": false
+ },
+ {
+  "no": 91,
+  "date": "2024-08-31",
+  "level": "Expert",
+  "topic": "Kontrak sepanjang waktu: pengakuan Agustus",
+  "narrative": "Pada bulan Agustus perusahaan mengeluarkan biaya proyek (dibayar tunai via Bank Mandiri). Hitung tingkat penyelesaian kumulatif dan pendapatan bulan ini (kontrak No.82).",
+  "party": "PT Menara Perkasa Development",
+  "amountInfo": "Biaya Agustus Rp96.000.000. Biaya kumulatif sampai akhir bulan Rp96.000.000. Estimasi total biaya Rp720.000.000. Nilai kontrak Rp960.000.000. ",
+  "isDistractor": false
+ },
+ {
+  "no": 92,
+  "date": "2024-09-01",
+  "level": "Advanced",
+  "topic": "Pembelian kredit",
+  "narrative": "Membeli komponen elektronik secara kredit dari PT Sinar Elektro Global.",
+  "party": "PT Sinar Elektro Global",
+  "amountInfo": "Harga faktur Rp258.000.000. Syarat 1/15, n/45.",
+  "isDistractor": false
+ },
+ {
+  "no": 93,
+  "date": "2024-09-05",
+  "level": "Advanced",
+  "topic": "Penerimaan termin kontrak",
+  "narrative": "Menerima termin pembayaran pertama dari pemberi kerja proyek (No.82) sesuai jadwal penagihan.",
+  "party": "PT Menara Perkasa Development",
+  "amountInfo": "Rp300.000.000 diterima via Bank Mandiri. Ditagihkan sebagai termin kontrak dan dicatat pada akun Aset Kontrak / (Liabilitas Kontrak).",
+  "isDistractor": false
+ },
+ {
+  "no": 94,
+  "date": "2024-09-05",
+  "level": "Intermediate",
+  "topic": "Beban gaji",
+  "narrative": "Membayar gaji karyawan Juli dan Agustus via Bank Mandiri.",
+  "party": "Karyawan",
+  "amountInfo": "Juli Rp78.000.000 dan Agustus Rp79.000.000; total dibayar sekaligus.",
+  "isDistractor": false
+ },
+ {
+  "no": 95,
+  "date": "2024-09-08",
+  "level": "Advanced",
+  "topic": "Penjualan kredit",
+  "narrative": "Menjual komponen elektronik secara kredit kepada PT Distribusi Elektro Timur.",
+  "party": "PT Distribusi Elektro Timur",
+  "amountInfo": "Harga faktur Rp230.000.000. Syarat n/30. HPP menurut kartu persediaan Rp138.000.000.",
+  "isDistractor": false
+ },
+ {
+  "no": 96,
+  "date": "2024-09-10",
+  "level": "Advanced",
+  "topic": "Pelunasan utang dengan diskon",
+  "narrative": "Melunasi faktur pembelian No.92 dari PT Sinar Elektro Global dalam periode diskon.",
+  "party": "PT Sinar Elektro Global",
+  "amountInfo": "Tagihan Rp258.000.000. Syarat 1/15, n/45, dibayar dalam periode diskon via Bank Mandiri.",
+  "isDistractor": false
+ },
+ {
+  "no": 97,
+  "date": "2024-09-12",
+  "level": "Advanced",
+  "topic": "Penghapusan piutang (metode cadangan)",
+  "narrative": "Seorang pelanggan lama (saldo awal) dinyatakan tutup usaha permanen tanpa aset. Manajemen memutuskan menghapus piutangnya. Perusahaan memakai metode cadangan.",
+  "party": "Toko Ritel Lestari",
+  "amountInfo": "Piutang Rp9.000.000, lewat jatuh tempo lebih dari 1 tahun.",
+  "isDistractor": false
+ },
+ {
+  "no": 98,
+  "date": "2024-09-15",
+  "level": "Intermediate",
+  "topic": "Penjualan tunai + HPP",
+  "narrative": "Rekap penjualan tunai pertengahan September via Bank Mandiri.",
+  "party": "Berbagai pelanggan",
+  "amountInfo": "Total penjualan Rp360.000.000; biaya persediaan Rp216.000.000.",
+  "isDistractor": false
+ },
+ {
+  "no": 99,
+  "date": "2024-09-18",
+  "level": "Expert",
+  "topic": "Program loyalitas (kewajiban pelaksanaan)",
+  "narrative": "Pelanggan proyek memperoleh poin reward yang dapat ditukar dengan diskon pembelian berikutnya. Poin merupakan hak material yang tidak akan diterima tanpa pembelian ini.",
+  "party": "PT Bangun Cipta Elektrik",
+  "amountInfo": "Faktur Rp260.000.000, syarat 2/10, n/30; biaya persediaan Rp156.000.000. Nilai wajar (harga jual berdiri sendiri) poin Rp6.000.000 setelah penyesuaian alokasi.",
+  "isDistractor": false
+ },
+ {
+  "no": 100,
+  "date": "2024-09-25",
+  "level": "Expert",
+  "topic": "Penurunan nilai aset (PSAK 236)",
+  "narrative": "Sebuah mesin perakitan lama mengalami penurunan kapasitas akibat perubahan teknologi yang membuat sebagian besar produknya usang. Hal ini merupakan indikasi penurunan nilai. Estimasi jumlah terpulihkan dibuat berdasarkan data berikut.",
+  "party": "Internal",
+  "amountInfo": "Nilai tercatat mesin Rp95.000.000. Nilai wajar dikurangi biaya pelepasan Rp58.000.000. Nilai pakai (PV arus kas) Rp63.000.000.",
+  "isDistractor": false
+ },
+ {
+  "no": 101,
+  "date": "2024-09-27",
+  "level": "Intermediate",
+  "topic": "Pelunasan piutang dengan diskon",
+  "narrative": "PT Bangun Cipta Elektrik melunasi faktur penjualan No.99 sebelum batas periode diskon berakhir.",
+  "party": "PT Bangun Cipta Elektrik",
+  "amountInfo": "Tagihan awal Rp260.000.000. Pelanggan membayar tepat waktu dalam periode diskon 2%.",
+  "isDistractor": false
+ },
+ {
+  "no": 102,
+  "date": "2024-09-28",
+  "level": "Intermediate",
+  "topic": "Perlengkapan",
+  "narrative": "Membeli perlengkapan kantor tunai dari kas kecil.",
+  "party": "Toko Alat Tulis Sejahtera",
+  "amountInfo": "Rp5.100.000.",
+  "isDistractor": false
+ },
+ {
+  "no": 103,
+  "date": "2024-09-30",
+  "level": "Advanced",
+  "topic": "Pembayaran bunga kredit bank",
+  "narrative": "Membayar bunga kredit investasi jangka panjang untuk periode Januari-September.",
+  "party": "Bank Investasi Nasional",
+  "amountInfo": "Pokok Rp500.000.000; bunga 8% p.a.; 9 bulan. Dibayar via Bank Mandiri.",
+  "isDistractor": false
+ },
+ {
+  "no": 104,
+  "date": "2024-09-30",
+  "level": "Expert",
+  "topic": "Kontrak sepanjang waktu: pengakuan September",
+  "narrative": "Pada bulan September perusahaan mengeluarkan biaya proyek (dibayar tunai via Bank Mandiri). Hitung tingkat penyelesaian kumulatif dan pendapatan bulan ini (kontrak No.82).",
+  "party": "PT Menara Perkasa Development",
+  "amountInfo": "Biaya September Rp180.000.000. Biaya kumulatif sampai akhir bulan Rp276.000.000. Estimasi total biaya Rp720.000.000. Nilai kontrak Rp960.000.000. ",
+  "isDistractor": false
+ },
+ {
+  "no": 105,
+  "date": "2024-10-01",
+  "level": "Advanced",
+  "topic": "Pembelian kredit",
+  "narrative": "Membeli komponen elektronik secara kredit dari PT Komponen Nusantara.",
+  "party": "PT Komponen Nusantara",
+  "amountInfo": "Harga faktur Rp302.000.000. Syarat 2/10, n/30.",
+  "isDistractor": false
+ },
+ {
+  "no": 106,
+  "date": "2024-10-07",
+  "level": "Intermediate",
+  "topic": "Pelunasan piutang (tanpa diskon)",
+  "narrative": "PT Distribusi Elektro Timur melunasi faktur penjualan No.95 setelah periode diskon berakhir.",
+  "party": "PT Distribusi Elektro Timur",
+  "amountInfo": "Tagihan Rp230.000.000 dibayar penuh via transfer Bank Mandiri.",
+  "isDistractor": false
+ },
+ {
+  "no": 107,
+  "date": "2024-10-08",
+  "level": "Advanced",
+  "topic": "Penjualan kredit",
+  "narrative": "Menjual komponen elektronik secara kredit kepada PT Retail Elektronik Sentosa.",
+  "party": "PT Retail Elektronik Sentosa",
+  "amountInfo": "Harga faktur Rp250.000.000. Syarat 2/10, n/30. HPP menurut kartu persediaan Rp150.000.000.",
+  "isDistractor": false
+ },
+ {
+  "no": 108,
+  "date": "2024-10-11",
+  "level": "Advanced",
+  "topic": "Pelunasan utang tanpa diskon",
+  "narrative": "Melunasi faktur pembelian No.105 dari PT Komponen Nusantara.",
+  "party": "PT Komponen Nusantara",
+  "amountInfo": "Tagihan Rp302.000.000. Syarat 2/10, n/30. Dibayar pada hari ke-11 sejak tanggal faktur.",
+  "isDistractor": false
+ },
+ {
+  "no": 109,
+  "date": "2024-10-15",
+  "level": "Intermediate",
+  "topic": "Pelunasan piutang dengan diskon",
+  "narrative": "PT Retail Elektronik Sentosa melunasi faktur penjualan No.107 sebelum batas periode diskon berakhir.",
+  "party": "PT Retail Elektronik Sentosa",
+  "amountInfo": "Tagihan awal Rp250.000.000. Pelanggan membayar tepat waktu dalam periode diskon 2%.",
+  "isDistractor": false
+ },
+ {
+  "no": 110,
+  "date": "2024-10-15",
+  "level": "Advanced",
+  "topic": "Pembayaran angsuran pajak",
+  "narrative": "Perusahaan membayar angsuran pajak penghasilan badan triwulan III melalui Bank Mandiri.",
+  "party": "Kantor Pajak",
+  "amountInfo": "Rp60.000.000 via Bank Mandiri.",
+  "isDistractor": false
+ },
+ {
+  "no": 111,
+  "date": "2024-10-18",
+  "level": "Expert",
+  "topic": "Provisi: kontinjensi menjadi kewajiban",
+  "narrative": "Pengadilan memutus perkara pesangon mantan karyawan (lihat No.50) dan memerintahkan perusahaan membayar. Putusan berkekuatan hukum tetap dan harus dibayar dalam 30 hari.",
+  "party": "Mantan karyawan",
+  "amountInfo": "Jumlah putusan Rp45.000.000, belum dibayar.",
+  "isDistractor": false
+ },
+ {
+  "no": 112,
+  "date": "2024-10-20",
+  "level": "Intermediate",
+  "topic": "Beban gaji",
+  "narrative": "Membayar gaji September dan Oktober via Bank Mandiri.",
+  "party": "Karyawan",
+  "amountInfo": "September Rp80.000.000 dan Oktober Rp81.000.000; total dibayar sekaligus.",
+  "isDistractor": false
+ },
+ {
+  "no": 113,
+  "date": "2024-10-24",
+  "level": "Intermediate",
+  "topic": "Pelunasan kewajiban",
+  "narrative": "Melunasi kewajiban putusan pengadilan No.111 via Bank Mandiri.",
+  "party": "Mantan karyawan",
+  "amountInfo": "Rp45.000.000.",
+  "isDistractor": false
+ },
+ {
+  "no": 114,
+  "date": "2024-10-28",
+  "level": "Intermediate",
+  "topic": "Penjualan tunai + HPP",
+  "narrative": "Rekap penjualan tunai akhir Oktober via Bank Mandiri.",
+  "party": "Berbagai pelanggan",
+  "amountInfo": "Total penjualan Rp320.000.000; biaya persediaan Rp192.000.000.",
+  "isDistractor": false
+ },
+ {
+  "no": 115,
+  "date": "2024-10-31",
+  "level": "Advanced",
+  "topic": "Penerimaan termin kontrak",
+  "narrative": "Menerima termin kedua dari pemberi kerja proyek (No.82).",
+  "party": "PT Menara Perkasa Development",
+  "amountInfo": "Rp250.000.000 diterima via Bank Mandiri.",
+  "isDistractor": false
+ },
+ {
+  "no": 116,
+  "date": "2024-10-31",
+  "level": "Expert",
+  "topic": "Kontrak sepanjang waktu: pengakuan Oktober",
+  "narrative": "Pada bulan Oktober perusahaan mengeluarkan biaya proyek (dibayar tunai via Bank Mandiri). Hitung tingkat penyelesaian kumulatif dan pendapatan bulan ini (kontrak No.82).",
+  "party": "PT Menara Perkasa Development",
+  "amountInfo": "Biaya Oktober Rp144.000.000. Biaya kumulatif sampai akhir bulan Rp420.000.000. Estimasi total biaya Rp720.000.000. Nilai kontrak Rp960.000.000. ",
+  "isDistractor": false
+ },
+ {
+  "no": 117,
+  "date": "2024-11-02",
+  "level": "Advanced",
+  "topic": "Pembelian kredit",
+  "narrative": "Membeli komponen elektronik secara kredit dari PT Sinar Elektro Global.",
+  "party": "PT Sinar Elektro Global",
+  "amountInfo": "Harga faktur Rp268.000.000. Syarat 1/15, n/45.",
+  "isDistractor": false
+ },
+ {
+  "no": 118,
+  "date": "2024-11-05",
+  "level": "Advanced",
+  "topic": "Penjualan kredit",
+  "narrative": "Menjual komponen elektronik secara kredit kepada PT Distribusi Elektro Timur.",
+  "party": "PT Distribusi Elektro Timur",
+  "amountInfo": "Harga faktur Rp270.000.000. Syarat n/30. HPP menurut kartu persediaan Rp162.000.000.",
+  "isDistractor": false
+ },
+ {
+  "no": 119,
+  "date": "2024-11-08",
+  "level": "Advanced",
+  "topic": "Pelunasan utang dengan diskon",
+  "narrative": "Melunasi faktur pembelian No.117 dari PT Sinar Elektro Global dalam periode diskon.",
+  "party": "PT Sinar Elektro Global",
+  "amountInfo": "Tagihan Rp268.000.000. Syarat 1/15, n/45, dibayar dalam periode diskon via Bank Mandiri.",
+  "isDistractor": false
+ },
+ {
+  "no": 120,
+  "date": "2024-11-12",
+  "level": "Advanced",
+  "topic": "Penghentian aset (nilai buku nol)",
+  "narrative": "Sebuah peralatan kantor lama yang sudah disusutkan penuh dibuang karena tidak ada nilai jual.",
+  "party": "Internal",
+  "amountInfo": "Harga perolehan Rp32.000.000; akumulasi penyusutan Rp32.000.000; tanpa hasil.",
+  "isDistractor": false
+ },
+ {
+  "no": 121,
+  "date": "2024-11-15",
+  "level": "Intermediate",
+  "topic": "Penjualan tunai + HPP",
+  "narrative": "Rekap penjualan tunai pertengahan November via Bank Mandiri.",
+  "party": "Berbagai pelanggan",
+  "amountInfo": "Total penjualan Rp310.000.000; biaya persediaan Rp186.000.000.",
+  "isDistractor": false
+ },
+ {
+  "no": 122,
+  "date": "2024-11-18",
+  "level": "Expert",
+  "topic": "Pertukaran aset (substansi komersial)",
+  "narrative": "Perusahaan menukar mobil operasional lama dengan mobil baru dari dealer yang sama dan membayar selisihnya. Pertukaran memiliki substansi komersial karena profil arus kas perusahaan berubah secara signifikan.",
+  "party": "Dealer Mobil Cahaya Motor",
+  "amountInfo": "Mobil lama: harga perolehan Rp240.000.000, akumulasi penyusutan Rp86.250.000, nilai wajar Rp140.000.000. Mobil baru: nilai wajar Rp280.000.000. Selisih dibayar via Bank Mandiri.",
+  "isDistractor": false
+ },
+ {
+  "no": 123,
+  "date": "2024-11-22",
+  "level": "Advanced",
+  "topic": "Pembelian kredit",
+  "narrative": "Membeli komponen elektronik secara kredit dari PT Komponen Nusantara.",
+  "party": "PT Komponen Nusantara",
+  "amountInfo": "Harga faktur Rp294.000.000. Syarat 2/10, n/30.",
+  "isDistractor": false
+ },
+ {
+  "no": 124,
+  "date": "2024-11-25",
+  "level": "Advanced",
+  "topic": "Dividen",
+  "narrative": "RUPS menyetujui pembagian dividen tunai kepada pemegang saham dan pembayaran dilakukan pada hari yang sama.",
+  "party": "Pemegang saham",
+  "amountInfo": "Rp60.000.000 dibayar via Bank Mandiri. Untuk kesederhanaan, deklarasi dan pembayaran terjadi di hari yang sama.",
+  "isDistractor": false
+ },
+ {
+  "no": 125,
+  "date": "2024-11-28",
+  "level": "Intermediate",
+  "topic": "Beban gaji",
+  "narrative": "Membayar gaji November via Bank Mandiri.",
+  "party": "Karyawan",
+  "amountInfo": "Rp82.000.000.",
+  "isDistractor": false
+ },
+ {
+  "no": 126,
+  "date": "2024-11-28",
+  "level": "Advanced",
+  "topic": "Penjualan kredit",
+  "narrative": "Menjual komponen elektronik secara kredit kepada PT Bangun Cipta Elektrik.",
+  "party": "PT Bangun Cipta Elektrik",
+  "amountInfo": "Harga faktur Rp290.000.000. Syarat 2/10, n/30. HPP menurut kartu persediaan Rp174.000.000.",
+  "isDistractor": false
+ },
+ {
+  "no": 127,
+  "date": "2024-11-30",
+  "level": "Expert",
+  "topic": "Kontrak sepanjang waktu: pengakuan November",
+  "narrative": "Pada bulan November perusahaan mengeluarkan biaya proyek (dibayar tunai via Bank Mandiri). Hitung tingkat penyelesaian kumulatif dan pendapatan bulan ini (kontrak No.82).",
+  "party": "PT Menara Perkasa Development",
+  "amountInfo": "Biaya November Rp108.000.000. Biaya kumulatif sampai akhir bulan Rp528.000.000. Estimasi total biaya Rp720.000.000. Nilai kontrak Rp960.000.000. ",
+  "isDistractor": false
+ },
+ {
+  "no": 128,
+  "date": "2024-12-01",
+  "level": "Expert",
+  "topic": "Distractor: utang jatuh tempo, belum dibayar",
+  "narrative": "Faktur pembelian No.123 dari PT Komponen Nusantara masih terbuka. Bagian keuangan menjadwalkan pembayaran pada minggu kedua Januari 2025 setelah rekonsiliasi faktur dengan pemasok.",
+  "party": "PT Komponen Nusantara",
+  "amountInfo": "Faktur Rp294.000.000 dengan syarat 2/10, n/30. Belum ada pembayaran pada 31 Desember 2024; periode diskon sudah lewat.",
+  "isDistractor": true
+ },
+ {
+  "no": 129,
+  "date": "2024-12-03",
+  "level": "Intermediate",
+  "topic": "Pelunasan piutang (tanpa diskon)",
+  "narrative": "PT Distribusi Elektro Timur melunasi faktur penjualan No.118 setelah periode diskon berakhir.",
+  "party": "PT Distribusi Elektro Timur",
+  "amountInfo": "Tagihan Rp270.000.000 dibayar penuh via transfer Bank Mandiri.",
+  "isDistractor": false
+ },
+ {
+  "no": 130,
+  "date": "2024-12-05",
+  "level": "Advanced",
+  "topic": "Penerimaan sisa termin kontrak",
+  "narrative": "Pemberi kerja proyek (No.82) melunasi seluruh sisa tagihan setelah proyek diserahterimakan.",
+  "party": "PT Menara Perkasa Development",
+  "amountInfo": "Rp410.000.000 diterima via Bank Mandiri.",
+  "isDistractor": false
+ },
+ {
+  "no": 131,
+  "date": "2024-12-08",
+  "level": "Intermediate",
+  "topic": "Penjualan tunai + HPP",
+  "narrative": "Rekap penjualan tunai awal Desember via Bank Mandiri.",
+  "party": "Berbagai pelanggan",
+  "amountInfo": "Total penjualan Rp380.000.000; biaya persediaan Rp228.000.000.",
+  "isDistractor": false
+ },
+ {
+  "no": 132,
+  "date": "2024-12-10",
+  "level": "Expert",
+  "topic": "Aset dimiliki untuk dijual (PSAK 105)",
+  "narrative": "Manajemen memutuskan menjual sebidang tanah kecil yang menganggur dan telah memasarkannya aktif pada harga wajar. Penjualan sangat mungkin selesai dalam 12 bulan.",
+  "party": "Internal",
+  "amountInfo": "Nilai tercatat Rp75.000.000; nilai wajar dikurangi biaya menjual Rp70.000.000.",
+  "isDistractor": false
+ },
+ {
+  "no": 133,
+  "date": "2024-12-12",
+  "level": "Advanced",
+  "topic": "Penjualan kredit",
+  "narrative": "Menjual komponen elektronik secara kredit kepada PT Retail Elektronik Sentosa.",
+  "party": "PT Retail Elektronik Sentosa",
+  "amountInfo": "Harga faktur Rp240.000.000. Syarat 2/10, n/30. HPP menurut kartu persediaan Rp144.000.000.",
+  "isDistractor": false
+ },
+ {
+  "no": 134,
+  "date": "2024-12-15",
+  "level": "Expert",
+  "topic": "Distractor: FOB destination",
+  "narrative": "Faktur pembelian dari PT Komponen Nusantara diterima; syarat FOB destination. Barang dikirim 15 Desember dan diperkirakan tiba di gudang 2 Januari 2025.",
+  "party": "PT Komponen Nusantara",
+  "amountInfo": "Nilai faktur Rp180.000.000.",
+  "isDistractor": true
+ },
+ {
+  "no": 135,
+  "date": "2024-12-18",
+  "level": "Intermediate",
+  "topic": "Pelunasan piutang (tanpa diskon)",
+  "narrative": "PT Bangun Cipta Elektrik melunasi faktur penjualan No.126 setelah periode diskon berakhir.",
+  "party": "PT Bangun Cipta Elektrik",
+  "amountInfo": "Tagihan Rp290.000.000 dibayar penuh via transfer Bank Mandiri.",
+  "isDistractor": false
+ },
+ {
+  "no": 136,
+  "date": "2024-12-18",
+  "level": "Intermediate",
+  "topic": "Beban gaji",
+  "narrative": "Membayar gaji Desember dan THR via Bank Mandiri sesuai kebijakan.",
+  "party": "Karyawan",
+  "amountInfo": "Gaji pokok Rp83.000.000 dan THR sebesar satu kali gaji Rp83.000.000.",
+  "isDistractor": false
+ },
+ {
+  "no": 137,
+  "date": "2024-12-20",
+  "level": "Expert",
+  "topic": "Kontrak sepanjang waktu: pengakuan Desember",
+  "narrative": "Pada bulan Desember perusahaan mengeluarkan biaya proyek (dibayar tunai via Bank Mandiri). Hitung tingkat penyelesaian kumulatif dan pendapatan bulan ini (kontrak No.82).",
+  "party": "PT Menara Perkasa Development",
+  "amountInfo": "Biaya Desember Rp192.000.000. Biaya kumulatif sampai akhir bulan Rp720.000.000. Estimasi total biaya Rp720.000.000. Nilai kontrak Rp960.000.000. Pekerjaan selesai 100% dan diserahterimakan.",
+  "isDistractor": false
+ },
+ {
+  "no": 138,
+  "date": "2024-12-22",
+  "level": "Advanced",
+  "topic": "Penghapusan piutang (kepailitan)",
+  "narrative": "Pelanggan dinyatakan pailit dan kurator menyatakan kreditur tidak akan menerima apa pun atas piutang lama yang sudah lewat jatuh tempo lebih dari 180 hari.",
+  "party": "CV Mitra Listrik Abadi (pelanggan lama)",
+  "amountInfo": "Piutang lama Rp38.000.000 (dari saldo awal), tidak terkait faktur No.133.",
+  "isDistractor": false
+ },
+ {
+  "no": 139,
+  "date": "2024-12-24",
+  "level": "Intermediate",
+  "topic": "Pembelian tunai",
+  "narrative": "Membeli barang dagang tunai dari kas kecil untuk menutup kekurangan stok.",
+  "party": "Toko Elektronik Grosir Cipta",
+  "amountInfo": "Rp8.500.000.",
+  "isDistractor": false
+ },
+ {
+  "no": 140,
+  "date": "2024-12-26",
+  "level": "Intermediate",
+  "topic": "Penjualan tunai + HPP",
+  "narrative": "Rekap penjualan tunai akhir tahun via Bank Mandiri.",
+  "party": "Berbagai pelanggan",
+  "amountInfo": "Total penjualan Rp430.000.000; biaya persediaan Rp258.000.000.",
+  "isDistractor": false
+ },
+ {
+  "no": 141,
+  "date": "2024-12-28",
+  "level": "Advanced",
+  "topic": "Beban jasa profesional",
+  "narrative": "Membayar konsultan pajak atas jasa penyusunan SPT Tahunan yang seluruhnya sudah diselesaikan pada Desember.",
+  "party": "Kantor Konsultan Pajak Amanah",
+  "amountInfo": "Rp15.000.000 via Bank Mandiri.",
+  "isDistractor": false
+ },
+ {
+  "no": 142,
+  "date": "2024-12-29",
+  "level": "Advanced",
+  "topic": "Pelepasan investasi FVTPL",
+  "narrative": "Perusahaan menjual seluruh saham yang dibeli untuk diperdagangkan (No.46) di pasar modal.",
+  "party": "Sekuritas Panin",
+  "amountInfo": "10.000 lembar @ Rp9.600 = Rp96.000.000 via Bank Mandiri. Nilai tercatat investasi Rp85.000.000 (belum pernah dinilai ulang).",
+  "isDistractor": false
+ },
+ {
+  "no": 143,
+  "date": "2024-12-30",
+  "level": "Advanced",
+  "topic": "Pembayaran angsuran pokok utang",
+  "narrative": "Membayar angsuran pokok tahunan kredit investasi jangka panjang via Bank Mandiri.",
+  "party": "Bank Investasi Nasional",
+  "amountInfo": "Pokok Rp100.000.000 (sisa pokok menjadi Rp400.000.000). Bunga Q4 dibahas di jurnal penyesuaian.",
+  "isDistractor": false
+ },
+ {
+  "no": 144,
+  "date": "2024-12-31",
+  "level": "Expert",
+  "topic": "Distractor: kontrak belum berlaku",
+  "narrative": "Perusahaan menandatangani kontrak pasokan tahunan dengan pelanggan strategis yang mengikat mulai 1 Januari 2025. Belum ada barang dikirim dan belum ada kas berpindah.",
+  "party": "PT Global Distribusi Makmur",
+  "amountInfo": "Kontrak berlaku 2025.",
+  "isDistractor": true
+ },
+ {
+  "no": 145,
+  "date": "2024-12-31",
+  "level": "Expert",
+  "topic": "Informasi untuk penyesuaian: LCNRV",
+  "narrative": "Stock opname fisik menemukan sekelompok persediaan komponen model lama dengan harga jual pasar turun tajam akibat pergantian teknologi.",
+  "party": "Internal",
+  "amountInfo": "Biaya perolehan kelompok Rp32.000.000; estimasi harga jual dikurangi biaya untuk menjual Rp21.000.000.",
+  "isDistractor": true
+ },
+ {
+  "no": 146,
+  "date": "2024-12-31",
+  "level": "Advanced",
+  "topic": "Distractor: pendapatan bunga deposito semester II",
+  "narrative": "Deposito BCA jatuh tempo interest untuk semester II pada 5 Januari 2025. Bunga belum diterima per 31 Desember.",
+  "party": "Bank BCA",
+  "amountInfo": "Bunga semester II Rp7.500.000, cair 5 Januari 2025.",
+  "isDistractor": true
+ },
+ {
+  "no": 147,
+  "date": "2024-12-31",
+  "level": "Advanced",
+  "topic": "Pembayaran kupon obligasi terbit",
+  "narrative": "Perusahaan membayar kupon obligasi periode pertama (15 Juli s.d. 31 Desember) via Bank Mandiri. Beban bunga efektif dan amortisasi diskonto diakui terpisah pada jurnal penyesuaian.",
+  "party": "Pemegang obligasi",
+  "amountInfo": "Kupon = nominal Rp500.000.000 x 9% x 5,5/12 = Rp20.625.000.",
+  "isDistractor": false
+ }
+]

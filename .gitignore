@@ -1,0 +1,29 @@
+node_modules
+dist
+dist-single
+*.local
+release
+
+.DS_Store
+Thumbs.db
+*.log
+coverage
+test-results
+
+# Rahasia dan berkas lokal (jangan pernah dikomit)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+*.jks
+secrets/
+# Hasil audit privat dan data pengguna
+PREPUBLICATION_AUDIT_PRIVATE.md
+*.cadangan.json
+akuntansi-cadangan-*.json
+sbom.cdx.json

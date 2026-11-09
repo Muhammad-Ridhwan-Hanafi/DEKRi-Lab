@@ -1,0 +1,2776 @@
+[
+ {
+  "app": "akuntansi-practice-pack",
+  "version": 1,
+  "id": "industri-jasa",
+  "title": "Jasa konsultasi: PT Cakra Konsultan Mandiri",
+  "description": "Perusahaan jasa. Pendapatan diterima di muka, sewa dibayar di muka, gaji terutang, penyusutan. Tanpa persediaan dan HPP. Abaikan pajak.",
+  "accounts": [
+   {
+    "code": "JK-1100",
+    "name": "Kas dan Bank",
+    "type": "Asset",
+    "normal": "Debit",
+    "reportClass": "Current Asset"
+   },
+   {
+    "code": "JK-1200",
+    "name": "Piutang Usaha",
+    "type": "Asset",
+    "normal": "Debit",
+    "reportClass": "Current Asset"
+   },
+   {
+    "code": "JK-1300",
+    "name": "Perlengkapan Kantor",
+    "type": "Asset",
+    "normal": "Debit",
+    "reportClass": "Current Asset"
+   },
+   {
+    "code": "JK-1400",
+    "name": "Sewa Dibayar di Muka",
+    "type": "Asset",
+    "normal": "Debit",
+    "reportClass": "Current Asset"
+   },
+   {
+    "code": "JK-1500",
+    "name": "Peralatan Kantor",
+    "type": "Asset",
+    "normal": "Debit",
+    "reportClass": "Fixed Asset"
+   },
+   {
+    "code": "JK-1510",
+    "name": "Akumulasi Penyusutan Peralatan Kantor",
+    "type": "Asset",
+    "normal": "Credit",
+    "reportClass": "Contra Asset"
+   },
+   {
+    "code": "JK-2100",
+    "name": "Utang Usaha",
+    "type": "Liability",
+    "normal": "Credit",
+    "reportClass": "Current Liability"
+   },
+   {
+    "code": "JK-2200",
+    "name": "Pendapatan Diterima di Muka",
+    "type": "Liability",
+    "normal": "Credit",
+    "reportClass": "Current Liability"
+   },
+   {
+    "code": "JK-2300",
+    "name": "Beban Gaji yang Masih Harus Dibayar",
+    "type": "Liability",
+    "normal": "Credit",
+    "reportClass": "Current Liability"
+   },
+   {
+    "code": "JK-3100",
+    "name": "Modal Saham",
+    "type": "Equity",
+    "normal": "Credit",
+    "reportClass": "Equity"
+   },
+   {
+    "code": "JK-4100",
+    "name": "Pendapatan Jasa Konsultasi",
+    "type": "Revenue",
+    "normal": "Credit",
+    "reportClass": "Revenue"
+   },
+   {
+    "code": "JK-5100",
+    "name": "Beban Gaji",
+    "type": "Expense",
+    "normal": "Debit",
+    "reportClass": "Expense"
+   },
+   {
+    "code": "JK-5200",
+    "name": "Beban Sewa",
+    "type": "Expense",
+    "normal": "Debit",
+    "reportClass": "Expense"
+   },
+   {
+    "code": "JK-5300",
+    "name": "Beban Perlengkapan",
+    "type": "Expense",
+    "normal": "Debit",
+    "reportClass": "Expense"
+   },
+   {
+    "code": "JK-5400",
+    "name": "Beban Penyusutan Peralatan Kantor",
+    "type": "Expense",
+    "normal": "Debit",
+    "reportClass": "Expense"
+   },
+   {
+    "code": "JK-5500",
+    "name": "Beban Listrik dan Telepon",
+    "type": "Expense",
+    "normal": "Debit",
+    "reportClass": "Expense"
+   },
+   {
+    "code": "JK-5600",
+    "name": "Beban Perjalanan Dinas",
+    "type": "Expense",
+    "normal": "Debit",
+    "reportClass": "Expense"
+   }
+  ],
+  "items": [
+   {
+    "id": "jk01",
+    "title": "Setoran modal pemegang saham",
+    "narrative": "PT Cakra Konsultan Mandiri didirikan. Para pemegang saham menyetor modal Rp500.000.000 secara tunai ke rekening bank perusahaan.",
+    "lines": [
+     {
+      "code": "JK-1100",
+      "debit": 500000000,
+      "credit": 0
+     },
+     {
+      "code": "JK-3100",
+      "debit": 0,
+      "credit": 500000000
+     }
+    ],
+    "explain": "Kas dan bank bertambah (debit). Modal saham bertambah (kredit)."
+   },
+   {
+    "id": "jk02",
+    "title": "Bayar sewa kantor 12 bulan di muka",
+    "narrative": "Perusahaan membayar sewa kantor untuk 12 bulan ke depan sebesar Rp96.000.000 dari rekening bank.",
+    "lines": [
+     {
+      "code": "JK-1400",
+      "debit": 96000000,
+      "credit": 0
+     },
+     {
+      "code": "JK-1100",
+      "debit": 0,
+      "credit": 96000000
+     }
+    ],
+    "explain": "Sewa untuk masa depan adalah aset (Sewa Dibayar di Muka), bukan beban. Bebannya baru diakui seiring waktu lewat jurnal penyesuaian."
+   },
+   {
+    "id": "jk03",
+    "title": "Beli peralatan kantor tunai",
+    "narrative": "Perusahaan membeli komputer dan perabot kantor seharga Rp45.000.000 dan membayarnya dari rekening bank.",
+    "lines": [
+     {
+      "code": "JK-1500",
+      "debit": 45000000,
+      "credit": 0
+     },
+     {
+      "code": "JK-1100",
+      "debit": 0,
+      "credit": 45000000
+     }
+    ],
+    "explain": "Peralatan bermanfaat lebih dari satu tahun sehingga dicatat sebagai aset tetap (debit), kas berkurang (kredit)."
+   },
+   {
+    "id": "jk04",
+    "title": "Beli perlengkapan kantor secara kredit",
+    "narrative": "Perusahaan membeli alat tulis dan kertas Rp6.500.000 dari pemasok. Pembayaran dilakukan bulan depan.",
+    "lines": [
+     {
+      "code": "JK-1300",
+      "debit": 6500000,
+      "credit": 0
+     },
+     {
+      "code": "JK-2100",
+      "debit": 0,
+      "credit": 6500000
+     }
+    ],
+    "explain": "Perlengkapan yang belum dipakai adalah aset (debit). Pembelian belum dibayar menambah utang usaha (kredit)."
+   },
+   {
+    "id": "jk05",
+    "title": "Jasa konsultasi selesai dan ditagih ke klien",
+    "narrative": "Perusahaan menyelesaikan proyek konsultasi untuk klien dan menerbitkan tagihan Rp80.000.000. Klien belum membayar.",
+    "lines": [
+     {
+      "code": "JK-1200",
+      "debit": 80000000,
+      "credit": 0
+     },
+     {
+      "code": "JK-4100",
+      "debit": 0,
+      "credit": 80000000
+     }
+    ],
+    "explain": "Pendapatan diakui saat jasa selesai diserahkan (dasar akrual), walau kas belum diterima. Piutang usaha bertambah."
+   },
+   {
+    "id": "jk06",
+    "title": "Terima uang muka kontrak konsultasi",
+    "narrative": "Seorang klien membayar uang muka Rp60.000.000 ke rekening bank untuk kontrak konsultasi yang baru akan dikerjakan bulan depan.",
+    "lines": [
+     {
+      "code": "JK-1100",
+      "debit": 60000000,
+      "credit": 0
+     },
+     {
+      "code": "JK-2200",
+      "debit": 0,
+      "credit": 60000000
+     }
+    ],
+    "explain": "Jasa belum diserahkan, jadi kewajiban untuk mengerjakan (Pendapatan Diterima di Muka) dicatat sebagai liabilitas, bukan pendapatan."
+   },
+   {
+    "id": "jk07",
+    "title": "Pelunasan piutang dari klien",
+    "narrative": "Klien melunasi sebagian tagihan sebesar Rp50.000.000 melalui transfer bank.",
+    "lines": [
+     {
+      "code": "JK-1100",
+      "debit": 50000000,
+      "credit": 0
+     },
+     {
+      "code": "JK-1200",
+      "debit": 0,
+      "credit": 50000000
+     }
+    ],
+    "explain": "Satu aset berganti aset: kas naik, piutang turun. Tidak ada pendapatan baru."
+   },
+   {
+    "id": "jk08",
+    "title": "Bayar gaji karyawan",
+    "narrative": "Perusahaan membayar gaji karyawan bulan ini sebesar Rp35.000.000 dari rekening bank.",
+    "lines": [
+     {
+      "code": "JK-5100",
+      "debit": 35000000,
+      "credit": 0
+     },
+     {
+      "code": "JK-1100",
+      "debit": 0,
+      "credit": 35000000
+     }
+    ],
+    "explain": "Gaji sudah dinikmati periode ini sehingga menjadi beban (debit), kas berkurang (kredit)."
+   },
+   {
+    "id": "jk09",
+    "title": "Bayar listrik dan telepon",
+    "narrative": "Tagihan listrik dan telepon kantor Rp4.200.000 dibayar tunai dari rekening bank.",
+    "lines": [
+     {
+      "code": "JK-5500",
+      "debit": 4200000,
+      "credit": 0
+     },
+     {
+      "code": "JK-1100",
+      "debit": 0,
+      "credit": 4200000
+     }
+    ],
+    "explain": "Beban operasional dibayar langsung: beban bertambah (debit), kas berkurang (kredit)."
+   },
+   {
+    "id": "jk10",
+    "title": "Bayar perjalanan dinas",
+    "narrative": "Biaya tiket dan akomodasi perjalanan dinas ke klien luar kota Rp3.800.000 dibayar tunai dari rekening bank.",
+    "lines": [
+     {
+      "code": "JK-5600",
+      "debit": 3800000,
+      "credit": 0
+     },
+     {
+      "code": "JK-1100",
+      "debit": 0,
+      "credit": 3800000
+     }
+    ],
+    "explain": "Biaya perjalanan dinas langsung menjadi beban periode berjalan."
+   },
+   {
+    "id": "jk11",
+    "title": "Bayar utang pembelian perlengkapan",
+    "narrative": "Perusahaan melunasi utang pembelian perlengkapan kantor sebesar Rp6.500.000 melalui transfer bank.",
+    "lines": [
+     {
+      "code": "JK-2100",
+      "debit": 6500000,
+      "credit": 0
+     },
+     {
+      "code": "JK-1100",
+      "debit": 0,
+      "credit": 6500000
+     }
+    ],
+    "explain": "Utang berkurang (debit), kas berkurang (kredit)."
+   },
+   {
+    "id": "jk12",
+    "title": "Penyesuaian: sewa dibayar di muka terpakai",
+    "narrative": "Pada akhir Desember, sewa kantor Rp96.000.000 yang dibayar untuk 12 bulan sejak 1 Oktober sudah terpakai 3 bulan. Buat jurnal penyesuaiannya.",
+    "lines": [
+     {
+      "code": "JK-5200",
+      "debit": 24000000,
+      "credit": 0
+     },
+     {
+      "code": "JK-1400",
+      "debit": 0,
+      "credit": 24000000
+     }
+    ],
+    "explain": "Beban sewa = Rp96.000.000 / 12 x 3 bulan = Rp24.000.000. Aset sewa dibayar di muka berkurang sebesar itu."
+   },
+   {
+    "id": "jk13",
+    "title": "Penyesuaian: penyusutan peralatan kantor",
+    "narrative": "Peralatan kantor seharga Rp45.000.000 dibeli 1 Oktober, umur manfaat 5 tahun, tanpa nilai residu, metode garis lurus. Hitung penyusutan sampai akhir Desember (3 bulan).",
+    "lines": [
+     {
+      "code": "JK-5400",
+      "debit": 2250000,
+      "credit": 0
+     },
+     {
+      "code": "JK-1510",
+      "debit": 0,
+      "credit": 2250000
+     }
+    ],
+    "explain": "Penyusutan = Rp45.000.000 / 5 / 12 x 3 = Rp2.250.000. Dicatat ke akun lawan aset (akumulasi), bukan langsung mengurangi peralatan."
+   },
+   {
+    "id": "jk14",
+    "title": "Penyesuaian: uang muka yang sudah dikerjakan",
+    "narrative": "Dari uang muka kontrak Rp60.000.000 yang sebelumnya dicatat sebagai pendapatan diterima di muka, pekerjaan senilai 40% telah diselesaikan sampai akhir Desember.",
+    "lines": [
+     {
+      "code": "JK-2200",
+      "debit": 24000000,
+      "credit": 0
+     },
+     {
+      "code": "JK-4100",
+      "debit": 0,
+      "credit": 24000000
+     }
+    ],
+    "explain": "Bagian yang sudah dikerjakan = 40% x Rp60.000.000 = Rp24.000.000. Liabilitas turun dan berpindah menjadi pendapatan."
+   },
+   {
+    "id": "jk15",
+    "title": "Penyesuaian: gaji yang masih harus dibayar",
+    "narrative": "Gaji karyawan sebulan Rp30.000.000 (30 hari). Pada akhir Desember, gaji untuk 4 hari terakhir belum dibayar.",
+    "lines": [
+     {
+      "code": "JK-5100",
+      "debit": 4000000,
+      "credit": 0
+     },
+     {
+      "code": "JK-2300",
+      "debit": 0,
+      "credit": 4000000
+     }
+    ],
+    "explain": "Beban = Rp30.000.000 / 30 x 4 = Rp4.000.000. Beban sudah terjadi tetapi belum dibayar, maka dicatat sebagai liabilitas (beban yang masih harus dibayar)."
+   },
+   {
+    "id": "jk16",
+    "title": "Penyesuaian: perlengkapan terpakai",
+    "narrative": "Perlengkapan kantor yang dibeli Rp6.500.000. Hasil hitung fisik akhir Desember menunjukkan sisa perlengkapan Rp2.000.000.",
+    "lines": [
+     {
+      "code": "JK-5300",
+      "debit": 4500000,
+      "credit": 0
+     },
+     {
+      "code": "JK-1300",
+      "debit": 0,
+      "credit": 4500000
+     }
+    ],
+    "explain": "Perlengkapan terpakai = Rp6.500.000 - Rp2.000.000 = Rp4.500.000."
+   }
+  ]
+ },
+ {
+  "app": "akuntansi-practice-pack",
+  "version": 1,
+  "id": "industri-dagang",
+  "title": "Dagang busana: PT Gaya Nusantara Busana",
+  "description": "Perusahaan dagang dengan sistem persediaan perpetual. Ongkos angkut, retur, potongan tunai, HPP. Abaikan pajak.",
+  "accounts": [
+   {
+    "code": "DG-1100",
+    "name": "Kas dan Bank",
+    "type": "Asset",
+    "normal": "Debit",
+    "reportClass": "Current Asset"
+   },
+   {
+    "code": "DG-1200",
+    "name": "Piutang Usaha",
+    "type": "Asset",
+    "normal": "Debit",
+    "reportClass": "Current Asset"
+   },
+   {
+    "code": "DG-1300",
+    "name": "Persediaan Barang Dagang",
+    "type": "Asset",
+    "normal": "Debit",
+    "reportClass": "Inventory"
+   },
+   {
+    "code": "DG-1400",
+    "name": "Asuransi Dibayar di Muka",
+    "type": "Asset",
+    "normal": "Debit",
+    "reportClass": "Current Asset"
+   },
+   {
+    "code": "DG-1600",
+    "name": "Peralatan Toko",
+    "type": "Asset",
+    "normal": "Debit",
+    "reportClass": "Fixed Asset"
+   },
+   {
+    "code": "DG-1610",
+    "name": "Akumulasi Penyusutan Peralatan Toko",
+    "type": "Asset",
+    "normal": "Credit",
+    "reportClass": "Contra Asset"
+   },
+   {
+    "code": "DG-2100",
+    "name": "Utang Usaha",
+    "type": "Liability",
+    "normal": "Credit",
+    "reportClass": "Current Liability"
+   },
+   {
+    "code": "DG-2200",
+    "name": "Utang Gaji",
+    "type": "Liability",
+    "normal": "Credit",
+    "reportClass": "Current Liability"
+   },
+   {
+    "code": "DG-3100",
+    "name": "Modal Saham",
+    "type": "Equity",
+    "normal": "Credit",
+    "reportClass": "Equity"
+   },
+   {
+    "code": "DG-4100",
+    "name": "Penjualan",
+    "type": "Revenue",
+    "normal": "Credit",
+    "reportClass": "Revenue"
+   },
+   {
+    "code": "DG-4110",
+    "name": "Retur Penjualan",
+    "type": "Revenue",
+    "normal": "Debit",
+    "reportClass": "Contra Revenue"
+   },
+   {
+    "code": "DG-4120",
+    "name": "Potongan Penjualan",
+    "type": "Revenue",
+    "normal": "Debit",
+    "reportClass": "Contra Revenue"
+   },
+   {
+    "code": "DG-5100",
+    "name": "Harga Pokok Penjualan",
+    "type": "Expense",
+    "normal": "Debit",
+    "reportClass": "Cost of Sales"
+   },
+   {
+    "code": "DG-5200",
+    "name": "Beban Gaji",
+    "type": "Expense",
+    "normal": "Debit",
+    "reportClass": "Expense"
+   },
+   {
+    "code": "DG-5300",
+    "name": "Beban Sewa",
+    "type": "Expense",
+    "normal": "Debit",
+    "reportClass": "Expense"
+   },
+   {
+    "code": "DG-5400",
+    "name": "Beban Iklan",
+    "type": "Expense",
+    "normal": "Debit",
+    "reportClass": "Expense"
+   },
+   {
+    "code": "DG-5500",
+    "name": "Beban Penyusutan Peralatan Toko",
+    "type": "Expense",
+    "normal": "Debit",
+    "reportClass": "Expense"
+   },
+   {
+    "code": "DG-5700",
+    "name": "Beban Asuransi",
+    "type": "Expense",
+    "normal": "Debit",
+    "reportClass": "Expense"
+   }
+  ],
+  "items": [
+   {
+    "id": "dg01",
+    "title": "Setoran modal pemegang saham",
+    "narrative": "PT Gaya Nusantara Busana, toko pakaian, menerima setoran modal tunai Rp300.000.000 ke rekening bank.",
+    "lines": [
+     {
+      "code": "DG-1100",
+      "debit": 300000000,
+      "credit": 0
+     },
+     {
+      "code": "DG-3100",
+      "debit": 0,
+      "credit": 300000000
+     }
+    ],
+    "explain": "Kas naik (debit), modal saham naik (kredit)."
+   },
+   {
+    "id": "dg02",
+    "title": "Pembelian barang dagang secara kredit",
+    "narrative": "Toko membeli pakaian dari pabrik Rp120.000.000 secara kredit. Perusahaan memakai sistem persediaan perpetual.",
+    "lines": [
+     {
+      "code": "DG-1300",
+      "debit": 120000000,
+      "credit": 0
+     },
+     {
+      "code": "DG-2100",
+      "debit": 0,
+      "credit": 120000000
+     }
+    ],
+    "explain": "Pada sistem perpetual, pembelian langsung menambah Persediaan (debit). Utang usaha bertambah (kredit)."
+   },
+   {
+    "id": "dg03",
+    "title": "Ongkos angkut pembelian",
+    "narrative": "Ongkos kirim barang dagang dari pabrik ke toko Rp2.400.000 dibayar tunai dari rekening bank. Syarat pengiriman FOB shipping point.",
+    "lines": [
+     {
+      "code": "DG-1300",
+      "debit": 2400000,
+      "credit": 0
+     },
+     {
+      "code": "DG-1100",
+      "debit": 0,
+      "credit": 2400000
+     }
+    ],
+    "explain": "Pada FOB shipping point, pembeli menanggung ongkos angkut. Biaya ini menambah harga perolehan persediaan."
+   },
+   {
+    "id": "dg04",
+    "title": "Retur pembelian",
+    "narrative": "Sebagian pakaian cacat senilai Rp5.000.000 dikembalikan kepada pemasok, dan nilainya mengurangi utang usaha.",
+    "lines": [
+     {
+      "code": "DG-2100",
+      "debit": 5000000,
+      "credit": 0
+     },
+     {
+      "code": "DG-1300",
+      "debit": 0,
+      "credit": 5000000
+     }
+    ],
+    "explain": "Utang berkurang (debit). Persediaan berkurang (kredit) karena barang keluar."
+   },
+   {
+    "id": "dg05",
+    "title": "Penjualan tunai dan HPP",
+    "narrative": "Toko menjual pakaian secara tunai Rp36.000.000 (ke rekening bank). Harga pokok barang yang terjual Rp21.600.000. Perusahaan memakai sistem perpetual.",
+    "lines": [
+     {
+      "code": "DG-1100",
+      "debit": 36000000,
+      "credit": 0
+     },
+     {
+      "code": "DG-4100",
+      "debit": 0,
+      "credit": 36000000
+     },
+     {
+      "code": "DG-5100",
+      "debit": 21600000,
+      "credit": 0
+     },
+     {
+      "code": "DG-1300",
+      "debit": 0,
+      "credit": 21600000
+     }
+    ],
+    "explain": "Pada perpetual, setiap penjualan dicatat dua pasang jurnal sekaligus: penjualan (kas debit, penjualan kredit) dan HPP (HPP debit, persediaan kredit)."
+   },
+   {
+    "id": "dg06",
+    "title": "Penjualan kredit dan HPP",
+    "narrative": "Toko menjual pakaian kepada pelanggan toko lain secara kredit, syarat 2/10, n/30, senilai Rp50.000.000. Harga pokok barang tersebut Rp30.000.000.",
+    "lines": [
+     {
+      "code": "DG-1200",
+      "debit": 50000000,
+      "credit": 0
+     },
+     {
+      "code": "DG-4100",
+      "debit": 0,
+      "credit": 50000000
+     },
+     {
+      "code": "DG-5100",
+      "debit": 30000000,
+      "credit": 0
+     },
+     {
+      "code": "DG-1300",
+      "debit": 0,
+      "credit": 30000000
+     }
+    ],
+    "explain": "Piutang dicatat sebesar harga bruto. Potongan tunai baru dicatat bila pelanggan benar-benar membayar dalam masa diskon."
+   },
+   {
+    "id": "dg07",
+    "title": "Retur penjualan",
+    "narrative": "Pelanggan mengembalikan pakaian yang dijual kredit senilai Rp4.000.000 dan piutangnya dibatalkan. Harga pokok barang retur Rp2.400.000 dan barang masuk kembali ke gudang dalam kondisi baik.",
+    "lines": [
+     {
+      "code": "DG-4110",
+      "debit": 4000000,
+      "credit": 0
+     },
+     {
+      "code": "DG-1200",
+      "debit": 0,
+      "credit": 4000000
+     },
+     {
+      "code": "DG-1300",
+      "debit": 2400000,
+      "credit": 0
+     },
+     {
+      "code": "DG-5100",
+      "debit": 0,
+      "credit": 2400000
+     }
+    ],
+    "explain": "Retur penjualan (akun lawan penjualan) bertambah dan piutang turun. Pada perpetual, persediaan dipulihkan dan HPP dibalik sebesar harga pokok barang retur."
+   },
+   {
+    "id": "dg08",
+    "title": "Pelunasan piutang dengan potongan tunai",
+    "narrative": "Pelanggan melunasi tagihan Rp46.000.000 (setelah retur) pada hari ke-8 dan memperoleh potongan 2% sesuai syarat 2/10, n/30.",
+    "lines": [
+     {
+      "code": "DG-1100",
+      "debit": 45080000,
+      "credit": 0
+     },
+     {
+      "code": "DG-4120",
+      "debit": 920000,
+      "credit": 0
+     },
+     {
+      "code": "DG-1200",
+      "debit": 0,
+      "credit": 46000000
+     }
+    ],
+    "explain": "Potongan = 2% x Rp46.000.000 = Rp920.000. Kas yang diterima Rp45.080.000. Piutang dihapus penuh Rp46.000.000."
+   },
+   {
+    "id": "dg09",
+    "title": "Pelunasan utang usaha",
+    "narrative": "Toko melunasi utang kepada pabrik sebesar Rp115.000.000 (utang Rp120.000.000 setelah retur Rp5.000.000) melalui transfer bank.",
+    "lines": [
+     {
+      "code": "DG-2100",
+      "debit": 115000000,
+      "credit": 0
+     },
+     {
+      "code": "DG-1100",
+      "debit": 0,
+      "credit": 115000000
+     }
+    ],
+    "explain": "Utang usaha berkurang (debit), kas berkurang (kredit)."
+   },
+   {
+    "id": "dg10",
+    "title": "Beli peralatan toko tunai",
+    "narrative": "Toko membeli rak display dan manekin Rp60.000.000 secara tunai dari rekening bank pada 1 September.",
+    "lines": [
+     {
+      "code": "DG-1600",
+      "debit": 60000000,
+      "credit": 0
+     },
+     {
+      "code": "DG-1100",
+      "debit": 0,
+      "credit": 60000000
+     }
+    ],
+    "explain": "Rak dan manekin dipakai lebih dari satu tahun sehingga menjadi aset tetap (debit); kas berkurang (kredit)."
+   },
+   {
+    "id": "dg11",
+    "title": "Bayar premi asuransi 12 bulan",
+    "narrative": "Toko membayar premi asuransi kebakaran untuk 12 bulan sebesar Rp7.200.000 dari rekening bank, berlaku sejak 1 Oktober.",
+    "lines": [
+     {
+      "code": "DG-1400",
+      "debit": 7200000,
+      "credit": 0
+     },
+     {
+      "code": "DG-1100",
+      "debit": 0,
+      "credit": 7200000
+     }
+    ],
+    "explain": "Manfaat asuransi berlangsung 12 bulan, maka dicatat sebagai aset terlebih dahulu."
+   },
+   {
+    "id": "dg12",
+    "title": "Bayar beban iklan",
+    "narrative": "Toko membayar iklan media sosial Rp8.000.000 secara tunai dari rekening bank.",
+    "lines": [
+     {
+      "code": "DG-5400",
+      "debit": 8000000,
+      "credit": 0
+     },
+     {
+      "code": "DG-1100",
+      "debit": 0,
+      "credit": 8000000
+     }
+    ],
+    "explain": "Iklan langsung menjadi beban periode ini."
+   },
+   {
+    "id": "dg13",
+    "title": "Bayar sewa toko bulanan",
+    "narrative": "Sewa toko bulan ini Rp6.000.000 dibayar tunai dari rekening bank.",
+    "lines": [
+     {
+      "code": "DG-5300",
+      "debit": 6000000,
+      "credit": 0
+     },
+     {
+      "code": "DG-1100",
+      "debit": 0,
+      "credit": 6000000
+     }
+    ],
+    "explain": "Sewa bulan berjalan menjadi beban (debit), kas berkurang (kredit)."
+   },
+   {
+    "id": "dg14",
+    "title": "Penyesuaian: asuransi terpakai",
+    "narrative": "Premi asuransi Rp7.200.000 dibayar untuk 12 bulan sejak 1 Oktober. Hitung bagian yang menjadi beban sampai 31 Desember.",
+    "lines": [
+     {
+      "code": "DG-5700",
+      "debit": 1800000,
+      "credit": 0
+     },
+     {
+      "code": "DG-1400",
+      "debit": 0,
+      "credit": 1800000
+     }
+    ],
+    "explain": "Beban asuransi = Rp7.200.000 / 12 x 3 = Rp1.800.000."
+   },
+   {
+    "id": "dg15",
+    "title": "Penyesuaian: penyusutan peralatan toko",
+    "narrative": "Peralatan toko Rp60.000.000 dibeli 1 September, umur 5 tahun, tanpa nilai residu, garis lurus. Hitung penyusutan sampai 31 Desember (4 bulan).",
+    "lines": [
+     {
+      "code": "DG-5500",
+      "debit": 4000000,
+      "credit": 0
+     },
+     {
+      "code": "DG-1610",
+      "debit": 0,
+      "credit": 4000000
+     }
+    ],
+    "explain": "Penyusutan = Rp60.000.000 / 5 / 12 x 4 = Rp4.000.000."
+   },
+   {
+    "id": "dg16",
+    "title": "Penyesuaian: gaji terutang",
+    "narrative": "Gaji pegawai toko untuk hari kerja terakhir Desember sebesar Rp3.500.000 baru dibayar bulan Januari.",
+    "lines": [
+     {
+      "code": "DG-5200",
+      "debit": 3500000,
+      "credit": 0
+     },
+     {
+      "code": "DG-2200",
+      "debit": 0,
+      "credit": 3500000
+     }
+    ],
+    "explain": "Beban gaji sudah terjadi di Desember walaupun belum dibayar, sehingga diakui dengan liabilitas (utang gaji)."
+   }
+  ]
+ },
+ {
+  "app": "akuntansi-practice-pack",
+  "version": 1,
+  "id": "industri-manufaktur",
+  "title": "Manufaktur furnitur: PT Kayu Jati Furnitur",
+  "description": "Perusahaan manufaktur. Bahan baku, barang dalam proses, barang jadi, upah langsung, overhead pabrik dibebankan. Abaikan pajak.",
+  "accounts": [
+   {
+    "code": "MF-1100",
+    "name": "Kas dan Bank",
+    "type": "Asset",
+    "normal": "Debit",
+    "reportClass": "Current Asset"
+   },
+   {
+    "code": "MF-1200",
+    "name": "Piutang Usaha",
+    "type": "Asset",
+    "normal": "Debit",
+    "reportClass": "Current Asset"
+   },
+   {
+    "code": "MF-1300",
+    "name": "Persediaan Bahan Baku",
+    "type": "Asset",
+    "normal": "Debit",
+    "reportClass": "Inventory"
+   },
+   {
+    "code": "MF-1400",
+    "name": "Persediaan Barang dalam Proses",
+    "type": "Asset",
+    "normal": "Debit",
+    "reportClass": "Inventory"
+   },
+   {
+    "code": "MF-1500",
+    "name": "Persediaan Barang Jadi",
+    "type": "Asset",
+    "normal": "Debit",
+    "reportClass": "Inventory"
+   },
+   {
+    "code": "MF-1600",
+    "name": "Mesin Produksi",
+    "type": "Asset",
+    "normal": "Debit",
+    "reportClass": "Fixed Asset"
+   },
+   {
+    "code": "MF-1610",
+    "name": "Akumulasi Penyusutan Mesin Produksi",
+    "type": "Asset",
+    "normal": "Credit",
+    "reportClass": "Contra Asset"
+   },
+   {
+    "code": "MF-2100",
+    "name": "Utang Usaha",
+    "type": "Liability",
+    "normal": "Credit",
+    "reportClass": "Current Liability"
+   },
+   {
+    "code": "MF-3100",
+    "name": "Modal Saham",
+    "type": "Equity",
+    "normal": "Credit",
+    "reportClass": "Equity"
+   },
+   {
+    "code": "MF-4100",
+    "name": "Penjualan",
+    "type": "Revenue",
+    "normal": "Credit",
+    "reportClass": "Revenue"
+   },
+   {
+    "code": "MF-5100",
+    "name": "Harga Pokok Penjualan",
+    "type": "Expense",
+    "normal": "Debit",
+    "reportClass": "Cost of Sales"
+   },
+   {
+    "code": "MF-5200",
+    "name": "Beban Penjualan",
+    "type": "Expense",
+    "normal": "Debit",
+    "reportClass": "Expense"
+   },
+   {
+    "code": "MF-5400",
+    "name": "Biaya Overhead Pabrik",
+    "type": "Expense",
+    "normal": "Debit",
+    "reportClass": "Overhead"
+   }
+  ],
+  "items": [
+   {
+    "id": "mf01",
+    "title": "Setoran modal dan beli mesin produksi",
+    "narrative": "PT Kayu Jati Furnitur menerima setoran modal tunai Rp800.000.000 ke rekening bank, lalu membeli mesin produksi Rp360.000.000 secara tunai.",
+    "lines": [
+     {
+      "code": "MF-1100",
+      "debit": 800000000,
+      "credit": 0
+     },
+     {
+      "code": "MF-3100",
+      "debit": 0,
+      "credit": 800000000
+     },
+     {
+      "code": "MF-1600",
+      "debit": 360000000,
+      "credit": 0
+     },
+     {
+      "code": "MF-1100",
+      "debit": 0,
+      "credit": 360000000
+     }
+    ],
+    "explain": "Dua peristiwa: modal saham naik dan kas naik; kemudian mesin (aset tetap) bertambah dan kas berkurang."
+   },
+   {
+    "id": "mf02",
+    "title": "Pembelian bahan baku secara kredit",
+    "narrative": "Perusahaan membeli kayu jati Rp90.000.000 dari pemasok. Pembayaran dilakukan bulan depan.",
+    "lines": [
+     {
+      "code": "MF-1300",
+      "debit": 90000000,
+      "credit": 0
+     },
+     {
+      "code": "MF-2100",
+      "debit": 0,
+      "credit": 90000000
+     }
+    ],
+    "explain": "Bahan baku yang belum dipakai adalah persediaan (debit). Utang usaha bertambah (kredit)."
+   },
+   {
+    "id": "mf03",
+    "title": "Bahan baku langsung masuk produksi",
+    "narrative": "Gudang menyerahkan kayu jati senilai Rp72.000.000 ke bagian produksi untuk dikerjakan menjadi furnitur.",
+    "lines": [
+     {
+      "code": "MF-1400",
+      "debit": 72000000,
+      "credit": 0
+     },
+     {
+      "code": "MF-1300",
+      "debit": 0,
+      "credit": 72000000
+     }
+    ],
+    "explain": "Bahan baku langsung berpindah dari persediaan bahan baku ke barang dalam proses."
+   },
+   {
+    "id": "mf04",
+    "title": "Bahan penolong dipakai pabrik",
+    "narrative": "Pabrik memakai paku, lem, dan amplas (bahan tidak langsung) senilai Rp5.000.000 yang diambil dari gudang bahan.",
+    "lines": [
+     {
+      "code": "MF-5400",
+      "debit": 5000000,
+      "credit": 0
+     },
+     {
+      "code": "MF-1300",
+      "debit": 0,
+      "credit": 5000000
+     }
+    ],
+    "explain": "Bahan penolong tidak dapat ditelusuri ke satu produk, jadi dicatat sebagai biaya overhead pabrik, bukan langsung ke barang dalam proses."
+   },
+   {
+    "id": "mf05",
+    "title": "Upah tenaga kerja langsung",
+    "narrative": "Upah tukang yang mengerjakan produk secara langsung Rp30.000.000 dibayar tunai dari rekening bank.",
+    "lines": [
+     {
+      "code": "MF-1400",
+      "debit": 30000000,
+      "credit": 0
+     },
+     {
+      "code": "MF-1100",
+      "debit": 0,
+      "credit": 30000000
+     }
+    ],
+    "explain": "Upah langsung menambah barang dalam proses karena melekat pada produk."
+   },
+   {
+    "id": "mf06",
+    "title": "Upah mandor (tenaga kerja tidak langsung)",
+    "narrative": "Gaji mandor pabrik Rp6.000.000 dibayar tunai dari rekening bank.",
+    "lines": [
+     {
+      "code": "MF-5400",
+      "debit": 6000000,
+      "credit": 0
+     },
+     {
+      "code": "MF-1100",
+      "debit": 0,
+      "credit": 6000000
+     }
+    ],
+    "explain": "Mandor mengawasi seluruh produksi sehingga upahnya masuk biaya overhead pabrik."
+   },
+   {
+    "id": "mf07",
+    "title": "Listrik pabrik",
+    "narrative": "Tagihan listrik pabrik Rp4.500.000 dibayar tunai dari rekening bank.",
+    "lines": [
+     {
+      "code": "MF-5400",
+      "debit": 4500000,
+      "credit": 0
+     },
+     {
+      "code": "MF-1100",
+      "debit": 0,
+      "credit": 4500000
+     }
+    ],
+    "explain": "Listrik pabrik adalah overhead pabrik."
+   },
+   {
+    "id": "mf08",
+    "title": "Penyusutan mesin produksi",
+    "narrative": "Mesin produksi Rp360.000.000 berumur 10 tahun tanpa nilai residu, garis lurus. Catat penyusutan satu bulan.",
+    "lines": [
+     {
+      "code": "MF-5400",
+      "debit": 3000000,
+      "credit": 0
+     },
+     {
+      "code": "MF-1610",
+      "debit": 0,
+      "credit": 3000000
+     }
+    ],
+    "explain": "Penyusutan sebulan = Rp360.000.000 / 10 / 12 = Rp3.000.000. Penyusutan mesin pabrik masuk overhead."
+   },
+   {
+    "id": "mf09",
+    "title": "Pembebanan overhead ke produksi",
+    "narrative": "Perusahaan membebankan overhead pabrik ke barang dalam proses dengan tarif 60% dari upah tenaga kerja langsung sebesar Rp30.000.000.",
+    "lines": [
+     {
+      "code": "MF-1400",
+      "debit": 18000000,
+      "credit": 0
+     },
+     {
+      "code": "MF-5400",
+      "debit": 0,
+      "credit": 18000000
+     }
+    ],
+    "explain": "Overhead dibebankan = 60% x Rp30.000.000 = Rp18.000.000. Akun Biaya Overhead Pabrik dikreditkan agar saldonya dapat dibandingkan dengan overhead aktual."
+   },
+   {
+    "id": "mf10",
+    "title": "Produk selesai dipindah ke barang jadi",
+    "narrative": "Produksi furnitur selesai. Barang dalam proses terdiri dari bahan baku Rp72.000.000, upah langsung Rp30.000.000, dan overhead dibebankan Rp18.000.000. Seluruh produk dipindahkan ke gudang barang jadi.",
+    "lines": [
+     {
+      "code": "MF-1500",
+      "debit": 120000000,
+      "credit": 0
+     },
+     {
+      "code": "MF-1400",
+      "debit": 0,
+      "credit": 120000000
+     }
+    ],
+    "explain": "Harga pokok produksi = Rp72.000.000 + Rp30.000.000 + Rp18.000.000 = Rp120.000.000."
+   },
+   {
+    "id": "mf11",
+    "title": "Penjualan kredit dan HPP",
+    "narrative": "Seluruh furnitur terjual secara kredit Rp200.000.000. Harga pokok barang jadi yang terjual sebesar Rp120.000.000.",
+    "lines": [
+     {
+      "code": "MF-1200",
+      "debit": 200000000,
+      "credit": 0
+     },
+     {
+      "code": "MF-4100",
+      "debit": 0,
+      "credit": 200000000
+     },
+     {
+      "code": "MF-5100",
+      "debit": 120000000,
+      "credit": 0
+     },
+     {
+      "code": "MF-1500",
+      "debit": 0,
+      "credit": 120000000
+     }
+    ],
+    "explain": "Dua pasang jurnal: pengakuan penjualan, dan pemindahan harga pokok dari persediaan barang jadi ke HPP."
+   },
+   {
+    "id": "mf12",
+    "title": "Penerimaan piutang",
+    "narrative": "Pelanggan membayar Rp150.000.000 atas penjualan kredit melalui transfer bank.",
+    "lines": [
+     {
+      "code": "MF-1100",
+      "debit": 150000000,
+      "credit": 0
+     },
+     {
+      "code": "MF-1200",
+      "debit": 0,
+      "credit": 150000000
+     }
+    ],
+    "explain": "Kas naik (debit), piutang turun (kredit)."
+   },
+   {
+    "id": "mf13",
+    "title": "Beban iklan penjualan",
+    "narrative": "Perusahaan membayar iklan katalog furnitur Rp7.000.000 tunai dari rekening bank.",
+    "lines": [
+     {
+      "code": "MF-5200",
+      "debit": 7000000,
+      "credit": 0
+     },
+     {
+      "code": "MF-1100",
+      "debit": 0,
+      "credit": 7000000
+     }
+    ],
+    "explain": "Biaya pemasaran bukan biaya produksi, jadi menjadi beban penjualan periode berjalan."
+   },
+   {
+    "id": "mf14",
+    "title": "Bayar utang pemasok",
+    "narrative": "Perusahaan membayar sebagian utang pembelian kayu Rp60.000.000 melalui transfer bank.",
+    "lines": [
+     {
+      "code": "MF-2100",
+      "debit": 60000000,
+      "credit": 0
+     },
+     {
+      "code": "MF-1100",
+      "debit": 0,
+      "credit": 60000000
+     }
+    ],
+    "explain": "Utang usaha berkurang (debit), kas berkurang (kredit)."
+   },
+   {
+    "id": "mf15",
+    "title": "Penutupan selisih overhead kurang dibebankan",
+    "narrative": "Akhir bulan, overhead pabrik aktual berjumlah Rp18.500.000 (bahan penolong, upah mandor, listrik, dan penyusutan mesin), sedangkan yang dibebankan ke produksi Rp18.000.000. Seluruh barang sudah terjual. Tutup selisihnya ke harga pokok penjualan.",
+    "lines": [
+     {
+      "code": "MF-5100",
+      "debit": 500000,
+      "credit": 0
+     },
+     {
+      "code": "MF-5400",
+      "debit": 0,
+      "credit": 500000
+     }
+    ],
+    "explain": "Overhead kurang dibebankan = Rp18.500.000 - Rp18.000.000 = Rp500.000. Karena barangnya sudah terjual, selisih ditambahkan ke HPP. Saldo akun overhead menjadi nol."
+   }
+  ]
+ },
+ {
+  "app": "akuntansi-practice-pack",
+  "version": 1,
+  "id": "industri-restoran",
+  "title": "Restoran: Warung Makan Sedap Rasa",
+  "description": "Usaha perorangan. Persediaan bahan makanan, katering, uang muka pesanan, prive. Abaikan pajak.",
+  "accounts": [
+   {
+    "code": "RS-1100",
+    "name": "Kas",
+    "type": "Asset",
+    "normal": "Debit",
+    "reportClass": "Current Asset"
+   },
+   {
+    "code": "RS-1200",
+    "name": "Piutang Usaha",
+    "type": "Asset",
+    "normal": "Debit",
+    "reportClass": "Current Asset"
+   },
+   {
+    "code": "RS-1300",
+    "name": "Persediaan Bahan Makanan",
+    "type": "Asset",
+    "normal": "Debit",
+    "reportClass": "Inventory"
+   },
+   {
+    "code": "RS-1400",
+    "name": "Peralatan Dapur",
+    "type": "Asset",
+    "normal": "Debit",
+    "reportClass": "Fixed Asset"
+   },
+   {
+    "code": "RS-1410",
+    "name": "Akumulasi Penyusutan Peralatan Dapur",
+    "type": "Asset",
+    "normal": "Credit",
+    "reportClass": "Contra Asset"
+   },
+   {
+    "code": "RS-2200",
+    "name": "Utang Gaji",
+    "type": "Liability",
+    "normal": "Credit",
+    "reportClass": "Current Liability"
+   },
+   {
+    "code": "RS-2300",
+    "name": "Uang Muka Pesanan Katering",
+    "type": "Liability",
+    "normal": "Credit",
+    "reportClass": "Current Liability"
+   },
+   {
+    "code": "RS-3100",
+    "name": "Modal Pemilik",
+    "type": "Equity",
+    "normal": "Credit",
+    "reportClass": "Equity"
+   },
+   {
+    "code": "RS-3200",
+    "name": "Prive",
+    "type": "Equity",
+    "normal": "Debit",
+    "reportClass": "Equity"
+   },
+   {
+    "code": "RS-4100",
+    "name": "Pendapatan Makanan dan Minuman",
+    "type": "Revenue",
+    "normal": "Credit",
+    "reportClass": "Revenue"
+   },
+   {
+    "code": "RS-5100",
+    "name": "Beban Bahan Makanan",
+    "type": "Expense",
+    "normal": "Debit",
+    "reportClass": "Expense"
+   },
+   {
+    "code": "RS-5200",
+    "name": "Beban Gaji",
+    "type": "Expense",
+    "normal": "Debit",
+    "reportClass": "Expense"
+   },
+   {
+    "code": "RS-5300",
+    "name": "Beban Gas dan Listrik",
+    "type": "Expense",
+    "normal": "Debit",
+    "reportClass": "Expense"
+   },
+   {
+    "code": "RS-5400",
+    "name": "Beban Penyusutan Peralatan Dapur",
+    "type": "Expense",
+    "normal": "Debit",
+    "reportClass": "Expense"
+   },
+   {
+    "code": "RS-5600",
+    "name": "Beban Sewa",
+    "type": "Expense",
+    "normal": "Debit",
+    "reportClass": "Expense"
+   }
+  ],
+  "items": [
+   {
+    "id": "rs01",
+    "title": "Setoran modal pemilik",
+    "narrative": "Bapak Hendra membuka Warung Makan Sedap Rasa dengan menyetor modal tunai Rp80.000.000.",
+    "lines": [
+     {
+      "code": "RS-1100",
+      "debit": 80000000,
+      "credit": 0
+     },
+     {
+      "code": "RS-3100",
+      "debit": 0,
+      "credit": 80000000
+     }
+    ],
+    "explain": "Kas naik (debit), modal pemilik naik (kredit)."
+   },
+   {
+    "id": "rs02",
+    "title": "Beli peralatan dapur tunai",
+    "narrative": "Warung membeli kompor industri dan peralatan masak Rp25.000.000 secara tunai.",
+    "lines": [
+     {
+      "code": "RS-1400",
+      "debit": 25000000,
+      "credit": 0
+     },
+     {
+      "code": "RS-1100",
+      "debit": 0,
+      "credit": 25000000
+     }
+    ],
+    "explain": "Peralatan tahan lama adalah aset tetap (debit), kas berkurang (kredit)."
+   },
+   {
+    "id": "rs03",
+    "title": "Beli bahan makanan tunai",
+    "narrative": "Warung membeli beras, daging, dan sayur Rp12.000.000 secara tunai.",
+    "lines": [
+     {
+      "code": "RS-1300",
+      "debit": 12000000,
+      "credit": 0
+     },
+     {
+      "code": "RS-1100",
+      "debit": 0,
+      "credit": 12000000
+     }
+    ],
+    "explain": "Bahan yang belum dipakai dicatat sebagai persediaan; beban baru diakui setelah bahan terpakai (disesuaikan di akhir periode)."
+   },
+   {
+    "id": "rs04",
+    "title": "Penjualan makanan tunai harian",
+    "narrative": "Penjualan makanan dan minuman kepada pelanggan hari ini Rp9.500.000 diterima tunai.",
+    "lines": [
+     {
+      "code": "RS-1100",
+      "debit": 9500000,
+      "credit": 0
+     },
+     {
+      "code": "RS-4100",
+      "debit": 0,
+      "credit": 9500000
+     }
+    ],
+    "explain": "Kas naik, pendapatan naik."
+   },
+   {
+    "id": "rs05",
+    "title": "Pesanan katering secara kredit",
+    "narrative": "Warung menyelesaikan pesanan katering untuk sebuah kantor senilai Rp15.000.000. Kantor akan membayar bulan depan.",
+    "lines": [
+     {
+      "code": "RS-1200",
+      "debit": 15000000,
+      "credit": 0
+     },
+     {
+      "code": "RS-4100",
+      "debit": 0,
+      "credit": 15000000
+     }
+    ],
+    "explain": "Pendapatan diakui saat katering diserahkan; belum ada kas, jadi muncul piutang."
+   },
+   {
+    "id": "rs06",
+    "title": "Terima uang muka pesanan katering",
+    "narrative": "Pelanggan memesan katering untuk acara bulan depan dan membayar uang muka Rp5.000.000 tunai.",
+    "lines": [
+     {
+      "code": "RS-1100",
+      "debit": 5000000,
+      "credit": 0
+     },
+     {
+      "code": "RS-2300",
+      "debit": 0,
+      "credit": 5000000
+     }
+    ],
+    "explain": "Acara belum dilayani, jadi uang muka adalah liabilitas."
+   },
+   {
+    "id": "rs07",
+    "title": "Bayar sewa tempat bulanan",
+    "narrative": "Warung membayar sewa tempat usaha untuk bulan ini Rp6.000.000 tunai.",
+    "lines": [
+     {
+      "code": "RS-5600",
+      "debit": 6000000,
+      "credit": 0
+     },
+     {
+      "code": "RS-1100",
+      "debit": 0,
+      "credit": 6000000
+     }
+    ],
+    "explain": "Beban sewa periode berjalan."
+   },
+   {
+    "id": "rs08",
+    "title": "Bayar gaji karyawan",
+    "narrative": "Gaji karyawan dapur dan pelayan bulan ini Rp14.000.000 dibayar tunai.",
+    "lines": [
+     {
+      "code": "RS-5200",
+      "debit": 14000000,
+      "credit": 0
+     },
+     {
+      "code": "RS-1100",
+      "debit": 0,
+      "credit": 14000000
+     }
+    ],
+    "explain": "Beban gaji bertambah (debit), kas berkurang (kredit)."
+   },
+   {
+    "id": "rs09",
+    "title": "Bayar gas dan listrik",
+    "narrative": "Tagihan gas elpiji dan listrik Rp3.200.000 dibayar tunai.",
+    "lines": [
+     {
+      "code": "RS-5300",
+      "debit": 3200000,
+      "credit": 0
+     },
+     {
+      "code": "RS-1100",
+      "debit": 0,
+      "credit": 3200000
+     }
+    ],
+    "explain": "Beban operasional."
+   },
+   {
+    "id": "rs10",
+    "title": "Pemilik mengambil uang pribadi",
+    "narrative": "Pemilik mengambil kas warung Rp4.000.000 untuk keperluan pribadi.",
+    "lines": [
+     {
+      "code": "RS-3200",
+      "debit": 4000000,
+      "credit": 0
+     },
+     {
+      "code": "RS-1100",
+      "debit": 0,
+      "credit": 4000000
+     }
+    ],
+    "explain": "Pengambilan pribadi bukan beban. Dicatat ke Prive, yang mengurangi ekuitas pemilik."
+   },
+   {
+    "id": "rs11",
+    "title": "Pelunasan piutang katering",
+    "narrative": "Kantor pelanggan membayar sebagian tagihan katering Rp10.000.000 tunai.",
+    "lines": [
+     {
+      "code": "RS-1100",
+      "debit": 10000000,
+      "credit": 0
+     },
+     {
+      "code": "RS-1200",
+      "debit": 0,
+      "credit": 10000000
+     }
+    ],
+    "explain": "Kas naik, piutang turun. Tidak ada pendapatan baru."
+   },
+   {
+    "id": "rs12",
+    "title": "Penyesuaian: bahan makanan terpakai",
+    "narrative": "Bahan makanan yang dibeli bulan ini Rp12.000.000. Stok opname akhir bulan menunjukkan sisa bahan Rp4.500.000.",
+    "lines": [
+     {
+      "code": "RS-5100",
+      "debit": 7500000,
+      "credit": 0
+     },
+     {
+      "code": "RS-1300",
+      "debit": 0,
+      "credit": 7500000
+     }
+    ],
+    "explain": "Bahan terpakai = Rp12.000.000 - Rp4.500.000 = Rp7.500.000; menjadi beban bahan makanan."
+   },
+   {
+    "id": "rs13",
+    "title": "Penyesuaian: penyusutan peralatan dapur",
+    "narrative": "Peralatan dapur Rp25.000.000 berumur 5 tahun dengan nilai residu Rp1.000.000, metode garis lurus. Catat penyusutan satu bulan.",
+    "lines": [
+     {
+      "code": "RS-5400",
+      "debit": 400000,
+      "credit": 0
+     },
+     {
+      "code": "RS-1410",
+      "debit": 0,
+      "credit": 400000
+     }
+    ],
+    "explain": "Penyusutan = (Rp25.000.000 - Rp1.000.000) / 5 / 12 = Rp400.000."
+   },
+   {
+    "id": "rs14",
+    "title": "Penyesuaian: uang muka katering sudah dilayani",
+    "narrative": "Acara katering yang uang mukanya Rp5.000.000 (dicatat sebagai liabilitas) sudah dilaksanakan seluruhnya pada akhir bulan.",
+    "lines": [
+     {
+      "code": "RS-2300",
+      "debit": 5000000,
+      "credit": 0
+     },
+     {
+      "code": "RS-4100",
+      "debit": 0,
+      "credit": 5000000
+     }
+    ],
+    "explain": "Kewajiban sudah dipenuhi sehingga liabilitas hilang dan pendapatan diakui."
+   },
+   {
+    "id": "rs15",
+    "title": "Penyesuaian: gaji terutang",
+    "narrative": "Gaji pelayan untuk 3 hari terakhir bulan ini sebesar Rp2.800.000 belum dibayar.",
+    "lines": [
+     {
+      "code": "RS-5200",
+      "debit": 2800000,
+      "credit": 0
+     },
+     {
+      "code": "RS-2200",
+      "debit": 0,
+      "credit": 2800000
+     }
+    ],
+    "explain": "Beban sudah terjadi tetapi belum dibayar: diakui bersama utang gaji."
+   }
+  ]
+ },
+ {
+  "app": "akuntansi-practice-pack",
+  "version": 1,
+  "id": "industri-konstruksi",
+  "title": "Konstruksi: PT Bangun Karya Persada",
+  "description": "Kontraktor. Uang muka proyek, pendapatan kontrak berdasarkan progres, termin, aset dan liabilitas kontrak. Abaikan pajak dan retensi.",
+  "accounts": [
+   {
+    "code": "KS-1100",
+    "name": "Kas dan Bank",
+    "type": "Asset",
+    "normal": "Debit",
+    "reportClass": "Current Asset"
+   },
+   {
+    "code": "KS-1200",
+    "name": "Piutang Termin",
+    "type": "Asset",
+    "normal": "Debit",
+    "reportClass": "Current Asset"
+   },
+   {
+    "code": "KS-1250",
+    "name": "Aset Kontrak",
+    "type": "Asset",
+    "normal": "Debit",
+    "reportClass": "Current Asset"
+   },
+   {
+    "code": "KS-1300",
+    "name": "Persediaan Material Proyek",
+    "type": "Asset",
+    "normal": "Debit",
+    "reportClass": "Inventory"
+   },
+   {
+    "code": "KS-1500",
+    "name": "Alat Berat",
+    "type": "Asset",
+    "normal": "Debit",
+    "reportClass": "Fixed Asset"
+   },
+   {
+    "code": "KS-1510",
+    "name": "Akumulasi Penyusutan Alat Berat",
+    "type": "Asset",
+    "normal": "Credit",
+    "reportClass": "Contra Asset"
+   },
+   {
+    "code": "KS-2100",
+    "name": "Utang Usaha",
+    "type": "Liability",
+    "normal": "Credit",
+    "reportClass": "Current Liability"
+   },
+   {
+    "code": "KS-2300",
+    "name": "Liabilitas Kontrak (Uang Muka Proyek)",
+    "type": "Liability",
+    "normal": "Credit",
+    "reportClass": "Current Liability"
+   },
+   {
+    "code": "KS-3100",
+    "name": "Modal Saham",
+    "type": "Equity",
+    "normal": "Credit",
+    "reportClass": "Equity"
+   },
+   {
+    "code": "KS-4100",
+    "name": "Pendapatan Kontrak Konstruksi",
+    "type": "Revenue",
+    "normal": "Credit",
+    "reportClass": "Revenue"
+   },
+   {
+    "code": "KS-5100",
+    "name": "Beban Kontrak",
+    "type": "Expense",
+    "normal": "Debit",
+    "reportClass": "Cost of Sales"
+   },
+   {
+    "code": "KS-5200",
+    "name": "Beban Penyusutan Alat Berat",
+    "type": "Expense",
+    "normal": "Debit",
+    "reportClass": "Expense"
+   },
+   {
+    "code": "KS-5300",
+    "name": "Beban Administrasi Proyek",
+    "type": "Expense",
+    "normal": "Debit",
+    "reportClass": "Expense"
+   }
+  ],
+  "items": [
+   {
+    "id": "ks01",
+    "title": "Setoran modal dan beli alat berat",
+    "narrative": "PT Bangun Karya Persada menerima setoran modal tunai Rp1.000.000.000 ke rekening bank, lalu membeli alat berat (ekskavator) Rp600.000.000 secara tunai.",
+    "lines": [
+     {
+      "code": "KS-1100",
+      "debit": 1000000000,
+      "credit": 0
+     },
+     {
+      "code": "KS-3100",
+      "debit": 0,
+      "credit": 1000000000
+     },
+     {
+      "code": "KS-1500",
+      "debit": 600000000,
+      "credit": 0
+     },
+     {
+      "code": "KS-1100",
+      "debit": 0,
+      "credit": 600000000
+     }
+    ],
+    "explain": "Modal saham dan kas naik, lalu alat berat (aset tetap) naik dan kas berkurang."
+   },
+   {
+    "id": "ks02",
+    "title": "Terima uang muka proyek",
+    "narrative": "Pemilik proyek membayar uang muka 10% dari nilai kontrak Rp2.000.000.000 ke rekening bank sebelum pekerjaan dimulai.",
+    "lines": [
+     {
+      "code": "KS-1100",
+      "debit": 200000000,
+      "credit": 0
+     },
+     {
+      "code": "KS-2300",
+      "debit": 0,
+      "credit": 200000000
+     }
+    ],
+    "explain": "Uang muka = 10% x Rp2.000.000.000 = Rp200.000.000. Pekerjaan belum dilakukan, jadi dicatat sebagai liabilitas kontrak, bukan pendapatan."
+   },
+   {
+    "id": "ks03",
+    "title": "Beli material proyek secara kredit",
+    "narrative": "Perusahaan membeli semen, baja, dan pasir Rp300.000.000 dari pemasok secara kredit.",
+    "lines": [
+     {
+      "code": "KS-1300",
+      "debit": 300000000,
+      "credit": 0
+     },
+     {
+      "code": "KS-2100",
+      "debit": 0,
+      "credit": 300000000
+     }
+    ],
+    "explain": "Material belum terpakai adalah persediaan (debit); utang usaha bertambah (kredit)."
+   },
+   {
+    "id": "ks04",
+    "title": "Material dipakai di proyek",
+    "narrative": "Dari material yang dibeli, senilai Rp240.000.000 telah dipakai dalam pekerjaan proyek.",
+    "lines": [
+     {
+      "code": "KS-5100",
+      "debit": 240000000,
+      "credit": 0
+     },
+     {
+      "code": "KS-1300",
+      "debit": 0,
+      "credit": 240000000
+     }
+    ],
+    "explain": "Material yang terpakai menjadi biaya kontrak (beban), persediaan berkurang."
+   },
+   {
+    "id": "ks05",
+    "title": "Bayar upah pekerja proyek",
+    "narrative": "Upah pekerja proyek Rp90.000.000 dibayar tunai dari rekening bank.",
+    "lines": [
+     {
+      "code": "KS-5100",
+      "debit": 90000000,
+      "credit": 0
+     },
+     {
+      "code": "KS-1100",
+      "debit": 0,
+      "credit": 90000000
+     }
+    ],
+    "explain": "Upah pekerja proyek adalah biaya kontrak."
+   },
+   {
+    "id": "ks06",
+    "title": "Biaya subkontraktor terutang",
+    "narrative": "Subkontraktor mekanikal dan elektrikal menagih Rp60.000.000 untuk pekerjaannya. Pembayaran belum dilakukan.",
+    "lines": [
+     {
+      "code": "KS-5100",
+      "debit": 60000000,
+      "credit": 0
+     },
+     {
+      "code": "KS-2100",
+      "debit": 0,
+      "credit": 60000000
+     }
+    ],
+    "explain": "Biaya kontrak diakui saat pekerjaan selesai, utang usaha bertambah."
+   },
+   {
+    "id": "ks07",
+    "title": "Biaya BBM alat berat",
+    "narrative": "Biaya solar untuk alat berat proyek Rp18.000.000 dibayar tunai dari rekening bank.",
+    "lines": [
+     {
+      "code": "KS-5100",
+      "debit": 18000000,
+      "credit": 0
+     },
+     {
+      "code": "KS-1100",
+      "debit": 0,
+      "credit": 18000000
+     }
+    ],
+    "explain": "Biaya operasi alat berat di proyek termasuk biaya kontrak."
+   },
+   {
+    "id": "ks08",
+    "title": "Pengakuan pendapatan berdasarkan progres",
+    "narrative": "Nilai kontrak Rp2.000.000.000. Berdasarkan laporan teknis, progres pekerjaan mencapai 25% pada akhir periode. Pendapatan diakui sepanjang waktu mengikuti progres dan belum ditagih.",
+    "lines": [
+     {
+      "code": "KS-1250",
+      "debit": 500000000,
+      "credit": 0
+     },
+     {
+      "code": "KS-4100",
+      "debit": 0,
+      "credit": 500000000
+     }
+    ],
+    "explain": "Pendapatan = 25% x Rp2.000.000.000 = Rp500.000.000. Karena belum ditagih, hak perusahaan dicatat sebagai aset kontrak."
+   },
+   {
+    "id": "ks09",
+    "title": "Tagihan termin pertama dengan potongan uang muka",
+    "narrative": "Perusahaan menerbitkan tagihan termin pertama senilai progres Rp500.000.000. Uang muka Rp200.000.000 yang diterima di awal diperhitungkan seluruhnya pada tagihan ini, sehingga piutang termin hanya sebesar sisanya. Pendapatan atas progres tersebut (Rp500.000.000) sebelumnya dicatat sebagai aset kontrak.",
+    "lines": [
+     {
+      "code": "KS-1200",
+      "debit": 300000000,
+      "credit": 0
+     },
+     {
+      "code": "KS-2300",
+      "debit": 200000000,
+      "credit": 0
+     },
+     {
+      "code": "KS-1250",
+      "debit": 0,
+      "credit": 500000000
+     }
+    ],
+    "explain": "Termin Rp500.000.000 dibayar dengan memotong uang muka Rp200.000.000; piutang termin = Rp300.000.000. Aset kontrak hilang karena kini sudah menjadi piutang. Liabilitas kontrak lunas."
+   },
+   {
+    "id": "ks10",
+    "title": "Terima pembayaran termin",
+    "narrative": "Pemilik proyek membayar piutang termin sebesar Rp300.000.000 melalui transfer bank.",
+    "lines": [
+     {
+      "code": "KS-1100",
+      "debit": 300000000,
+      "credit": 0
+     },
+     {
+      "code": "KS-1200",
+      "debit": 0,
+      "credit": 300000000
+     }
+    ],
+    "explain": "Kas naik, piutang termin turun."
+   },
+   {
+    "id": "ks11",
+    "title": "Bayar utang pemasok dan subkontraktor",
+    "narrative": "Perusahaan membayar utang usaha Rp350.000.000 melalui transfer bank.",
+    "lines": [
+     {
+      "code": "KS-2100",
+      "debit": 350000000,
+      "credit": 0
+     },
+     {
+      "code": "KS-1100",
+      "debit": 0,
+      "credit": 350000000
+     }
+    ],
+    "explain": "Utang usaha berkurang (debit), kas berkurang (kredit)."
+   },
+   {
+    "id": "ks12",
+    "title": "Bayar beban administrasi proyek",
+    "narrative": "Biaya perizinan dan administrasi kantor proyek Rp12.000.000 dibayar tunai dari rekening bank.",
+    "lines": [
+     {
+      "code": "KS-5300",
+      "debit": 12000000,
+      "credit": 0
+     },
+     {
+      "code": "KS-1100",
+      "debit": 0,
+      "credit": 12000000
+     }
+    ],
+    "explain": "Biaya umum yang tidak langsung melekat pada pekerjaan dicatat sebagai beban administrasi."
+   },
+   {
+    "id": "ks13",
+    "title": "Penyesuaian: penyusutan alat berat",
+    "narrative": "Alat berat Rp600.000.000 berumur 8 tahun tanpa nilai residu, garis lurus. Catat penyusutan satu bulan.",
+    "lines": [
+     {
+      "code": "KS-5200",
+      "debit": 6250000,
+      "credit": 0
+     },
+     {
+      "code": "KS-1510",
+      "debit": 0,
+      "credit": 6250000
+     }
+    ],
+    "explain": "Penyusutan = Rp600.000.000 / 8 / 12 = Rp6.250.000."
+   }
+  ]
+ },
+ {
+  "app": "akuntansi-practice-pack",
+  "version": 1,
+  "id": "industri-pendidikan",
+  "title": "Pendidikan: Lembaga Bimbel Cerdas Prima",
+  "description": "Jasa pendidikan. SPP diterima di muka, pendapatan pendaftaran, piutang SPP, honor pengajar. Abaikan pajak.",
+  "accounts": [
+   {
+    "code": "PD-1100",
+    "name": "Kas dan Bank",
+    "type": "Asset",
+    "normal": "Debit",
+    "reportClass": "Current Asset"
+   },
+   {
+    "code": "PD-1200",
+    "name": "Piutang Biaya Pendidikan",
+    "type": "Asset",
+    "normal": "Debit",
+    "reportClass": "Current Asset"
+   },
+   {
+    "code": "PD-1300",
+    "name": "Perlengkapan Kelas",
+    "type": "Asset",
+    "normal": "Debit",
+    "reportClass": "Current Asset"
+   },
+   {
+    "code": "PD-1400",
+    "name": "Peralatan Pembelajaran",
+    "type": "Asset",
+    "normal": "Debit",
+    "reportClass": "Fixed Asset"
+   },
+   {
+    "code": "PD-1410",
+    "name": "Akumulasi Penyusutan Peralatan Pembelajaran",
+    "type": "Asset",
+    "normal": "Credit",
+    "reportClass": "Contra Asset"
+   },
+   {
+    "code": "PD-2100",
+    "name": "Utang Usaha",
+    "type": "Liability",
+    "normal": "Credit",
+    "reportClass": "Current Liability"
+   },
+   {
+    "code": "PD-2200",
+    "name": "Biaya Pendidikan Diterima di Muka",
+    "type": "Liability",
+    "normal": "Credit",
+    "reportClass": "Current Liability"
+   },
+   {
+    "code": "PD-2300",
+    "name": "Utang Gaji Pengajar",
+    "type": "Liability",
+    "normal": "Credit",
+    "reportClass": "Current Liability"
+   },
+   {
+    "code": "PD-3100",
+    "name": "Modal Pemilik",
+    "type": "Equity",
+    "normal": "Credit",
+    "reportClass": "Equity"
+   },
+   {
+    "code": "PD-4100",
+    "name": "Pendapatan Biaya Pendidikan",
+    "type": "Revenue",
+    "normal": "Credit",
+    "reportClass": "Revenue"
+   },
+   {
+    "code": "PD-4200",
+    "name": "Pendapatan Biaya Pendaftaran",
+    "type": "Revenue",
+    "normal": "Credit",
+    "reportClass": "Revenue"
+   },
+   {
+    "code": "PD-5100",
+    "name": "Beban Gaji Pengajar",
+    "type": "Expense",
+    "normal": "Debit",
+    "reportClass": "Expense"
+   },
+   {
+    "code": "PD-5200",
+    "name": "Beban Sewa Ruang",
+    "type": "Expense",
+    "normal": "Debit",
+    "reportClass": "Expense"
+   },
+   {
+    "code": "PD-5300",
+    "name": "Beban Perlengkapan Kelas",
+    "type": "Expense",
+    "normal": "Debit",
+    "reportClass": "Expense"
+   },
+   {
+    "code": "PD-5400",
+    "name": "Beban Penyusutan Peralatan",
+    "type": "Expense",
+    "normal": "Debit",
+    "reportClass": "Expense"
+   },
+   {
+    "code": "PD-5500",
+    "name": "Beban Promosi",
+    "type": "Expense",
+    "normal": "Debit",
+    "reportClass": "Expense"
+   }
+  ],
+  "items": [
+   {
+    "id": "pd01",
+    "title": "Setoran modal pemilik",
+    "narrative": "Ibu Sari mendirikan Lembaga Bimbel Cerdas Prima dengan menyetor modal tunai Rp120.000.000 ke rekening bank.",
+    "lines": [
+     {
+      "code": "PD-1100",
+      "debit": 120000000,
+      "credit": 0
+     },
+     {
+      "code": "PD-3100",
+      "debit": 0,
+      "credit": 120000000
+     }
+    ],
+    "explain": "Kas naik, modal pemilik naik."
+   },
+   {
+    "id": "pd02",
+    "title": "Terima biaya pendaftaran siswa",
+    "narrative": "24 siswa baru membayar biaya pendaftaran masing-masing Rp250.000 secara tunai. Biaya pendaftaran tidak dapat dikembalikan.",
+    "lines": [
+     {
+      "code": "PD-1100",
+      "debit": 6000000,
+      "credit": 0
+     },
+     {
+      "code": "PD-4200",
+      "debit": 0,
+      "credit": 6000000
+     }
+    ],
+    "explain": "24 x Rp250.000 = Rp6.000.000. Biaya pendaftaran tidak dapat dikembalikan dan layanan pendaftaran sudah diberikan, sehingga diakui sebagai pendapatan."
+   },
+   {
+    "id": "pd03",
+    "title": "Terima SPP 6 bulan di muka",
+    "narrative": "40 siswa membayar SPP untuk 6 bulan ke depan, masing-masing Rp1.800.000, secara tunai ke rekening bank.",
+    "lines": [
+     {
+      "code": "PD-1100",
+      "debit": 72000000,
+      "credit": 0
+     },
+     {
+      "code": "PD-2200",
+      "debit": 0,
+      "credit": 72000000
+     }
+    ],
+    "explain": "40 x Rp1.800.000 = Rp72.000.000. Layanan 6 bulan belum diberikan, jadi uang diterima di muka adalah liabilitas."
+   },
+   {
+    "id": "pd04",
+    "title": "Beli peralatan pembelajaran tunai",
+    "narrative": "Bimbel membeli proyektor dan komputer Rp30.000.000 tunai dari rekening bank.",
+    "lines": [
+     {
+      "code": "PD-1400",
+      "debit": 30000000,
+      "credit": 0
+     },
+     {
+      "code": "PD-1100",
+      "debit": 0,
+      "credit": 30000000
+     }
+    ],
+    "explain": "Aset tetap bertambah, kas berkurang."
+   },
+   {
+    "id": "pd05",
+    "title": "Beli perlengkapan kelas secara kredit",
+    "narrative": "Bimbel membeli spidol, modul, dan alat tulis Rp5.000.000 secara kredit.",
+    "lines": [
+     {
+      "code": "PD-1300",
+      "debit": 5000000,
+      "credit": 0
+     },
+     {
+      "code": "PD-2100",
+      "debit": 0,
+      "credit": 5000000
+     }
+    ],
+    "explain": "Perlengkapan belum terpakai adalah aset; utang usaha bertambah."
+   },
+   {
+    "id": "pd06",
+    "title": "Bayar gaji pengajar",
+    "narrative": "Gaji pengajar bulan ini Rp22.000.000 dibayar dari rekening bank.",
+    "lines": [
+     {
+      "code": "PD-5100",
+      "debit": 22000000,
+      "credit": 0
+     },
+     {
+      "code": "PD-1100",
+      "debit": 0,
+      "credit": 22000000
+     }
+    ],
+    "explain": "Beban gaji bertambah (debit), kas berkurang (kredit)."
+   },
+   {
+    "id": "pd07",
+    "title": "Bayar sewa ruang kelas",
+    "narrative": "Sewa ruang kelas bulan ini Rp8.000.000 dibayar dari rekening bank.",
+    "lines": [
+     {
+      "code": "PD-5200",
+      "debit": 8000000,
+      "credit": 0
+     },
+     {
+      "code": "PD-1100",
+      "debit": 0,
+      "credit": 8000000
+     }
+    ],
+    "explain": "Beban sewa periode berjalan."
+   },
+   {
+    "id": "pd08",
+    "title": "Bayar biaya promosi",
+    "narrative": "Bimbel membayar pembuatan brosur dan spanduk promosi Rp3.500.000 secara tunai dari rekening bank.",
+    "lines": [
+     {
+      "code": "PD-5500",
+      "debit": 3500000,
+      "credit": 0
+     },
+     {
+      "code": "PD-1100",
+      "debit": 0,
+      "credit": 3500000
+     }
+    ],
+    "explain": "Biaya promosi menjadi beban periode ini."
+   },
+   {
+    "id": "pd09",
+    "title": "SPP bulanan belum dibayar siswa",
+    "narrative": "10 siswa program reguler belum membayar SPP bulan ini, masing-masing Rp1.200.000. Layanan sudah diberikan sepenuhnya bulan ini.",
+    "lines": [
+     {
+      "code": "PD-1200",
+      "debit": 12000000,
+      "credit": 0
+     },
+     {
+      "code": "PD-4100",
+      "debit": 0,
+      "credit": 12000000
+     }
+    ],
+    "explain": "10 x Rp1.200.000 = Rp12.000.000. Layanan sudah diberikan, jadi pendapatan diakui walau kas belum diterima."
+   },
+   {
+    "id": "pd10",
+    "title": "Pelunasan SPP tertunggak",
+    "narrative": "Beberapa siswa membayar SPP tertunggak total Rp9.000.000 secara tunai.",
+    "lines": [
+     {
+      "code": "PD-1100",
+      "debit": 9000000,
+      "credit": 0
+     },
+     {
+      "code": "PD-1200",
+      "debit": 0,
+      "credit": 9000000
+     }
+    ],
+    "explain": "Kas naik, piutang turun."
+   },
+   {
+    "id": "pd11",
+    "title": "Penyesuaian: SPP diterima di muka yang sudah diakui",
+    "narrative": "SPP 6 bulan yang diterima di muka sebesar Rp72.000.000 dicatat sebagai liabilitas. Pada akhir bulan pertama, layanan 1 bulan telah diberikan.",
+    "lines": [
+     {
+      "code": "PD-2200",
+      "debit": 12000000,
+      "credit": 0
+     },
+     {
+      "code": "PD-4100",
+      "debit": 0,
+      "credit": 12000000
+     }
+    ],
+    "explain": "Pendapatan bulan ini = Rp72.000.000 / 6 = Rp12.000.000."
+   },
+   {
+    "id": "pd12",
+    "title": "Penyesuaian: penyusutan peralatan",
+    "narrative": "Peralatan pembelajaran Rp30.000.000 berumur 4 tahun tanpa residu, garis lurus. Catat penyusutan satu bulan.",
+    "lines": [
+     {
+      "code": "PD-5400",
+      "debit": 625000,
+      "credit": 0
+     },
+     {
+      "code": "PD-1410",
+      "debit": 0,
+      "credit": 625000
+     }
+    ],
+    "explain": "Penyusutan = Rp30.000.000 / 4 / 12 = Rp625.000."
+   },
+   {
+    "id": "pd13",
+    "title": "Penyesuaian: perlengkapan kelas terpakai",
+    "narrative": "Perlengkapan kelas yang dibeli Rp5.000.000. Stok akhir bulan menunjukkan sisa Rp1.500.000.",
+    "lines": [
+     {
+      "code": "PD-5300",
+      "debit": 3500000,
+      "credit": 0
+     },
+     {
+      "code": "PD-1300",
+      "debit": 0,
+      "credit": 3500000
+     }
+    ],
+    "explain": "Terpakai = Rp5.000.000 - Rp1.500.000 = Rp3.500.000."
+   },
+   {
+    "id": "pd14",
+    "title": "Penyesuaian: gaji pengajar terutang",
+    "narrative": "Honor pengajar lepas untuk kelas tambahan akhir bulan sebesar Rp5.500.000 baru dibayar bulan depan.",
+    "lines": [
+     {
+      "code": "PD-5100",
+      "debit": 5500000,
+      "credit": 0
+     },
+     {
+      "code": "PD-2300",
+      "debit": 0,
+      "credit": 5500000
+     }
+    ],
+    "explain": "Jasa pengajar sudah dinikmati bulan ini sehingga menjadi beban, kewajibannya dicatat sebagai utang gaji."
+   }
+  ]
+ },
+ {
+  "app": "akuntansi-practice-pack",
+  "version": 1,
+  "id": "industri-transportasi",
+  "title": "Ekspedisi: PT Lintas Nusa Ekspedisi",
+  "description": "Jasa angkutan barang. Aset kendaraan, pinjaman bank, asuransi, penyusutan dengan nilai residu, bunga terutang. Abaikan pajak.",
+  "accounts": [
+   {
+    "code": "TR-1100",
+    "name": "Kas dan Bank",
+    "type": "Asset",
+    "normal": "Debit",
+    "reportClass": "Current Asset"
+   },
+   {
+    "code": "TR-1200",
+    "name": "Piutang Usaha",
+    "type": "Asset",
+    "normal": "Debit",
+    "reportClass": "Current Asset"
+   },
+   {
+    "code": "TR-1300",
+    "name": "Suku Cadang",
+    "type": "Asset",
+    "normal": "Debit",
+    "reportClass": "Current Asset"
+   },
+   {
+    "code": "TR-1400",
+    "name": "Asuransi Dibayar di Muka",
+    "type": "Asset",
+    "normal": "Debit",
+    "reportClass": "Current Asset"
+   },
+   {
+    "code": "TR-1500",
+    "name": "Kendaraan Operasional",
+    "type": "Asset",
+    "normal": "Debit",
+    "reportClass": "Fixed Asset"
+   },
+   {
+    "code": "TR-1510",
+    "name": "Akumulasi Penyusutan Kendaraan",
+    "type": "Asset",
+    "normal": "Credit",
+    "reportClass": "Contra Asset"
+   },
+   {
+    "code": "TR-2100",
+    "name": "Utang Usaha",
+    "type": "Liability",
+    "normal": "Credit",
+    "reportClass": "Current Liability"
+   },
+   {
+    "code": "TR-2200",
+    "name": "Utang Bank",
+    "type": "Liability",
+    "normal": "Credit",
+    "reportClass": "Long-term Liability"
+   },
+   {
+    "code": "TR-2300",
+    "name": "Utang Bunga",
+    "type": "Liability",
+    "normal": "Credit",
+    "reportClass": "Current Liability"
+   },
+   {
+    "code": "TR-3100",
+    "name": "Modal Saham",
+    "type": "Equity",
+    "normal": "Credit",
+    "reportClass": "Equity"
+   },
+   {
+    "code": "TR-4100",
+    "name": "Pendapatan Jasa Angkutan",
+    "type": "Revenue",
+    "normal": "Credit",
+    "reportClass": "Revenue"
+   },
+   {
+    "code": "TR-5100",
+    "name": "Beban BBM",
+    "type": "Expense",
+    "normal": "Debit",
+    "reportClass": "Expense"
+   },
+   {
+    "code": "TR-5200",
+    "name": "Beban Gaji Pengemudi",
+    "type": "Expense",
+    "normal": "Debit",
+    "reportClass": "Expense"
+   },
+   {
+    "code": "TR-5300",
+    "name": "Beban Pemeliharaan Kendaraan",
+    "type": "Expense",
+    "normal": "Debit",
+    "reportClass": "Expense"
+   },
+   {
+    "code": "TR-5400",
+    "name": "Beban Penyusutan Kendaraan",
+    "type": "Expense",
+    "normal": "Debit",
+    "reportClass": "Expense"
+   },
+   {
+    "code": "TR-5500",
+    "name": "Beban Asuransi",
+    "type": "Expense",
+    "normal": "Debit",
+    "reportClass": "Expense"
+   },
+   {
+    "code": "TR-5600",
+    "name": "Beban Bunga",
+    "type": "Expense",
+    "normal": "Debit",
+    "reportClass": "Expense"
+   }
+  ],
+  "items": [
+   {
+    "id": "tr01",
+    "title": "Setoran modal pemegang saham",
+    "narrative": "PT Lintas Nusa Ekspedisi menerima setoran modal tunai Rp600.000.000 ke rekening bank.",
+    "lines": [
+     {
+      "code": "TR-1100",
+      "debit": 600000000,
+      "credit": 0
+     },
+     {
+      "code": "TR-3100",
+      "debit": 0,
+      "credit": 600000000
+     }
+    ],
+    "explain": "Kas naik, modal saham naik."
+   },
+   {
+    "id": "tr02",
+    "title": "Beli truk sebagian tunai dan sebagian kredit bank",
+    "narrative": "Perusahaan membeli 3 truk seharga Rp450.000.000. Dibayar Rp150.000.000 dari rekening bank dan sisanya Rp300.000.000 dibiayai pinjaman bank.",
+    "lines": [
+     {
+      "code": "TR-1500",
+      "debit": 450000000,
+      "credit": 0
+     },
+     {
+      "code": "TR-1100",
+      "debit": 0,
+      "credit": 150000000
+     },
+     {
+      "code": "TR-2200",
+      "debit": 0,
+      "credit": 300000000
+     }
+    ],
+    "explain": "Kendaraan dicatat sebesar harga perolehan penuh (debit). Pembayarannya dua sumber: kas dan utang bank (kredit)."
+   },
+   {
+    "id": "tr03",
+    "title": "Bayar premi asuransi truk 12 bulan",
+    "narrative": "Perusahaan membayar premi asuransi seluruh armada untuk 12 bulan, Rp14.400.000, dari rekening bank, berlaku sejak 1 Oktober.",
+    "lines": [
+     {
+      "code": "TR-1400",
+      "debit": 14400000,
+      "credit": 0
+     },
+     {
+      "code": "TR-1100",
+      "debit": 0,
+      "credit": 14400000
+     }
+    ],
+    "explain": "Perlindungan 12 bulan: dicatat sebagai aset terlebih dahulu."
+   },
+   {
+    "id": "tr04",
+    "title": "Pendapatan angkutan tunai",
+    "narrative": "Perusahaan menerima pembayaran jasa angkutan barang Rp45.000.000 secara tunai ke rekening bank.",
+    "lines": [
+     {
+      "code": "TR-1100",
+      "debit": 45000000,
+      "credit": 0
+     },
+     {
+      "code": "TR-4100",
+      "debit": 0,
+      "credit": 45000000
+     }
+    ],
+    "explain": "Kas naik, pendapatan naik."
+   },
+   {
+    "id": "tr05",
+    "title": "Pendapatan angkutan secara kredit",
+    "narrative": "Perusahaan menyelesaikan pengiriman untuk sebuah pabrik dan menagih Rp80.000.000. Pembayaran dilakukan bulan depan.",
+    "lines": [
+     {
+      "code": "TR-1200",
+      "debit": 80000000,
+      "credit": 0
+     },
+     {
+      "code": "TR-4100",
+      "debit": 0,
+      "credit": 80000000
+     }
+    ],
+    "explain": "Pendapatan diakui saat jasa selesai, piutang bertambah."
+   },
+   {
+    "id": "tr06",
+    "title": "Bayar BBM",
+    "narrative": "Biaya solar untuk seluruh armada Rp28.000.000 dibayar tunai dari rekening bank.",
+    "lines": [
+     {
+      "code": "TR-5100",
+      "debit": 28000000,
+      "credit": 0
+     },
+     {
+      "code": "TR-1100",
+      "debit": 0,
+      "credit": 28000000
+     }
+    ],
+    "explain": "BBM dipakai sepanjang periode berjalan, jadi menjadi beban."
+   },
+   {
+    "id": "tr07",
+    "title": "Bayar gaji pengemudi",
+    "narrative": "Gaji pengemudi dan kenek bulan ini Rp24.000.000 dibayar dari rekening bank.",
+    "lines": [
+     {
+      "code": "TR-5200",
+      "debit": 24000000,
+      "credit": 0
+     },
+     {
+      "code": "TR-1100",
+      "debit": 0,
+      "credit": 24000000
+     }
+    ],
+    "explain": "Beban gaji bertambah, kas berkurang."
+   },
+   {
+    "id": "tr08",
+    "title": "Beli suku cadang secara kredit",
+    "narrative": "Bengkel rekanan menjual ban dan oli Rp9.000.000 secara kredit untuk persediaan suku cadang.",
+    "lines": [
+     {
+      "code": "TR-1300",
+      "debit": 9000000,
+      "credit": 0
+     },
+     {
+      "code": "TR-2100",
+      "debit": 0,
+      "credit": 9000000
+     }
+    ],
+    "explain": "Suku cadang yang belum dipasang adalah aset; utang usaha bertambah."
+   },
+   {
+    "id": "tr09",
+    "title": "Pelunasan piutang pelanggan",
+    "narrative": "Pelanggan membayar tagihan angkutan Rp60.000.000 melalui transfer bank.",
+    "lines": [
+     {
+      "code": "TR-1100",
+      "debit": 60000000,
+      "credit": 0
+     },
+     {
+      "code": "TR-1200",
+      "debit": 0,
+      "credit": 60000000
+     }
+    ],
+    "explain": "Kas naik, piutang turun."
+   },
+   {
+    "id": "tr10",
+    "title": "Bayar cicilan pinjaman bank (pokok dan bunga)",
+    "narrative": "Perusahaan membayar cicilan bank Rp13.000.000 dari rekening bank, terdiri dari angsuran pokok Rp10.000.000 dan bunga Rp3.000.000.",
+    "lines": [
+     {
+      "code": "TR-2200",
+      "debit": 10000000,
+      "credit": 0
+     },
+     {
+      "code": "TR-5600",
+      "debit": 3000000,
+      "credit": 0
+     },
+     {
+      "code": "TR-1100",
+      "debit": 0,
+      "credit": 13000000
+     }
+    ],
+    "explain": "Pokok mengurangi utang bank. Bunga adalah beban keuangan periode ini. Keduanya dibayar dengan satu pengeluaran kas."
+   },
+   {
+    "id": "tr11",
+    "title": "Penyesuaian: asuransi terpakai",
+    "narrative": "Premi asuransi Rp14.400.000 dibayar untuk 12 bulan sejak 1 Oktober. Hitung beban sampai 31 Desember.",
+    "lines": [
+     {
+      "code": "TR-5500",
+      "debit": 3600000,
+      "credit": 0
+     },
+     {
+      "code": "TR-1400",
+      "debit": 0,
+      "credit": 3600000
+     }
+    ],
+    "explain": "Beban = Rp14.400.000 / 12 x 3 = Rp3.600.000."
+   },
+   {
+    "id": "tr12",
+    "title": "Penyesuaian: penyusutan truk",
+    "narrative": "Truk seharga Rp450.000.000 dibeli 1 Oktober, umur 7 tahun, nilai residu Rp30.000.000, garis lurus. Hitung penyusutan sampai 31 Desember (3 bulan).",
+    "lines": [
+     {
+      "code": "TR-5400",
+      "debit": 15000000,
+      "credit": 0
+     },
+     {
+      "code": "TR-1510",
+      "debit": 0,
+      "credit": 15000000
+     }
+    ],
+    "explain": "Penyusutan sebulan = (Rp450.000.000 - Rp30.000.000) / 7 / 12; untuk 3 bulan = Rp15.000.000."
+   },
+   {
+    "id": "tr13",
+    "title": "Penyesuaian: suku cadang terpakai",
+    "narrative": "Dari suku cadang yang dibeli Rp9.000.000, senilai Rp6.000.000 telah dipasang pada truk sampai akhir Desember.",
+    "lines": [
+     {
+      "code": "TR-5300",
+      "debit": 6000000,
+      "credit": 0
+     },
+     {
+      "code": "TR-1300",
+      "debit": 0,
+      "credit": 6000000
+     }
+    ],
+    "explain": "Suku cadang yang dipasang menjadi beban pemeliharaan; persediaan berkurang."
+   },
+   {
+    "id": "tr14",
+    "title": "Penyesuaian: bunga bank terutang",
+    "narrative": "Bunga pinjaman bank untuk akhir Desember sebesar Rp2.000.000 sudah menjadi beban tetapi baru akan dibayar bulan Januari.",
+    "lines": [
+     {
+      "code": "TR-5600",
+      "debit": 2000000,
+      "credit": 0
+     },
+     {
+      "code": "TR-2300",
+      "debit": 0,
+      "credit": 2000000
+     }
+    ],
+    "explain": "Beban bunga sudah terjadi di periode ini; dicatat bersama utang bunga."
+   }
+  ]
+ }
+]

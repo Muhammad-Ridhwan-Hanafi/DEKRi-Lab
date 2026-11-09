@@ -1,0 +1,17 @@
+name: Soal atau kunci jawaban diduga salah
+description: Angka, jurnal, penjelasan, atau rujukan standar yang tampak keliru
+labels: [konten]
+body:
+  - type: input
+    id: soal
+    attributes:
+      label: Nomor/judul soal
+    validations:
+      required: true
+  - type: textarea
+    id: dugaan
+    attributes:
+      label: Jawaban yang Anda yakini dan dasar perhitungannya
+      description: Jangan menyalin teks standar berhak cipta; cukup sebutkan nomor standar/paragraf dan ringkasan dengan kata-kata Anda.
+    validations:
+      required: true

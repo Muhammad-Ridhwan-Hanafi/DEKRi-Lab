@@ -1,0 +1,176 @@
+[
+ {
+  "code": "1-1000",
+  "debit": 145000000,
+  "credit": 0,
+  "note": null
+ },
+ {
+  "code": "1-1100",
+  "debit": 610000000,
+  "credit": 0,
+  "note": null
+ },
+ {
+  "code": "1-1150",
+  "debit": 250000000,
+  "credit": 0,
+  "note": null
+ },
+ {
+  "code": "1-1200",
+  "debit": 382000000,
+  "credit": 0,
+  "note": null
+ },
+ {
+  "code": "1-1210",
+  "debit": 0,
+  "credit": 61000000,
+  "note": null
+ },
+ {
+  "code": "1-1310",
+  "debit": 12000000,
+  "credit": 0,
+  "note": null
+ },
+ {
+  "code": "1-1400",
+  "debit": 468500000,
+  "credit": 0,
+  "note": null
+ },
+ {
+  "code": "1-1500",
+  "debit": 9800000,
+  "credit": 0,
+  "note": null
+ },
+ {
+  "code": "1-1600",
+  "debit": 36000000,
+  "credit": 0,
+  "note": null
+ },
+ {
+  "code": "1-1700",
+  "debit": 18000000,
+  "credit": 0,
+  "note": null
+ },
+ {
+  "code": "1-2100",
+  "debit": 950000000,
+  "credit": 0,
+  "note": null
+ },
+ {
+  "code": "1-2200",
+  "debit": 1200000000,
+  "credit": 0,
+  "note": null
+ },
+ {
+  "code": "1-2210",
+  "debit": 0,
+  "credit": 240000000,
+  "note": null
+ },
+ {
+  "code": "1-2300",
+  "debit": 420000000,
+  "credit": 0,
+  "note": null
+ },
+ {
+  "code": "1-2310",
+  "debit": 0,
+  "credit": 172500000,
+  "note": null
+ },
+ {
+  "code": "1-2400",
+  "debit": 560000000,
+  "credit": 0,
+  "note": null
+ },
+ {
+  "code": "1-2410",
+  "debit": 0,
+  "credit": 196000000,
+  "note": null
+ },
+ {
+  "code": "1-2500",
+  "debit": 85000000,
+  "credit": 0,
+  "note": null
+ },
+ {
+  "code": "1-2510",
+  "debit": 0,
+  "credit": 39000000,
+  "note": null
+ },
+ {
+  "code": "2-1000",
+  "debit": 0,
+  "credit": 296000000,
+  "note": null
+ },
+ {
+  "code": "2-1100",
+  "debit": 0,
+  "credit": 150000000,
+  "note": null
+ },
+ {
+  "code": "2-1200",
+  "debit": 0,
+  "credit": 28500000,
+  "note": null
+ },
+ {
+  "code": "2-1400",
+  "debit": 0,
+  "credit": 45000000,
+  "note": null
+ },
+ {
+  "code": "2-1500",
+  "debit": 0,
+  "credit": 32000000,
+  "note": null
+ },
+ {
+  "code": "2-1900",
+  "debit": 0,
+  "credit": 100000000,
+  "note": "Angsuran pokok kredit investasi yang jatuh tempo 30 Desember 2024 (bagian lancar)"
+ },
+ {
+  "code": "2-2100",
+  "debit": 0,
+  "credit": 400000000,
+  "note": null
+ },
+ {
+  "code": "3-1000",
+  "debit": 0,
+  "credit": 2000000000,
+  "note": null
+ },
+ {
+  "code": "3-1100",
+  "debit": 0,
+  "credit": 150000000,
+  "note": null
+ },
+ {
+  "code": "3-2000",
+  "debit": 0,
+  "credit": 1236300000,
+  "note": null
+ }
+]

@@ -1,2 +1,7 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# Akhir baris LF di semua OS agar `prettier --check` konsisten di Windows.
+* text=auto eol=lf
+*.bat text eol=crlf
+*.png binary
+*.ico binary
+*.jpg binary
+*.woff2 binary
