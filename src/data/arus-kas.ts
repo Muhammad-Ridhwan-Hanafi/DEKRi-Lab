@@ -1,7 +1,7 @@
 /**
  * Latihan klasifikasi arus kas (PSAK 207), terpisah dari 26 skenario inti: tidak memengaruhi akurasi Dashboard maupun pool ujian.
  * Dua kelompok sengaja dipisah menurut periode berlaku: jangan mencampur aturan sebelum dan sesudah amendemen PSAK 207 terkait PSAK 118.
- * Nomor paragraf ditandai "cek" sampai dicocokkan dengan naskah final di SAK Online (IAI).
+ * Nomor paragraf ditandai "cek" sampai dicocokkan dengan naskah final di SAK Online.
  */
 export type KasKelompok = '7A' | '7B';
 
@@ -32,7 +32,7 @@ export const KAS_KELOMPOK: Record<KasKelompok, { judul: string; standar: string;
   },
   '7B': {
     judul: '7B. Klasifikasi arus kas, setelah amendemen PSAK 207 terkait PSAK 118',
-    standar: 'PSAK 207 sebagaimana diamendemen oleh PSAK 118 (disahkan DSAK IAI 28 Mei 2025)',
+    standar: 'PSAK 207 sebagaimana diamendemen oleh PSAK 118 (disahkan 28 Mei 2025)',
     periode: 'Efektif untuk periode tahunan yang dimulai 1 Januari 2027',
     asumsi: 'Entitas bukan lembaga keuangan, kecuali soal menyatakan lain. Pilihan kebijakan 7A tidak lagi tersedia.',
   },

@@ -4,7 +4,7 @@ Untuk pemilik non-DevOps. Kerjakan dari atas ke bawah. Jangan membuat repositori
 
 ## 1. Dapat diselesaikan oleh pemilik proyek
 
-- [ ] Baca `docs/CONTENT_SOURCES.md` dan pastikan pernyataan asal konten (dibuat dengan bantuan Claude AI, landasan IAI, disunting Anda) sudah benar menurut Anda; koreksi bila ada yang keliru
+- [ ] Baca `docs/CONTENT_SOURCES.md` dan pastikan pernyataan asal konten (dibuat dengan bantuan Claude AI, landasan standar akuntansi, disunting Anda) sudah benar menurut Anda; koreksi bila ada yang keliru
 - [ ] Periksa contoh teks di `src/data/materi.ts` yang paling mirip definisi standar; ubah ke kalimat Anda sendiri bila ragu
 - [ ] Baca ketentuan layanan OpenAI yang berlaku untuk logo Anda dan simpan salinan/tanggalnya
 - [ ] Putuskan lisensi konten (kasus, kunci, materi, logo): tetap “tidak otomatis MIT” (kondisi sekarang) atau pilih lisensi (mis. Creative Commons). Catat keputusan di `docs/LICENSING.md`
@@ -43,7 +43,7 @@ Bukan nasihat hukum; hal-hal ini sebaiknya dikonsultasikan bila Anda ingin kepas
 - [ ] PDKI: ulangi pencarian persis “DEKRi Lab”, simpan tangkapan layar bertanggal, lalu cari variasi (DEKRI, DEKRi Labs, pelafalan serupa) dan merek gambar/logo; pertimbangkan Kelas 9, 41, 42 (`docs/BRAND_CHECK.md`)
 - [ ] AHU Online: cek kemiripan nama perusahaan dan bank fiktif dalam kasus (mis. PT Sumber Cahaya Elektrindo, Bank Arunika, Bank Cendana) dengan badan usaha nyata
 - [ ] Bila ingin mendaftarkan merek atau memastikan status hak atas keluaran AI/logo: konsultasi konsultan HKI
-- [ ] Verifikasi nomor paragraf bertanda “(cek)” terhadap SAK Online (IAI), dan tanggal pengesahan PSAK 118 yang tertulis di `src/data/arus-kas.ts`
+- [ ] Verifikasi nomor paragraf bertanda “(cek)” terhadap SAK Online, dan tanggal pengesahan PSAK 118 yang tertulis di `src/data/arus-kas.ts`
 - [ ] Keputusan code signing (membutuhkan sertifikat berbayar); tanpa itu rilis tetap boleh dengan peringatan yang dijelaskan
 
 ## 5. Sudah selesai dan memiliki bukti

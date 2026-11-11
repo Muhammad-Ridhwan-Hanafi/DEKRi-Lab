@@ -11,6 +11,7 @@ import { ConfirmButton } from '../components/ConfirmButton';
 import { JournalForm } from '../components/JournalForm';
 import { KeyJournal } from '../components/KeyReveal';
 import { StatusBadge } from '../components/StatusBadge';
+import { StepExplain } from '../components/StudyAids';
 import { useCtx } from '../hooks';
 
 const newSeed = () => Math.floor(Math.random() * 1_000_000);
@@ -145,7 +146,7 @@ function Latihan(p: LatihanProps) {
         <div className="mt-3 rounded-md border border-blue-200 bg-blue-50 p-3 text-sm">
           <div className="mb-1 font-semibold text-blue-900">Kunci dan penjelasan</div>
           <KeyJournal lines={p.keyLines.map((l) => ({ ...l, name: l.name ?? '' }))} />
-          {p.explain && <p>{p.explain}</p>}
+          <StepExplain lines={p.keyLines} explain={p.explain} extra={p.extra} />
         </div>
       )}
     </div>

@@ -9,7 +9,7 @@ import { JournalForm } from '../components/JournalForm';
 import { KeyJournal, KeyReveal } from '../components/KeyReveal';
 import { StatusBadge } from '../components/StatusBadge';
 import { Diagnosis, KeyCompare } from '../components/Diagnosis';
-import { FlagNote, Hints, WhyCorrect } from '../components/StudyAids';
+import { FlagNote, Hints, StepExplain, WhyCorrect } from '../components/StudyAids';
 import { useCtx } from '../hooks';
 import { navigate } from '../router';
 
@@ -312,7 +312,7 @@ function Jurnal({ no }: { no: string }) {
           text={`${TRANSACTIONS.find((t) => String(t.no) === no)?.narrative ?? ''} ${TRANSACTIONS.find((t) => String(t.no) === no)?.amountInfo ?? ''}`}
         />
       )}
-      {r.status === 'BENAR' && !r.revealed && <WhyCorrect explain={key.explain} />}
+      {r.status === 'BENAR' && !r.revealed && <WhyCorrect explain={key.explain} lines={key.lines} topic={key.topic} />}
       {r.status !== 'BENAR' && !r.revealed && <Hints kind="txn" id={no} topic={key.topic} lines={key.lines} />}
       <FlagNote kind="txn" id={no} />
       <KeyReveal
@@ -339,7 +339,7 @@ function Jurnal({ no }: { no: string }) {
             <KeyJournal lines={key.lines} />
           </>
         )}
-        <p>{key.explain}</p>
+        <StepExplain lines={key.lines} topic={key.topic} explain={key.explain} reason={KEY.analysis[no]?.reason} />
       </KeyReveal>
     </div>
   );

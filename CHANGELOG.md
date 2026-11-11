@@ -2,6 +2,10 @@
 
 ## Belum dirilis
 
+### Penjelasan kunci lebih panjang dan bertahap
+
+- Penjelasan kunci (Transaksi, Penyesuaian, Latihan Varian, soal industri, Ujian) kini tersusun langkah demi langkah: jenis peristiwa, perhitungan, prinsip yang dipakai, tiap akun beserta alasan sisi debit atau kreditnya, pemeriksaan keseimbangan, dan pegangan untuk mengingat. Untuk peristiwa tanpa jurnal ditampilkan alasan mengapa tidak dijurnal. Penjelasan yang sama muncul di "Mengapa jawaban ini benar?" setelah jawaban benar. Isi per akun disusun otomatis dari jurnal kunci, jadi tidak menambah klaim akuntansi baru.
+
 ### Penafian diperjelas
 
 - `DISCLAIMER.md` dan halaman Pengaturan > Tentang kini memuat pernyataan tersendiri bahwa soal mungkin tidak sesuai dengan PSAK, dan bahwa semua perusahaan fiktif (kesamaan dengan pihak nyata adalah ketidaksengajaan).
@@ -26,7 +30,7 @@
 
 ### Audit ulang publikasi (provenance, logo, merek)
 
-- Dokumentasi provenance diperbarui sesuai klarifikasi pemilik: materi disusun dengan bantuan Claude AI berlandaskan referensi IAI; logo dibuat dengan ChatGPT; pemeriksaan awal nama di PDKI dicatat (`docs/CONTENT_SOURCES.md`, `docs/ASSET_ATTRIBUTION.md`, `docs/BRAND_CHECK.md`, `docs/LICENSING.md`). Lisensi MIT dinyatakan hanya untuk kode sumber.
+- Dokumentasi provenance diperbarui sesuai klarifikasi pemilik: materi disusun dengan bantuan Claude AI berlandaskan referensi standar akuntansi; logo dibuat dengan ChatGPT; pemeriksaan awal nama di PDKI dicatat (`docs/CONTENT_SOURCES.md`, `docs/ASSET_ATTRIBUTION.md`, `docs/BRAND_CHECK.md`, `docs/LICENSING.md`). Lisensi MIT dinyatakan hanya untuk kode sumber.
 - GitHub Actions dikunci ke SHA commit (checkout v7.0.1, setup-node v7.1.0).
 - Keterangan Pengaturan > Tentang dan DISCLAIMER memuat pengungkapan bantuan AI dan cakupan lisensi.
 

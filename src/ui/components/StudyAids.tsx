@@ -1,4 +1,7 @@
 import { ACCOUNT_BY_CODE } from '../../data';
+import { EXT_BY_CODE } from '../../data/ext';
+import { explainJournal, type ExplainLine } from '../../engine/explain';
+import type { Account } from '../../engine/types';
 import { itemKey, type ItemKind } from '../../store/derive';
 import { useApp } from '../../store/useApp';
 import { useCtx } from '../hooks';
@@ -90,8 +93,27 @@ export function FlagNote({ kind, id }: { kind: ItemKind; id: string }) {
 }
 
 /** Penjelasan setelah jawaban BENAR (orang sering benar karena kebetulan); tidak mengubah akurasi. */
-export function WhyCorrect({ explain, calc, points }: { explain?: string | null; calc?: string | null; points?: string[] }) {
-  if (!explain && !calc && !points?.length) return null;
+export function WhyCorrect({
+  explain,
+  calc,
+  points,
+  lines,
+  topic,
+}: {
+  explain?: string | null;
+  calc?: string | null;
+  points?: string[];
+  lines?: ExplainLine[];
+  topic?: string | null;
+}) {
+  if (!explain && !calc && !points?.length && !lines?.length) return null;
+  if (lines?.length)
+    return (
+      <details className="mt-2 rounded-md border border-green-200 bg-green-50 px-2 py-1 text-sm">
+        <summary className="cursor-pointer select-none font-medium">Mengapa jawaban ini benar?</summary>
+        <StepExplain lines={lines} topic={topic} explain={explain} calc={calc} />
+      </details>
+    );
   return (
     <details className="mt-2 rounded-md border border-green-200 bg-green-50 px-2 py-1 text-sm">
       <summary className="cursor-pointer select-none font-medium">Mengapa jawaban ini benar?</summary>
@@ -109,5 +131,45 @@ export function WhyCorrect({ explain, calc, points }: { explain?: string | null;
         </ul>
       )}
     </details>
+  );
+}
+
+/** Penjelasan kunci langkah demi langkah (disusun dari jurnal kunci). */
+export function StepExplain({
+  lines,
+  topic,
+  explain,
+  calc,
+  reason,
+  extra,
+}: {
+  lines: ExplainLine[];
+  topic?: string | null;
+  explain?: string | null;
+  calc?: string | null;
+  reason?: string | null;
+  extra?: readonly Account[];
+}) {
+  const extraMap = new Map((extra ?? []).map((a) => [a.code, a]));
+  const lookup = (code: string) => extraMap.get(code) ?? ACCOUNT_BY_CODE[code] ?? EXT_BY_CODE[code];
+  const steps = explainJournal(lines, lookup, { topic, explain, calc, reason });
+  return (
+    <ol className="mt-2 space-y-2" aria-label="Penjelasan langkah demi langkah">
+      {steps.map((st, i) => (
+        <li key={i} className="rounded-md bg-white/70 px-2 py-1.5">
+          <div className="font-medium">
+            {i + 1}. {st.title}
+          </div>
+          {st.body && <p className="mt-0.5">{st.body}</p>}
+          {st.items && (
+            <ul className="mt-0.5 list-disc space-y-0.5 pl-5">
+              {st.items.map((t, j) => (
+                <li key={j}>{t}</li>
+              ))}
+            </ul>
+          )}
+        </li>
+      ))}
+    </ol>
   );
 }

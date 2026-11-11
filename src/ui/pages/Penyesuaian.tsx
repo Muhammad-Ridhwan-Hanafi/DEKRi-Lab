@@ -7,7 +7,7 @@ import { JournalForm } from '../components/JournalForm';
 import { KeyJournal, KeyReveal } from '../components/KeyReveal';
 import { StatusBadge } from '../components/StatusBadge';
 import { Diagnosis, KeyCompare } from '../components/Diagnosis';
-import { FlagNote, Hints, WhyCorrect } from '../components/StudyAids';
+import { FlagNote, Hints, StepExplain, WhyCorrect } from '../components/StudyAids';
 import { useCtx } from '../hooks';
 
 export function Penyesuaian({ code }: { code?: string }) {
@@ -56,7 +56,7 @@ export function Penyesuaian({ code }: { code?: string }) {
                   </button>
                 )}
                 {r.status === 'PERIKSA' && !r.revealed && <Diagnosis lines={state.adjusting[a.code] ?? []} keyLines={key.lines} text={a.facts} />}
-                {r.status === 'BENAR' && !r.revealed && <WhyCorrect explain={key.explain} calc={key.calc} />}
+                {r.status === 'BENAR' && !r.revealed && <WhyCorrect explain={key.explain} calc={key.calc} lines={key.lines} topic={a.category} />}
                 {r.status !== 'BENAR' && !r.revealed && <Hints kind="adj" id={a.code} topic={a.category} lines={key.lines} calc={key.calc} />}
                 <FlagNote kind="adj" id={a.code} />
                 <KeyReveal
@@ -72,12 +72,7 @@ export function Penyesuaian({ code }: { code?: string }) {
                 >
                   <KeyCompare lines={state.adjusting[a.code] ?? []} keyLines={key.lines} />
                   <KeyJournal lines={key.lines} />
-                  {key.calc && (
-                    <p>
-                      <b>Perhitungan:</b> {key.calc}
-                    </p>
-                  )}
-                  {key.explain && <p>{key.explain}</p>}
+                  <StepExplain lines={key.lines} topic={a.category} explain={key.explain} calc={key.calc} />
                 </KeyReveal>
               </div>
             )}

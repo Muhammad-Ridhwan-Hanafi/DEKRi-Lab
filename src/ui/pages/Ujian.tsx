@@ -21,6 +21,7 @@ import { clearExamSession, loadExamSession, saveExamSession } from '../../store/
 import { useApp } from '../../store/useApp';
 import { JournalForm } from '../components/JournalForm';
 import { KeyJournal } from '../components/KeyReveal';
+import { StepExplain } from '../components/StudyAids';
 import { StatusBadge } from '../components/StatusBadge';
 import { ConfirmButton } from '../components/ConfirmButton';
 import { navigate } from '../router';
@@ -491,7 +492,7 @@ function Pembahasan({ item }: { item: ExamItem }) {
     return k ? (
       <>
         {k.lines.length ? <KeyJournal lines={k.lines} /> : <p>Tidak ada jurnal.</p>}
-        <p>{k.explain}</p>
+        {k.lines.length ? <StepExplain lines={k.lines} topic={k.topic} explain={k.explain} /> : <p>{k.explain}</p>}
       </>
     ) : null;
   }
@@ -500,12 +501,7 @@ function Pembahasan({ item }: { item: ExamItem }) {
     return k ? (
       <>
         <KeyJournal lines={k.lines} />
-        {k.calc && (
-          <p>
-            <b>Perhitungan:</b> {k.calc}
-          </p>
-        )}
-        {k.explain && <p>{k.explain}</p>}
+        <StepExplain lines={k.lines} topic={k.category} explain={k.explain} calc={k.calc} />
       </>
     ) : null;
   }

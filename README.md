@@ -43,9 +43,9 @@ Catatan: simpan berkas ini di satu tempat tetap dan jangan dipindahkan, karena p
 ## Penting dibaca
 
 - Ini alat belajar mandiri, **bukan** pengganti standar akuntansi resmi, dan **bukan** nasihat akuntansi, pajak, atau hukum.
-- Proyek ini **tidak berafiliasi** dengan IAI (Ikatan Akuntan Indonesia) atau lembaga lain.
+- Proyek ini **tidak memiliki afiliasi apa pun** dengan lembaga atau pihak mana pun.
 - Kunci jawaban ada di dalam aplikasi, jadi aplikasi ini tidak cocok dipakai sebagai alat ujian yang anti-curang.
-- Materi dan soal disusun dengan bantuan AI (Claude) berlandaskan standar IAI, lalu disunting pemilik. Logo dibuat dengan ChatGPT. Penjelasan lengkap: [asal konten](docs/CONTENT_SOURCES.md) dan [asal logo](docs/ASSET_ATTRIBUTION.md).
+- Materi dan soal disusun dengan bantuan AI (Claude) berlandaskan standar akuntansi, lalu disunting pemilik. Logo dibuat dengan ChatGPT. Penjelasan lengkap: [asal konten](docs/CONTENT_SOURCES.md) dan [asal logo](docs/ASSET_ATTRIBUTION.md).
 - Rujukan nomor paragraf standar yang bertanda "(cek)" belum diperiksa terhadap teks resmi.
 
 Dokumen lain: [Penafian](DISCLAIMER.md) · [Privasi](PRIVACY.md) · [Keamanan](SECURITY.md) · [Perubahan](CHANGELOG.md) · [Cara berkontribusi](CONTRIBUTING.md)
