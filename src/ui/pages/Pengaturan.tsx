@@ -5,6 +5,7 @@ import { DesktopBackupSection } from '../components/DesktopBackup';
 import { MAX_BACKUP_BYTES, parseBackup, type BackupSummary } from '../../store/state';
 import { useApp } from '../../store/useApp';
 import { downloadText } from '../format';
+import { FEEDBACK_URL } from '../links';
 import { getTheme, setTheme, type Theme } from '../theme';
 import { SCALES, getScale, setScale, type Scale } from '../prefs';
 import { ShortcutList } from '../components/Shortcuts';
@@ -136,6 +137,7 @@ export function Pengaturan() {
           <b>Catatan PSAK:</b> mungkin terdapat soal, kunci, atau penjelasan yang tidak sesuai dengan PSAK. Bila berbeda, rujuk standar resmi yang berlaku atau
           tanyakan kepada pengajar Anda.
         </p>
+        <FeedbackBox />
         <p className="mt-1 text-xs text-slate-500">
           <b>Perusahaan fiktif:</b> semua perusahaan, bank, nama, dan angka dalam aplikasi ini fiktif. Kesamaan dengan pihak nyata adalah ketidaksengajaan.
         </p>
@@ -226,6 +228,33 @@ export function Pengaturan() {
           </button>
         </div>
       </section>
+    </div>
+  );
+}
+
+function FeedbackBox() {
+  const [copied, setCopied] = useState<'ok' | 'gagal' | null>(null);
+  const copy = async () => {
+    try {
+      await navigator.clipboard.writeText(FEEDBACK_URL);
+      setCopied('ok');
+    } catch {
+      setCopied('gagal');
+    }
+  };
+  return (
+    <div className="mt-2 rounded-md border border-slate-200 bg-slate-50 p-2 text-xs" aria-label="Laporkan kesalahan soal">
+      <p>
+        <b>Menemukan soal atau kunci yang keliru?</b> Laporkan lewat GitHub agar bisa diperbaiki di versi berikutnya. Sebutkan nomor soal dan bagian yang
+        menurut Anda salah. Aplikasi ini bekerja offline, jadi salin tautan di bawah lalu buka di peramban.
+      </p>
+      <div className="mt-1 flex flex-wrap items-center gap-2">
+        <code className="break-all rounded bg-white px-1.5 py-0.5">{FEEDBACK_URL}</code>
+        <button className="btn" onClick={() => void copy()}>
+          Salin tautan
+        </button>
+        {copied && <span role="status">{copied === 'ok' ? 'Tautan disalin.' : 'Tidak bisa menyalin otomatis; salin teks tautan secara manual.'}</span>}
+      </div>
     </div>
   );
 }

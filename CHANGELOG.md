@@ -1,6 +1,10 @@
 # Catatan perubahan
 
-## Belum dirilis
+## 1.0.1
+
+### Laporan kesalahan soal
+
+- Pengaturan > Tentang kini memuat kotak "Menemukan soal atau kunci yang keliru?" dengan tautan templat issue GitHub dan tombol Salin tautan (aplikasi offline, jadi tautan disalin, bukan dibuka di dalam aplikasi). Kotak kunci jawaban menunjuk ke sana. README dan DISCLAIMER menyebutkan cara melapor.
 
 ### Analisis opsional dan teks Tentang dirapikan
 

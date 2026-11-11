@@ -8,7 +8,7 @@
 6. **Semua perusahaan fiktif.** Seluruh perusahaan, bank, lembaga, orang, nama, alamat, angka, dan kejadian dalam aplikasi ini adalah **fiktif**, dibuat hanya untuk latihan. Kesamaan dengan badan usaha, merek, atau orang yang nyata, baik yang masih ada maupun tidak, adalah **ketidaksengajaan** dan tidak dimaksudkan menggambarkan pihak mana pun.
 7. **Asumsi soal.** Jawaban “benar” mengikuti asumsi yang tertulis pada tiap soal; praktik nyata dapat berbeda.
 8. **Kunci jawaban tertanam.** Kunci ada di dalam bundel aplikasi dan hanya disembunyikan di antarmuka; aplikasi bukan alat ujian yang aman dari kecurangan.
-9. **Tanpa jaminan.** Perangkat lunak disediakan “sebagaimana adanya”, tanpa jaminan apa pun (lihat `LICENSE`). Kesalahan soal atau kunci mungkin ada; laporkan lewat issue.
+9. **Tanpa jaminan.** Perangkat lunak disediakan “sebagaimana adanya”, tanpa jaminan apa pun (lihat `LICENSE`). Kesalahan soal atau kunci mungkin ada; laporkan lewat Issues di GitHub (templat "Soal atau kunci jawaban diduga salah") atau lewat Pengaturan > Tentang di aplikasi.
 10. **Installer belum ditandatangani.** Berkas installer tidak ditandatangani secara digital, sehingga Windows dapat menampilkan peringatan. Verifikasi berkas hanya dari halaman Release resmi repositori ini dan cocokkan checksum SHA-256 (checksum membuktikan berkas tidak rusak/berubah dari yang dipublikasikan, bukan membuktikan siapa penerbitnya).
 
 Lisensi MIT hanya untuk kode sumber; logo dan materi tidak otomatis tercakup (`docs/LICENSING.md`). Pemeriksaan nama di PDKI adalah pemeriksaan awal, bukan jaminan bebas sengketa merek (`docs/BRAND_CHECK.md`).

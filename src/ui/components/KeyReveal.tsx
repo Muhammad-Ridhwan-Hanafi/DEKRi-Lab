@@ -25,6 +25,7 @@ export function KeyReveal({ revealed, onReveal, children, onAdopt }: Props) {
     <div className="mt-3 rounded-md border border-blue-200 bg-blue-50 p-3 text-sm">
       <div className="mb-1 font-semibold text-blue-900">Kunci dan penjelasan</div>
       {children}
+      <p className="mt-2 text-xs text-slate-600">Merasa kunci atau penjelasan ini keliru? Cara melaporkannya ada di Pengaturan, bagian Tentang.</p>
       {onAdopt && (
         <button className="btn mt-2" onClick={onAdopt}>
           Pakai jawaban kunci sebagai jawaban saya

@@ -1,7 +1,7 @@
 // @vitest-environment jsdom
 import 'fake-indexeddb/auto';
 import { afterEach, describe, expect, it, vi } from 'vitest';
-import { cleanup, render, screen, waitFor, fireEvent } from '@testing-library/react';
+import { cleanup, render, screen, waitFor, fireEvent, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
 async function open(hash: string) {
@@ -111,5 +111,19 @@ describe('skor komponen dan status ganda penutupan (UI)', () => {
     expect(penutupConsistencyLabel('PERIKSA')).toBe('Belum konsisten dengan buku Anda');
     expect(penutupConsistencyLabel('BELUM DIISI')).toBe('Belum diisi');
     expect(penutupConsistencyLabel('BELUM DIPERIKSA')).toBe('Belum diperiksa');
+  });
+});
+
+describe('laporan kesalahan soal', () => {
+  it('Pengaturan menampilkan tautan GitHub dan tombol salin', async () => {
+    await open('#/pengaturan');
+    const user = userEvent.setup();
+    const box = await screen.findByLabelText('Laporkan kesalahan soal');
+    expect(box.textContent).toContain('issues/new?template=soal_salah.yml');
+    const writeText = vi.fn().mockResolvedValue(undefined);
+    Object.defineProperty(navigator, 'clipboard', { value: { writeText }, configurable: true });
+    await user.click(within(box).getByRole('button', { name: 'Salin tautan' }));
+    expect(writeText).toHaveBeenCalledWith(expect.stringContaining('github.com/'));
+    expect(await within(box).findByText('Tautan disalin.')).toBeTruthy();
   });
 });

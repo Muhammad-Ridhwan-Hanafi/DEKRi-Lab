@@ -27,3 +27,8 @@ PREPUBLICATION_AUDIT_PRIVATE.md
 *.cadangan.json
 akuntansi-cadangan-*.json
 sbom.cdx.json
+
+# Berkas sesi R/RStudio (bisa memuat riwayat perintah pribadi)
+.Rhistory
+.RData
+.Rproj.user/
