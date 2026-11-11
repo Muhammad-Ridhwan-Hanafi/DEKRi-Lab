@@ -54,7 +54,7 @@ describe('UX desktop', () => {
   });
 
   it('Simpan PDF hanya ada di aplikasi desktop dan memanggil jembatan', async () => {
-    await open('#/analisis');
+    await open('#/neraca-saldo');
     expect(screen.queryByRole('button', { name: 'Simpan PDF' })).toBeNull();
     cleanup();
     const savePdf = vi.fn().mockResolvedValue({ ok: true, path: 'C:\\x\\laporan.pdf' });
@@ -67,24 +67,11 @@ describe('UX desktop', () => {
       onBeforeClose: vi.fn(),
       closeReady: vi.fn(),
     };
-    await open('#/analisis');
+    await open('#/neraca-saldo');
     const user = userEvent.setup();
     await user.click(await screen.findByRole('button', { name: 'Simpan PDF' }));
     expect(savePdf).toHaveBeenCalledTimes(1);
     expect(await screen.findByText(/PDF disimpan: C:/)).toBeTruthy();
-  });
-
-  it('Analisis: Common size, Arus kas, DuPont, dan Dasbor tampil', async () => {
-    await open('#/analisis');
-    const user = userEvent.setup();
-    await user.click(await screen.findByRole('button', { name: 'Common size' }));
-    expect(await screen.findByText(/Laba rugi: persen terhadap penjualan bersih/)).toBeTruthy();
-    await user.click(screen.getByRole('button', { name: 'Arus kas' }));
-    expect(await screen.findByText('Konsistensi dengan neraca')).toBeTruthy();
-    await user.click(screen.getByRole('button', { name: 'DuPont' }));
-    expect(await screen.findByText(/DuPont belum bisa dihitung|DuPont tiga komponen/)).toBeTruthy();
-    await user.click(screen.getByRole('button', { name: 'Dasbor analisis' }));
-    expect(await screen.findByText('Temuan utama')).toBeTruthy();
   });
 });
 

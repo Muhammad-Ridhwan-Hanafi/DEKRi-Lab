@@ -146,12 +146,12 @@ describe('alur UI', () => {
     expect(useApp.getState().state.journal['1']).toHaveLength(1);
   });
 
-  it('semua 18 halaman dapat dibuka tanpa error', async () => {
+  it('semua 17 halaman dapat dibuka tanpa error', async () => {
     const user = userEvent.setup();
     await open(user, '#/dashboard');
     const nav = screen.getByRole('navigation', { name: 'Navigasi utama' });
     const labels = Array.from(nav.querySelectorAll('li button')).map((b) => b.textContent ?? '');
-    expect(labels).toHaveLength(18);
+    expect(labels).toHaveLength(17);
     for (const label of labels) {
       await user.click(within(nav).getByRole('button', { name: label }));
       await waitFor(() => expect(within(nav).getByRole('button', { name: label }).getAttribute('aria-current')).toBe('page'));

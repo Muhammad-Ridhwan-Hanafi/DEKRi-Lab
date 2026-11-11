@@ -54,15 +54,6 @@ describe('fitur roadmap (UI)', () => {
     await waitFor(() => expect(screen.queryByText(/Belum ada percobaan tercatat/)).toBeNull());
   });
 
-  it('Analisis: kertas kerja dan rasio tampil tanpa error', async () => {
-    await open('#/analisis');
-    const user = userEvent.setup();
-    expect(await screen.findByText('Jumlah seimbang')).toBeTruthy();
-    await user.click(screen.getByRole('button', { name: 'Rasio keuangan' }));
-    expect(await screen.findByText('Rasio lancar')).toBeTruthy();
-    expect(screen.queryByText('Terjadi kesalahan pada halaman ini.')).toBeNull();
-  });
-
   it('Buku Pembantu: rekonsiliasi cocok dengan jurnal kunci diadopsi, dan kartu persediaan tampil', async () => {
     const { useApp } = await open('#/buku-pembantu');
     const { KEY } = await import('../../src/data');

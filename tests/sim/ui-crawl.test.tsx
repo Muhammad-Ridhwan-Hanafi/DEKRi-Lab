@@ -128,7 +128,6 @@ describe('UI setelah SEMUA soal selesai', () => {
       'laporan/S14',
       'laporan/S15',
       'penutup',
-      'analisis',
       'belajar',
       'belajar/bab',
       'koreksi',
@@ -160,7 +159,7 @@ describe('UI setelah SEMUA soal selesai', () => {
     for (let i = 7; i <= 18; i++) await visit(`#/belajar/bab/${i}`);
   }, 240000);
 
-  it('klik semua tab di Analisis, Laporan, Buku Pembantu, Koreksi, Kasus', async () => {
+  it('klik semua tab di Laporan, Buku Pembantu, Koreksi, Kasus', async () => {
     const user = userEvent.setup();
     const click = async (name: string | RegExp) => {
       const b = screen.getAllByRole('button', { name }).find((x) => !x.closest('nav'));
@@ -170,8 +169,6 @@ describe('UI setelah SEMUA soal selesai', () => {
       expect(screen.queryByText('Terjadi kesalahan pada halaman ini.')).toBeNull();
       expect(document.body.textContent ?? '').not.toMatch(BAD_TEXT);
     };
-    await visit('#/analisis');
-    for (const t of ['Kertas kerja 10 kolom', 'Dasbor analisis', 'Rasio keuangan', 'Common size', 'Arus kas', 'DuPont']) await click(t);
     await visit('#/laporan');
     for (const t of ['Laba rugi', 'Ekuitas', 'Posisi keuangan', 'Arus kas']) await click(t);
     await visit('#/buku-pembantu');

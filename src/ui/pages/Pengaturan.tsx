@@ -129,9 +129,16 @@ export function Pengaturan() {
         </p>
         <p className="mt-1 text-xs text-slate-500">
           Alat belajar independen: tidak berafiliasi dengan atau disahkan oleh IAI atau lembaga mana pun, dan bukan nasihat akuntansi, pajak, atau hukum.
-          Seluruh perusahaan dan angka fiktif. Penjelasan standar (PSAK) memakai kata-kata sendiri; rujukan paragraf bertanda “(cek)” belum diverifikasi
-          terhadap teks resmi. Kasus dan materi disusun dengan bantuan AI (Claude) berlandaskan referensi IAI, dan logo dibuat dengan ChatGPT; lisensi MIT hanya
-          untuk kode sumber. Lihat DISCLAIMER.md dan docs/LICENSING.md pada repositori.
+          Penjelasan standar (PSAK) memakai kata-kata sendiri; rujukan paragraf bertanda “(cek)” belum diverifikasi terhadap teks resmi. Kasus dan materi
+          disusun dengan bantuan AI (Claude) berlandaskan referensi IAI, dan logo dibuat dengan ChatGPT; lisensi MIT hanya untuk kode sumber. Lihat
+          DISCLAIMER.md dan docs/LICENSING.md pada repositori.
+        </p>
+        <p className="mt-1 text-xs text-slate-500">
+          <b>Catatan PSAK:</b> soal dan kunci dibuat dengan bantuan AI sehingga mungkin ada yang tidak sesuai dengan PSAK. Bila berbeda, rujuk standar resmi
+          dari IAI atau tanyakan kepada pengajar Anda.
+        </p>
+        <p className="mt-1 text-xs text-slate-500">
+          <b>Perusahaan fiktif:</b> semua perusahaan, bank, nama, dan angka dalam aplikasi ini fiktif. Kesamaan dengan pihak nyata adalah ketidaksengajaan.
         </p>
       </section>
 

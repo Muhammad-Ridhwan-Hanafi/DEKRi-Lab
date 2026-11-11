@@ -37,17 +37,20 @@ jobs:
       - run: npm audit --omit=dev --audit-level=high
       - run: npm run build:single
       - run: npx electron-builder --win nsis --publish never
-      - name: Checksum SHA-256 dan SBOM
+      - name: Versi HTML mandiri, checksum SHA-256, dan SBOM
         shell: pwsh
         run: |
-          $f = Get-Item "release/DEKRi-Lab-Setup-*.exe"
-          $h = (Get-FileHash $f.FullName -Algorithm SHA256).Hash.ToLower()
-          "$h  $($f.Name)" | Out-File -Encoding ascii "release/SHA256SUMS.txt"
+          Copy-Item dist-single/index.html release/DEKRi-Lab.html
+          $files = @(Get-Item "release/DEKRi-Lab-Setup-*.exe") + @(Get-Item "release/DEKRi-Lab.html")
+          $files | ForEach-Object {
+            $h = (Get-FileHash $_.FullName -Algorithm SHA256).Hash.ToLower()
+            "$h  $($_.Name)"
+          } | Out-File -Encoding ascii "release/SHA256SUMS.txt"
           npm sbom --sbom-format cyclonedx | Out-File -Encoding utf8 "release/sbom.cdx.json"
       - name: Buat GitHub Release (draf, ditinjau pemilik sebelum dipublikasikan)
         shell: bash
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          gh release create "$GITHUB_REF_NAME" release/DEKRi-Lab-Setup-*.exe release/SHA256SUMS.txt release/sbom.cdx.json \
+          gh release create "$GITHUB_REF_NAME" release/DEKRi-Lab-Setup-*.exe release/DEKRi-Lab.html release/SHA256SUMS.txt release/sbom.cdx.json \
             --draft --title "DEKRi Lab $GITHUB_REF_NAME" --generate-notes

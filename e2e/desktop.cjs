@@ -110,7 +110,7 @@ async function firstWin(app) {
   await app.evaluate(({ dialog }, p) => {
     dialog.showSaveDialog = async () => ({ canceled: false, filePath: p });
   }, pdfPath);
-  await w.evaluate(() => (window.location.hash = '#/analisis'));
+  await w.evaluate(() => (window.location.hash = '#/neraca-saldo'));
   await w.getByRole('button', { name: 'Simpan PDF' }).click();
   await w.getByText(/PDF disimpan:/).waitFor({ timeout: 15000 });
   const pdfHead = require('fs').existsSync(pdfPath) ? require('fs').readFileSync(pdfPath).subarray(0, 5).toString() : '';
@@ -168,7 +168,7 @@ async function firstWin(app) {
   const nav2 = await w.locator('nav li button').allTextContents();
   ok(
     'menu: halaman tambahan tampil',
-    ['Analisis', 'Buku Pembantu', 'Latihan Varian', 'Latihan Pajak', 'Jalur Belajar'].every((x) => nav2.includes(x)),
+    ['Laporan', 'Buku Pembantu', 'Latihan Varian', 'Latihan Pajak', 'Jalur Belajar'].every((x) => nav2.includes(x)),
     nav2.join(', '),
   );
   await w.evaluate(() => (window.location.hash = '#/transaksi/1'));

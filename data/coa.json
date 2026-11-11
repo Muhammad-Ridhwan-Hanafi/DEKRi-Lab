@@ -8,14 +8,14 @@
  },
  {
   "code": "1-1100",
-  "name": "Bank Mandiri",
+  "name": "Bank Arunika",
   "type": "Asset",
   "normal": "Debit",
   "reportClass": "Current Asset"
  },
  {
   "code": "1-1150",
-  "name": "Bank BCA (Deposito)",
+  "name": "Bank Cendana (Deposito)",
   "type": "Asset",
   "normal": "Debit",
   "reportClass": "Current Asset"

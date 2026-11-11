@@ -29,7 +29,6 @@ const Laporan = lazy(() => import('./pages/Laporan').then((x) => ({ default: x.L
 const Skenario = lazy(() => import('./pages/Skenario').then((x) => ({ default: x.Skenario })));
 const Ujian = lazy(() => import('./pages/Ujian').then((x) => ({ default: x.Ujian })));
 const Belajar = lazy(() => import('./pages/Belajar').then((x) => ({ default: x.Belajar })));
-const Analisis = lazy(() => import('./pages/Analisis').then((x) => ({ default: x.Analisis })));
 const BukuPembantu = lazy(() => import('./pages/BukuPembantu').then((x) => ({ default: x.BukuPembantu })));
 const Materi = lazy(() => import('./pages/Materi').then((x) => ({ default: x.Materi })));
 const Varian = lazy(() => import('./pages/Varian').then((x) => ({ default: x.Varian })));
@@ -45,7 +44,6 @@ const NAV: Array<[string, string]> = [
   ['neraca-saldo', 'Neraca Saldo'],
   ['penyesuaian', 'Penyesuaian'],
   ['laporan', 'Laporan'],
-  ['analisis', 'Analisis'],
   ['buku-pembantu', 'Buku Pembantu'],
   ['penutup', 'Penutup'],
   ['koreksi', 'Koreksi'],
@@ -56,7 +54,7 @@ const NAV: Array<[string, string]> = [
   ['pengaturan', 'Pengaturan'],
 ];
 
-/** Pengelompokan menurut aktivitas pengguna. Semua 18 menu tetap ada; urutan di dalam kelompok mengikuti alur kerja. */
+/** Pengelompokan menurut aktivitas pengguna. Semua 17 menu tetap ada; urutan di dalam kelompok mengikuti alur kerja. */
 const NAV_GROUPS: Array<{ id: string; label: string; paths: string[] }> = [
   { id: 'ruang-kerja', label: 'Ruang kerja', paths: ['dashboard'] },
   {
@@ -64,7 +62,7 @@ const NAV_GROUPS: Array<{ id: string; label: string; paths: string[] }> = [
     label: 'Siklus akuntansi',
     paths: ['kasus', 'transaksi', 'jurnal', 'buku-besar', 'buku-pembantu', 'neraca-saldo', 'penyesuaian', 'laporan', 'penutup'],
   },
-  { id: 'analisis-belajar', label: 'Analisis dan belajar', paths: ['analisis', 'belajar'] },
+  { id: 'belajar', label: 'Belajar', paths: ['belajar'] },
   { id: 'latihan', label: 'Latihan dan evaluasi', paths: ['koreksi', 'skenario', 'varian', 'pajak', 'ujian'] },
 ];
 const NAV_LABEL: Record<string, string> = Object.fromEntries(NAV);
@@ -135,8 +133,6 @@ function Page({ seg }: { seg: string[] }) {
     case 'belajar':
       if (seg[1] === 'bab') return <Materi key={seg[2]} bab={seg[2]} />;
       return <Belajar key={seg[1]} id={seg[1]} />;
-    case 'analisis':
-      return <Analisis />;
     case 'buku-pembantu':
       return <BukuPembantu />;
     case 'varian':

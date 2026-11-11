@@ -2,6 +2,28 @@
 
 ## Belum dirilis
 
+### Penafian diperjelas
+
+- `DISCLAIMER.md` dan halaman Pengaturan > Tentang kini memuat pernyataan tersendiri bahwa soal mungkin tidak sesuai dengan PSAK, dan bahwa semua perusahaan fiktif (kesamaan dengan pihak nyata adalah ketidaksengajaan).
+
+### Fokus ke akuntansi: fitur dirampingkan
+
+- Bagian **Paket soal tambahan** (muat soal dari berkas JSON) dihapus dari Latihan Varian, karena tidak semua pengguna dapat membuat berkas JSON. Soal industri bawaan tetap ada. Dua paket PSAK 216 yang hanya bisa dimuat lewat fitur itu (`data/paket-psak/`) ikut dihapus.
+- Halaman **Analisis** (kertas kerja, rasio, common size, arus kas, DuPont) dihapus. Menu kini 17. Analisis opsional per transaksi di halaman Transaksi tetap ada. Materi belajar "Analisis Laporan Keuangan" tetap sebagai teori tanpa tombol latihan.
+
+### Nama perusahaan fiktif
+
+- Nama bank nyata dalam kasus diganti nama rekaan: Bank Mandiri menjadi Bank Arunika, Bank BCA menjadi Bank Cendana, PT Sekuritas Mandiri Investama menjadi PT Sekuritas Lazuardi Investama. Kode akun dan angka tidak berubah; hanya nama tampilan.
+
+### Tes lebih tahan di komputer lambat
+
+- Batas tunggu `findBy*`/`waitFor` pada tes UI dinaikkan dari 1 detik ke 15 detik (`tests/setup.ts`). Di komputer yang sibuk, satu tes (`jurnal benar -> Periksa -> BENAR`) kadang gagal hanya karena halaman belum sempat tampil dalam 1 detik. Isi pemeriksaan tidak berubah. `bangun-exe.bat` kini mengulang otomatis (maks. 3 kali) bila langkah pembuatan installer gagal karena unduhan terputus.
+
+### README untuk pengguna awam
+
+- README ditulis ulang dengan bahasa sederhana: apa itu aplikasinya, dua cara memakai (pasang di Windows, atau satu berkas HTML tanpa pasang), dan hal penting yang perlu diketahui. Rincian pengembang dan fitur dipindahkan ke `docs/DEVELOPMENT.md`.
+- Release kini ikut melampirkan `DEKRi-Lab.html` (versi tanpa pasang) beserta checksum-nya.
+
 ### Audit ulang publikasi (provenance, logo, merek)
 
 - Dokumentasi provenance diperbarui sesuai klarifikasi pemilik: materi disusun dengan bantuan Claude AI berlandaskan referensi IAI; logo dibuat dengan ChatGPT; pemeriksaan awal nama di PDKI dicatat (`docs/CONTENT_SOURCES.md`, `docs/ASSET_ATTRIBUTION.md`, `docs/BRAND_CHECK.md`, `docs/LICENSING.md`). Lisensi MIT dinyatakan hanya untuk kode sumber.

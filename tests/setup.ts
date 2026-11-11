@@ -1,4 +1,5 @@
 import { beforeEach } from 'vitest';
+import { configure } from '@testing-library/dom';
 import { setScope, userKeyOf } from '../src/store/scope';
 
 // Layar masuk menutupi aplikasi bila belum ada profil. Tes yang merender <App /> dianggap sudah masuk,
@@ -21,3 +22,7 @@ beforeEach(() => {
   seed();
   scope();
 });
+
+// Batas tunggu findBy*/waitFor bawaan (1 dtk) terlalu ketat untuk komputer yang lambat atau sedang sibuk (render pertama memuat halaman
+// secara lazy). Tes menunggu sampai kondisi terpenuhi, jadi batas yang lebih longgar hanya mencegah galat palsu; isi pemeriksaan tidak berubah.
+configure({ asyncUtilTimeout: 15000 });

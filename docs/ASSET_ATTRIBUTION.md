@@ -13,6 +13,10 @@
 - Pengolahan yang dilakukan di proyek ini: gambar diubah menjadi SVG vektor dengan penelusuran otomatis (potrace; lihat komentar di `brand-paths.ts`), lalu dipakai ulang sebagai komponen UI, favicon, dan ikon aplikasi (`build/icon.*`). Tidak ada pewarnaan atau penambahan elemen dari sumber lain yang tercatat.
 - Pemeriksaan isi berkas SVG: tidak ada elemen `<text>`, `font-family`, `<image>`, atau tautan eksternal; seluruhnya bentuk jalur (path). Maka tidak ada font atau gambar eksternal yang tertanam di SVG. Gambar rasternya (PNG/ICO) tidak diperiksa elemen per elemen.
 
+## Bukti pembuatan logo dan nama (keterangan pemilik)
+
+- Pemilik proyek memperlihatkan dua tangkapan layar percakapan dengan asisten AI: satu berisi gambar logo DEKRi Lab dengan palet warna (indigo #4D49FC, navy #17124F, lime #E4FF97, putih) dan keputusan nama merek "DEKRI Lab"; satu lagi daftar lima nama yang diusulkan (DEKRI, JURNEO, RASQI, AKRUNA, NERAQ). Tangkapan layar itu disimpan pemilik di luar repositori dan **tidak** dimasukkan ke repositori publik. Tanggal dan nama layanan pada tangkapan layar tidak terlihat jelas, jadi tidak dicatat di sini.
+
 ## Status hukum logo (tanpa jaminan)
 
 - **Hak penggunaan keluaran** menurut ketentuan layanan OpenAI adalah hal yang berbeda dari **perlindungan hak cipta atau hak eksklusif** atas desain logo menurut hukum Indonesia. Pemilik perlu membaca ketentuan layanan OpenAI yang berlaku pada saat pembuatan logo; auditor tidak menyimpulkan isinya.

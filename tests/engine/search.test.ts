@@ -13,9 +13,9 @@ describe('pencarian global', () => {
   });
 
   it('semua kata harus cocok dan judul diprioritaskan', () => {
-    const r = search(index, 'bank mandiri');
+    const r = search(index, 'bank arunika');
     expect(r.length).toBeGreaterThan(0);
-    expect(r.every((e) => e.hay.includes('bank') && e.hay.includes('mandiri'))).toBe(true);
+    expect(r.every((e) => e.hay.includes('bank') && e.hay.includes('arunika'))).toBe(true);
     expect(search(index, '1-1100')[0].href).toBe('buku-besar/1-1100');
     expect(search(index, '')).toEqual([]);
     expect(search(index, 'zzzxxqq')).toEqual([]);

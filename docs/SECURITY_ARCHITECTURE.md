@@ -4,7 +4,7 @@ Ringkasan kontrol yang ada di kode dan cara memeriksanya. Bukan audit pihak keti
 
 ## Model ancaman
 
-Aplikasi offline, tanpa akun/server. Risiko utama: (1) berkas cadangan/paket soal JSON yang dibuat pihak lain lalu diimpor pengguna; (2) kode di halaman memanggil proses utama Electron secara tidak semestinya; (3) rantai pasok (dependensi, workflow rilis, installer palsu).
+Aplikasi offline, tanpa akun/server. Risiko utama: (1) berkas cadangan JSON yang dibuat pihak lain lalu diimpor pengguna; (2) kode di halaman memanggil proses utama Electron secara tidak semestinya; (3) rantai pasok (dependensi, workflow rilis, installer palsu).
 
 ## Kontrol Electron (`desktop/main.cjs`, `preload.cjs`)
 

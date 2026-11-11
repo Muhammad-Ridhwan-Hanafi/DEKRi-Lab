@@ -18,7 +18,7 @@ Sertakan versi, langkah reproduksi, dan dampak. Ini proyek sukarela: tidak ada j
 ## Cakupan
 
 - Pembungkus Electron (`desktop/`): isolasi konteks, sandbox, jembatan IPC, CSP, penanganan berkas cadangan.
-- Impor berkas cadangan dan paket soal JSON.
+- Impor berkas cadangan JSON.
 - Rantai pasok build/rilis (workflow GitHub Actions).
 
 ## Di luar cakupan

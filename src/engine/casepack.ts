@@ -103,7 +103,7 @@ export const EXAMPLE_PACK = {
     {
       id: 'c1',
       title: 'Setoran modal tambahan',
-      narrative: 'Pemegang saham menyetor tambahan modal Rp100.000.000 ke Bank Mandiri.',
+      narrative: 'Pemegang saham menyetor tambahan modal Rp100.000.000 ke Bank Arunika.',
       lines: [
         { code: '1-1100', debit: 100000000, credit: 0 },
         { code: '3-1000', debit: 0, credit: 100000000 },

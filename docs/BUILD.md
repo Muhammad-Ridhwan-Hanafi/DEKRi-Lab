@@ -20,7 +20,7 @@ Di Windows, `bangun-exe.bat` menjalankan langkah yang sama.
 
 1. Perbarui `version` di `package.json` dan `CHANGELOG.md`.
 2. Selesaikan `RELEASE_CHECKLIST.md`.
-3. Buat tag `vX.Y.Z` yang sama persis dengan versi (workflow menolak bila beda). Workflow membuat Release **draf** berisi installer, `SHA256SUMS.txt`, dan `sbom.cdx.json`; pemilik meninjau lalu mempublikasikan.
+3. Buat tag `vX.Y.Z` yang sama persis dengan versi (workflow menolak bila beda). Workflow membuat Release **draf** berisi installer, `DEKRi-Lab.html` (versi tanpa pasang), `SHA256SUMS.txt`, dan `sbom.cdx.json`; pemilik meninjau lalu mempublikasikan.
 
 Checksum SHA-256 hanya memastikan berkas tidak berubah sejak dibuat; checksum tidak membuktikan penerbitnya. Installer belum ditandatangani kode.
 

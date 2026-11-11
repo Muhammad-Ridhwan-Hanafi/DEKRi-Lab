@@ -1,18 +1,16 @@
 import { useEffect, useState } from 'react';
 import { ACCOUNT_BY_CODE } from '../../data';
-import { EXT_ACCOUNTS, EXT_BY_CODE, TAX_BY_CODE, registerAccounts } from '../../data/ext';
+import { EXT_ACCOUNTS, EXT_BY_CODE, TAX_BY_CODE } from '../../data/ext';
 import { INDUSTRY_PACKS } from '../../data/industri';
-import { EXAMPLE_PACK, packNet, parsePack, type Pack, type PackItem } from '../../engine/casepack';
+import { packNet, type Pack, type PackItem } from '../../engine/casepack';
 import type { Account, JournalLine } from '../../engine/types';
 import { PATTERNS, generate, parseId, type Pattern, type Variant } from '../../engine/variants';
-import { loadPacks, savePacks } from '../../store/persistence';
 import { useApp } from '../../store/useApp';
 import { gradeJournal } from '../../validation/grade';
 import { ConfirmButton } from '../components/ConfirmButton';
 import { JournalForm } from '../components/JournalForm';
 import { KeyJournal } from '../components/KeyReveal';
 import { StatusBadge } from '../components/StatusBadge';
-import { downloadText } from '../format';
 import { useCtx } from '../hooks';
 
 const newSeed = () => Math.floor(Math.random() * 1_000_000);
@@ -64,7 +62,6 @@ export function Varian({ tax }: { tax: boolean }) {
       )}
       <Soal key={v.id} v={v} tax={tax} />
       {!tax && <Industri />}
-      {!tax && <Paket />}
     </div>
   );
 }
@@ -225,110 +222,6 @@ function Industri() {
           {item && <PackSoal key={`${pack.id}:${item.id}`} pack={pack} item={item} />}
         </div>
       )}
-    </div>
-  );
-}
-
-// ---------- paket soal ----------
-function Paket() {
-  const [packs, setPacks] = useState<Pack[]>([]);
-  const [err, setErr] = useState('');
-  const [active, setActive] = useState<{ pack: string; item: string } | null>(null);
-  useEffect(() => {
-    let live = true;
-    void loadPacks().then((raw) => {
-      if (!live) return;
-      const ok: Pack[] = [];
-      for (const r of raw) {
-        try {
-          const pk = parsePack(JSON.stringify(r));
-          registerAccounts(pk.accounts ?? []);
-          ok.push(pk);
-        } catch {
-          /* paket tersimpan yang rusak dilewati */
-        }
-      }
-      setPacks(ok);
-    });
-    return () => {
-      live = false;
-    };
-  }, []);
-  const onFile = async (f: File | undefined) => {
-    if (!f) return;
-    try {
-      const pk = parsePack(await f.text());
-      registerAccounts(pk.accounts ?? []);
-      const next = [...packs.filter((x) => x.id !== pk.id), pk];
-      await savePacks(next);
-      setPacks(next);
-      setErr('');
-    } catch (e) {
-      setErr((e as Error).message);
-    }
-  };
-  const remove = async (id: string) => {
-    const next = packs.filter((x) => x.id !== id);
-    await savePacks(next);
-    setPacks(next);
-    if (active?.pack === id) setActive(null);
-  };
-  const pack = packs.find((x) => x.id === active?.pack);
-  const item = pack?.items.find((x) => x.id === active?.item);
-  return (
-    <div className="card space-y-3">
-      <h2 className="font-semibold">Paket soal tambahan</h2>
-      <p className="text-sm text-slate-600">
-        Muat paket soal dari file JSON (misalnya buatan dosen atau Anda sendiri) tanpa membangun ulang aplikasi. Kunci jurnal divalidasi: harus seimbang dan
-        memakai akun yang ada. Paket tersimpan di peramban ini dan tidak ikut cadangan jawaban.
-      </p>
-      <div className="flex flex-wrap items-center gap-2">
-        <label className="btn cursor-pointer">
-          Muat paket (.json)
-          <input
-            aria-label="Muat paket soal"
-            type="file"
-            accept="application/json,.json"
-            className="sr-only"
-            onChange={(e) => void onFile(e.target.files?.[0])}
-          />
-        </label>
-        <button className="btn" onClick={() => downloadText('contoh-paket-soal.json', JSON.stringify(EXAMPLE_PACK, null, 2), 'application/json')}>
-          Unduh contoh format
-        </button>
-      </div>
-      {err && (
-        <p className="rounded-md border border-red-300 bg-red-50 p-2 text-sm text-red-800" role="alert">
-          {err}
-        </p>
-      )}
-      {packs.map((pk) => (
-        <div key={pk.id} className="rounded-md border border-slate-200 p-2">
-          <div className="flex flex-wrap items-center gap-2">
-            <b>{pk.title}</b>
-            <span className="text-xs text-slate-500">{pk.items.length} soal</span>
-            <ConfirmButton
-              className="btn ml-auto"
-              label="Hapus paket"
-              message="Paket dihapus dari peramban ini."
-              confirmLabel="Ya, hapus"
-              onConfirm={() => void remove(pk.id)}
-            />
-          </div>
-          <div className="mt-1 flex flex-wrap gap-1">
-            {pk.items.map((it) => (
-              <button
-                key={it.id}
-                className={`btn ${active?.pack === pk.id && active.item === it.id ? 'btn-primary' : ''}`}
-                onClick={() => setActive({ pack: pk.id, item: it.id })}
-              >
-                {it.title}
-              </button>
-            ))}
-          </div>
-        </div>
-      ))}
-      {pack && item && <PackSoal key={`${pack.id}:${item.id}`} pack={pack} item={item} />}
     </div>
   );
 }

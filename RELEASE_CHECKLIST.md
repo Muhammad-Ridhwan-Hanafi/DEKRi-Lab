@@ -11,7 +11,7 @@ Untuk pemilik non-DevOps. Kerjakan dari atas ke bawah. Jangan membuat repositori
 - [ ] Putuskan apakah nama/logo DEKRi Lab dilarang dipakai untuk produk turunan (tambahkan satu kalimat di README)
 - [ ] Putuskan nama pemegang hak cipta di `LICENSE` (kini “Ridhwan”)
 - [ ] Putuskan kontak publik privasi/keamanan (opsional; tanpa kontak pun boleh, lihat `SECURITY.md`)
-- [ ] Ganti nama bank contoh (Mandiri/BCA) dengan nama generik bila ingin (opsional)
+- [x] Nama bank nyata (Mandiri/BCA) sudah diganti nama fiktif (Bank Arunika, Bank Cendana)
 - [ ] Simpan `PREPUBLICATION_AUDIT_PRIVATE.md` di luar folder repositori
 
 ## 2. Dapat diselesaikan melalui GitHub
@@ -41,7 +41,7 @@ Installer belum pernah berhasil dibangun lengkap dan dijalankan oleh auditor; di
 Bukan nasihat hukum; hal-hal ini sebaiknya dikonsultasikan bila Anda ingin kepastian.
 
 - [ ] PDKI: ulangi pencarian persis “DEKRi Lab”, simpan tangkapan layar bertanggal, lalu cari variasi (DEKRI, DEKRi Labs, pelafalan serupa) dan merek gambar/logo; pertimbangkan Kelas 9, 41, 42 (`docs/BRAND_CHECK.md`)
-- [ ] AHU Online: cek kemiripan nama perusahaan fiktif dalam kasus dengan badan usaha nyata
+- [ ] AHU Online: cek kemiripan nama perusahaan dan bank fiktif dalam kasus (mis. PT Sumber Cahaya Elektrindo, Bank Arunika, Bank Cendana) dengan badan usaha nyata
 - [ ] Bila ingin mendaftarkan merek atau memastikan status hak atas keluaran AI/logo: konsultasi konsultan HKI
 - [ ] Verifikasi nomor paragraf bertanda “(cek)” terhadap SAK Online (IAI), dan tanggal pengesahan PSAK 118 yang tertulis di `src/data/arus-kas.ts`
 - [ ] Keputusan code signing (membutuhkan sertifikat berbayar); tanpa itu rilis tetap boleh dengan peringatan yang dijelaskan

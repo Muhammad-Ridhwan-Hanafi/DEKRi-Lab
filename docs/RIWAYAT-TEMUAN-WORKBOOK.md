@@ -70,7 +70,7 @@ Ringkasan: 25 temuan (Tinggi 3, Sedang 8, Rendah 11, sudah diperbaiki sebelumnya
 ## #10 Deposito sebagai kas dan setara kas
 
 - Tingkat: Sedang · Status: Diperbaiki: fakta deposito berjangka 3 bulan ARO · Lokasi: 04_COA 1-1150; 14_FINANCIAL_POSITION baris 6; 15 baris 46 & 57
-- Temuan: Deposito BCA Rp250jt masuk "Kas dan setara kas", padahal tidak ada informasi jatuh tempo <=3 bulan; bunga dibayar per semester menunjukkan tenor >=6 bulan (PSAK 207 (d/h PSAK 2) par.7).
+- Temuan: Deposito Bank Cendana Rp250jt masuk "Kas dan setara kas", padahal tidak ada informasi jatuh tempo <=3 bulan; bunga dibayar per semester menunjukkan tenor >=6 bulan (PSAK 207 (d/h PSAK 2) par.7).
 - Dampak: Kas dan setara kas awal Rp1.005jt dan akhir Rp1.246jt masing-masing memuat Rp250jt; tanpa deposito akhir = Rp996jt.
 - Rekomendasi: Tambahkan tanggal jatuh tempo deposito; bila >3 bulan pisahkan sebagai investasi lancar lain.
 

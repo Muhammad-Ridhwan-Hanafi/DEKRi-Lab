@@ -21,5 +21,5 @@ Kelas barang/jasa yang relevan untuk dipertimbangkan (belum ada yang dinyatakan 
 
 ## Catatan
 
-- Nama perusahaan fiktif dalam kasus dan nama bank contoh belum dicek terhadap badan usaha nyata (AHU Online).
+- Seluruh nama perusahaan dan bank dalam kasus fiktif (nama bank nyata sudah diganti: Bank Arunika, Bank Cendana). Kemiripan tidak sengaja dengan badan usaha nyata belum dicek (AHU Online).
 - Jika pemilik memutuskan mendaftarkan merek, konsultasikan dengan konsultan HKI terdaftar.

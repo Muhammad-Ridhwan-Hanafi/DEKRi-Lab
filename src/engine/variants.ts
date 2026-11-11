@@ -48,7 +48,7 @@ export function mulberry32(seed: number) {
 }
 
 const NAMES: Record<string, string> = {
-  '1-1100': 'Bank Mandiri',
+  '1-1100': 'Bank Arunika',
   '1-1400': 'Persediaan Barang Dagang',
   '1-1800': 'Pajak Dibayar di Muka (PPh 25)',
   '2-1000': 'Utang Usaha',
@@ -79,7 +79,7 @@ function mk(pattern: Pattern, seed: number, title: string, tax: boolean, narrati
 
 const SUPPLIERS = ['PT Komponen Nusantara', 'CV Kabel Sentosa', 'PT Elektro Prima Utama', 'UD Sumber Daya Listrik'];
 const CUSTOMERS = ['PT Bangun Cipta Elektrik', 'Toko Elektronik Makmur Jaya', 'PT Retail Elektronik Sentosa', 'Toko Ritel Lestari'];
-const BANKS = ['Bank Mandiri'];
+const BANKS = ['Bank Arunika'];
 
 export function generate(pattern: Pattern, seed: number): Variant {
   const r = mulberry32(seed * 7919 + PATTERNS.findIndex((p) => p.pattern === pattern) * 104729 + 13);

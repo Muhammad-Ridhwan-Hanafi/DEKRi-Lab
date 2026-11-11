@@ -83,7 +83,7 @@ export const MODULES: LearnModule[] = [
     theory: [
       'Saldo normal: aset dan beban di debit; liabilitas, ekuitas, dan pendapatan di kredit.',
       'Akun kontra bersaldo normal berlawanan dengan induknya, misalnya Akumulasi Penyusutan (aset, normal kredit) dan Potongan Penjualan (pendapatan, normal debit).',
-      'Pilih akun paling spesifik: Bank Mandiri, bukan sekadar Kas, bila kejadian melalui rekening itu.',
+      'Pilih akun paling spesifik: Bank Arunika, bukan sekadar Kas, bila kejadian melalui rekening itu.',
     ],
     example: {
       caseText: 'Akun 1-1210 Cadangan Kerugian Penurunan Nilai Piutang.',
@@ -129,7 +129,7 @@ export const MODULES: LearnModule[] = [
       'Transaksi bisa hanya menukar satu aset dengan aset lain tanpa mengubah total.',
     ],
     example: {
-      caseText: 'Pemegang saham menyetor Rp400.000.000 ke Bank Mandiri (transaksi 1).',
+      caseText: 'Pemegang saham menyetor Rp400.000.000 ke Bank Arunika (transaksi 1).',
       solutionText: 'Aset (Bank) naik 400 juta dan ekuitas (Modal Saham) naik 400 juta. Persamaan tetap seimbang.',
     },
     practice: { label: 'Kerjakan transaksi 1 dan 2', href: 'transaksi/1' },
@@ -527,7 +527,6 @@ export const MODULES: LearnModule[] = [
       caseText: 'Laba bersih 100, penjualan 1.000, total aset 800, ekuitas 400.',
       solutionText: 'Margin 10%; perputaran aset 1,25x; pengganda ekuitas 2x; ROE = 10% x 1,25 x 2 = 25% = 100/400.',
     },
-    practice: { label: 'Buka Analisis keuangan', href: 'analisis' },
     quiz: [
       { q: 'Aset lancar 600, liabilitas jangka pendek 300. Rasio lancar…', options: ['2,0x', '0,5x', '3,0x', '1,0x'], answer: 0, why: '600 / 300 = 2,0x.' },
       { q: 'Margin 8%, perputaran aset 1,5x, pengganda ekuitas 2x. ROE…', options: ['24%', '12%', '16%', '3%'], answer: 0, why: '8% x 1,5 x 2 = 24%.' },

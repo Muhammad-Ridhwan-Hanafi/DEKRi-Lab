@@ -3,7 +3,6 @@ import { beforeAll, describe, expect, it } from 'vitest';
 import corrData from '../../data/correcting-cases.json';
 import { ADJUSTMENTS, COA, CORRECTING, KEY, OPENING, SCENARIOS, TRANSACTIONS } from '../../src/data';
 import { INDUSTRY_PACKS } from '../../src/data/industri';
-import { basis, cashFlowAnalysis, commonSizeBalance, commonSizeIncome, dupont, ratios, worksheet } from '../../src/engine/analysis';
 import { packNet, parsePack, EXAMPLE_PACK } from '../../src/engine/casepack';
 import { expectedClosing, postClosingTB, type ClosingEntry } from '../../src/engine/closing';
 import { reconcileWithKey, runChecks } from '../../src/engine/checks';
@@ -214,43 +213,6 @@ describe('SIM 2 - laporan keuangan dari jawaban pengguna = kunci', () => {
   it('penelusuran angka (trace) berjalan dan menghasilkan indeks', () => {
     const idx = buildTraceIndex(ledgerInputFor(S().state));
     expect(idx.byCell.size).toBeGreaterThan(0);
-  });
-});
-
-describe('SIM 3 - analisis keuangan dari jawaban lengkap', () => {
-  it('kertas kerja 10 kolom seimbang di setiap kolom', () => {
-    const rep = ctxNow().report;
-    const ws = worksheet(rep.tb, COA);
-    expect(ws.totals.ns[0]).toBe(ws.totals.ns[1]);
-    expect(ws.totals.adj[0]).toBe(ws.totals.adj[1]);
-    expect(ws.totals.nssp[0]).toBe(ws.totals.nssp[1]);
-    expect(ws.final.lr[0]).toBe(ws.final.lr[1]);
-    expect(ws.final.neraca[0]).toBe(ws.final.neraca[1]);
-    expect(ws.netIncome).toBe(ctxNow().netIncome);
-  });
-
-  it('16 rasio, common size, DuPont, arus kas: tanpa NaN dan arus kas rekonsiliasi', () => {
-    const rep = ctxNow().report;
-    const b = basis(rep.tb, COA);
-    const rs = ratios(b);
-    expect(rs).toHaveLength(16);
-    for (const r of rs) {
-      expect(r.value === null || Number.isFinite(r.value), `${r.name} = ${r.value}`).toBe(true);
-      expect(r.interpretation).not.toMatch(/NaN|undefined|Infinity/);
-      expect(r.source).not.toMatch(/NaN|undefined|Infinity/);
-    }
-    // identitas akuntansi
-    expect(b.totalAssets).toBe(b.totalLiabilities + b.equity);
-    const dp = dupont(b);
-    expect(dp).not.toBeNull();
-    const cs = commonSizeIncome(rep.tb, COA, b.netSales);
-    for (const r of cs) expect(Number.isFinite(r.amount) && (r.pct === null || Number.isFinite(r.pct))).toBe(true);
-    const cb = commonSizeBalance(rep.tb, COA, b.totalAssets, ctxNow().netIncome);
-    for (const r of [...cb.assets, ...cb.funding]) expect(Number.isFinite(r.amount) && (r.pct === null || Number.isFinite(r.pct))).toBe(true);
-    const cf = cashFlowAnalysis(rep.cells as never, ctxNow().netIncome);
-    expect(cf.gap).toBe(0);
-    expect(cf.operating + cf.investing + cf.financing).toBe(cf.net);
-    expect(cf.opening + cf.net).toBe(cf.closing);
   });
 });
 

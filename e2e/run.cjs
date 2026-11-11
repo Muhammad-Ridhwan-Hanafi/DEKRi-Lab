@@ -24,7 +24,6 @@ const PAGES = [
   'neraca-saldo',
   'penyesuaian',
   'laporan',
-  'analisis',
   'belajar',
   'buku-pembantu',
   'penutup',
