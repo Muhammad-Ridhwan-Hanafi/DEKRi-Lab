@@ -129,9 +129,8 @@ export function Pengaturan() {
         </p>
         <p className="mt-1 text-xs text-slate-500">
           Proyek sumber terbuka yang independen dan tidak memiliki afiliasi apa pun. Aplikasi ini bukan nasihat akuntansi, pajak, atau hukum. Kasus dan materi
-          disusun dengan bantuan kecerdasan buatan (AI), sehingga dapat memuat kesalahan. Penjelasan standar (PSAK) memakai kata-kata sendiri; rujukan paragraf
-          bertanda “(cek)” belum diverifikasi terhadap teks resmi. Lisensi MIT hanya untuk kode sumber. Lihat DISCLAIMER.md dan docs/LICENSING.md pada
-          repositori.
+          disusun dengan bantuan kecerdasan buatan (AI). Soal disusun agar sesuai dengan standar akuntansi (PSAK), tetapi masih mungkin ada kesalahan. Lisensi
+          MIT hanya untuk kode sumber. Lihat DISCLAIMER.md dan docs/LICENSING.md pada repositori.
         </p>
         <p className="mt-1 text-xs text-slate-500">
           <b>Catatan PSAK:</b> mungkin terdapat soal, kunci, atau penjelasan yang tidak sesuai dengan PSAK. Bila berbeda, rujuk standar resmi yang berlaku atau

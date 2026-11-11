@@ -199,7 +199,6 @@ function analysisWhy(key: AnalysisKey): string[] {
     key.needsAdj ? `Penyesuaian akhir tahun — ${YES_NO_INFO.needsAdj[key.needsAdj] ?? key.needsAdj}` : '',
     key.affectsProfit ? `Laba — ${YES_NO_INFO.affectsProfit[key.affectsProfit] ?? key.affectsProfit}` : '',
     key.affectsCash ? `Kas — ${YES_NO_INFO.affectsCash[key.affectsCash] ?? key.affectsCash}` : '',
-    key.reason ? `Alasan akuntansi — ${key.reason}` : '',
   ];
   return pts.filter(Boolean);
 }
@@ -256,7 +255,6 @@ function Analisis({ no }: { no: string }) {
             <li>
               Perlu penyesuaian: {key.needsAdj} · Memengaruhi laba: {key.affectsProfit} · Memengaruhi kas: {key.affectsCash}
             </li>
-            <li>{key.reason}</li>
           </ul>
         )}
       </KeyReveal>

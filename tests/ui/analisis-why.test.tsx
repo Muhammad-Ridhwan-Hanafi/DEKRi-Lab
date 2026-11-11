@@ -47,7 +47,7 @@ describe('Analisis: penjelasan setelah benar', () => {
     expect(text).toContain('Penyesuaian akhir tahun —');
     expect(text).toContain('Laba —');
     expect(text).toContain('Kas —');
-    if (k.reason) expect(text).toContain(k.reason);
+    expect(text).not.toContain('Alasan akuntansi');
   });
 });
 

@@ -46,7 +46,7 @@ Catatan: simpan berkas ini di satu tempat tetap dan jangan dipindahkan, karena p
 - Proyek ini **tidak memiliki afiliasi apa pun** dengan lembaga atau pihak mana pun.
 - Kunci jawaban ada di dalam aplikasi, jadi aplikasi ini tidak cocok dipakai sebagai alat ujian yang anti-curang.
 - Materi dan soal disusun dengan bantuan AI (Claude) berlandaskan standar akuntansi, lalu disunting pemilik. Logo dibuat dengan ChatGPT. Penjelasan lengkap: [asal konten](docs/CONTENT_SOURCES.md) dan [asal logo](docs/ASSET_ATTRIBUTION.md).
-- Rujukan nomor paragraf standar yang bertanda "(cek)" belum diperiksa terhadap teks resmi.
+- Soal disusun agar sesuai dengan standar akuntansi (PSAK), tetapi masih mungkin ada kesalahan.
 
 Dokumen lain: [Penafian](DISCLAIMER.md) · [Privasi](PRIVACY.md) · [Keamanan](SECURITY.md) · [Perubahan](CHANGELOG.md) · [Cara berkontribusi](CONTRIBUTING.md)
 

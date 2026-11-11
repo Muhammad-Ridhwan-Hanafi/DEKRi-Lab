@@ -2,6 +2,11 @@
 
 ## Belum dirilis
 
+### Analisis opsional dan teks Tentang dirapikan
+
+- Kunci Analisis (opsional) kini hanya menampilkan klasifikasi arus kas, perlu penyesuaian, memengaruhi laba, dan memengaruhi kas. Kalimat tambahan (misalnya "Penjualan tunai + HPP") dihapus; alasan tetap tampil untuk peristiwa yang tidak dijurnal.
+- Teks Tentang, README, dan DISCLAIMER: pernyataan "penjelasan memakai kata-kata sendiri" dan "rujukan bertanda (cek)" diganti dengan "soal disusun agar sesuai dengan standar akuntansi (PSAK), tetapi masih mungkin ada kesalahan".
+
 ### Penjelasan kunci lebih panjang dan bertahap
 
 - Penjelasan kunci (Transaksi, Penyesuaian, Latihan Varian, soal industri, Ujian) kini tersusun langkah demi langkah: jenis peristiwa, perhitungan, prinsip yang dipakai, tiap akun beserta alasan sisi debit atau kreditnya, pemeriksaan keseimbangan, dan pegangan untuk mengingat. Untuk peristiwa tanpa jurnal ditampilkan alasan mengapa tidak dijurnal. Penjelasan yang sama muncul di "Mengapa jawaban ini benar?" setelah jawaban benar. Isi per akun disusun otomatis dari jurnal kunci, jadi tidak menambah klaim akuntansi baru.
