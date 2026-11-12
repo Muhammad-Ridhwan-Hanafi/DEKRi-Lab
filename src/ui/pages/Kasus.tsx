@@ -2,15 +2,49 @@ import { useState } from 'react';
 import { CASE, COA, OPENING, ACCOUNT_BY_CODE } from '../../data';
 import { formatRupiah } from '../../engine/money';
 
-type Rows = string[][];
+type Cell = string | number | null;
+type Rows = Cell[][];
+
+/** Angka mentah pada tabel aging ditampilkan rapi: pecahan sebagai persen, lainnya dengan titik ribuan. */
+const fmtNum = (c: string): string => {
+  if (!/^\d+(\.\d+)?$/.test(c)) return c;
+  const n = Number(c);
+  if (n > 0 && n < 1) return `${Number((n * 100).toFixed(2)).toLocaleString('id-ID')}%`;
+  return n.toLocaleString('id-ID');
+};
+const base = (c: Cell): string => (c === null || c === undefined ? '' : String(c));
+
+const isBullet = (r: string[]) => r[0] === '•';
+const strs = (r: Cell[]): string[] => r.map(base);
 
 function RowsTable({ rows, header }: { rows: Rows; header?: boolean }) {
   const maxCols = Math.max(2, ...rows.map((r) => r.length));
+  let aging = false;
   return (
     <table>
       <tbody>
         {rows.map((r, i) => {
-          const cells = r.map((c) => c ?? '');
+          let cells = strs(r);
+          if (/^TABEL AGING/i.test(cells[0])) aging = true;
+          else if (aging && cells[0] !== '' && cells.slice(1).every((c) => c === '') && cells[0].length > 60) aging = false;
+          if (aging) cells = cells.map((c, j) => (j > 0 ? fmtNum(c) : c));
+          // Baris berpoin: dikelompokkan menjadi satu daftar penuh lebar (poin pertama menggambar seluruh kelompok).
+          if (isBullet(cells)) {
+            if (i > 0 && isBullet(strs(rows[i - 1]))) return null;
+            const group: string[] = [];
+            for (let k = i; k < rows.length && isBullet(strs(rows[k])); k++) group.push(strs(rows[k]).find((c, j) => j > 0 && c) ?? '');
+            return (
+              <tr key={i}>
+                <td colSpan={maxCols}>
+                  <ul className="list-disc space-y-1.5 pl-5">
+                    {group.map((t, k) => (
+                      <li key={k}>{t}</li>
+                    ))}
+                  </ul>
+                </td>
+              </tr>
+            );
+          }
           const nonEmpty = cells.filter((c) => c !== '');
           const isHead = (header && i === 0) || (nonEmpty.length === 1 && cells[0] !== '' && cells[0] === cells[0].toUpperCase() && cells[0].length > 3);
           if (isHead)
@@ -19,7 +53,8 @@ function RowsTable({ rows, header }: { rows: Rows; header?: boolean }) {
                 <th colSpan={maxCols}>{nonEmpty[0] ?? ''}</th>
               </tr>
             );
-          const kept = cells.map((c, j) => [c, j] as const).filter(([c, j]) => !(c === '' && j > 0));
+          const last = cells.reduce((m, c, j) => (c !== '' ? j : m), 0);
+          const kept = cells.map((c, j) => [c, j] as const).filter(([c, j]) => (aging ? j <= last : !(c === '' && j > 0)));
           return (
             <tr key={i}>
               {kept.map(([c, j], k) => (

@@ -127,3 +127,17 @@ describe('laporan kesalahan soal', () => {
     expect(await within(box).findByText('Tautan disalin.')).toBeTruthy();
   });
 });
+
+describe('halaman Kasus: tampilan rapi', () => {
+  it('Petunjuk penggunaan berupa daftar poin dan tabel aging berformat', async () => {
+    await open('#/kasus');
+    expect(await screen.findByText('PETUNJUK PENGGUNAAN')).toBeTruthy();
+    const items = Array.from(document.querySelectorAll('td ul li')).map((l) => l.textContent ?? '');
+    expect(items).toHaveLength(4);
+    expect(items[0]).toMatch(/^Kerjakan berurutan/);
+    expect(screen.queryByText('•')).toBeNull();
+    expect(screen.getAllByText('240.000.000').length).toBeGreaterThan(0);
+    expect(screen.getAllByText('30%').length).toBeGreaterThan(0);
+    expect(screen.queryByText('240000000')).toBeNull();
+  });
+});

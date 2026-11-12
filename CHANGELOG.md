@@ -2,6 +2,21 @@
 
 ## 1.0.1
 
+### Halaman Kasus lebih rapi
+
+- "Petunjuk penggunaan" di Kasus > Profil kini berupa daftar poin satu kolom penuh (sebelumnya titik poin berada di kolom lebar tersendiri). Angka pada tabel aging piutang ditampilkan dengan titik ribuan dan persen (sebelumnya angka mentah seperti 240000000 dan 0.3).
+
+### Kemudahan pemasangan dan rilis
+
+- README mengutamakan `DEKRi-Lab.html` (tanpa pemasangan) sebagai cara pertama, dengan panduan peringatan "Windows protected your PC" dan saran bila pemasangan gagal. Tangkapan layar diperbarui dan ditambah satu untuk penjelasan kunci.
+- Rilis GitHub dibuat sebagai draf bertanda pre-release dengan teks pembuka "Unduh yang mana?" (`.github/release-notes-header.md`).
+- Dependabot tidak lagi mengusulkan kenaikan versi besar React (`react`, `react-dom`, dan tipenya); ditangani manual.
+- `package.json` diberi deskripsi dan kata kunci. `docs/GITHUB_SETUP.md` memuat teks About, topics, dan langkah proteksi cabang.
+
+### Penjelasan kunci dibuat lebih ringkas
+
+- Penjelasan kunci kini hanya tiga bagian pendek: Intinya, Mengapa dicatat begini (satu baris per akun: sisi debit/kredit dan arah perubahan), dan Ingat. Langkah "Periksa keseimbangan" dihapus. Peristiwa tanpa jurnal hanya menampilkan alasannya.
+
 ### Laporan kesalahan soal
 
 - Pengaturan > Tentang kini memuat kotak "Menemukan soal atau kunci yang keliru?" dengan tautan templat issue GitHub dan tombol Salin tautan (aplikasi offline, jadi tautan disalin, bukan dibuka di dalam aplikasi). Kotak kunci jawaban menunjuk ke sana. README dan DISCLAIMER menyebutkan cara melapor.

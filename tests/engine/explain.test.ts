@@ -4,37 +4,32 @@ import { explainJournal, explainLine } from '../../src/engine/explain';
 
 const lookup = (c: string) => ACCOUNT_BY_CODE[c];
 
-describe('penjelasan kunci langkah demi langkah', () => {
-  it('aset bertambah di debit, modal bertambah di kredit', () => {
+describe('penjelasan kunci', () => {
+  it('aset bertambah di debit, modal bertambah di kredit; tanpa langkah keseimbangan', () => {
     const t = KEY.readableTxn.find((x) => x.no === 1)!;
     const steps = explainJournal(t.lines, lookup, { topic: t.topic, explain: t.explain });
-    const items = steps.find((s) => s.title.startsWith('Akun'))!.items!;
-    expect(items[0]).toMatch(/^DEBIT Rp400\.000\.000: Bank Arunika \(aset\) bertambah.*dicatat di sisi debit/);
-    expect(items[1]).toMatch(/^KREDIT Rp400\.000\.000: Modal Saham \(ekuitas\) bertambah.*dicatat di sisi kredit/);
-    expect(steps.some((s) => s.title === 'Periksa keseimbangan' && /sama dengan/.test(s.body ?? ''))).toBe(true);
+    expect(steps.map((s) => s.title)).toEqual(['Intinya', 'Mengapa dicatat begini', 'Ingat']);
+    const items = steps[1].items!;
+    expect(items[0]).toBe('Debit — Bank Arunika: aset bertambah.');
+    expect(items[1]).toBe('Kredit — Modal Saham: ekuitas bertambah.');
+    expect(JSON.stringify(steps)).not.toMatch(/keseimbangan/i);
   });
 
-  it('akun pengurang (kontra) dijelaskan sebagai akun pengurang', () => {
+  it('akun pengurang dan arah berkurang dijelaskan', () => {
     const contra = Object.values(ACCOUNT_BY_CODE).find((a) => a.type === 'Asset' && a.normal === 'Credit')!;
-    const txt = explainLine({ code: contra.code, debit: 0, credit: 1000 }, contra);
-    expect(txt).toMatch(/akun pengurang/);
-    expect(txt).toMatch(/^KREDIT Rp1\.000: .*bertambah\..*dicatat di sisi kredit/);
+    expect(explainLine({ code: contra.code, debit: 0, credit: 1000 }, contra)).toMatch(/^Kredit — .*: akun pengurang aset bertambah\.$/);
+    const kas = ACCOUNT_BY_CODE['1-1100'];
+    expect(explainLine({ code: kas.code, debit: 0, credit: 5 }, kas)).toMatch(/aset berkurang\.$/);
   });
 
-  it('semua soal inti menghasilkan penjelasan lengkap tanpa NaN/undefined', () => {
+  it('semua soal inti menghasilkan penjelasan tanpa NaN/undefined; tanpa jurnal diberi alasan', () => {
     const all = [...KEY.readableTxn.map((t) => ({ ...t, calc: null as string | null })), ...KEY.readableAdj.map((a) => ({ ...a, topic: a.category }))];
     for (const t of all) {
       const steps = explainJournal(t.lines, lookup, { topic: 'topic' in t ? (t.topic as string) : null, explain: t.explain, calc: t.calc });
-      const text = JSON.stringify(steps);
-      expect(text).not.toMatch(/NaN|undefined|null/);
+      expect(JSON.stringify(steps)).not.toMatch(/NaN|undefined|null/);
       const n = t.lines.filter((l) => l.debit || l.credit).length;
-      if (!n) {
-        expect(steps.some((s) => s.title === 'Mengapa tidak ada jurnal')).toBe(true);
-        continue;
-      }
-      const items = steps.find((s) => s.title.startsWith('Akun'))!.items!;
-      expect(items).toHaveLength(n);
-      expect(steps.find((s) => s.title === 'Periksa keseimbangan')!.body).toMatch(/sama dengan/);
+      if (!n) expect(steps[0].title).toBe('Mengapa tidak dijurnal');
+      else expect(steps.find((s) => s.title === 'Mengapa dicatat begini')!.items).toHaveLength(n);
     }
   });
 });

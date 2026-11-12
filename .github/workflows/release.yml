@@ -53,4 +53,4 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           gh release create "$GITHUB_REF_NAME" release/DEKRi-Lab-Setup-*.exe release/DEKRi-Lab.html release/SHA256SUMS.txt release/sbom.cdx.json \
-            --draft --title "DEKRi Lab $GITHUB_REF_NAME" --generate-notes
+            --draft --prerelease --title "DEKRi Lab $GITHUB_REF_NAME" --notes-file .github/release-notes-header.md --generate-notes

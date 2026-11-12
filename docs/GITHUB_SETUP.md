@@ -25,3 +25,24 @@ Langkah ini dilakukan **oleh pemilik di GitHub**; berkas di repositori tidak bis
 ## Setelah publik
 
 Periksa tab Security dan Actions, lalu uji alur rilis dengan tag percobaan di repositori privat/uji sebelum tag nyata pertama.
+
+## Tampilan repositori (kotak About)
+
+Isi lewat ikon roda gigi di samping "About" pada halaman utama repositori:
+
+- **Description:** `Aplikasi latihan akuntansi offline: dari jurnal sampai laporan keuangan, dengan kasus fiktif. Jawaban diperiksa otomatis.`
+- **Topics:** `akuntansi`, `pembelajaran`, `latihan`, `laporan-keuangan`, `indonesia`, `offline`, `psak`, `react`, `typescript`, `electron`
+- Hapus centang **Releases**, **Packages**, dan **Deployments** di sidebar jika tidak dipakai (opsional). Biarkan **Releases** tercentang agar halaman unduhan terlihat.
+
+## Proteksi cabang `main` (langkah singkat)
+
+Settings > Rules > Rulesets > New ruleset > New branch ruleset:
+
+1. Beri nama `main`, status **Active**, target **Default branch**.
+2. Centang **Restrict deletions** dan **Block force pushes**.
+3. Sebagai pemilik tunggal, jangan dulu mewajibkan pull request atau reviu, karena Anda tidak bisa menyetujui PR sendiri. Aktifkan **Require status checks to pass** dan pilih pemeriksaan CI hanya bila Anda bekerja lewat PR.
+4. Simpan dengan **Create**.
+
+## Rilis pertama
+
+Alur rilis membuat **draf** yang sekaligus bertanda **Pre-release**. Setelah memeriksa unggahan, klik **Publish release**. Untuk rilis stabil nanti, edit rilis lalu centang **Set as the latest release** dan lepaskan centang pre-release. Teks pembuka rilis ada di `.github/release-notes-header.md`.

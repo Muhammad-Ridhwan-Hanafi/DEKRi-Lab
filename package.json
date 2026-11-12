@@ -2,7 +2,7 @@
   "name": "akuntansi-practice",
   "private": true,
   "version": "1.0.1",
-  "description": "DEKRi Lab: latihan siklus akuntansi PT Sumber Cahaya Elektrindo (aplikasi desktop portable)",
+  "description": "DEKRi Lab: aplikasi latihan akuntansi offline (jurnal sampai laporan keuangan) dengan kasus fiktif PT Sumber Cahaya Elektrindo",
   "author": "Ridhwan",
   "license": "MIT",
   "main": "desktop/main.cjs",
@@ -81,8 +81,6 @@
     "nsis": {
       "oneClick": false,
       "perMachine": false,
-      "allowElevation": true,
-      "allowToChangeInstallationDirectory": true,
       "createDesktopShortcut": true,
       "createStartMenuShortcut": true,
       "shortcutName": "DEKRi Lab",
@@ -90,7 +88,9 @@
       "installerIcon": "build/icon.ico",
       "uninstallerIcon": "build/icon.ico",
       "deleteAppDataOnUninstall": false,
-      "runAfterFinish": true
+      "runAfterFinish": true,
+      "allowElevation": true,
+      "allowToChangeInstallationDirectory": true
     },
     "electronFuses": {
       "runAsNode": false,
@@ -112,5 +112,15 @@
         "to": "licenses/OFL-Inter.txt"
       }
     ]
-  }
+  },
+  "keywords": [
+    "akuntansi",
+    "pembelajaran",
+    "latihan",
+    "jurnal",
+    "laporan-keuangan",
+    "indonesia",
+    "offline",
+    "psak"
+  ]
 }

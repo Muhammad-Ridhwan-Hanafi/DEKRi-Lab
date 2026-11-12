@@ -14,25 +14,33 @@ DEKRi Lab adalah aplikasi untuk berlatih akuntansi dari awal sampai akhir: menca
 
 ## Cara memakai (pilih salah satu)
 
-### Cara 1: Pasang di Windows
+### Cara 1 (paling mudah): tanpa memasang apa pun
 
-1. Buka halaman **Releases** repositori ini (menu di sisi kanan halaman GitHub).
-2. Unduh berkas yang namanya diawali `DEKRi-Lab-Setup`, berakhiran `.exe`.
-3. Klik dua kali berkas itu, lalu klik **Next** sampai selesai.
-4. Buka **DEKRi Lab** dari ikon di Desktop atau menu Start.
+1. Buka halaman **Releases** di repositori ini (di sisi kanan halaman GitHub), lalu unduh berkas `DEKRi-Lab.html`.
+2. Klik dua kali berkas itu. Ia terbuka di Chrome atau Edge, dan Anda bisa langsung berlatih.
 
-Saat pertama kali, Windows bisa menampilkan peringatan biru "Windows protected your PC". Penyebabnya, installer ini belum memiliki tanda tangan digital berbayar. Unduh hanya dari halaman Releases repositori ini. Jika yakin, klik **More info**, lalu **Run anyway**.
+Simpan berkas ini di satu tempat tetap dan jangan dipindahkan, karena progres tersimpan berdasarkan lokasi berkas. Kalau perlu pindah, buka **Pengaturan > Cadangan** dan ekspor dulu.
 
-### Cara 2: Tanpa memasang apa pun
+### Cara 2: Pasang di Windows
 
-1. Di halaman **Releases**, unduh berkas `DEKRi-Lab.html`.
-2. Klik dua kali. Berkas akan terbuka di Chrome atau Edge.
+Pilih cara ini kalau Anda ingin cadangan otomatis dan tombol Simpan PDF.
 
-Catatan: simpan berkas ini di satu tempat tetap dan jangan dipindahkan, karena progres tersimpan berdasarkan lokasi berkas. Kalau perlu pindah, buka **Pengaturan > Cadangan** dan ekspor dulu.
+1. Di halaman **Releases**, unduh berkas yang namanya diawali `DEKRi-Lab-Setup` dan berakhiran `.exe`.
+2. Klik dua kali, lalu ikuti petunjuk di layar. Anda bisa memilih folder tujuan pemasangan, lalu klik **Next** dan **Install** sampai selesai.
+3. Buka **DEKRi Lab** dari ikon di Desktop atau menu Start.
+
+**Kalau muncul peringatan biru "Windows protected your PC":** itu normal, karena pemasang ini belum memiliki tanda tangan digital berbayar. Unduh hanya dari halaman Releases repositori ini. Lalu:
+
+1. Klik **More info**.
+2. Klik **Run anyway**.
+
+**Kalau pemasangan gagal:** pakai Cara 1. Hasilnya sama untuk berlatih.
 
 ## Tampilan
 
 ![Tema gelap](docs/images/aplikasi-gelap.png)
+
+![Penjelasan kunci jawaban](docs/images/penjelasan-kunci.png)
 
 ## Progres dan cadangan
 
