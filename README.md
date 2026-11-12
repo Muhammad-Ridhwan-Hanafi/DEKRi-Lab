@@ -38,9 +38,15 @@ Pilih cara ini kalau Anda ingin cadangan otomatis dan tombol Simpan PDF.
 
 ## Tampilan
 
-![Tema gelap](docs/images/aplikasi-gelap.png)
+Semua tangkapan layar memakai data contoh dan perusahaan fiktif.
 
-![Penjelasan kunci jawaban](docs/images/penjelasan-kunci.png)
+|                                                                                                                                   |                                                                                                                                   |
+| --------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| ![Dashboard dengan progres belajar](docs/images/dashboard-progres.png)<br>**Dashboard**: progres, akurasi, dan langkah berikutnya | ![Mengisi jurnal transaksi](docs/images/transaksi-benar.png)<br>**Transaksi**: isi jurnal, tekan Periksa, dan lihat penjelasannya |
+| ![Kunci jawaban dan penjelasan](docs/images/penjelasan-kunci.png)<br>**Kunci dan penjelasan** bertahap, bukan hanya jawaban       | ![Kalkulator melayang](docs/images/kalkulator.png)<br>**Kalkulator** yang bisa digeser, dengan titik ribuan otomatis              |
+| ![Laporan laba rugi](docs/images/laporan.png)<br>**Laporan keuangan** dihitung dari jurnal Anda                                   | ![Buku besar](docs/images/buku-besar.png)<br>**Buku besar** per akun dengan saldo berjalan                                        |
+| ![Neraca saldo](docs/images/neraca-saldo.png)<br>**Neraca saldo** sebelum dan sesudah penyesuaian                                 | ![Jalur belajar](docs/images/jalur-belajar.png)<br>**Jalur belajar**: 13 materi dengan kuis                                       |
+| ![Tema gelap](docs/images/aplikasi-gelap.png)<br>**Tema gelap**                                                                   | ![Layar masuk](docs/images/masuk-terang.png)<br>**Masuk dengan nama** (tanpa kata sandi)                                          |
 
 ## Progres dan cadangan
 

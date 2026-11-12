@@ -48,7 +48,7 @@ export function explainJournal(
     });
     return steps;
   }
-  const intro = opts.topic && opts.explain ? `${opts.topic}: ${opts.explain}` : (opts.explain ?? opts.topic);
+  const intro = opts.topic && opts.explain ? `${opts.topic}${/[.:!?]$/.test(opts.topic) ? '' : '.'} ${opts.explain}` : (opts.explain ?? opts.topic);
   if (intro) steps.push({ title: 'Intinya', body: intro });
   if (opts.calc) steps.push({ title: 'Perhitungan', body: opts.calc });
   steps.push({ title: 'Mengapa dicatat begini', items: used.map((l) => explainLine(l, lookup(l.code))) });

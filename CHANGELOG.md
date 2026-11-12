@@ -2,6 +2,10 @@
 
 ## 1.0.1
 
+### Galeri tangkapan layar
+
+- README kini memuat galeri 10 tangkapan layar (Dashboard, Transaksi, penjelasan kunci, Kalkulator, Laporan, Buku Besar, Neraca Saldo, Jalur Belajar, tema gelap, layar masuk), semuanya dari data contoh fiktif.
+
 ### Halaman Kasus lebih rapi
 
 - "Petunjuk penggunaan" di Kasus > Profil kini berupa daftar poin satu kolom penuh (sebelumnya titik poin berada di kolom lebar tersendiri). Angka pada tabel aging piutang ditampilkan dengan titik ribuan dan persen (sebelumnya angka mentah seperti 240000000 dan 0.3).
