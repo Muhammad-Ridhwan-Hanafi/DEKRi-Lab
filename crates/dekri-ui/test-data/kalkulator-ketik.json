@@ -1,0 +1,38 @@
+{
+  "_catatan": "Vektor bersama untuk pemformat ketikan kalkulator. format: teks mentah di kolom + posisi kursor -> teks berformat + posisi kursor. delete: Backspace/Delete di samping titik ribuan -> hasil akhir (none = perilaku bawaan). Dibaca oleh tes Rust (extras.rs) dan tests/ui/kalkulator-ketik.cjs; keduanya harus lulus.",
+  "format": [
+    { "nama": "hapus di tengah angka, pengelompokan berubah", "raw": "1.23.567", "caret": 4, "text": "123.567", "pos": 3 },
+    { "nama": "sisip di tengah, pengelompokan berubah", "raw": "1.9234", "caret": 3, "text": "19.234", "pos": 2 },
+    { "nama": "sisip di tengah, titik baru muncul di depan kursor", "raw": "1293.456", "caret": 3, "text": "1.293.456", "pos": 4 },
+    { "nama": "ketik di akhir", "raw": "1.2345", "caret": 6, "text": "12.345", "pos": 6 },
+    { "nama": "x kecil jadi kali", "raw": "6x7", "caret": 2, "text": "6×7", "pos": 2 },
+    { "nama": "X besar jadi kali", "raw": "6X7", "caret": 3, "text": "6×7", "pos": 3 },
+    { "nama": "* dan / jadi kali dan bagi", "raw": "8/2*3", "caret": 5, "text": "8÷2×3", "pos": 5 },
+    { "nama": "koma desimal setelah ribuan", "raw": "1250,5", "caret": 6, "text": "1.250,5", "pos": 7 },
+    { "nama": "ketik di dalam desimal", "raw": "1.250,55", "caret": 8, "text": "1.250,55", "pos": 8 },
+    { "nama": "titik depan sisa hapus angka pertama dibuang", "raw": ".234", "caret": 0, "text": "234", "pos": 0 },
+    { "nama": "kursor setelah titik depan", "raw": ".234", "caret": 1, "text": "234", "pos": 0 },
+    { "nama": "titik belakang dibuang", "raw": "5.", "caret": 2, "text": "5", "pos": 1 },
+    { "nama": "dua angka dalam satu rumus", "raw": "1234+5678", "caret": 9, "text": "1.234+5.678", "pos": 11 },
+    { "nama": "sudah rapi tidak berubah", "raw": "1.234.567", "caret": 5, "text": "1.234.567", "pos": 5 },
+    { "nama": "titik tanpa angka dibiarkan", "raw": "(.)", "caret": 3, "text": "(.)", "pos": 3 },
+    { "nama": "hapus angka pertama angka kedua", "raw": "1.234+.567", "caret": 6, "text": "1.234+567", "pos": 6 },
+    { "nama": "kosong", "raw": "", "caret": 0, "text": "", "pos": 0 },
+    { "nama": "rumus dengan kurung", "raw": "(1250000-12000)÷5", "caret": 17, "text": "(1.250.000-12.000)÷5", "pos": 20 },
+    { "nama": "kursor di depan", "raw": "1234567", "caret": 0, "text": "1.234.567", "pos": 0 },
+    { "nama": "dua koma tidak diubah", "raw": "1,2,3", "caret": 5, "text": "1,2,3", "pos": 5 },
+    { "nama": "titik setelah desimal dibiarkan (salah ketik gaya Inggris)", "raw": "1,250.50", "caret": 8, "text": "1,250.50", "pos": 8 },
+    { "nama": "titik langsung setelah koma dibiarkan", "raw": "0XX1,.956523)", "caret": 0, "text": "0××1,.956.523)", "pos": 0 },
+    { "nama": "titik awal setelah operator dibuang", "raw": "5+.234", "caret": 3, "text": "5+234", "pos": 2 }
+  ],
+  "delete": [
+    { "nama": "Backspace setelah titik: hapus angka di depannya", "key": "Backspace", "value": "1.234", "caret": 2, "text": "234", "pos": 0 },
+    { "nama": "Delete sebelum titik: hapus angka di belakangnya", "key": "Delete", "value": "1.234", "caret": 1, "text": "134", "pos": 1 },
+    { "nama": "Backspace setelah titik kedua", "key": "Backspace", "value": "12.345.678", "caret": 7, "text": "1.234.678", "pos": 5 },
+    { "nama": "Delete sebelum titik kedua", "key": "Delete", "value": "12.345.678", "caret": 6, "text": "1.234.578", "pos": 7 },
+    { "nama": "Backspace biasa dibiarkan", "key": "Backspace", "value": "1.234", "caret": 3, "none": true },
+    { "nama": "Delete di akhir dibiarkan", "key": "Delete", "value": "1.234", "caret": 5, "none": true },
+    { "nama": "titik tanpa angka di depannya dibiarkan", "key": "Backspace", "value": "(.5", "caret": 2, "none": true },
+    { "nama": "titik tanpa angka di belakangnya dibiarkan", "key": "Delete", "value": "5.+", "caret": 1, "none": true }
+  ]
+}

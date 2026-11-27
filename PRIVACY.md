@@ -1,28 +1,33 @@
 # Kebijakan privasi
 
-Berlaku untuk DEKRi Lab (aplikasi desktop dan HTML mandiri).
+Berlaku untuk DEKRi Lab (aplikasi desktop untuk Windows 10 dan 11).
 
 ## Ringkasan
 
-- Aplikasi berjalan **offline**. Tidak ada server, akun daring, telemetri, analitik, iklan, atau pelaporan crash otomatis. Kode tidak memuat permintaan jaringan, dan versi desktop memblokir semua permintaan non-lokal.
+- Aplikasi berjalan **offline**. Tidak ada server, akun daring, telemetri, analitik, iklan, pembaruan otomatis, atau pelaporan crash otomatis. Aplikasi ini sendiri tidak membuat koneksi ke internet.
+- Satu-satunya soket jaringan yang dibuka adalah soket lokal (`127.0.0.1`, port acak, dilindungi kunci acak) yang dipakai kerangka antarmuka Dioxus untuk menghubungkan program dengan jendelanya. Soket itu tidak dapat dijangkau dari komputer lain.
+- Tampilan memakai Microsoft Edge WebView2, komponen Windows yang dikelola dan diperbarui Microsoft. Perilakunya sendiri (termasuk pembaruan dan data yang disimpannya) mengikuti kebijakan Microsoft, bukan DEKRi Lab.
 - Pengembang **tidak menerima data apa pun** dari penggunaan aplikasi.
 
 ## Data yang disimpan di perangkat Anda
 
-| Data                                    | Isi                                                                                                                                       | Lokasi                                                                                       |
-| --------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
-| Progres latihan                         | jawaban jurnal, penilaian, catatan, riwayat percobaan, pengaturan                                                                         | IndexedDB dan localStorage milik aplikasi (EXE: folder `%APPDATA%\Latihan Siklus Akuntansi`) |
-| Nama profil                             | nama yang Anda ketik saat masuk, dipakai untuk memisahkan progres antar pengguna di satu perangkat; **bukan akun dan tidak diverifikasi** | sama seperti di atas                                                                         |
-| Cadangan otomatis (hanya EXE/installer) | salinan JSON progres                                                                                                                      | `Dokumen\Latihan Siklus Akuntansi\Cadangan` (7 berkas harian terakhir)                       |
-| Cadangan manual                         | berkas JSON yang Anda ekspor sendiri                                                                                                      | lokasi pilihan Anda                                                                          |
+| Data | Isi | Lokasi |
+| --- | --- | --- |
+| Progres latihan | jawaban jurnal, penilaian, catatan, riwayat percobaan, pengaturan | berkas JSON (`state-<nama>.json`) di `%APPDATA%\Latihan Siklus Akuntansi` |
+| Nama profil | nama yang Anda ketik saat masuk, dipakai untuk memisahkan progres antar pengguna di satu perangkat; **bukan akun dan tidak diverifikasi** | `users.json` di folder yang sama |
+| Pilihan tema | Ikuti sistem, Terang, atau Gelap | `tampilan.json` di folder yang sama |
+| Cadangan otomatis | salinan JSON progres | `Dokumen\Latihan Siklus Akuntansi\Cadangan` (7 berkas harian terakhir) |
+| Cadangan manual | berkas JSON yang Anda ekspor sendiri | lokasi pilihan Anda |
+| Salinan pengaman | salinan progres yang dibuat sebelum impor cadangan atau reset | folder Cadangan di atas |
+| Berkas cetak laporan | HTML laporan yang dibuat saat Anda menekan tombol cetak | folder sementara Windows |
 
-Nama folder memakai nama lama aplikasi (“Latihan Siklus Akuntansi”) agar progres dari versi sebelumnya tetap terbaca.
+Kedua folder memakai nama lama aplikasi (“Latihan Siklus Akuntansi”) agar progres dan cadangan dari versi 1 tetap terbaca.
 
 ## Hal yang perlu Anda ketahui
 
 - Berkas cadangan **tidak dienkripsi** dan memuat nama profil serta seluruh jawaban Anda. Jangan mengunggahnya ke tempat publik (misalnya lampiran issue GitHub) bila berisi data yang tidak ingin Anda bagikan.
 - Jangan memasukkan data pribadi atau data keuangan nyata perusahaan ke dalam latihan; seluruh kasus dalam aplikasi fiktif.
-- Menghapus data: hapus folder data aplikasi di atas dan folder Cadangan. Fitur “Reset progres” di Pengaturan menyimpan dulu salinan pengaman progres lama (agar tidak hilang tak sengaja) sehingga data lama masih ada di penyimpanan aplikasi sampai folder datanya dihapus. Menghapus (uninstall) aplikasi **tidak** menghapus progres Anda secara bawaan.
+- Menghapus data: hapus kedua folder bernama `Latihan Siklus Akuntansi` (satu di `%APPDATA%`, satu di **Dokumen**, tempat folder Cadangan berada). Tombol “Hapus semua jawaban” di Pengaturan menyimpan dulu cadangan terakhir ke folder Cadangan (agar tidak hilang tak sengaja), jadi data lama masih ada di sana sampai folder itu dihapus. Menghapus (uninstall) aplikasi **tidak** menghapus progres Anda secara bawaan.
 - Aplikasi tidak ditujukan untuk anak di bawah umur tanpa pendampingan orang tua/guru, tetapi tidak mengumpulkan data apa pun dari siapa pun.
 
 ## Kontak

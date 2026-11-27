@@ -1,0 +1,29 @@
+name: Tes asap UI (Windows, manual)
+
+# Eksperimental: dijalankan manual (Actions > Run workflow) sampai terbukti stabil di runner Windows.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  smoke:
+    runs-on: windows-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Bangun aplikasi
+        run: cargo build --release -p dekri-ui
+      - name: Pasang playwright-core (tanpa unduh peramban)
+        run: npm install --no-save playwright-core
+      - name: Jalankan aplikasi dengan debugging WebView2 dan tes
+        shell: pwsh
+        env:
+          WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS: --remote-debugging-port=9222
+          DEKRI_USER: Smoke
+        run: |
+          $app = Start-Process -FilePath target/release/dekri-lab.exe -PassThru
+          try { node tests/ui/smoke.cjs } finally { Stop-Process -Id $app.Id -Force -ErrorAction SilentlyContinue }

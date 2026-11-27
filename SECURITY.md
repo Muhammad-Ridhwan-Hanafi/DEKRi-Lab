@@ -17,12 +17,11 @@ Sertakan versi, langkah reproduksi, dan dampak. Ini proyek sukarela: tidak ada j
 
 ## Cakupan
 
-- Pembungkus Electron (`desktop/`): isolasi konteks, sandbox, jembatan IPC, CSP, penanganan berkas cadangan.
-- Impor berkas cadangan JSON.
-- Rantai pasok build/rilis (workflow GitHub Actions).
+- Impor berkas cadangan JSON dan penulisan cadangan otomatis.
+- Pemasang Windows (`installer/`) dan rantai pasok build/rilis (workflow GitHub Actions, dependensi Cargo).
 
 ## Di luar cakupan
 
-- Kunci jawaban ada di dalam bundel dan hanya disembunyikan di antarmuka; ini bukan alat ujian anti-curang.
+- Kunci jawaban ada di dalam biner dan hanya disembunyikan di antarmuka; ini bukan alat ujian anti-curang.
 - Serangan yang memerlukan akses fisik/akun Windows pengguna (berkas cadangan tidak dienkripsi; lihat `PRIVACY.md`).
 - Installer belum ditandatangani secara digital, sehingga Windows SmartScreen dapat menampilkan peringatan.

@@ -13,7 +13,7 @@ body:
     id: versi
     attributes:
       label: Cara menjalankan
-      options: [EXE Windows, HTML mandiri (dist-single), Dev server]
+      options: [Pemasang Windows, ZIP tanpa pemasangan Windows, Dibangun dari kode sumber]
     validations:
       required: true
   - type: input

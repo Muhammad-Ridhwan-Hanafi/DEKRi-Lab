@@ -1,0 +1,18 @@
+[workspace]
+resolver = "2"
+members = ["crates/dekri-core", "crates/dekri-ui"]
+
+[workspace.package]
+version = "2.0.0"
+edition = "2021"
+license = "MIT"
+repository = "https://github.com/Muhammad-Ridhwan-Hanafi/DEKRi-Lab"
+authors = ["Ridhwan"]
+rust-version = "1.82"
+
+[profile.release]
+codegen-units = 1
+lto = true
+opt-level = "s"
+panic = "abort"
+strip = true

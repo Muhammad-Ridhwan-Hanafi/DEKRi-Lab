@@ -4,20 +4,21 @@ Terima kasih sudah mau membantu. Aplikasi ini adalah alat belajar akuntansi, jad
 
 ## Persiapan
 
-```bash
-npm ci
-npm run check   # typecheck + semua tes + Prettier
-npm run dev
-```
+Pasang Rust stabil ([rustup.rs](https://rustup.rs)). Di Linux (Debian atau Ubuntu), pasang juga `libgtk-3-dev libwebkit2gtk-4.1-dev libxdo-dev libayatana-appindicator3-dev libssl-dev`.
 
-Butuh Node.js 20.19+ (disarankan 22).
+```bash
+cargo fmt --all
+cargo clippy --workspace --all-targets -- -D warnings
+cargo test --workspace
+cargo run -p dekri-ui --release
+```
 
 ## Aturan
 
-- Jangan mengubah `appId`, `productName` (package.json) atau `NAME` (desktop/main.cjs): ketiganya menentukan lokasi data pengguna.
-- Perubahan pada data soal, kunci jawaban, rumus, atau penilaian harus disertai tes (lihat `tests/engine/` dan `tests/parity/`).
-- Jangan menambah dependensi yang memanggil jaringan, CDN, font remote, atau telemetri. Aplikasi harus tetap berjalan offline.
-- Jalankan `npm run format` sebelum commit.
+- Jangan mengubah lokasi data pengguna (`Latihan Siklus Akuntansi` di `%APPDATA%`) atau folder cadangan (`Dokumen\Latihan Siklus Akuntansi\Cadangan`), dan jangan mengubah format cadangan tanpa jalur migrasi.
+- Perubahan pada data soal, kunci jawaban, rumus, atau penilaian harus disertai tes (lihat `crates/dekri-core/tests/` dan `tests/parity/`).
+- Jangan menambah dependensi yang memanggil jaringan atau telemetri. Aplikasi harus tetap berjalan offline.
+- Jalankan `cargo fmt --all` sebelum commit. Bila `Cargo.lock` berubah, jalankan `python3 tools/gen_notices.py`.
 - Satu pull request, satu topik. Jelaskan apa yang berubah dan bagaimana mengujinya.
 
 ## Melaporkan masalah

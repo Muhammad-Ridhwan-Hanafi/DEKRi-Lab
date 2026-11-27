@@ -1,10 +1,85 @@
 # Catatan perubahan
 
+## 2.0.0
+
+### Ringkasan dibanding versi 1
+
+- Seluruh aplikasi ditulis ulang dengan Rust (Dioxus dan WebView sistem). Electron, React, TypeScript, dan Node.js tidak dipakai lagi. Isi pelajaran (kasus, soal, kunci, penjelasan) dan hasil penilaian tetap sama.
+- Pengamatan Task Manager saat aplikasi diam: versi 1 memakai 209,4 MB untuk 4 proses, versi 2 memakai 6,8 MB untuk proses aplikasinya. WebView2 milik Windows berjalan sebagai proses terpisah dan tidak termasuk angka itu; ini bukan tolok ukur baku.
+- Rilis berupa pemasang Windows dan ZIP tanpa pemasangan. Versi HTML mandiri dihentikan.
+- Folder progres dan folder cadangan sama dengan versi 1. Progres di penyimpanan peramban versi 1 tidak ikut pindah otomatis; gunakan cadangan (lihat README, "Pindah dari versi 1").
+- Fitur baru: Latihan Hari Ini, Peta konsep, Bagaimana-jika, dampak jurnal ke laporan, penelusuran asal angka, tempel dari Excel, mode Fokus, tema Ikuti sistem, dan pesan yang jelas untuk "tidak perlu jurnal". Rincian ada di bagian-bagian berikut.
+
+### Seluruh aplikasi kini ditulis dengan Rust
+
+- Aplikasi dipindahkan dari Electron/React/TypeScript ke **Rust** dengan antarmuka Dioxus (WebView sistem) yang memakai ulang CSS dan animasi versi 1. Satu biner kecil, tanpa Node.js dan tanpa mem-bundel peramban. Repositori kini hanya berisi kode Rust (`crates/`), data kasus (`data/`), pemasang NSIS (`installer/`), dan dokumen.
+- Tampilan lama dipulihkan di versi Rust: kanvas krem, border hitam tebal, bayangan keras, aksen indigo, sidebar lila, menu terpilih hijau limau, font Inter, layar masuk berdekorasi, serta mode terang/gelap (Pengaturan > Tampilan atau tombol di sidebar).
+- Mesin akuntansi, penilaian, laporan (298 sel), generator soal varian, ujian, jalur belajar, dan cadangan sudah diuji sama dengan workbook Excel dan versi TypeScript (35 tes).
+- Versi HTML mandiri (`DEKRi-Lab.html`) dan pembungkus Electron/Tauri dihentikan. Rilis kini berisi pemasang Windows dan ZIP tanpa pemasangan.
+- Pemasang Windows (NSIS) berupa wizard biasa dengan **pilihan folder tujuan**, per pengguna tanpa hak administrator; uninstall tidak menghapus progres.
+- Progres versi lama (IndexedDB) tidak ikut pindah; cadangan otomatis di `Dokumen\Latihan Siklus Akuntansi\Cadangan` dan cadangan hasil ekspor tetap terbaca.
+- Konten terbaru dibawa ke versi Rust: penjelasan kunci tiga bagian pendek (Intinya, Mengapa dicatat begini, Ingat), kunci Analisis (opsional) hanya empat isian, Pengaturan > Tentang dengan penafian PSAK, perusahaan fiktif, tanpa afiliasi, dan kotak laporan soal keliru (tautan disalin).
+- Penanda “(cek ke naskah resmi/final)” pada soal arus kas dihapus dari tampilan.
+- CI diganti: `cargo fmt`, `clippy -D warnings`, `cargo test`, dan pembuatan pemasang di `windows-latest`. Dependabot untuk Cargo dan GitHub Actions. SBOM npm dihentikan (tidak ada lagi dependensi npm).
+- Peringatan dependensi alat build Node (mis. `minimatch`) tidak relevan lagi.
+- Tata letak dan perilaku versi 1 dipertahankan: kalkulator melayang (bisa digeser, Alt+panah), pencarian Ctrl+K, bantuan pintasan, splash awal, onboarding, 17 menu sidebar dengan tab Belajar/Materi, Ujian dan Pengaturan dengan struktur sama, animasi masuk/pop/shake.
+- Diagnosis kesalahan (tanpa membuka kunci), perbandingan jawaban dengan kunci, petunjuk bertingkat, penanda/catatan, "Mengapa jawaban ini benar", blok Analisis (opsional), dan "Soal berikutnya" dengan Ctrl+Enter kini ada di Transaksi, Penyesuaian, dan Skenario.
+- Perbaikan yang juga berlaku bagi pengguna versi 1: tombol kalkulator kini menyisipkan di posisi kursor (tidak lagi melompat ke akhir); Bagan akun di Kasus bisa dicari dan difilter menurut tipe; kalimat \"Di luar inti materi\u2026\" dihapus dari narasi Transaksi 65; nama akun yang panjang di kolom jurnal bergeser otomatis saat disorot sehingga terbaca penuh.
+- Dari review kode: Transaksi beralih ke dua kolom hanya pada lebar ≥1280 px (di bawahnya daftar di atas, jurnal tidak lagi sesak); tombol Sebelumnya/Berikutnya mengikuti filter; Jurnal Umum punya pencarian (nomor, topik, akun, keterangan); daftar materi Jalur Belajar menempel dan punya scroll sendiri.
+- Ikon jendela (bilah judul/taskbar) kini logo DEKRi Lab. Tampilan Laporan dirapikan: lebar kolom tetap, tepi kanan rata, angka rapat ke kanan, kolom kosong dibuang, catatan tunggal dilipat di bawah label, subtotal bergaris, nilai nol redup, label rincian menjorok.
+- Perbaikan laporan pengguna: ikon tertanam di dekri-lab.exe (build.rs + embed-resource); tidak ada lagi jendela CMD (subsistem Windows); mode fokus kini bisa keluar lagi (tombol Fokus atau Esc; gaya inline dibuat eksplisit); tema awal terang; folder data Windows memakai nama yang sama dengan versi 1 (`Latihan Siklus Akuntansi`, data pratinjau 2.0 disalin sekali) dan cadangan v1 dipulihkan otomatis saat pengguna dengan nama sama masuk; tab Profil pada Kasus dirancang ulang menjadi kartu identitas dan kartu topik.
+- Perbaikan dari audit UI/UX: Pemeriksaan silang bisa dibuka dari toolbar Laporan; strip status sticky di Neraca Saldo; penanda "selisih" dan lompat ke transaksi tidak seimbang di Jurnal Umum; Buku Besar memakai pemilih akun dengan tombol sebelumnya/berikutnya; label filter Transaksi; tombol "Buka" pada baris ulasan Beranda; ukuran jendela minimum 1024x640; Ctrl+Z native di kolom teks; jebakan fokus pada dialog; label tab Laporan tanpa kode sheet; jadwal ulasan memakai satu sumber (`schedule_text`) sehingga teks tidak lagi keliru.
+- Ditambahkan: penelusuran asal angka Laporan (klik angka), banner pemulihan cadangan saat progres kosong, tautan \"Lewati ke konten utama\".
+- Latihan Hari Ini: antrean maks. 10 soal (ulangan jatuh tempo, topik terlemah, lalu transaksi berikutnya) dengan petunjuk, diagnosis, dan kunci; Dashboard memperoleh Peta konsep (kotak per jenis transaksi berwarna menurut hasil).
+- Laporan: tab Bagaimana-jika (ubah nominal satu jurnal, lihat pos laporan yang bergeser); Transaksi: \"Dampak jurnal ini ke laporan\" (jurnal \u2192 akun \u2192 pos laporan); Pemeriksaan: dugaan penyebab selisih.
+- Kenyamanan: tempel dari Excel/Sheets ke tabel jurnal (Akun, Debit, Kredit), riwayat jawaban per soal (dipulihkan dari salinan saat Periksa), mode fokus (Alt+F: menu disembunyikan, tampilan diperbesar).
+- Kualitas: audit konsistensi data kasus dan kunci (tes dan tombol di Pengaturan > Tentang), tombol Laporkan soal ini (berkas laporan + papan klip), tes asap UI Windows eksperimental (`tests/ui/smoke.cjs`, workflow manual).
+- Belum ada di versi Rust: banner perubahan eksternal (tidak relevan: hanya satu jendela), halaman galat khusus (panik Rust menutup aplikasi), dan tautan Pemeriksaan ke penelusuran; “Simpan PDF” membuka laporan di peramban untuk dicetak (lihat `docs/DEVELOPMENT.md`).
+
+### Redesain antarmuka: Modern Soft Neo-Brutalism
+
+Identitas visual versi 1 (lila, hijau limau, krem, garis hitam, huruf tebal) dipertahankan dan dimatangkan. Fokusnya kenyamanan belajar: hierarki yang jelas, angka keuangan yang mudah dibaca, dan umpan balik yang tidak membuat pengguna mencari-cari. Logika akuntansi, data kasus, kunci, dan teks pembelajaran tidak diubah; keempat baris jurnal awal tetap ada dan semua pintasan keyboard bekerja seperti sebelumnya.
+
+- **Sistem desain** (`docs/DESIGN-SYSTEM.md`): token warna semantik terang/gelap, skala tipografi, varian tombol (utama, sekunder, ghost, bahaya, ikon, segmen), kartu (biasa, unggulan, interaktif, statistik, wadah data), badge dan callout status, kolom isian dengan fokus yang jelas. Bayangan keras kini hanya untuk aksi utama dan elemen unggulan.
+- **Shell dan toolbar**: toolbar menjadi command bar (pencarian, kelompok Alat bantu, kelompok Riwayat, akurasi, status simpan) yang menyusut menjadi ikon di bawah 1280 px; sidebar lebih rapat dengan item aktif yang otomatis terlihat.
+- **Dashboard**: hero "Lanjutkan pembelajaran" dengan cincin kemajuan, empat ubin tanpa angka ganda, tahapan siklus sebagai kartu interaktif, onboarding ringkas.
+- **Transaksi**: narasi kejadian dan nominal/syarat dipisah dalam panel; umpan balik jurnal berupa callout dengan ikon; total jurnal menjadi badge Seimbang atau Selisih (sisi mana yang lebih besar); dua kolom hanya ≥ 1280 px dan Sebelumnya/Berikutnya mengikuti filter.
+- **Jurnal Umum**: ringkasan di atas yang menyebut cakupan, pencarian, header tabel menempel, baris kredit menjorok, total "seluruh jurnal" atau "hasil pencarian".
+- **Buku Besar**: filter periode, saldo awal dan saldo akhir, saldo berjalan dengan sisi D/K, baris bulan, tautan ke transaksi sumber.
+- **Buku Pembantu**: rekonsiliasi dengan akun kontrol sebagai empat angka dan badge Cocok/Tidak cocok, rekap per pihak yang bisa dipilih sebagai filter, saldo berjalan pada rincian transaksi, kartu persediaan dengan total.
+- **Neraca Saldo**: strip total menempel, saldo di sisi tak lazim ditandai ⚠ dengan catatan penjelasnya, pilihan sebelum/sesudah penyesuaian berupa tombol segmen.
+- **Halaman lain**: Penutup (kolom tidak lagi terpotong, total dan status seimbang), Koreksi (kasus dipisah menjadi narasi, jurnal yang salah, dan rujukan materi), Skenario (kasus dan fakta berlabel, rujukan BAB sebagai badge), Jalur Belajar dan Ringkasan BAB (hierarki judul, teks 15 px, kuis dengan hasil berwarna), Latihan Hari Ini (panel soal dan baris navigasi), Pengaturan (dua kolom ≥ 1280 px), Ujian (skor menonjol, tombol Ujian baru di atas), tab segmen yang sama di Kasus, Laporan, Koreksi, Buku Pembantu, dan Belajar.
+- **Profil Kasus (perbaikan)**: tabel aging piutang tidak lagi pecah menjadi kartu per baris berangka mentah (240000000), dan "Petunjuk penggunaan" tidak lagi menjadi empat kartu berjudul "•". Profil kini berisi kartu identitas, petunjuk penggunaan sebagai daftar bernomor tepat di bawahnya, kartu informasi (butir per bagian atau per kalimat; isi dalam tanda kurung tidak pernah terpotong), dan tabel aging sebagai tabel sungguhan (angka berformat, baris total, badge tanggal dan "dipakai pada AJ18"). Catatan rekonsiliasi di bawah tabel, yang sebelumnya tidak tampil, kini tampil dengan sub-butir untuk rincian faktur. Judul kecil memakai kelas baru `.t-eyebrow`. Dijaga 9 tes di `laporan.rs`, termasuk satu yang memastikan tidak ada sel sumber yang hilang.
+- Diperiksa pada 1366×820, 1280×800, dan 1024×640, terang dan gelap.
+
+### Perbaikan kalkulator dan umpan balik "tidak perlu jurnal"
+
+- **Transaksi**: mencentang "Peristiwa ini tidak perlu jurnal" pada peristiwa yang sebenarnya memerlukan jurnal, lalu menekan Periksa, kini menampilkan peringatan ("Transaksi ini memerlukan jurnal ... Hapus centangnya, lalu isi jurnalnya") dan lencana Periksa. Sebelumnya tidak ada respons apa pun karena jawaban itu dianggap belum diisi. Peringatan tidak membocorkan akun atau nominal kunci. Soal ujian yang dijawab dengan cara itu kini dihitung sudah dijawab (salah), bukan kosong. Peristiwa yang memang tanpa jurnal dinilai seperti sebelumnya. Dijaga 5 tes baru di `derive.rs`.
+- **Kalkulator, kursor**: menghapus atau menyisipkan angka di tengah rumus panjang tidak lagi membuat kursor melompat ke akhir (yang membuat angka terakhir ikut terhapus). Ada dua penyebab. Pertama, titik ribuan dipasang oleh Rust sehingga Dioxus menulis ulang isi kolom setiap kali pengelompokan berubah. Kedua, penulisan ulang itu bisa menimpa ketikan yang masih dalam perjalanan: pada ketikan cepat (jeda 30 ms, mirip menahan Backspace) angka bisa hilang, mis. 123.456.789.012.345 menjadi 1.234.578.012.345. Kini kolom milik DOM (Dioxus tidak lagi mengikat nilainya; Rust menulis ke kolom hanya untuk tombol, "=", dan riwayat lewat `tulis_kolom`), dan teks serta kursor dirapikan di WebView pada kejadian input yang sama (`crates/dekri-ui/assets/kalkulator-ketik.js`), sehingga teks yang sampai ke Rust sudah identik. Backspace tepat setelah titik ribuan dan Delete tepat sebelumnya langsung menghapus angka di seberang titik (sebelumnya titik terpasang ulang dan Delete terasa macet). Menghapus angka pertama tidak lagi meninggalkan titik di depan yang dibaca sebagai 0,234.
+- **Kalkulator, operator**: huruf x dan X dari papan ketik dibaca sebagai kali dan tampil ×; \* dan / bekerja seperti sebelumnya.
+- **Kalkulator, koma**: "1.250,5" dan "1250,5" kini terbaca. Sebelumnya muncul "angka tidak valid" bila ada titik ribuan di depan koma, termasuk hasil seperti 3.333,3333 yang tidak bisa dilanjutkan setelah "=". Salah ketik seperti "1,250.50" atau "1,5,5" tetap ditolak, tidak ditebak.
+- Pemformat ketikan ada di dua tempat (Rust dan JS) yang dijaga identik oleh vektor bersama `crates/dekri-ui/test-data/kalkulator-ketik.json`, dibaca oleh tes Rust dan `tests/ui/kalkulator-ketik.cjs` (juga dijalankan di CI).
+
+### Dokumentasi GitHub ditulis ulang
+
+- README: perbandingan versi 1 dan 2 (termasuk bukti pemakaian memori), fitur yang baru dan yang belum ada, isi dan jumlah soal, kebutuhan sistem (termasuk WebView2), cara memasang, memeriksa keaslian, memperbarui, mencopot, pindah dari versi 1, pintasan keyboard, pertanyaan umum, dan 12 tangkapan layar baru dari tampilan terbaru.
+- Perbaikan dokumen: lokasi data Windows yang benar adalah `%APPDATA%\Latihan Siklus Akuntansi` (sebelumnya tertulis `DEKRi Lab` di README, Privasi, CONTRIBUTING, DEVELOPMENT, dan templat PR); soket lokal 127.0.0.1 milik Dioxus kini disebut di Privasi dan arsitektur keamanan; prasyarat Linux disamakan dengan CI.
+- Templat issue saran fitur (`saran.yml`) dikembalikan dan tautan kebijakan keamanan ditambahkan ke formulir issue. `docs/GITHUB_SETUP.md` memuat teks About dan topics; teks pembuka Release diperbarui.
+- Keterangan asal konten dan logo dipusatkan di `docs/CONTENT_SOURCES.md` dan `docs/ASSET_ATTRIBUTION.md`.
+
+Catatan di bawah ini berasal dari versi sebelum 2.0.0 (Electron/React) dan disimpan sebagai riwayat.
+
+## 1.0.2
+
+### Perbaikan keamanan dependensi
+
+- Memperbaiki GHSA-g3hv-75wg-m249 (denial of service pada `minimatch` >= 7.0.0 dan < 11.0.1) di rantai alat build Electron (`electron-builder`) lewat `overrides` npm yang sempit; `npm audit` menjadi 0 temuan. Tidak ada perubahan fitur, tampilan, atau perilaku aplikasi.
+
+### Dokumentasi
+
+- README ditambah: kebutuhan sistem, untuk siapa dan isi aplikasi, memeriksa keaslian unduhan, memperbarui dan mencopot, pertanyaan umum, serta kanal saran. Formulir issue baru untuk saran fitur (`saran.yml`).
+
 ## 1.0.1
-
-### Galeri tangkapan layar
-
-- README kini memuat galeri 10 tangkapan layar (Dashboard, Transaksi, penjelasan kunci, Kalkulator, Laporan, Buku Besar, Neraca Saldo, Jalur Belajar, tema gelap, layar masuk), semuanya dari data contoh fiktif.
 
 ### Halaman Kasus lebih rapi
 
@@ -12,6 +87,7 @@
 
 ### Kemudahan pemasangan dan rilis
 
+- Pemasang Windows berupa wizard biasa dengan pilihan folder tujuan (`oneClick: false`, `allowToChangeInstallationDirectory: true`); bukan lagi pemasangan otomatis satu klik.
 - README mengutamakan `DEKRi-Lab.html` (tanpa pemasangan) sebagai cara pertama, dengan panduan peringatan "Windows protected your PC" dan saran bila pemasangan gagal. Tangkapan layar diperbarui dan ditambah satu untuk penjelasan kunci.
 - Rilis GitHub dibuat sebagai draf bertanda pre-release dengan teks pembuka "Unduh yang mana?" (`.github/release-notes-header.md`).
 - Dependabot tidak lagi mengusulkan kenaikan versi besar React (`react`, `react-dom`, dan tipenya); ditangani manual.
@@ -58,9 +134,9 @@
 
 ### Audit ulang publikasi (provenance, logo, merek)
 
-- Dokumentasi provenance diperbarui sesuai klarifikasi pemilik: materi disusun dengan bantuan Claude AI berlandaskan referensi standar akuntansi; logo dibuat dengan ChatGPT; pemeriksaan awal nama di PDKI dicatat (`docs/CONTENT_SOURCES.md`, `docs/ASSET_ATTRIBUTION.md`, `docs/BRAND_CHECK.md`, `docs/LICENSING.md`). Lisensi MIT dinyatakan hanya untuk kode sumber.
+- Dokumentasi asal konten diperbarui sesuai klarifikasi pemilik; pemeriksaan awal nama di PDKI dicatat (`docs/CONTENT_SOURCES.md`, `docs/ASSET_ATTRIBUTION.md`, `docs/BRAND_CHECK.md`, `docs/LICENSING.md`). Lisensi MIT dinyatakan hanya untuk kode sumber.
 - GitHub Actions dikunci ke SHA commit (checkout v7.0.1, setup-node v7.1.0).
-- Keterangan Pengaturan > Tentang dan DISCLAIMER memuat pengungkapan bantuan AI dan cakupan lisensi.
+- Keterangan Pengaturan > Tentang dan DISCLAIMER memuat pengungkapan asal konten dan cakupan lisensi.
 
 ### Audit publikasi (keamanan, lisensi, dokumentasi)
 

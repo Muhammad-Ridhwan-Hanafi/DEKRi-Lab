@@ -12,30 +12,42 @@ concurrency:
   group: ci-${{ github.ref }}
   cancel-in-progress: true
 
+env:
+  CARGO_TERM_COLOR: always
+
 jobs:
-  check:
+  linux:
+    name: Format, lint, dan uji (Linux)
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 30
     steps:
-      # SHA dikunci (diverifikasi dari halaman rilis dan halaman commit di github.com saat audit, Nov 2026); Dependabot memperbaruinya.
+      # SHA dikunci (v7.0.1); Dependabot memperbaruinya.
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           persist-credentials: false
-      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+      - name: Pustaka sistem (WebView/GTK)
+        run: sudo apt-get update && sudo apt-get install -y libgtk-3-dev libwebkit2gtk-4.1-dev libxdo-dev libayatana-appindicator3-dev libssl-dev
+      - run: cargo fmt --all -- --check
+      - run: cargo clippy --workspace --all-targets --locked -- -D warnings
+      - run: cargo test --workspace --locked
+      - name: Pemformat ketikan kalkulator (JS identik dengan Rust)
+        run: node tests/ui/kalkulator-ketik.cjs
+
+  windows:
+    name: Bangun aplikasi dan pemasang (Windows)
+    needs: linux
+    runs-on: windows-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
-          node-version: 22
-          cache: npm
-      - run: npm ci
-      - run: npm run typecheck
-      - run: npm test
-      - run: npx prettier --check .
-      - run: npm run build:single
-      - name: Audit dependensi produksi (gagal bila ada temuan high/critical)
-        run: npm audit --omit=dev --audit-level=high
-      - name: SBOM CycloneDX
-        run: npm sbom --sbom-format cyclonedx > sbom.cdx.json
-      - name: Pastikan build tidak memanggil sumber daya eksternal
+          persist-credentials: false
+      - name: Bangun dekri-lab.exe dan pemasang NSIS
+        shell: pwsh
+        run: ./installer/build.ps1
+      - name: Pastikan hasil build ada
+        shell: pwsh
         run: |
-          if grep -E -o 'src="https?://[^"]+"|href="https?://[^"]+"' dist-single/index.html; then
-            echo "Ditemukan referensi eksternal pada dist-single/index.html" && exit 1
-          fi
+          $setup = Get-ChildItem dist/DEKRi-Lab-Setup-*.exe
+          if (-not $setup) { throw 'Pemasang tidak terbentuk' }
+          $setup | ForEach-Object { "{0}  {1:N1} MB" -f $_.Name, ($_.Length / 1MB) }

@@ -1,0 +1,17 @@
+[package]
+name = "dekri-core"
+description = "Mesin akuntansi DEKRi Lab: buku besar, laporan, penilaian jawaban, cadangan (tanpa UI)"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+authors.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = { version = "1", features = ["preserve_order"] }
+indexmap = { version = "2", features = ["serde"] }
+sha1 = "0.10"
+unicode-normalization = "0.1"
+chrono = { version = "0.4", default-features = false, features = ["std", "clock"] }

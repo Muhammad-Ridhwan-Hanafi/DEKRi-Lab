@@ -1,8 +1,6 @@
-node_modules
-dist
-dist-single
+target/
+dist/
 *.local
-release
 
 .DS_Store
 Thumbs.db
@@ -26,7 +24,6 @@ secrets/
 PREPUBLICATION_AUDIT_PRIVATE.md
 *.cadangan.json
 akuntansi-cadangan-*.json
-sbom.cdx.json
 
 # Berkas sesi R/RStudio (bisa memuat riwayat perintah pribadi)
 .Rhistory

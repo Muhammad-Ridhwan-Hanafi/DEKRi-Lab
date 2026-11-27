@@ -644,7 +644,7 @@
   "date": "2024-06-28",
   "level": "Advanced",
   "topic": "Pembelian valuta asing",
-  "narrative": "Membeli komponen dari pemasok Singapura secara kredit. Dicatat dengan kurs transaksi. Di luar inti materi: revaluasi kurs pada akhir periode tidak dibahas dalam latihan ini.",
+  "narrative": "Membeli komponen dari pemasok Singapura secara kredit. Dicatat dengan kurs transaksi.",
   "party": "Global Electronics Supplier Pte Ltd",
   "amountInfo": "USD 20.000, kurs Rp15.600/USD, syarat n/60.",
   "isDistractor": false

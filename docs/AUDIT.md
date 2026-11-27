@@ -1,20 +1,14 @@
 # Catatan audit dan batasan
 
-Ringkasan temuan audit mandiri atas aplikasi (bukan audit pihak ketiga).
-
-## Temuan yang diperbaiki
-
-- `parseRupiah` memotong atau kehilangan presisi pada angka sangat besar; kini dibatasi `MAX_RUPIAH` dan hanya menerima `-` di depan.
-- Teks Materi menyebut Sewa Dibayar di Muka sebelum penyesuaian 108 juta; mesin menghitung 129 juta (108 juta adalah hasil AJ01). Teks dan tes dikoreksi.
-- Petunjuk bertahap membocorkan angka antara lewat teks perhitungan; `maskCalc` kini menutup angka yang sama dengan nominal baris jurnal.
-- Daerah gulir pada tabel analisis tidak dapat difokus keyboard (axe); diberi `tabIndex`, `role="region"`, dan label.
-- Desktop: izin perangkat, webview, dan pemanggil IPC dari luar halaman aplikasi kini ditolak.
+Ringkasan temuan pemeriksaan mandiri (bukan audit pihak ketiga).
 
 ## Keterbatasan yang diketahui
 
-- **Kunci jawaban ada di dalam bundel JavaScript** dan hanya disembunyikan di UI. Aplikasi ini bukan alat ujian yang aman dari kecurangan.
-- EXE Windows belum pernah dijalankan di Windows; verifikasi hanya lewat Electron di Linux (xvfb).
-- Ctrl+P belum diuji di Windows asli.
+- **Kunci jawaban ada di dalam biner** dan hanya disembunyikan di antarmuka. Aplikasi ini bukan alat ujian yang aman dari kecurangan.
+- Pemasang Windows belum pernah dipasang dan dijalankan di Windows bersih oleh pengembang; yang terbukti hanya kompilasi skrip NSIS di Linux dan tes mesin.
+- Tidak ada tes otomatis untuk antarmuka Dioxus.
 - Hanya satu periode laba rugi, sehingga analisis tren tidak tersedia.
-- Teks materi tidak diverifikasi terhadap PSAK resmi; ambang kuis adalah pilihan penulis.
-- Uji aksesibilitas otomatis hanya membuka tab bawaan tiap halaman.
+- Teks materi dan rujukan paragraf PSAK tidak diverifikasi terhadap naskah resmi; ambang kuis adalah pilihan penulis. Soal dapat tidak sesuai dengan PSAK (lihat `DISCLAIMER.md`).
+- Fitur versi web lama yang belum ada di versi Rust tercantum di `docs/DEVELOPMENT.md`.
+
+Temuan dan perbaikan sebelum 2.0.0 (parser rupiah, petunjuk yang membocorkan angka, dan lainnya) tercatat di `CHANGELOG.md` dan `docs/RIWAYAT-TEMUAN-WORKBOOK.md`.

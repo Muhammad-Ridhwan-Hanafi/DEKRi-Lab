@@ -1,0 +1,23 @@
+[package]
+name = "dekri-ui"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+description = "DEKRi Lab: antarmuka web (Dioxus) di atas dekri-core"
+
+[[bin]]
+name = "dekri-lab"
+path = "src/main.rs"
+
+[build-dependencies]
+embed-resource = "3"
+
+[dependencies]
+dekri-core = { path = "../dekri-core" }
+dioxus = { version = "0.7", features = ["desktop"] }
+rfd = "0.15"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tokio = { version = "1", features = ["time"] }
+chrono = { version = "0.4", default-features = false, features = ["std", "clock"] }

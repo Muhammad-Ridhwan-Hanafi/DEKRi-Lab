@@ -1,6 +1,6 @@
 name: Release (Windows)
 
-# Dipicu oleh tag versi, misalnya: git tag v1.0.0 && git push origin v1.0.0
+# Dipicu oleh tag versi, misalnya: git tag v2.0.0 && git push origin v2.0.0
 # Hanya pemilik repositori yang sebaiknya bisa membuat tag (atur lewat tag ruleset; lihat docs/GITHUB_SETUP.md).
 on:
   push:
@@ -9,48 +9,43 @@ on:
 permissions:
   contents: read
 
+env:
+  CARGO_TERM_COLOR: always
+
 jobs:
   windows:
     runs-on: windows-latest
-    timeout-minutes: 40
+    timeout-minutes: 45
     permissions:
       contents: write # hanya untuk membuat GitHub Release
     steps:
-      # SHA dikunci (diverifikasi dari halaman rilis dan halaman commit di github.com saat audit, Nov 2026); Dependabot memperbaruinya.
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           persist-credentials: false
-      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
-        with:
-          node-version: 22
-          cache: npm
-      - name: Pastikan tag cocok dengan versi package.json
+      - name: Pastikan tag cocok dengan versi di Cargo.toml
         shell: bash
         run: |
-          v="$(node -p "require('./package.json').version")"
+          v="$(grep -m1 '^version' Cargo.toml | sed -E 's/version *= *"([^"]+)"/\1/')"
           if [ "$GITHUB_REF_NAME" != "v$v" ]; then
-            echo "Tag $GITHUB_REF_NAME tidak sama dengan v$v di package.json" && exit 1
+            echo "Tag $GITHUB_REF_NAME tidak sama dengan v$v di Cargo.toml" && exit 1
           fi
-      - run: npm ci
-      - run: npm run typecheck
-      - run: npm test
-      - run: npm audit --omit=dev --audit-level=high
-      - run: npm run build:single
-      - run: npx electron-builder --win nsis --publish never
-      - name: Versi HTML mandiri, checksum SHA-256, dan SBOM
+      - name: Uji
+        run: cargo test --workspace --locked --release
+      - name: Bangun aplikasi, pemasang NSIS, dan versi tanpa pemasangan
+        shell: pwsh
+        run: ./installer/build.ps1
+      - name: Checksum SHA-256
         shell: pwsh
         run: |
-          Copy-Item dist-single/index.html release/DEKRi-Lab.html
-          $files = @(Get-Item "release/DEKRi-Lab-Setup-*.exe") + @(Get-Item "release/DEKRi-Lab.html")
+          $files = @(Get-Item "dist/DEKRi-Lab-Setup-*.exe") + @(Get-Item "dist/DEKRi-Lab-windows-x64.zip")
           $files | ForEach-Object {
             $h = (Get-FileHash $_.FullName -Algorithm SHA256).Hash.ToLower()
             "$h  $($_.Name)"
-          } | Out-File -Encoding ascii "release/SHA256SUMS.txt"
-          npm sbom --sbom-format cyclonedx | Out-File -Encoding utf8 "release/sbom.cdx.json"
+          } | Out-File -Encoding ascii "dist/SHA256SUMS.txt"
       - name: Buat GitHub Release (draf, ditinjau pemilik sebelum dipublikasikan)
         shell: bash
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          gh release create "$GITHUB_REF_NAME" release/DEKRi-Lab-Setup-*.exe release/DEKRi-Lab.html release/SHA256SUMS.txt release/sbom.cdx.json \
+          gh release create "$GITHUB_REF_NAME" dist/DEKRi-Lab-Setup-*.exe dist/DEKRi-Lab-windows-x64.zip dist/SHA256SUMS.txt \
             --draft --prerelease --title "DEKRi Lab $GITHUB_REF_NAME" --notes-file .github/release-notes-header.md --generate-notes

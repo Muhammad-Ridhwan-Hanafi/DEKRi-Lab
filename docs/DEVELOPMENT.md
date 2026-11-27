@@ -1,117 +1,72 @@
-# Panduan pengembang dan rincian fitur
-
-Bagian ini dipindahkan dari README agar README tetap ringkas untuk pengguna biasa.
-
-## Pengembangan
-
-Prasyarat: Node.js 20.19+ (disarankan 22).
-
-```bash
-npm ci
-npm run dev           # pengembangan
-npm run check         # typecheck + tes + Prettier
-npm run build:single  # satu berkas HTML di dist-single/index.html
-npm run desktop       # jalankan versi Electron dari hasil build:single
-```
-
-Rilis Windows dibangun otomatis oleh GitHub Actions saat tag versi didorong (`git tag v1.0.0 && git push origin v1.0.0`); lihat `.github/workflows/release.yml`.
-
-## Tanpa Node.js
-
-`dist-single/index.html` adalah satu file mandiri: klik dua kali untuk membuka di Chrome/Edge. Progres tersimpan per lokasi file; jangan memindahkan file setelah mulai (atau ekspor cadangan dulu). Buat ulang dengan `npm run build:single`.
-
-## Buka di VS Code
-
-1. Pasang Node.js 20+ (nodejs.org) dan VS Code.
-2. Clone repositori ini (atau ekstrak zip), lalu di VS Code: File > Open Folder > pilih folder proyek.
-3. Tekan `Ctrl+Shift+B` (Mac: `Cmd+Shift+B`) untuk menjalankan task "Mulai aplikasi" (npm install lalu dev server; peramban terbuka otomatis).
-4. Tes: Terminal > Run Task > "Jalankan tes".
-
-## Menjalankan
-
-- `npm ci`
-- `npm run dev` — pengembangan
-- `npm test` — tes mesin akuntansi, penilaian, paritas dengan workbook
-- `npm run build` — hasil di `dist/` (hosting statis; offline setelah kunjungan pertama)
+# Panduan pengembang
 
 ## Struktur
 
-- `data/*.json` — kasus dan kunci hasil ekstraksi workbook (`tools/extract_workbook.py`). `data/case.json` disunting manual untuk aplikasi; ekstraktor menulis `case.extracted.json` agar tidak menimpanya.
-- `src/engine` — mesin murni (pembulatan Excel, buku besar, laporan hasil transpilasi rumus, penutup, pemeriksaan)
-- `src/validation` — penilaian BELUM DIISI / BENAR / PERIKSA tanpa membocorkan kunci
-- `src/store` — state pengguna, autosave, ekspor/impor cadangan JSON
-- `src/ui` — 17 halaman
+```
+Cargo.toml               workspace Rust (versi tunggal di [workspace.package])
+crates/dekri-core/       mesin tanpa UI: buku besar, laporan (298 sel), penilaian, penutupan, pemeriksaan,
+                         generator soal varian, ujian, jalur belajar, cadangan, penjelasan kunci
+crates/dekri-ui/         antarmuka Dioxus (WebView) + CSS v1 (biner: dekri-lab)
+data/*.json              kasus dan kunci (dibenamkan ke biner lewat include_str!)
+crates/dekri-core/data/  materi, modul, tata letak laporan, soal arus kas
+tests/parity/            fixture paritas dengan workbook Excel (dipakai crates/dekri-core/tests/parity.rs)
+installer/               skrip pemasang NSIS dan build.ps1
+tools/                   skrip Python pendukung data (lihat di bawah)
+build/, assets/brand/    ikon dan sumber logo
+```
 
-## Cadangan
+## Menjalankan
 
-- Pengaturan > Cadangan: ekspor/impor satu berkas JSON. Di aplikasi EXE, cadangan otomatis ke `Dokumen\Latihan Siklus Akuntansi\Cadangan` (lihat bawah).
-- Mode ujian (menu Ujian): soal acak tanpa umpan balik, nilai di akhir; tidak mengubah progres belajar.
-- Urungkan/Ulangi: Ctrl+Z / Ctrl+Shift+Z (maks. 100 langkah; 30 langkah terakhir tetap ada setelah halaman dimuat ulang).
+```bash
+cargo run -p dekri-ui --release
+cargo test --workspace
+```
 
-## Tampilan
+Linux butuh GTK 3 dan webkit2gtk (daftar paket di `docs/BUILD.md`); Windows butuh Microsoft Edge WebView2 Runtime, yang sudah ada di Windows 11 dan sebagian besar Windows 10.
 
-Gaya Google Workspace untuk desktop/laptop: token warna dan komponen global ada di `src/index.css`, ikon di `src/ui/components/Icon.tsx` (digambar sendiri, tanpa pustaka), kerangka (sidebar dan top bar) di `src/ui/App.tsx`. Semua aset lokal; tidak ada font atau ikon dari internet.
+## CSS
 
-## Aplikasi Windows (installer)
+CSS (`crates/dekri-ui/assets/main.css`) di-commit dan dibenamkan ke biner. Bila Anda menambah kelas Tailwind baru di `crates/dekri-ui/src`, bangun ulang dengan `python3 tools/css/build.py <folder-berisi-tailwindcss-cli>` (folder itu berisi `node_modules/.bin/tailwindcss` v4; hanya alat pengembangan) sebelum `cargo build`. Token warna, tipografi, dan varian komponen (tombol, kartu, badge, callout, tabel data) ada di `docs/DESIGN-SYSTEM.md`; pakai kelas komponen itu, jangan warna mentah.
 
-- Bangun: klik dua kali `bangun-exe.bat` (butuh Node.js dan npm), atau `npm install && npm run typecheck && npm test && npm run dist:win`. Hasil yang dibagikan: `release/DEKRi-Lab-Setup-<versi>.exe` (installer NSIS: pilih folder pemasangan, pintasan Desktop dan Start Menu, uninstaller di Apps & Features). Folder `release/win-unpacked` hanyalah bahan baku pembuatan installer (berisi `DEKRi Lab.exe` yang tidak boleh dibagikan sendiri); `bangun-exe.bat` menghapusnya otomatis. Membangun installer harus dilakukan di Windows.
-- Progres disimpan di `%APPDATA%\Latihan Siklus Akuntansi` (bukan di folder EXE). `appId` dan `productName` di `package.json`, serta konstanta `NAME` di `desktop/main.cjs`, jangan diubah setelah dipakai karena menentukan lokasi data (nama tampilan "DEKRi Lab" hanya untuk judul jendela, ikon, dan nama berkas EXE).
-- `npm run desktop` menjalankan versi Electron dari hasil `build:single`. Uji persistensi di Linux: `xvfb-run -a node e2e/desktop.cjs`.
-- Windows SmartScreen/antivirus dapat memberi peringatan karena EXE belum ditandatangani.
+## Prinsip
 
-## Fitur belajar tambahan (roadmap)
+- `dekri-core` murni: tidak ada UI, jaringan, atau waktu tersembunyi, sehingga semuanya bisa diuji. Hasil penilaian dan laporan harus sama dengan workbook Excel sumber (lihat `docs/TESTING.md`).
+- Penilaian memakai saldo bersih per akun dengan toleransi Rp1.000.
+- Jangan mengubah nama folder data (`Latihan Siklus Akuntansi` di `%APPDATA%`) atau folder cadangan (`Dokumen\Latihan Siklus Akuntansi\Cadangan`): keduanya menentukan lokasi progres pengguna. Pratinjau 2.0 sempat memakai `DEKRi Lab`; isinya disalin satu kali ke folder yang benar bila ada.
+- Format cadangan sama dengan versi web lama (`BACKUP_APP = 'akuntansi-practice'`), sehingga cadangan lama masih bisa diimpor. Jangan diubah tanpa jalur migrasi.
+- Perubahan data soal, kunci, rumus, atau penilaian harus disertai tes.
+- Jangan menambah dependensi yang memakai jaringan.
 
-- **Petunjuk bertahap** (Transaksi, Penyesuaian): 3 tingkat (kelompok akun, dasar perhitungan, sisi baris pertama). Tidak pernah memuat nominal jawaban (diuji untuk 147 + 28 soal). Setelah jawaban BENAR tampil "Mengapa jawaban ini benar?".
-- **Tandai dan catatan** per soal; filter "Ditandai" di daftar transaksi.
-- **Log percobaan dan tren** di Dashboard: aktivitas 14 hari, streak, akurasi mingguan.
-- **Ujian**: batas waktu, sesi tersimpan saat halaman dimuat ulang (waktu tetap berjalan), tanda ragu, cakupan (tingkat, ditandai, topik lemah), soal koreksi dan deteksi kesalahan, pembahasan, riwayat skor.
-- **Buku Pembantu**: piutang per pelanggan, utang per pemasok (dengan rekonsiliasi ke akun kontrol), kartu persediaan nilai rupiah.
-- **Latihan Varian**: 6 pola soal berbenih; **Latihan Pajak**: PPN masukan/keluaran dan PPh 23 (akun tambahan di `src/data/ext.ts`, terpisah dari kasus utama). Soal ini tidak masuk akurasi Dashboard.
-- **Soal berbagai industri** (halaman Latihan Varian): 103 soal jurnal dari 7 jenis usaha (jasa konsultasi, dagang busana, manufaktur furnitur, restoran, konstruksi, bimbingan belajar, ekspedisi), tiap industri dengan bagan akun sendiri dan penjelasan. Terpisah dari kasus utama; tidak memengaruhi laporan maupun akurasi Dashboard. Sumber data: `data/industri-packs.json`, dibuat ulang dengan `python3 -I tools/gen_industri.py data/industri-packs.json` (skrip juga mensimulasikan buku besar tiap industri sebagai pemeriksaan).
-- **Ringkasan BAB 7-18** (tab di halaman Jalur Belajar; tautan lama `#/materi` dialihkan): ringkasan jurnal, rumus, jebakan; tertaut ke skenario.
-- **EXE: cadangan otomatis** ke `Dokumen\Latihan Siklus Akuntansi\Cadangan` (terbaru + harian 7 hari), disimpan juga saat aplikasi ditutup; banner pemulihan bila progres kosong tetapi ada cadangan.
+## Penjelasan kunci
 
-Data baru ada di `UserState` (`hints`, `flags`, `notes`, `log`, `exams`, `pajak`, `tables`) dan tetap `version: 1`: cadangan lama dibaca dengan nilai awal kosong (tes: `tests/engine/migrate-roadmap.test.ts`).
+`crates/dekri-core/src/explain.rs` menyusun penjelasan dari kunci itu sendiri: Intinya, Perhitungan (bila ada), Mengapa dicatat begini (satu baris per akun, arah perubahan dihitung dari jenis akun dan sisi normalnya, akun pengurang dikenali), dan Ingat. Peristiwa tanpa jurnal hanya menampilkan alasannya. Teks tidak menambah klaim akuntansi baru di luar data kunci.
 
-## Jalur Belajar dan umpan balik
+## Tangkapan layar dan debug
 
-- **Jalur Belajar** (`#/belajar`): 13 materi berurutan, masing-masing berisi tujuan, konsep, teori, contoh, penyelesaian, latihan, pembahasan, dan evaluasi (kuis). Status Belum mulai / Sedang dipelajari / Selesai, persentase, prasyarat, dan rekomendasi materi berikutnya dihitung dari pekerjaan nyata (jurnal yang benar dan nilai kuis). Ambang kuis dan target latihan adalah pilihan pedagogis penulis, bukan standar resmi.
-- **Umpan balik per jenis kesalahan**: setelah Periksa, aplikasi menjelaskan jenis kesalahan (akun salah, sisi debit/kredit terbalik, nominal salah, dsb.).
-- **Skor komponen** (Dashboard): per jurnal, 3 komponen per akun kunci (akun, sisi, nominal) dikurangi 1 per akun berlebih. Ini metrik tambahan; status BENAR/PERIKSA dan akurasi tidak berubah. Di halaman Penutup tiap baris punya dua status: "konsisten dengan buku Anda" dan "sesuai kunci kasus".
-- **Klasifikasi arus kas** pada analisis transaksi adalah latihan tanpa penilaian: laporan arus kas dibangun dari kunci kasus, bukan dari isian pengguna.
-- **Toleransi nominal** per soal: bawaan Rp1 (setara workbook); Latihan Varian dari generator memakai Rp0.
-- Teks materi ditulis penulis dan belum diverifikasi terhadap teks PSAK resmi.
+Variabel lingkungan berikut hanya berguna saat pengembangan (`DEKRI_DEMO` hanya bekerja pada build debug):
 
-## Fitur aplikasi desktop
+- `DEKRI_USER=Nama` melewati layar masuk; `DEKRI_PAGE=Laporan` membuka halaman tertentu; `DEKRI_SEL=3` memilih soal.
+- `DEKRI_THEME=dark` memilih tema gelap; `DEKRI_SIZE=1366x820` mengatur ukuran jendela awal (minimum 1024x640).
+- `DEKRI_CALC=1`, `DEKRI_SEARCH=1`, `DEKRI_HELP=1` membuka kalkulator, pencarian, dan bantuan; `DEKRI_EXAM=run|done` membuka ujian; `DEKRI_KASUS_TAB=2` memilih tab Kasus; `DEKRI_TRACE=S12_B53` membuka penelusuran sel Laporan.
+- `DEKRI_DEMO=1` mengisi jawaban dari kunci. Tangkapan layar diambil dari luar (mis. `import -window root` di bawah Xvfb); tidak ada variabel untuk itu.
+- `AKUNTANSI_BACKUP_DIR=folder` mengganti folder cadangan (untuk pengujian).
 
-**Kalkulator** bawaan (tombol di header atau `Alt+C`): ekspresi `+ - * /`, tanda kurung, dan `%`; format Indonesia (koma = desimal, titik ribuan terisi otomatis saat mengetik); jendela melayang yang bisa digeser; riwayat 10 hitungan selama aplikasi terbuka; hasil bisa disalin atau dimasukkan ke kolom nominal yang terakhir diklik (dibulatkan ke rupiah). Penguraian ekspresi dilakukan sendiri tanpa `eval`.
+Tanpa layar: `xvfb-run -a -s "-screen 0 1280x800x24" target/debug/dekri-lab`.
 
-Pengaturan memuat ukuran tampilan (90–150%), pintasan keyboard (juga tombol `?`), dan Tentang (versi). Panduan awal tampil sekali pada pemakaian pertama. Di aplikasi EXE ada tombol **Simpan PDF** (Electron `printToPDF`); di peramban gunakan **Cetak**.
+## Skrip pendukung (`tools/`)
 
-Keamanan Electron: contextIsolation, sandbox, tanpa nodeIntegration, jembatan IPC sempit (7 metode) dengan validasi pengirim, semua permintaan izin perangkat ditolak, `window.open` dan webview diblokir. Lihat `docs/AUDIT.md`. Riwayat temuan audit workbook diarsipkan di `docs/RIWAYAT-TEMUAN-WORKBOOK.md`.
+- `extract_workbook.py`: mengekstrak kasus dan kunci dari workbook sumber ke `data/*.json` (workbook tidak ada di repositori).
+- `gen_industri.py`: membuat `data/industri-packs.json` dan memverifikasi tiap paket (jurnal seimbang, saldo tidak di sisi yang salah).
+- `gen_notices.py`: membuat `THIRD_PARTY_NOTICES.md` dari `Cargo.lock`.
 
-## Tes
+## Cadangan dan data
 
-- `tests/sim/` mensimulasikan pengerjaan SEMUA soal dengan jawaban kunci (store dan UI) dan memeriksa laporan, ujian, Jalur Belajar, cadangan, serta generator varian; paling lama (±1 menit), bisa dijalankan sendiri: `npx vitest run tests/sim --no-file-parallelism`.
-- `npm test` menjalankan: mesin dan penilaian, kesetaraan dengan Excel (jawaban kunci dan 2.304 jawaban salah), alur UI (jsdom), dan logika cadangan.
-- Memperbarui fixture Excel (butuh LibreOffice dan workbook asli): `python3 tools/fill_workbook_with_key.py <xlsx>` dan `python3 tools/mutated_parity.py <xlsx>`.
+- Progres: `%APPDATA%\Latihan Siklus Akuntansi\state-<nama>.json`, `users.json`, dan `tampilan.json` (tema). Di Linux: `~/.local/share/dekri-lab`; di macOS: `~/Library/Application Support/DEKRi Lab`.
+- Cadangan otomatis: 7 berkas harian terakhir per pengguna di `Dokumen\Latihan Siklus Akuntansi\Cadangan`, ditulis atomik, tidak menyentuh berkas lain, menolak tautan simbolik dan berkas di atas 20 MB. Saat `state` belum ada, progres dipulihkan dari cadangan terbaru.
+- Ekspor dan impor manual: Pengaturan. Undo/redo: Ctrl+Z / Ctrl+Y. Kalkulator: Alt+C. Pencarian: Ctrl+K.
 
-## Kualitas kode
+## Keterbatasan versi Rust dibanding versi web lama
 
-- `npm run check` = `tsc --noEmit` + semua tes + pemeriksaan Prettier. `npm run format` merapikan kode.
-- ESLint belum dipasang: typescript-eslint belum mendukung TypeScript 7 yang dipakai proyek ini. TypeScript mode ketat dengan `noUnusedLocals` menggantikan sebagian perannya.
-- `npm run e2e` menjalankan tes browser Chromium (Playwright). Prasyarat: `npm run build`, lalu `npm run preview` di terminal lain, dan pustaka `playwright` tersedia (`npm i -g playwright`, lalu `NODE_PATH=$(npm root -g) npm run e2e`). Variabel opsional: `WORKBOOK_XLSX` (jalur workbook asli) dan `FULL_BACKUP` (cadangan JSON berisi semua jawaban, untuk mengukur penelusuran angka terberat).
-
-## Catatan
-
-- Ekspor JSON di halaman Pengaturan secara berkala (data peramban bisa terhapus).
-- Penilaian memakai toleransi Rp1 seperti rumus workbook.
-
-## Perubahan keandalan (lanjutan audit)
-
-- **Penutupan sadar tanda**: baris `3-3000` menerima laba (debit Ikhtisar) maupun rugi (kredit Ikhtisar); Neraca Saldo setelah Penutupan tetap seimbang. Tes: `tests/engine/closing-loss.test.ts`.
-- **Validasi impor/muat state** (`src/store/state.ts`): setiap baris jurnal dicek (nominal berhingga 0 s.d. 10 triliun, kode akun dikenal, kunci `__proto__` ditolak, batas jumlah). Isian tidak valid dibuang dan jumlahnya ditampilkan sebelum pemulihan. Berkas cadangan maks. 25 MB. Tes: `tests/engine/sanitize.test.ts`.
-- **Salinan pengaman**: progres disalin otomatis sebelum impor cadangan atau reset; dapat dikembalikan dari Pengaturan > Cadangan.
-- **Autosave**: ditulis segera saat jendela disembunyikan/ditutup (termasuk sebelum EXE menutup), dicoba ulang tiap 5 detik bila gagal, dan dijeda bila tab lain menyimpan data (banner pilihan "Muat data terbaru" / "Pakai data di tab ini").
-- **Arus kas**: UI menyatakan bahwa pengelompokan aktivitas mengikuti kunci kasus.
-- **Golden test konten**: tiap jurnal kunci transaksi/penyesuaian seimbang dan memakai akun yang ada (`tests/engine/content-integrity.test.ts`).
+- "Cetak / simpan PDF" membuat HTML di folder sementara lalu membukanya di peramban (Cetak > Simpan sebagai PDF); tidak ada pembuatan PDF langsung.
+- Tidak ada ekspor Excel (juga tidak ada di versi web lama).
+- Tidak ada tes otomatis klik/interaksi antarmuka yang andal; hanya hook env, tes unit, dan `tests/ui/smoke.cjs` (eksperimental).

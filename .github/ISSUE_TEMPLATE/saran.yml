@@ -1,0 +1,21 @@
+name: Saran fitur atau perbaikan
+description: Usul fitur baru atau perbaikan agar aplikasi lebih mudah dipakai
+labels: [saran]
+body:
+  - type: textarea
+    id: saran
+    attributes:
+      label: Apa saran Anda?
+      description: Jelaskan apa yang ingin ditambah atau diperbaiki, dan masalah belajar apa yang ingin diatasi.
+    validations:
+      required: true
+  - type: dropdown
+    id: versi
+    attributes:
+      label: Cara menjalankan
+      options: [Pemasang Windows, ZIP tanpa pemasangan Windows, Dibangun dari kode sumber]
+  - type: textarea
+    id: lain
+    attributes:
+      label: Info tambahan
+      description: Jangan unggah berkas cadangan yang berisi data pribadi.

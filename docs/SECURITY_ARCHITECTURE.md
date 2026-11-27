@@ -1,41 +1,29 @@
 # Arsitektur keamanan
 
-Ringkasan kontrol yang ada di kode dan cara memeriksanya. Bukan audit pihak ketiga.
+Aplikasi ini berjalan offline sebagai satu proses Rust (Dioxus) yang menampilkan antarmuka lewat WebView sistem (WebView2/webkit2gtk) dari berkas lokal yang tertanam. Tidak ada server di internet, tidak memuat halaman dari internet, dan semua logika berjalan di Rust. Satu-satunya soket yang dibuka adalah soket lokal milik Dioxus (lihat baris Jaringan).
 
-## Model ancaman
+## Ringkasan
 
-Aplikasi offline, tanpa akun/server. Risiko utama: (1) berkas cadangan JSON yang dibuat pihak lain lalu diimpor pengguna; (2) kode di halaman memanggil proses utama Electron secara tidak semestinya; (3) rantai pasok (dependensi, workflow rilis, installer palsu).
+| Area | Rancangan |
+| --- | --- |
+| Jaringan | Tidak ada koneksi keluar: tidak ada pustaka HTTP atau klien jaringan di dependensi langsung `Cargo.toml`, tidak ada telemetri atau pembaruan otomatis. Dioxus desktop membuka satu soket WebSocket di `127.0.0.1` (port acak, kunci acak per sesi) untuk menyampaikan pembaruan tampilan ke jendela; soket itu tidak dapat dijangkau dari komputer lain. Tautan laporan soal disalin ke papan klip, tidak dibuka. |
+| Data pengguna | Hanya berkas JSON lokal (progres dan cadangan). Tidak dienkripsi (lihat `PRIVACY.md`). |
+| Impor cadangan | Dibaca sebagai teks, dibatasi 20 MB, diparse dengan `serde_json` ke tipe terdefinisi; nominal rusak dan akun tak dikenal dibuang. Tidak ada eksekusi isi berkas. |
+| Cadangan otomatis | Ditulis atomik (berkas sementara lalu rename), hanya 7 berkas harian per pengguna dihapus, berkas lain tidak disentuh, tautan simbolik dan berkas bukan biasa ditolak. Nama berkas dari nama pengguna diubah menjadi slug aman. |
+| Proses lain | Hanya membuka folder atau berkas HTML laporan dengan program tetap (`explorer`, `open`, `xdg-open`); argumen berupa jalur milik aplikasi, tanpa shell dan tanpa teks dari pengguna. |
+| Bahasa | Rust aman; `panic = "abort"`, `lto`, simbol dihapus pada build rilis. |
+| Rantai pasok | `Cargo.lock` dikomit dan dipakai dengan `--locked`; Dependabot untuk Cargo dan GitHub Actions; aksi CI dikunci ke SHA commit; workflow rilis hanya diberi izin tulis pada job rilis dan membuat Release berstatus draf. |
 
-## Kontrol Electron (`desktop/main.cjs`, `preload.cjs`)
+## Batasan yang diketahui
 
-| Kontrol            | Implementasi                                                                                                                                                                                                                                               |
-| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Isolasi renderer   | `nodeIntegration:false`, `contextIsolation:true`, `sandbox:true`, `devTools:false`                                                                                                                                                                         |
-| Permukaan IPC      | `contextBridge` mengekspos 7 fungsi saja; tidak ada `ipcRenderer`/`require`/akses berkas umum                                                                                                                                                              |
-| Validasi pemanggil | semua `ipcMain.handle` dan `app:close-ready` memeriksa `senderFrame.url` sama persis dengan `dist-single/index.html`                                                                                                                                       |
-| Navigasi           | `will-navigate` dan `will-redirect` hanya mengizinkan halaman aplikasi; `window.open` ditolak; `will-attach-webview` dibatalkan                                                                                                                            |
-| Jaringan           | `webRequest.onBeforeRequest` membatalkan semua URL selain file/data/blob/devtools; izin perangkat ditolak                                                                                                                                                  |
-| CSP                | meta CSP pada build mandiri: `default-src 'none'`, `connect-src 'none'`, `object-src/frame-src 'none'`, `base-uri/form-action 'none'`. `script-src`/`style-src` memakai `'unsafe-inline'` karena aplikasi disisipkan ke satu HTML; tidak ada `unsafe-eval` |
-| Fuses              | `runAsNode`, `enableNodeOptionsEnvironmentVariable`, `enableNodeCliInspectArguments` dimatikan; `onlyLoadAppFromAsar` dihidupkan (lihat `package.json > build.electronFuses`)                                                                              |
-| Instance tunggal   | `requestSingleInstanceLock`                                                                                                                                                                                                                                |
+- **Kunci jawaban ada di dalam biner** (dibenamkan dari `data/*.json`) dan hanya disembunyikan di antarmuka. Ini bukan alat ujian anti-curang.
+- Berkas cetak laporan ditulis ke folder sementara pengguna dengan nama tetap (`dekri-laporan-<kode>.html`). Pada komputer bersama, pengguna lain dengan akses ke folder yang sama dapat mengganti berkas itu sebelum dibuka; risiko ini rendah di Windows (folder sementara per pengguna) dan belum dimitigasi.
+- Cadangan tidak dienkripsi dan memuat nama profil serta seluruh jawaban.
+- Pemasang dan biner belum ditandatangani secara digital; Windows SmartScreen dapat memperingatkan. Checksum SHA-256 di Release hanya membuktikan berkas tidak berubah sejak dibuat.
+- Pemasang berjalan per pengguna (tanpa hak administrator) dan menulis ke folder pilihan pengguna, `HKCU\Software\DEKRiLab`, dan entri Uninstall pengguna. Pemasang tidak menghapus data belajar saat uninstall.
+- Soket lokal Dioxus hanya menerima sambungan yang membawa kunci acak yang dibuat saat program berjalan. Perlindungan ini bergantung pada implementasi Dioxus dan belum diaudit secara independen.
+- Pustaka Dioxus/wry bersumber dari crates.io dan mengikuti pembaruan Dependabot; tidak ada audit keamanan independen atas dependensi ini.
 
-Keterbatasan CSP: `'unsafe-inline'` pada skrip berarti CSP tidak menahan XSS inline; pertahanannya adalah tidak adanya masukan eksternal yang di-render sebagai HTML (React meng-escape teks) dan tidak adanya `dangerouslySetInnerHTML` (periksa dengan `grep -rn dangerouslySetInnerHTML src`).
+## Riwayat
 
-## Berkas cadangan (`desktop/backup.cjs`)
-
-- Nama pengguna dari halaman dibentuk ulang menjadi `[a-z0-9-]` + potongan hash; tidak ada karakter jalur.
-- Isi divalidasi (JSON, `app`, `version`, `state` objek) dan dibatasi 20 MB sebelum menyentuh disk; penulisan atomik (berkas sementara lalu rename).
-- Berkas yang berupa tautan simbolik tidak ditulis menembus; pembacaan menolak berkas non-biasa dan terlalu besar.
-- Folder tetap di Dokumen pengguna; tidak ada jalur yang diberikan halaman.
-- Impor di sisi halaman (`parseBackup`, `parsePack`) memvalidasi bentuk dan membuang isian tidak valid; diuji terhadap `__proto__`/`constructor`.
-
-## Rantai pasok
-
-- `package-lock.json` dengan integrity; `npm ci` di CI; `npm audit --omit=dev` di CI.
-- Workflow berizin minimum (`contents: read`; rilis `contents: write` hanya pada job rilis); rilis dibuat sebagai **draf**.
-- Aksi GitHub dikunci ke SHA commit lengkap dengan komentar versi (lihat `docs/BUILD.md`); workflow belum pernah dijalankan di GitHub.
-- Installer belum ditandatangani kode.
-
-## Cara memeriksa
-
-`npm test` (termasuk `tests/engine/desktop-backup.test.ts`), `xvfb-run -a node e2e/desktop.cjs` (27 pemeriksaan Electron termasuk jaringan diblokir, navigasi dibatalkan, IPC menolak isi asing).
+Sebelum versi 2.0.0 aplikasi berbasis Electron/React (dan sempat dicoba dengan Tauri). Seluruh bagian Electron, termasuk isolasi konteks, IPC, dan CSP, dihapus bersama kode itu; peringatan dependensi alat build Node (mis. `minimatch`) tidak relevan lagi.
